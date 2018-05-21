@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shawn-sandy/blacktie.git"
+    "url": "https://github.com/shawn-sandy/blacktie.git"
   },
   "author": "shawn sandy <creative@shawnsandy.design>",
   "license": "MIT",

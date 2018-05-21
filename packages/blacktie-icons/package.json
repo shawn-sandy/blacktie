@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "BlackTie svg icons",
   "main": "index.js",
-  "repository": "http://",
+  "repository": "https://github.com/shawn-sandy/blacktie",
   "author": "shawn sandy <creative@shawnsandy.design>",
   "license": "MIT",
   "private": false,
