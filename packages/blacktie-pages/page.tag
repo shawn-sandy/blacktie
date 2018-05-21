@@ -27,6 +27,5 @@
 			self.update()
 		}
 
-
 	</script>
 </bt-page>
