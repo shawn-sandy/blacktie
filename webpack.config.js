@@ -39,7 +39,7 @@ const config = {
     app: __dirname + "/src/app.js",
     components: __dirname + "/src/components/index.js",
     pages: __dirname + "/src/components/pages.js",
-    vendors: ["umbrellajs", "validate", "smooth-scroll"]
+    vendors: ["umbrellajs", "validate", "smooth-scroll", 'riot']
   },
   output: {
     path: __dirname + "/dist",
