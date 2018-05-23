@@ -1,5 +1,5 @@
 <bt-page>
-	<main data-is={ page }></main>
+	<main data-is="{ page }"></main>
 	<script>
 		import route from 'riot-route'
 		var self = this
