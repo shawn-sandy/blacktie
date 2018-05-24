@@ -1,6 +1,6 @@
 {
   "name": "blacktie-pages",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A simple page routing component",
   "main": "dist/index.js",
   "scripts": {
