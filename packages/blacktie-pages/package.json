@@ -1,6 +1,6 @@
 {
   "name": "blacktie-pages",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A simple page routing component",
   "main": "dist/index.js",
   "scripts": {
@@ -27,5 +27,8 @@
   "dependencies": {
     "riot": "^3.10.0",
     "riot-route": "^3.1.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
