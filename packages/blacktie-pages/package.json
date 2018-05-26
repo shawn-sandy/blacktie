@@ -1,11 +1,11 @@
 {
   "name": "blacktie-pages",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "A simple page routing component",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "riot ./ dist/index.js",
+    "compile": "riot ./src dist/index.js",
     "build": "npm run compile",
     "publish": "npm run compile"
   },
