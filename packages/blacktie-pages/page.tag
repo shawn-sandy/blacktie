@@ -1,7 +1,9 @@
 <bt-page>
-	<main data-is="{ page }"></main>
+	<main data-is={ page }></main>
 	<script>
 		import route from 'riot-route'
+
+
 		var self = this
 		const links = {
 			home: "/",
@@ -9,7 +11,7 @@
 		}
 		route.start(true)
 
-		self.page = 'bt-landing-page'
+		self.page = opts.defaultPage || 'demo-page'
 
 		route(function (page, id, action) {
 

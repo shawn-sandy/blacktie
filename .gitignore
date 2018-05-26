@@ -7,3 +7,4 @@ node_modules
 yarn-error.log
 bt-comps
 dist-bk
+lerna-debug.log
