@@ -2,7 +2,8 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
-  entry: __dirname + '/src/index.js',
+  mode: 'production',
+  entry: __dirname + '/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/dist/',
@@ -16,10 +17,6 @@ module.exports = {
         exclude: /node_modules/,
         use: [{
           loader: 'riot-tag-loader',
-          options: {
-            hot: true,
-            type: 'es6'
-          }
         }]
       },
       {
@@ -41,7 +38,7 @@ module.exports = {
             {
               loader: "css-loader",
               options: {
-                minimize: isProduction
+                minimize: true
               }
             },
             {
