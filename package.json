@@ -79,6 +79,7 @@
     "concurrently": "^3.5.1",
     "cross-env": "^5.1.4",
     "dompurify": "^1.0.3",
+    "gulp-copy": "^1.1.0",
     "riot": "^3.10.0",
     "riot-hot-reload": "^1.0.0",
     "smooth-scroll": "^12.1.5",
