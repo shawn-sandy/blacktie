@@ -55,4 +55,7 @@ gulp.task("reports", () =>
 gulp.task("new-package", () => {
   let package_name = arg.name || arg.n
   console.log(package_name);
+  gulp.src('./packages/packages-start/**/*.*')
+  .pipe(copy('./packages/' + package_name))
+
 })
