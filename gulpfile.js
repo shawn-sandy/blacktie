@@ -1,9 +1,10 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass");
-const print = require("gulp-print");
+const print = require("gulp-print").default
 const cssnano = require("gulp-cssnano");
 const reports = require("gulp-sizereport");
 const copy = require('gulp-copy')
+const replace = require('gulp-string-replace')
 
 // fetch command line arguments
 const arg = (argList => {
@@ -54,8 +55,9 @@ gulp.task("reports", () =>
 
 gulp.task("new-package", () => {
   let package_name = arg.name || arg.n
-  console.log(package_name);
-  gulp.src('./packages/packages-start/**/*.*')
-  .pipe(copy('./packages/' + package_name))
+  gulp.src(['packages-start/**/*.*'] )
+  .pipe(replace('package-name', package_name))
+  .pipe(gulp.dest('./packages/' + package_name ))
+  .pipe(print())
 
 })
