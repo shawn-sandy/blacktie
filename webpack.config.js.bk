@@ -1,5 +1,6 @@
 const Html = require("html-webpack-plugin");
 const Extract = require("extract-text-webpack-plugin");
+const ExtractCss = require("mini-css-extract-plugin")
 const Dashboard = require("webpack-dashboard/plugin");
 const Copy = require("copy-webpack-plugin");
 const Uglify = require("uglifyjs-webpack-plugin");
@@ -7,9 +8,7 @@ const Cleanup = require("clean-webpack-plugin");
 const Webpack = require("webpack");
 const Notify = require("webpack-notifier");
 const OptimizeCss = require("optimize-css-assets-webpack-plugin");
-const Monitor = require("webpack-monitor");
-const Jarvis = require("webpack-jarvis");
-const BrowserSync = require("browser-sync-webpack-plugin")
+const BrowserSync = require("browser-sync-webpack-plugin");
 
 require("dotenv").config();
 
@@ -41,11 +40,6 @@ const config = {
     pages: __dirname + "/src/components/pages.js",
     vendors: ["umbrellajs", "validate", "smooth-scroll", 'riot']
   },
-  output: {
-    path: __dirname + "/dist",
-    filename: "js/[name].js",
-    publicPath: "/"
-  },
   devServer: {
 
     host: HOST,
@@ -75,6 +69,19 @@ const config = {
         loader: "riot-tag-loader"
       },
       {
+        test: /\.html$/,
+        use: [{
+          loader: "html-loader",
+          options: {
+            minimize: false
+          }
+        }]
+      },
+      {
+        test: /\.css$/,
+        use: [ExtractCss.loader, "css-loader"]
+      },
+      {
         test: /\.scss$/,
         use: Extract.extract({
           fallback: "style-loader",
@@ -97,14 +104,15 @@ const config = {
     ]
   },
   plugins: [
-    new Extract("css/[name].min.css"),
+    new Extract("css/style.min.css"),
     new Html({
-      template: __dirname + "/src/index.html",
-      inject: "body",
-      title: "BlackTie"
+      template: "./src/index.html",
+      filename: "index.html"
+
     }),
-    new Webpack.optimize.CommonsChunkPlugin({
-      name: "vendors"
+    new ExtractCss({
+      filename: "[name].css",
+      chunkFilename: "[id].css"
     }),
     new BrowserSync(
       // BrowserSync options
@@ -119,10 +127,7 @@ const config = {
         from: __dirname + '/src/icons/',
         to: "icons"
       }
-    ]),
-    new Jarvis({
-      port: 1337 // optional: set a port
-    })
+    ])
   ],
 
 };

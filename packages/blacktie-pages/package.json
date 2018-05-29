@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "riot src dist/index.js",
-    "build": "webpack --hide-modules",
+    "build": "webpack --mode development",
     "build:riot": "npm run compile",
     "publish": "npm run compile"
   },
