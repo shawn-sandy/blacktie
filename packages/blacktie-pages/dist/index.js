@@ -2,32 +2,17 @@ riot.tag2('demo-page', '<div class="container"> <p>Lorem ipsum dolor sit amet co
 });
 
 import route from 'riot-route'
-riot.tag2('bt-page', '<main data-is="{page}"></main>', '', '', function(opts) {
-
-
-		var self = this
-		const links = {
-			home: "/",
-			components: "bt-components"
-		}
+riot.tag2('bt-page', '<div data-is="{page}"></div>', '', '', function(opts) {
 		route.start(true)
+		var self = this
 
-		self.page = opts.defaultPage || 'demo-page'
-
-		route(function (page, id, action) {
-
-			if (page) {
-				self.page = page;
-				switchComponent(self.page)
+		route(function (route) {
+			if (route) {
+				self.page = route;
+			} else {
+				self.page = opts.defaultPage
 			}
-
-			console.log('routes', self.page, id, action)
-
-		})
-
-		function switchComponent(page) {
-			self.page = page
 			self.update()
-		}
-
+			console.log('routes', self.page)
+		})
 });

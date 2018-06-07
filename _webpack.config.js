@@ -35,8 +35,7 @@ function setDevTool() {
 
 const config = {
   entry: {
-	  components: __dirname + "/src/components/index.js",
-    pages: __dirname + "/src/components/pages.js"
+	  components: __dirname + "/src/components/index.js"
   },
   devServer: {
     host: HOST,
