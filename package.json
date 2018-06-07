@@ -2,11 +2,7 @@
   "name": "blacktie",
   "version": "0.1.2",
   "description": "BlacktieBlackTie is a framework agnostic reusable collection of UX/UI patterns, libraries and tools created to make it easy to customize and enhance FrontEnd frameworks like bootstrap, adding missing utilities and elements.",
-  "main": "dist/components/btw.js",
-  "types": "dist/components/types/index.d.ts",
-  "files": [
-    "dist/components/"
-  ],
+  "main": "dist/main.js",
   "browser": "dist/components/btw.js",
   "collection": "dist/components/collection/collection-manifest.json",
   "scripts": {
@@ -62,8 +58,8 @@
     "raw-loader": "^0.5.1",
     "riot-compiler": "^3.4.0",
     "riot-tag-loader": "^2.0.2",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.20.1",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.1.5",
     "webpack": "^4.10.0",
     "webpack-cli": "^2.1.4",

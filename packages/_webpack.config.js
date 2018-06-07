@@ -8,13 +8,15 @@ const Cleanup = require("clean-webpack-plugin");
 const Webpack = require("webpack");
 const Notify = require("webpack-notifier");
 const OptimizeCss = require("optimize-css-assets-webpack-plugin");
+const Monitor = require("webpack-monitor");
+const Jarvis = require("webpack-jarvis");
 const BrowserSync = require("browser-sync-webpack-plugin");
 
 require("dotenv").config();
 
-const HOST = process.env.HOST || 'localhost';
-const PORT = process.env.PORT || 4040;
-const PROXY = `http://${HOST}:${PORT}`;
+const HOST =  'localhost';
+const PORT = 7071;
+const PROXY = `http://${HOST}:${PORT}`
 
 const ENV = process.env.ENV;
 const isDevelopment = ENV === "development";
@@ -23,7 +25,7 @@ const isProduction = ENV === "production";
 function setDevTool() {
   // function to set dev-tool depending on environment
   if (isDevelopment) {
-    return "inline-source-map";
+    return "eval-source-map";
   } else if (isProduction) {
     return "source-map";
   } else {
@@ -32,24 +34,17 @@ function setDevTool() {
 }
 
 const config = {
-  devtool: 'eval-source-map',
-
   entry: {
-    app: __dirname + "/src/app.js",
-    components: __dirname + "/src/components/index.js",
-    pages: __dirname + "/src/components/pages.js",
-    vendors: ["umbrellajs", "validate", "smooth-scroll", 'riot']
+	  components: __dirname + "/src/components/index.js",
+    pages: __dirname + "/src/components/pages.js"
   },
   devServer: {
-
     host: HOST,
     port: PORT,
     contentBase: __dirname + '/dist',
-
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.js$/,
         use: "babel-loader",
         exclude: [/node_modules/]
@@ -60,13 +55,27 @@ const config = {
         options: {}
       },
       {
-        test: /\.html/,
-        loader: "raw-loader"
-      },
-      {
         test: /\.tag$/,
         exclude: /node_modules/,
         loader: "riot-tag-loader"
+      },
+      {
+        test: /\.scss$/,
+        use: Extract.extract({
+          fallback: "style-loader",
+          use: [
+            {
+              loader: "css-loader",
+
+            },
+            {
+              loader: "postcss-loader"
+            },
+            {
+              loader: "sass-loader"
+            }
+          ]
+        })
       },
       {
         test: /\.html$/,
@@ -80,35 +89,14 @@ const config = {
       {
         test: /\.css$/,
         use: [ExtractCss.loader, "css-loader"]
-      },
-      {
-        test: /\.scss$/,
-        use: Extract.extract({
-          fallback: "style-loader",
-          use: [
-            {
-              loader: "css-loader",
-              options: {
-                minimize: isProduction
-              }
-            },
-            {
-              loader: "postcss-loader"
-            },
-            {
-              loader: "sass-loader"
-            }
-          ]
-        })
       }
     ]
   },
   plugins: [
-    new Extract("css/style.min.css"),
+
     new Html({
       template: "./src/index.html",
-      filename: "index.html"
-
+      filename: "./index.html"
     }),
     new ExtractCss({
       filename: "[name].css",
@@ -119,18 +107,13 @@ const config = {
       {
         host: HOST,
         port: PORT,
-        proxy: PROXY
+        proxy: PROXY,
       }
-    ),
-    new Copy([
-      {
-        from: __dirname + '/src/icons/',
-        to: "icons"
-      }
-    ])
-  ],
+    )
 
-};
+  ]
+
+}
 
 // Minify and copy assets in production
 // plugins to use in a production environment
@@ -138,14 +121,11 @@ if (isProduction) {
   config.plugins.push(
     new Uglify(),
     new Webpack.DefinePlugin({
-      "process.env": { NODE_ENV: '"production"' }
-    }),
-    new Notify({
-      title: "BlackTie Notifications",
-      message: "Production bundled successfully. You are ready to party",
-      sound: true
+      "process.env": {
+        NODE_ENV: '"production"'
+      }
     })
-  );
+  )
 }
 
 if (isDevelopment) {
