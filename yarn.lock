@@ -7013,6 +7013,12 @@ methods@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
 
+micro-style-loader@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/micro-style-loader/-/micro-style-loader-0.1.0.tgz#619e9022d54a019f7c35f40f191de60a78cafd5a"
+  dependencies:
+    loader-utils "^1.0.2"
+
 micromatch@2.3.11, micromatch@^2.1.5, micromatch@^2.3.11, micromatch@^2.3.7:
   version "2.3.11"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-2.3.11.tgz#86677c97d1720b363431d04d0d15293bd38c1565"
