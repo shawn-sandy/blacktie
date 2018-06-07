@@ -49,24 +49,8 @@ module.exports = {
 			},
 			{
 				test: /\.scss$/,
-				use: [{
-						loader: "style-loader",
-						options: {
-							sourceMap: true
-						}
-					},
-					{
-						loader: "css-loader",
-						options: {}
-					},
-					{
-						loader: "sass-loader",
-						options: {
-							sourceMaps: true
-						}
-					}
-				]
-			}
+				use: ["style-loader", "css-loader", "sass-loader"],
+			  },
 		]
 	},
 	plugins: [
