@@ -1,9 +1,9 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path")
-const devMode = false
 
-module.exports = {
+module.exports = (env, argv) => ({
+
 	entry: {
 		app: __dirname + "/src/app.js",
 		components: __dirname + "/src/components/index.js",
@@ -40,7 +40,7 @@ module.exports = {
 				use: [{
 					loader: "html-loader",
 					options: {
-						minimize: true
+						minimize: false
 					}
 				}]
 			},
@@ -50,10 +50,10 @@ module.exports = {
 			},
 			{
 				test: /\.s?[ac]ss$/,
-				use: [MiniCssExtractPlugin.loader,
+				use: [ argv.mode === 'production'  ? MiniCssExtractPlugin.loader : 'style-loader',
 				  'css-loader',
 				  'postcss-loader',
-				  'sass-loader',
+				  'sass-loader'
 				],
 			  }
 		]
@@ -67,4 +67,4 @@ module.exports = {
 			filename: "[name].css"
 		})
 	]
-};
+});

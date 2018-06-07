@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production --hide-modules && gulp reports",
-    "test-build": "webpack --mode=production",
+    "test-build": "webpack --mode development",
     "dev": "webpack --hide-modules --progress",
     "start": "webpack-dev-server --mode development --watch",
     "reports": "gulp reports"
