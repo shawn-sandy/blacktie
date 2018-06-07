@@ -8,7 +8,14 @@ module.exports = {
 		components: __dirname + "/src/components/index.js",
 		pages: __dirname + "/src/components/pages.js"
 	},
-
+	optimization: {
+		runtimeChunk: true
+	},
+	output: {
+		path: path.join(__dirname, "dist"),
+		filename: "[name].js",
+		chunkFilename: "[name].js"
+	},
 	module: {
 		rules: [{
 				test: /\.js$/,
@@ -43,10 +50,9 @@ module.exports = {
 			{
 				test: /\.scss$/,
 				use: [{
-						loader: "micro-style-loader",
+						loader: "style-loader",
 						options: {
-							sourceMaps: true,
-							inline: false
+							sourceMap: true
 						}
 					},
 					{
