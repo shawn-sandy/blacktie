@@ -8,6 +8,7 @@ module.exports = {
 		components: __dirname + "/src/components/index.js",
 		pages: __dirname + "/src/components/pages.js"
 	},
+
 	module: {
 		rules: [{
 				test: /\.js$/,
@@ -44,7 +45,8 @@ module.exports = {
 				use: [{
 						loader: "micro-style-loader",
 						options: {
-							sourceMaps: true
+							sourceMaps: true,
+							inline: false
 						}
 					},
 					{
@@ -53,7 +55,9 @@ module.exports = {
 					},
 					{
 						loader: "sass-loader",
-						options: {}
+						options: {
+							sourceMaps: true
+						}
 					}
 				]
 			}
@@ -65,8 +69,7 @@ module.exports = {
 			filename: "./index.html"
 		}),
 		new MiniCssExtractPlugin({
-			filename: "[name].css",
-			chunkFilename: "[id].css"
+			filename: "app.css"
 		})
 	]
 };
