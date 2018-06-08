@@ -3,10 +3,15 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const path = require("path")
 const BrowserSync = require("browser-sync-webpack-plugin")
 const OptimizeCss = require('optimize-css-assets-webpack-plugin')
+const ErrorOverlayPlugin = require('error-overlay-webpack-plugin')
+
 
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 7700;
 const PROXY = `http://${HOST}:${PORT}`
+
+console.log('webpack running');
+
 
 const config = (env, argv) => ({
 
@@ -27,7 +32,7 @@ const config = (env, argv) => ({
 		host: HOST,
 		port: PORT,
 		contentBase: __dirname + '/dist',
-	  },
+	},
 	module: {
 		rules: [{
 				test: /\.js$/,
@@ -61,16 +66,17 @@ const config = (env, argv) => ({
 			},
 			{
 				test: /\.s?[ac]ss$/,
-				use: [ argv.mode === 'production'  ? MiniCssExtractPlugin.loader : 'style-loader',
-				  'css-loader',
-				  'postcss-loader',
-				  'sass-loader'
+				use: [argv.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
+					'css-loader',
+					'postcss-loader',
+					'sass-loader'
 				],
-			  }
+			}
 		]
 	},
 
 	plugins: [
+
 		new HtmlWebPackPlugin({
 			template: "./src/index.html",
 			filename: "./index.html"
@@ -81,12 +87,12 @@ const config = (env, argv) => ({
 		new BrowserSync(
 			// BrowserSync options
 			{
-			  host: HOST,
-			  port: PORT,
-			  proxy: PROXY,
+				host: HOST,
+				port: PORT,
+				proxy: PROXY,
 			}
-		  ),
-
+		),
+		new ErrorOverlayPlugin()
 	],
 
 });
@@ -104,4 +110,4 @@ const config = (env, argv) => ({
 // }
 
 
-module.exports = config ;
+module.exports = config;
