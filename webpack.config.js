@@ -1,6 +1,11 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path")
+const BrowserSync = require("browser-sync-webpack-plugin")
+
+const HOST = process.env.HOST || 'localhost';
+const PORT = process.env.PORT || 7700;
+const PROXY = `http://${HOST}:${PORT}`
 
 module.exports = (env, argv) => ({
 
@@ -17,6 +22,11 @@ module.exports = (env, argv) => ({
 		filename: "[name].js",
 		chunkFilename: "[name].js"
 	},
+	devServer: {
+		host: HOST,
+		port: PORT,
+		contentBase: __dirname + '/dist',
+	  },
 	module: {
 		rules: [{
 				test: /\.js$/,
@@ -58,6 +68,7 @@ module.exports = (env, argv) => ({
 			  }
 		]
 	},
+
 	plugins: [
 		new HtmlWebPackPlugin({
 			template: "./src/index.html",
@@ -66,5 +77,13 @@ module.exports = (env, argv) => ({
 		new MiniCssExtractPlugin({
 			filename: "[name].css"
 		})
+		,new BrowserSync(
+			// BrowserSync options
+			{
+			  host: HOST,
+			  port: PORT,
+			  proxy: PROXY,
+			}
+		  ),
 	]
 });
