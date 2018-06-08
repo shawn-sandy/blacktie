@@ -1,13 +1,14 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebPackPlugin = require("html-webpack-plugin")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const path = require("path")
 const BrowserSync = require("browser-sync-webpack-plugin")
+const OptimizeCss = require('optimize-css-assets-webpack-plugin')
 
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 7700;
 const PROXY = `http://${HOST}:${PORT}`
 
-module.exports = (env, argv) => ({
+const config = (env, argv) => ({
 
 	entry: {
 		app: __dirname + "/src/app.js",
@@ -76,8 +77,8 @@ module.exports = (env, argv) => ({
 		}),
 		new MiniCssExtractPlugin({
 			filename: "[name].css"
-		})
-		,new BrowserSync(
+		}),
+		new BrowserSync(
 			// BrowserSync options
 			{
 			  host: HOST,
@@ -85,5 +86,22 @@ module.exports = (env, argv) => ({
 			  proxy: PROXY,
 			}
 		  ),
-	]
+
+	],
+
 });
+
+// if(argv.mode === 'production') {
+// 	config.plugins.push(
+
+// 		new OptimizeCSSAssetsPlugin({
+// 			cssProcessor: require("cssnano"),
+// 			canPrint: false,
+// 			cssProcessorOptions: { discardComments: { removeAll: true } },
+// 		  }),
+
+// 	)
+// }
+
+
+module.exports = config ;
