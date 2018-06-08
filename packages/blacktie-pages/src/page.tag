@@ -1,33 +1,18 @@
 <bt-page>
-	<main data-is={ page }></main>
+	<div data-is={ page }></div>
 	<script>
 		import route from 'riot-route'
-
-
-		var self = this
-		const links = {
-			home: "/",
-			components: "bt-components"
-		}
 		route.start(true)
+		var self = this
 
-		self.page = opts.defaultPage || 'demo-page'
-
-		route(function (page, id, action) {
-
-			if (page) {
-				self.page = page;
-				switchComponent(self.page)
+		route(function (route) {
+			if (route) {
+				self.page = route;
+			} else {
+				self.page = opts.defaultPage
 			}
-
-			console.log('routes', self.page, id, action)
-
-		})
-
-		function switchComponent(page) {
-			self.page = page
 			self.update()
-		}
-
+			console.log('routes', self.page)
+		})
 	</script>
 </bt-page>

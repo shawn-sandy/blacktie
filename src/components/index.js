@@ -17,4 +17,9 @@ import 'blacktie-icons/bt-icon-material.tag'
 import 'blacktie-loaders/spin-loader/bt-loader-spin.tag'
 import 'blacktie-loaders/processing/bt-loader-processing.tag'
 
+import "blacktie-pages/index.js"
+
+import './pages/landing.tag'
+import './pages/components.tag'
+
 riot.mount('*')

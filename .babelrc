@@ -4,5 +4,5 @@
       "transform-react-jsx",
        { "pragma": "h" }]
   ],
-  "presets": ["env", "es2015-riot"]
+  "presets": ["env", "es2015-riot", "react"]
 }
