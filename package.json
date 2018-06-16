@@ -89,7 +89,8 @@
     "riot-hot-reload": "^1.0.0",
     "smooth-scroll": "^12.1.5",
     "umbrellajs": "^2.10.1",
-    "validate": "cferdinandi/validate"
+    "validate": "cferdinandi/validate",
+    "vue": "^2.5.16"
   },
   "bolt": {
     "workspaces": [

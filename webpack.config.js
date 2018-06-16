@@ -18,15 +18,15 @@ const config = (env, argv) => ({
 	entry: {
 		app: __dirname + "/src/app.js",
 		components: __dirname + "/src/components/index.js",
-		pages: __dirname + "/src/components/pages.js"
+		pages: __dirname + "/src/components/pages.js",
+		vue_components: __dirname + "/src/vue/test.js"
 	},
 	optimization: {
-		runtimeChunk: true
+		runtimeChunk: false
 	},
 	output: {
 		path: path.join(__dirname, "dist"),
-		filename: "[name].js",
-		chunkFilename: "[name].js"
+		filename: "[name].[chunkhash:4].js",
 	},
 	devServer: {
 		host: HOST,
@@ -96,18 +96,5 @@ const config = (env, argv) => ({
 	],
 
 });
-
-// if(argv.mode === 'production') {
-// 	config.plugins.push(
-
-// 		new OptimizeCSSAssetsPlugin({
-// 			cssProcessor: require("cssnano"),
-// 			canPrint: false,
-// 			cssProcessorOptions: { discardComments: { removeAll: true } },
-// 		  }),
-
-// 	)
-// }
-
 
 module.exports = config;

@@ -1,3 +1,7 @@
+html {
+  -webkit-font-smoothing: antialiased;
+    height: 100%;
+}
 .block-elm {
   min-height: 40vh;
   @extend .elm-bg-whitesmoke;
