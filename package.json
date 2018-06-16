@@ -87,8 +87,7 @@
     "webpack-monitor": "^1.0.14",
     "webpack-notifier": "^1.5.0"
   },
-  "dependencies": {},
   "workspaces": [
-    "packages/*"
+    "components/*"
   ]
 }
