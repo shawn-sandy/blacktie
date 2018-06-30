@@ -5,6 +5,8 @@ const BrowserSync = require("browser-sync-webpack-plugin")
 const OptimizeCss = require('optimize-css-assets-webpack-plugin')
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+
+
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 7700;
 const PROXY = `http://${HOST}:${PORT}`
@@ -17,7 +19,8 @@ const config = (env, argv) => ({
 		app: __dirname + "/src/app.js",
 		components: __dirname + "/src/components/index.js",
 		pages: __dirname + "/src/components/pages.js",
-		vue_components: __dirname + "/src/vue/test.js"
+    vue_components: __dirname + "/src/vue/test.js",
+    router: __dirname + "/src/router.js"
 	},
 	optimization: {
 		runtimeChunk: false

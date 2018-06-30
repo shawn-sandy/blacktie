@@ -1,8 +1,8 @@
 import Vue from 'vue'
 
 console.log('path name', window.location.pathname)
-const Home = require('./index.vue').default
-const NotFound =
+const Home = require('./vue/pages/index.vue').default
+const NotFound = require('./vue/pages/404.vue').default
 
 const routes  = {
   '/': Home
@@ -16,11 +16,10 @@ const getQueryString = function (field, url) {
 }
 
 const page =  getQueryString('pg');
-
-//console.log('page', pg)
+console.log('page', page);
 
 new Vue({
-  el: '#app',
+  el: '#routes',
   data() {
     return {
       currentRoute: window.location.pathname,
@@ -29,7 +28,7 @@ new Vue({
   computed: {
     ViewComponent () {
      console.log('pg', page)
-      return routes[page] || NotFound
+      return routes[page] || Home
     }
   },
   render (h) { return h(this.ViewComponent) }
