@@ -1,0 +1,54 @@
+
+@mixin color_sets($color_sets) {
+  @each $name, $color in ($color_set) {
+    .elm-color-#{$name} {
+      color: $color;
+    }
+    .elm-border-color-#{$name} {
+      border-color: $color;
+    }
+    .elm-bg-color-#{$name} {
+      background-color: $color;
+    }
+  }
+}
+
+@function rem-calc($size, $default: 16px) {
+  $remSize: $size / $default;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: rem-calc($size);
+}
+
+@mixin placeholder() {
+  input::-webkit-input-placeholder {@content}
+  input:-moz-placeholder           {@content}
+  input::-moz-placeholder          {@content}
+  input:-ms-input-placeholder      {@content}
+}
+
+@mixin transition($what: all, $time: 0.3s, $how: ease-in-out) {
+  -webkit-transition: $what $time $how;
+  -moz-transition:    $what $time $how;
+  -ms-transition:     $what $time $how;
+  -o-transition:      $what $time $how;
+  transition:         $what $time $how;
+}
+
+
+@mixin elmSizes($size_array, $elm){
+
+  @each $attr, $value in ($size_array) {
+
+    .#{$attr} {
+
+      $elm: $value;
+
+    }
+
+  }
+
+}
