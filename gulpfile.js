@@ -3,7 +3,6 @@ const sass = require("gulp-sass");
 const print = require("gulp-print").default
 const cssnano = require("gulp-cssnano");
 const reports = require("gulp-sizereport");
-const copy = require('gulp-copy')
 const replace = require('gulp-string-replace')
 
 // fetch command line arguments
@@ -34,30 +33,57 @@ const arg = (argList => {
 
   return arg;
 
-})(process.argv);
+})(process.argv)
 
-gulp.task("sass", () =>
-  gulp
-    .src("./src/stylesheets/*.scss", { base: "./src/stylesheets" })
-    .pipe(sass().on("error", sass.logError))
-    .pipe(reports({ gzip: true }))
-    .pipe(cssnano())
-    .pipe(gulp.dest("./gist/css"))
-    .pipe(reports({ gzip: true }))
-);
-
-gulp.task("watch:sass", () => gulp.watch("./src/css/**/*.scss", ["sass"]));
+gulp.task('default', function(){
+	console.log('Gulp default')
+})
 
 gulp.task("reports", () =>
   gulp.src("./dist/**/*.*")
   .pipe(reports({ gzip: true }))
 );
 
-gulp.task("new-package", () => {
-  let package_name = arg.name || arg.n
-  gulp.src(['packages-start/**/*.*'] )
-  .pipe(replace('package-name', package_name))
-  .pipe(gulp.dest('./packages/' + package_name ))
-  .pipe(print())
+gulp.task('riot-html', () => {
 
 })
+
+
+/**
+ * Scaffold for components, pages
+ *
+ * gulp new:component --name package-name
+ * gulp new:component --name sg-cart
+ * lerna bootstrap
+ */
+
+// gulp.task("new:component", () => {
+//   scaffold('component')
+// })
+
+gulp.task("new:page", () => {
+  scaffold("pages", "pages" )
+})
+
+gulp.task("new:component", () => {
+  scaffold("vue-starter" )
+})
+
+const scaffold = (sourceFolder, targetFolder = 'components') => {
+  let packageName = arg.name || arg.n
+  let packageTitle = capitalize(packageName.replace('-', ' '))
+  const dir = `scaffolds/${sourceFolder}/**/*.*`
+  gulp.src([dir] )
+  .pipe(replace('package-name', packageName))
+  .pipe(replace('package-title', packageTitle))
+  .pipe(gulp.dest(`./${targetFolder}/${packageName}` ))
+  .pipe(print())
+}
+
+const capitalize =  function (str) {
+	str = str.toLowerCase().split(' ');
+	for (var i = 0; i < str.length; i++) {
+		str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+	}
+	return str.join(' ');
+};

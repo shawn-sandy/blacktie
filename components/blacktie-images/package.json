@@ -1,7 +1,7 @@
 {
-  "name": "package-name",
+  "name": "blacktie-images",
   "version": "1.0.0",
-  "description": "package-title - blacktie component ",
+  "description": "Blacktie Images - blacktie component ",
   "author": "Shawn Sandy <shawnsandy04@gmail.com>",
   "private": true,
   "scripts": {
