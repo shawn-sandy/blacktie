@@ -4,14 +4,12 @@ const path = require("path")
 const BrowserSync = require("browser-sync-webpack-plugin")
 const OptimizeCss = require('optimize-css-assets-webpack-plugin')
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin')
-
-
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 7700;
 const PROXY = `http://${HOST}:${PORT}`
 
 console.log('webpack running');
-
 
 const config = (env, argv) => ({
 
@@ -92,6 +90,7 @@ const config = (env, argv) => ({
 				proxy: PROXY,
 			}
 		),
+		new VueLoaderPlugin(),
 		new ErrorOverlayPlugin()
 	],
 

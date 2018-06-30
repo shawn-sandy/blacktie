@@ -79,6 +79,7 @@
     "umbrellajs": "^2.10.1",
     "validate": "cferdinandi/validate",
     "vue": "^2.5.16",
+    "vue-loader": "^15.2.4",
     "webpack": "^4.10.0",
     "webpack-cli": "^2.1.4",
     "webpack-dashboard": "^1.0.2",
