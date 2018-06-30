@@ -88,7 +88,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your package-title Vue.js App'
+      msg: 'Blacktie package-title'
     }
   }
 }

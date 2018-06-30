@@ -66,14 +66,14 @@ gulp.task("new:page", () => {
 })
 
 gulp.task("new:component", () => {
-  scaffold("vue-starter" )
+  scaffold("vue-template" )
 })
 
-const scaffold = (sourceFolder, targetFolder = 'components') => {
+const scaffold = (sourceFolder, targetFolder = 'packages') => {
   let packageName = arg.name || arg.n
   let packageTitle = capitalize(packageName.replace('-', ' '))
-  const dir = `scaffolds/${sourceFolder}/**/*.*`
-  gulp.src([dir] )
+  const dir = [`scaffolds/${sourceFolder}/**/*`, '`scaffolds/${sourceFolder}/*`']
+  gulp.src(dir )
   .pipe(replace('package-name', packageName))
   .pipe(replace('package-title', packageTitle))
   .pipe(gulp.dest(`./${targetFolder}/${packageName}` ))
