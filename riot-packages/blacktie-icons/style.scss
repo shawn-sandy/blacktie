@@ -1,0 +1,29 @@
+@import "./node_modules/blacktie-styles/mixins/_mixins.scss";
+
+.bt-icon-tiny {
+	width: rem-calc(16px);
+	height: rem-calc(16px);
+	stroke-width: 2px;
+}
+
+.bt-icon {
+	width: rem-calc(32px);
+	height: rem-calc(32px);
+	stroke-width: 2px;
+}
+
+.bt-icon-sm {
+	width: rem-calc(24px);
+	height: rem-calc(24px);
+}
+
+
+.bt-icon-md {
+	width: rem-calc(48px);
+	height: rem-calc(48px);
+}
+
+.bt-icon-lg {
+	width: rem-calc(64px);
+	height: rem-calc(64px);
+}

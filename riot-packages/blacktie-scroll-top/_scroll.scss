@@ -1,0 +1,15 @@
+
+.back-to-top {
+	position: fixed;
+	z-index: 7;
+	bottom: 160px;
+	right: 60px;
+	transition: all 0.7s ease;
+  }
+
+  a.back-to-top {
+	color: gray;
+	&:hover {
+	  color: darken(gray, 40%);
+	}
+  }

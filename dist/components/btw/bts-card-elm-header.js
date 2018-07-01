@@ -1,2 +1,0 @@
-/*! Built with http://stenciljs.com */
-const{h:e,Context:t}=window.btw;class s{render(){return e("div",{class:`card-elm-header ${this.className}`},e("slot",null))}static get is(){return"bts-card-elm-header"}static get properties(){return{className:{type:String,attr:"class-name"}}}}export{s as BtsCardElmHeader};

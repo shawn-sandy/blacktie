@@ -1,3 +1,10 @@
+html {
+  -webkit-font-smoothing: antialiased;
+    height: 100%;
+}
+main {
+  min-height: 75vh;
+}
 .block-elm {
   min-height: 40vh;
   @extend .elm-bg-whitesmoke;
@@ -33,7 +40,8 @@
 }
 
 .meta-elm {
-  @extend .flex-elm-left;
+  @extend %flex-elm;
+  @extend %flex-elm-left;
   margin: 40px 0;
   border: 1px solid whitesmoke;
 
@@ -41,23 +49,10 @@
     border-right: 1px solid whitesmoke;
     height: inherit;
     min-height: 60px;
-    @extend .flex-elm-left;
+    @extend %flex-elm;
+    @extend %flex-elm-left;
     &:last-child {
       border: none;
     }
-  }
-}
-
-.back-to-top {
-  position: fixed;
-  z-index: 7;
-  bottom: 160px;
-  right: 60px;
-  transition: all 0.7s ease;
-}
-a.back-to-top {
-  color: gray;
-  &:hover {
-    color: darken(gray, 40%);
   }
 }

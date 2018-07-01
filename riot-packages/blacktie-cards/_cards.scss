@@ -1,0 +1,35 @@
+@import "./node_modules/blacktie-styles/placeholders.scss";
+
+
+bts-card-elm, bts-card-elm-header, bts-card-elm-content {
+	width: 100%;
+	height: 100%
+}
+
+.card-elm {
+  @extend %flex-elm-column;
+  // @extend %elm-rds-square;
+  @extend %elm-shadow;
+  border-radius: 2px;
+  // @extend %elm-border;
+  > * {
+    width: 100% important;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.card-elm-header {
+  @extend %flex-elm-left;
+  padding: 10px 20px;
+  font-weight: 500;
+  width: 100% important;
+}
+
+.card-elm-content {
+  height: 100% important;
+  > * {
+    @extend %flex-elm-column;
+    padding: 20px 20px;
+  }
+}

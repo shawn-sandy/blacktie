@@ -1,0 +1,29 @@
+{
+  "name": "blacktie-icons",
+  "version": "0.0.1",
+  "description": "BlackTie svg icons",
+  "main": "index.js",
+  "repository": "https://github.com/shawn-sandy/blacktie",
+  "author": "shawn sandy <creative@shawnsandy.design>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "riot": "^3.10.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "bable-loader": "^0.0.1-security",
+    "cross-env": "^5.1.5",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^2.1.5",
+    "riot": "^3.10.0",
+    "riot-route": "^3.1.3",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4"
+  }
+}

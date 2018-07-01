@@ -5,7 +5,9 @@ import { u } from "umbrellajs";
 import { setTimeout } from "timers";
 const validate = require("validate");
 const smoothScroll = require("smooth-scroll");
-import {h, app} from "hyperapp";
+
+
+import '../riot/selections/dropdown/dropdown.js'
 
 /** simple and easy form validation */
 validate.init();
@@ -89,3 +91,11 @@ const main = app(
   view,
   document.querySelector(".hyper")
 );
+
+const truncate = function (elm, limit, after = "...") {
+	if(!elm || !limit) return;
+	 let truncated = elm.textContent.trim()
+	 truncated = truncated.split(' ').slice(0, limit);
+	 truncated = truncated.join(' ') + (after ? after : " ");
+	 elm.textContent = truncated;
+}
