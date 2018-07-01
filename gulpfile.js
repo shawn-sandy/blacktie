@@ -1,7 +1,5 @@
 const gulp = require("gulp");
-const sass = require("gulp-sass");
 const print = require("gulp-print").default
-const cssnano = require("gulp-cssnano");
 const reports = require("gulp-sizereport");
 const replace = require('gulp-string-replace')
 
