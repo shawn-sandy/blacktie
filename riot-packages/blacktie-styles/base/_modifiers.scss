@@ -1,0 +1,123 @@
+.elm-border-color {
+	border-color: lightgray;
+}
+
+.elm-border {
+	border: 1px solid lightgray;
+}
+
+.elm-borderless {
+	border: none;
+}
+
+.elm-border-top {
+	@extend .elm-border;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+}
+
+.elm-border-bottom {
+	@extend .elm-border;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.elm-border-left {
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+}
+
+.elm-border-left {
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+}
+
+.elm-rds-rounded
+{
+	border-radius: 9999px;
+}
+
+.elm-rds-tiny, .elm-rds-square {
+	border-radius: 1px;
+}
+
+.elm-rds-small {
+	border-radius: 5px;
+}
+
+.elm-rds-medium {
+	border-radius: 8px;
+}
+
+.elm-rds-large {
+	border-radius: 12px;
+}
+
+.elm-background {
+	background-color: whitesmoke;
+}
+
+.elm-background-transparent {
+	background-color: transparent;
+}
+
+.elm-shadow {
+	box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.elm-shadow-lift {
+	box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11),
+	0 5px 15px 0 rgba(0, 0, 0, .08);
+}
+
+.elm-shadow-none {
+	box-shadow: none;
+}
+
+.elm-text-shadow {
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.elm-rounded {
+	border-radius: 9999px;
+}
+
+.elm-hide {
+	display: none;
+}
+
+.elm-full-width {
+	width: 100%;
+}
+
+.elm-width-half {
+	width: 50%;
+}
+
+.elm-quarter {
+	width: 25%;
+}
+
+.elm-three-quarter {
+	width: 75%;
+}
+
+.elm-full-height {
+	height: 100%;
+}
+
+.elm-height-half {
+	height: 50%;
+}
+
+.elm-height-quarter {
+	height: 25%;
+}
+
+.elm-inline {
+	display: inline-block;
+}

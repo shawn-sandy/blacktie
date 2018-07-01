@@ -8,12 +8,11 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-  <style type="riot"></style>
+
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.2.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
-  <style type="riot"></style>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -21,13 +20,15 @@
 
 <body id="body">
 
-
     <nav class="navbar elm-bg-whitesmoke" role="navigation" aria-label="main navigation">
       <div class="container is-size-7 is-uppercase">
         <a class="navbar-item" href="/">Home</a>
         <a class="navbar-item" href="#bt-page-component">Components</a>
       </div>
     </nav>
+    <main>
+
+
   <div class="container">
     <div class="content section">
       <h1 class="title is-1" data-module="example">
@@ -35,6 +36,12 @@
         <small class="is-size-6 is-uppercase elm-color-gray">A small UI toolkit</small>
       </h1>
     </div>
+  </div>
+
+  <div class="container">
+    <div id="routes">
+  </div>
+
   </div>
   <div class="container">
       <div id="components-demo">
@@ -46,7 +53,7 @@
 
 
   <bt-page default-page="bt-landing-page"></bt-page>
-
+</main>
   <footer class="elm-bg-gray-dark">
     <section class="container section elm-color-lightgray">
       <div class="columns">
@@ -81,7 +88,7 @@
     </section>
 
     <div class="section elm-color-whitesmoke">
-      <p class="has-text-centered attributions">
+      <p class="has-text-centered attributions col-xs-1">
         Copyright / Attributions
       </p>
 

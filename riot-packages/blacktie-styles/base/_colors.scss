@@ -1,0 +1,36 @@
+@each $name, $color in ($color_set) {
+
+	.elm-color-#{$name} {
+		color: $color;
+	}
+
+	.elm-color-#{$name}:hover {
+		color: $color;
+	}
+
+	.elm-border-#{$name} {
+		border-color: $color;
+		&:hover {
+			color: darken($color, 10%)
+		}
+	}
+
+	.elm-bg-#{$name} {
+		background-color: $color;
+		&:hover {
+			color: darken($color, 10%)
+		}
+	}
+
+	.elm-bg-#{$name}:hover {
+		background-color: $color;
+		&:hover {
+			color: darken($color, 10%)
+		}
+	}
+
+	.elm-stroke-#{$name} {
+		stroke: $color;
+	}
+
+}

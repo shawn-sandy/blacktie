@@ -77,6 +77,10 @@ body {
 .fs-6 {
   font-size: 0.75rem; }
 
+html {
+  -webkit-font-smoothing: antialiased;
+  height: 100%; }
+
 .block-elm {
   min-height: 40vh; }
 
@@ -819,7 +823,7 @@ html {
   @media (max-width: 575.98px) {
     html {
       font-size: 11px; } }
-  @media (min-width: 576.98px) {
+  @media (min-width: 575.98px + 1) {
     html {
       font-size: 14px;
       font-size: 0.875rem; } }
