@@ -77,7 +77,7 @@ const scaffold = (sourceFolder, targetFolder = 'packages') => {
     `scaffolds/${sourceFolder}/.*`
   ]
   gulp.src(dirs, {
-      'base': './scaffolds/vue-template'
+      'base': `./scaffolds/${sourceFolder}`
     })
     .pipe(replace('package-name', packageName))
     .pipe(replace('package-title', packageTitle))
