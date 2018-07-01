@@ -1,0 +1,59 @@
+.figure-elm {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+
+  * {
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  figcaption {
+    color: azure;
+    position: absolute;
+    top: 0;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-image: -webkit-linear-gradient(
+      bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      transparent 100%
+    );
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7) 0%,
+      transparent 100%
+    );
+    display: flex;
+    flex-direction: column;
+  }
+
+  .centered {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top {
+    justify-content: flex-start;
+  }
+
+  .bottom {
+    justify-content: flex-end;
+  }
+
+  .left {
+    align-items: flex-start;
+  }
+
+  .right {
+    align-items: flex-end;
+  }
+
+
+}

@@ -1,0 +1,45 @@
+:scope {
+  width: 100%;
+  max-width: 360px;
+  display: block;
+}
+
+.bt-address-select {
+  width: 100%;
+
+  .form-control:disabled, .form-control[readonly] {
+    background-color: #fff;
+  }
+}
+
+.address-dropdown {
+  // padding: 5px;
+  position: relative;
+  width: 100%;
+
+}
+
+.address-dropdown-btn {
+  background-color: transparent;
+  width: 100%;
+  cursor: pointer;
+}
+
+.bt-address-list {
+
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+  position: absolute;
+  z-index: 99;
+  left: 0px;
+  background-color: #fff;
+  width: 100%;
+  height: 260px;
+  overflow: auto;
+}
+
+.d-none {
+  display: none;
+}

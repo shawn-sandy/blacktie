@@ -1,0 +1,48 @@
+.bt-loader-processing {
+ text-align: center;
+ margin: auto;
+  .loader--label {
+    padding-bottom: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(82, 126, 239);
+    font-family: Lato;
+  }
+
+  .bt-processing {
+	height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .loader--background {
+    background: rgba(225, 230, 249, 0.5);
+    height: 10px;
+    display: inline-block;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: relative;
+    z-index: -1;
+  }
+
+  .loader--bar {
+    top: -10px;
+    height: 10px;
+    position: relative;
+    width: 0%;
+    display: inline-block;
+    background-image: linear-gradient(to right, #5452eb, #50a0f1);
+    animation: growth 1.5s ease-in infinite;
+  }
+
+  @keyframes growth {
+    to {
+      width: 100%;
+    }
+  }
+}

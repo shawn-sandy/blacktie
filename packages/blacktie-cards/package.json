@@ -1,0 +1,41 @@
+{
+  "name": "blacktie-cards",
+  "version": "0.0.11",
+  "description": "A simple page routing component",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "riot ./src dist/index.js",
+    "build": "npm run compile",
+    "publish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shawn-sandy/blacktie.git"
+  },
+  "keywords": [
+    "blacktie",
+    "component",
+    "frontend",
+    "vue"
+  ],
+  "author": "shawn sandy <creative@shawnsandy.design>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shawn-sandy/blacktie/issues"
+  },
+  "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/package-name",
+  "dependencies": {
+    "blacktie-styles": "^0.0.1",
+    "sass-loader": "^7.0.3",
+    "vue": "^2.5.16",
+    "vue-loader": "^15.2.4",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "blacktie-styles": "^0.0.1"
+  }
+}

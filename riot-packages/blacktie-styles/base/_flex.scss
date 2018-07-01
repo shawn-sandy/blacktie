@@ -1,0 +1,31 @@
+.flex-elm {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+
+}
+
+.flex-elm-left {
+	@extend .flex-elm;
+	justify-content: flex-start
+}
+
+.flex-elm-right {
+	@extend .flex-elm;
+	justify-content: flex-end;
+}
+
+.flex-elm-header {
+	>* {
+		@extend .flex-elm;
+		@extend .flex-elm-left;
+	}
+}
+
+.flex-elm-column {
+	@extend .flex-elm;
+	flex-direction: column;
+	overflow: hidden;
+}

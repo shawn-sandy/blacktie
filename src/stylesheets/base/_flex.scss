@@ -5,7 +5,7 @@
 	height: 100%;
 	width: 100%;
 	> * {
-		padding: 0 10px;
+		padding: 0 0px;
 		flex-grow: 1;
 	}
 }
@@ -25,10 +25,6 @@
 		@extend .flex-elm;
 		@extend .flex-elm-left;
 	}
-}
-
-.radius {
-	border-radius: 7px;
 }
 
 .flex-elm-column {

@@ -1,0 +1,51 @@
+.block-elm {
+  min-height: 40vh;
+  @extend .elm-bg-whitesmoke;
+}
+
+.block-elm-small {
+  height: 25vh;
+}
+
+.block-elm-medium {
+  height: 40vh;
+}
+
+.block-elm-large {
+  height: 60vh;
+}
+
+.block-elm-full {
+  height: 100vh;
+}
+
+.links-elm {
+  padding: 0 5 0 0;
+
+  .links-elm-link {
+    padding: 10px 0px;
+    display: block;
+    border-bottom: 1px solid whitesmoke;
+    * {
+      padding: 0 10px;
+    }
+  }
+}
+
+.meta-elm {
+  @extend %flex-elm;
+  @extend %flex-elm-left;
+  margin: 40px 0;
+  border: 1px solid whitesmoke;
+
+  .meta-elm-items {
+    border-right: 1px solid whitesmoke;
+    height: inherit;
+    min-height: 60px;
+    @extend %flex-elm;
+    @extend %flex-elm-left;
+    &:last-child {
+      border: none;
+    }
+  }
+}

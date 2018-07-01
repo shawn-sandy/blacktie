@@ -1,0 +1,10 @@
+{
+  "name": "blacktie-styles",
+  "version": "0.0.1",
+  "description": "Stylesheet utilities - blacktie",
+  "main": "index.js",
+  "author": "shawn sandy",
+  "license": "MIT",
+  "dependencies": {
+  }
+}

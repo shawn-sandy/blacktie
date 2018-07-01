@@ -1,0 +1,42 @@
+.collections-elm {
+	margin: 20px 0;
+	@extend .elm-border-top;
+	@extend .elm-border-bottom;
+	border-color: whitesmoke;
+}
+
+.collection-elm {
+	//margin: 5px 0;
+
+	padding: 20px;
+	border-bottom: 1px solid lightgray;
+	&:hover {
+		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.062);
+		background-color: whitesmoke;
+
+	}
+	&:last-child {
+		// border-bottom: none;
+	}
+	//@include box-shadow();
+	> * {
+		//@extend .flex-elm-left;
+
+	}
+	&-tiny {
+		height: 40px;
+	}
+	&-small {
+		height: 60px;
+		padding: 30px;
+	}
+	&-medium {
+		height: 90px;
+		padding: 40px;
+	}
+	&-large {
+		height: 140px;
+		padding: 60px;
+	}
+
+}

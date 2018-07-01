@@ -1,131 +1,100 @@
-const Html = require("html-webpack-plugin");
-const Extract = require("extract-text-webpack-plugin");
-const Dashboard = require("webpack-dashboard/plugin");
-const Copy = require("copy-webpack-plugin");
-const Uglify = require("uglifyjs-webpack-plugin");
-const Cleanup = require("clean-webpack-plugin");
-const Webpack = require("webpack");
-const Notify = require("webpack-notifier");
-const OptimizeCss = require("optimize-css-assets-webpack-plugin");
-const Monitor = require("webpack-monitor");
-const Jarvis = require("webpack-jarvis");
+const HtmlWebPackPlugin = require("html-webpack-plugin")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const path = require("path")
+const BrowserSync = require("browser-sync-webpack-plugin")
+const OptimizeCss = require('optimize-css-assets-webpack-plugin')
+const ErrorOverlayPlugin = require('error-overlay-webpack-plugin')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
-require("dotenv").config();
 
-const ENV = process.env.ENV;
-const isDevelopment = ENV === "development";
-const isProduction = ENV === "production";
+const HOST = process.env.HOST || 'localhost';
+const PORT = process.env.PORT || 7700;
+const PROXY = `http://${HOST}:${PORT}`
 
-function setDevTool() {
-  // function to set dev-tool depending on environment
-  if (isDevelopment) {
-    return "inline-source-map";
-  } else if (isProduction) {
-    return "source-map";
-  } else {
-    return "eval-source-map";
-  }
-}
+console.log('webpack running');
 
-const config = {
-  devtool: setDevTool(),
+const config = (env, argv) => ({
 
-  entry: {
-    app: __dirname + "/src/js/app.js",
-    riot: __dirname + "/src/riot/index.js",
-    vendors: ["umbrellajs", "validate", "smooth-scroll", 'riot']
-  },
-  output: {
-    path: __dirname + "/dist",
-    filename: "js/[name].js",
-    publicPath: "/"
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: "babel-loader",
-        exclude: [/node_modules/]
-      },
-      {
-        test: /\.vue$/,
-        loader: "vue-loader",
-        options: {}
-      },
-      {
-        test: /\.html/,
-        loader: "raw-loader"
-      },
-      {
-        test: /\.tag$/,
-        exclude: /node_modules/,
-        loader: "riot-tag-loader"
-      },
-      {
-        test: /\.scss$/,
-        use: Extract.extract({
-          fallback: "style-loader",
-          use: [
-            {
-              loader: "css-loader",
-              options: {
-                minimize: isProduction
-              }
-            },
-            {
-              loader: "postcss-loader"
-            },
-            {
-              loader: "sass-loader"
-            }
-          ]
-        })
-      }
-    ]
-  },
-  plugins: [
-    new Extract("css/[name].min.css"),
-    new Html({
-      template: __dirname + "/src/index.html",
-      inject: "body",
-      title: "BlackTie"
-    }),
-    new Webpack.optimize.CommonsChunkPlugin({
-      name: "vendors"
-    }),
-    new Copy([
-      {
-        from: __dirname + "/public/stylesheets"
-      },
-      {
-        from:
-          __dirname +
-          "/node_modules/bytesize-icons/dist/bytesize-symbols.min.svg",
-        to: "icons/bytesize-symbols.min.svg"
-      }
-    ])
-  ],
+	entry: {
+		app: __dirname + "/src/app.js",
+    vue_components: __dirname + "/src/vue/test.js",
+    router: __dirname + "/src/router.js"
+	},
+	optimization: {
+		runtimeChunk: false
+	},
+	output: {
+		path: path.join(__dirname, "dist"),
+		filename: "[name].[chunkhash:4].js",
+	},
+	devServer: {
+		host: HOST,
+		port: PORT,
+		contentBase: __dirname + '/dist',
+	},
+	module: {
+		rules: [{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				use: {
+					loader: "babel-loader"
+				}
+			},
+			{
+				test: /\.vue$/,
+				loader: "vue-loader",
+				options: {}
+			},
+			{
+				test: /\.tag$/,
+				exclude: /node_modules/,
+				loader: "riot-tag-loader"
+			},
+			{
+				test: /\.html$/,
+				use: [{
+					loader: "html-loader",
+					options: {
+						minimize: false
+					}
+				}]
+			},
+			{
+				test: /\.css$/,
+				use: [MiniCssExtractPlugin.loader, "css-loader"]
+			},
+			{
+				test: /\.s?[ac]ss$/,
+				use: [argv.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
+					'css-loader',
+					'postcss-loader',
+					'sass-loader'
+				],
+			}
+		]
+	},
 
-};
+	plugins: [
 
-// Minify and copy assets in production
-// plugins to use in a production environment
-if (isProduction) {
-  config.plugins.push(
-    new Uglify(),
-    new Webpack.DefinePlugin({
-      "process.env": { NODE_ENV: '"production"' }
-    }),
-    new Notify({
-      title: "BlackTie Notifications",
-      message: "Production bundled successfully. You are ready to party",
-      sound: true
-    })
-  );
-}
+		new HtmlWebPackPlugin({
+			template: "./src/index.html",
+			filename: "./index.html"
+		}),
+		new MiniCssExtractPlugin({
+			filename: "[name].css"
+		}),
+		new BrowserSync(
+			// BrowserSync options
+			{
+				host: HOST,
+				port: PORT,
+				proxy: PROXY,
+			}
+		),
+		new VueLoaderPlugin(),
+		new ErrorOverlayPlugin()
+	],
 
-if (isDevelopment) {
-  config.plugins.push(new Dashboard());
-}
+});
 
 module.exports = config;
