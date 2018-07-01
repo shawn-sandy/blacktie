@@ -6,7 +6,8 @@ const replace = require('gulp-string-replace')
 // fetch command line arguments
 const arg = (argList => {
 
-  let arg = {}, a, opt, thisOpt, curOpt;
+  let arg = {},
+    a, opt, thisOpt, curOpt;
   for (a = 0; a < argList.length; a++) {
 
     thisOpt = argList[a].trim();
@@ -18,8 +19,7 @@ const arg = (argList => {
       if (curOpt) arg[curOpt] = opt;
       curOpt = null;
 
-    }
-    else {
+    } else {
 
       // argument name
       curOpt = opt;
@@ -33,13 +33,15 @@ const arg = (argList => {
 
 })(process.argv)
 
-gulp.task('default', function(){
-	console.log('Gulp default')
+gulp.task('default', function () {
+  console.log('Gulp default')
 })
 
 gulp.task("reports", () =>
   gulp.src("./dist/**/*.*")
-  .pipe(reports({ gzip: true }))
+  .pipe(reports({
+    gzip: true
+  }))
 );
 
 gulp.task('riot-html', () => {
@@ -60,28 +62,33 @@ gulp.task('riot-html', () => {
 // })
 
 gulp.task("new:page", () => {
-  scaffold("pages", "pages" )
+  scaffold("pages", "pages")
 })
 
 gulp.task("new:component", () => {
-  scaffold("vue-template" )
+  scaffold("vue-template")
 })
 
 const scaffold = (sourceFolder, targetFolder = 'packages') => {
   let packageName = arg.name || arg.n
   let packageTitle = capitalize(packageName.replace('-', ' '))
-  const dir = [`scaffolds/${sourceFolder}/**/*`, '`scaffolds/${sourceFolder}/*`']
-  gulp.src(dir )
-  .pipe(replace('package-name', packageName))
-  .pipe(replace('package-title', packageTitle))
-  .pipe(gulp.dest(`./${targetFolder}/${packageName}` ))
-  .pipe(print())
+  const dirs = [
+    `scaffolds/${sourceFolder}/**/*`,
+    `scaffolds/${sourceFolder}/.*`
+  ]
+  gulp.src(dirs, {
+      'base': './scaffolds/vue-template'
+    })
+    .pipe(replace('package-name', packageName))
+    .pipe(replace('package-title', packageTitle))
+    .pipe(gulp.dest(`./${targetFolder}/${packageName}`))
+    .pipe(print())
 }
 
-const capitalize =  function (str) {
-	str = str.toLowerCase().split(' ');
-	for (var i = 0; i < str.length; i++) {
-		str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
-	}
-	return str.join(' ');
+const capitalize = function (str) {
+  str = str.toLowerCase().split(' ');
+  for (var i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+  }
+  return str.join(' ');
 };
