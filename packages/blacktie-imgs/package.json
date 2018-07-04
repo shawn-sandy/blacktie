@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "blacktie-styles": "^0.0.1",
     "file-loader": "^1.1.11",
     "vue": "^2.5.16"
   },
