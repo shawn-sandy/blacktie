@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="flex-elm">
-    <HelloWorld msg="package-title demo"/>
+    <HelloWorld msg="Blacktie Elements demo"/>
   </div>
 </template>
 

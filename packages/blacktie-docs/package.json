@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^0.4.0",
+    "blacktie-styles": "^0.0.1",
+    "bulma": "^0.7.1",
     "concurrent-transform": "^1.0.0",
     "gravatar": "^1.6.0",
     "gulp": "^4.0.0",
