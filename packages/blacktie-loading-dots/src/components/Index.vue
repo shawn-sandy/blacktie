@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1 class="title is-1">{{ msg }}</h1>
+    <h1 class="title is-3">{{ msg }}</h1>
     <div class="stage">
       <div class="dot-floating"></div>
     </div>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'LoadingDots',
   props: {
     msg: String
   }
@@ -40,7 +40,7 @@ export default {
 $dotHeight: 10px;
 $dotRadius: $dotWidth/2;
 
-$dotColor: #9880ff;
+$dotColor: #151516;
 $dotBgColor: $dotColor;
 $dotBeforeColor: $dotColor;
 $dotAfterColor: $dotColor;
@@ -63,11 +63,11 @@ $dotSpacing: $dotWidth + $dotWidth/2;
  */
 .dot-floating {
   position: relative;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #9880ff;
-  color: #9880ff;
+  width:$dotWidth;
+  height: $dotHeight;
+  border-radius: $dotRadius;
+  background-color: $dotColor;
+  color: $dotColor;
   animation: dotFloating 3s infinite cubic-bezier(0.15, 0.6, 0.9, 0.1);
 }
 
@@ -80,21 +80,21 @@ $dotSpacing: $dotWidth + $dotWidth/2;
 
 .dot-floating::before {
   left: -12px;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #9880ff;
-  color: #9880ff;
+   width:$dotWidth;
+  height: $dotHeight;
+  border-radius: $dotRadius;
+  background-color: $dotColor;
+  color: $dotColor;
   animation: dotFloatingBefore 3s infinite ease-in-out;
 }
 
 .dot-floating::after {
   left: -24px;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #9880ff;
-  color: #9880ff;
+   width:$dotWidth;
+  height: $dotHeight;
+  border-radius: $dotRadius;
+  background-color: $dotColor;
+  color: $dotColor;
   animation: dotFloatingAfter 3s infinite cubic-bezier(0.4, 0, 1, 1);
 }
 
