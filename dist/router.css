@@ -1,0 +1,156 @@
+/**
+ *
+ * three-dots.css v0.1.0
+ *
+ * https://nzbin.github.io/three-dots/
+ *
+ * Copyright (c) 2018 nzbin
+ *
+ * Released under the MIT license
+ *
+ */
+/**
+ * ==============================================
+ * Dot Elastic
+ * ==============================================
+ */
+.stage[data-v-d7342180] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+  margin: 0 -5%;
+  overflow: hidden;
+}
+
+/**
+ * ==============================================
+ * Dot Floating
+ * ==============================================
+ */
+.dot-floating[data-v-d7342180] {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #151516;
+  color: #151516;
+  -webkit-animation: dotFloating-data-v-d7342180 3s infinite cubic-bezier(0.15, 0.6, 0.9, 0.1);
+          animation: dotFloating-data-v-d7342180 3s infinite cubic-bezier(0.15, 0.6, 0.9, 0.1);
+}
+.dot-floating[data-v-d7342180]::before, .dot-floating[data-v-d7342180]::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+.dot-floating[data-v-d7342180]::before {
+  left: -12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #151516;
+  color: #151516;
+  -webkit-animation: dotFloatingBefore-data-v-d7342180 3s infinite ease-in-out;
+          animation: dotFloatingBefore-data-v-d7342180 3s infinite ease-in-out;
+}
+.dot-floating[data-v-d7342180]::after {
+  left: -24px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #151516;
+  color: #151516;
+  -webkit-animation: dotFloatingAfter-data-v-d7342180 3s infinite cubic-bezier(0.4, 0, 1, 1);
+          animation: dotFloatingAfter-data-v-d7342180 3s infinite cubic-bezier(0.4, 0, 1, 1);
+}
+@-webkit-keyframes dotFloating-data-v-d7342180 {
+0% {
+    left: calc(-50% - 5px);
+}
+75% {
+    left: calc(50% + 105px);
+}
+100% {
+    left: calc(50% + 105px);
+}
+}
+@keyframes dotFloating-data-v-d7342180 {
+0% {
+    left: calc(-50% - 5px);
+}
+75% {
+    left: calc(50% + 105px);
+}
+100% {
+    left: calc(50% + 105px);
+}
+}
+@-webkit-keyframes dotFloatingBefore-data-v-d7342180 {
+0% {
+    left: -50px;
+}
+50% {
+    left: -12px;
+}
+75% {
+    left: -50px;
+}
+100% {
+    left: -50px;
+}
+}
+@keyframes dotFloatingBefore-data-v-d7342180 {
+0% {
+    left: -50px;
+}
+50% {
+    left: -12px;
+}
+75% {
+    left: -50px;
+}
+100% {
+    left: -50px;
+}
+}
+@-webkit-keyframes dotFloatingAfter-data-v-d7342180 {
+0% {
+    left: -100px;
+}
+50% {
+    left: -24px;
+}
+75% {
+    left: -100px;
+}
+100% {
+    left: -100px;
+}
+}
+@keyframes dotFloatingAfter-data-v-d7342180 {
+0% {
+    left: -100px;
+}
+50% {
+    left: -24px;
+}
+75% {
+    left: -100px;
+}
+100% {
+    left: -100px;
+}
+}
+
+
+.missing[data-v-140ea3ca] {
+  min-height: 40vh;
+}
+

@@ -81,6 +81,9 @@ html {
   -webkit-font-smoothing: antialiased;
   height: 100%; }
 
+main {
+  min-height: 75vh; }
+
 .block-elm {
   min-height: 40vh; }
 
