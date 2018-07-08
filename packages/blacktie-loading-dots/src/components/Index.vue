@@ -6,14 +6,14 @@
 
 <script>
 export default {
-  name: "LoadingDots",
+  name: 'LoadingDots',
   props: {
     loadingStyle: {
       type: String,
-      default: "floating"
+      default: 'floating'
     }
   }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
