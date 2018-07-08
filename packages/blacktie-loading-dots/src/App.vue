@@ -3,7 +3,7 @@
     <div class="section">
       <h1 class="title is-1">Blacktie Loading-dots demo</h1>
     <hr>
-    <HelloWorld msg="Blacktie Loading-dots demo"/>
+    <HelloWorld loading-style="windmill"/>
     </div>
 
   </div>
@@ -21,6 +21,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~blacktie-styles/app.scss";
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
