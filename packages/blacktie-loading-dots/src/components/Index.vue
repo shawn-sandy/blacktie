@@ -1,42 +1,27 @@
 <template>
-  <div class="hello">
-    <h1 class="title is-3">{{ msg }}</h1>
-    <div class="stage">
-      <div class="dot-floating"></div>
-    </div>
-
+  <div class="bt-component stage">
+    <div :class="`dot-${loadingStyle}`"></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'LoadingDots',
+  name: "LoadingDots",
   props: {
-    msg: String
+    loadingStyle: {
+      type: String,
+      default: "floating"
+    }
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-@charset "UTF-8";
-/**
- *
- * three-dots.css v0.1.0
- *
- * https://nzbin.github.io/three-dots/
- *
- * Copyright (c) 2018 nzbin
- *
- * Released under the MIT license
- *
- */
-/**
- * ==============================================
- * Dot Elastic
- * ==============================================
- */
- $dotWidth: 10px;
+@import "~three-dots/sass/mixins";
+@import "~three-dots/sass/variables";
+
+$dotWidth: 10px;
 $dotHeight: 10px;
 $dotRadius: $dotWidth/2;
 
@@ -48,95 +33,201 @@ $dotAfterColor: $dotColor;
 $dotSpacing: $dotWidth + $dotWidth/2;
 
 .stage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0;
-    margin: 0 -5%;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin: 0 -5%;
+  overflow: hidden;
 }
-
 /**
  * ==============================================
  * Dot Floating
  * ==============================================
  */
+
+$d-max: 50px;
+$d-min: 12px;
+
 .dot-floating {
   position: relative;
-  width:$dotWidth;
-  height: $dotHeight;
-  border-radius: $dotRadius;
-  background-color: $dotColor;
-  color: $dotColor;
+
+  @include dot;
+
   animation: dotFloating 3s infinite cubic-bezier(0.15, 0.6, 0.9, 0.1);
-}
 
-.dot-floating::before, .dot-floating::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  top: 0;
-}
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+  }
 
-.dot-floating::before {
-  left: -12px;
-   width:$dotWidth;
-  height: $dotHeight;
-  border-radius: $dotRadius;
-  background-color: $dotColor;
-  color: $dotColor;
-  animation: dotFloatingBefore 3s infinite ease-in-out;
-}
+  &::before {
+    left: -$d-min;
 
-.dot-floating::after {
-  left: -24px;
-   width:$dotWidth;
-  height: $dotHeight;
-  border-radius: $dotRadius;
-  background-color: $dotColor;
-  color: $dotColor;
-  animation: dotFloatingAfter 3s infinite cubic-bezier(0.4, 0, 1, 1);
+    @include dot($bgColor: $dotBeforeColor);
+
+    animation: dotFloatingBefore 3s infinite ease-in-out;
+  }
+
+  &::after {
+    left: -$d-min * 2;
+
+    @include dot($bgColor: $dotAfterColor);
+
+    animation: dotFloatingAfter 3s infinite cubic-bezier(0.4, 0, 1, 1);
+  }
 }
 
 @keyframes dotFloating {
   0% {
-    left: calc(-50% - 5px);
+    left: calc(-50% - #{$dotWidth/2});
   }
+
   75% {
-    left: calc(50% + 105px);
+    left: calc(50% + #{$d-max * 2 + $dotWidth/2});
   }
+
   100% {
-    left: calc(50% + 105px);
+    left: calc(50% + #{$d-max * 2 + $dotWidth/2});
   }
 }
 
 @keyframes dotFloatingBefore {
   0% {
-    left: -50px;
+    left: -$d-max;
   }
+
   50% {
-    left: -12px;
+    left: -$d-min;
   }
+
   75% {
-    left: -50px;
+    left: -$d-max;
   }
+
   100% {
-    left: -50px;
+    left: -$d-max;
   }
 }
 
 @keyframes dotFloatingAfter {
   0% {
-    left: -100px;
+    left: -$d-max * 2;
   }
+
   50% {
-    left: -24px;
+    left: -$d-min * 2;
   }
+
   75% {
-    left: -100px;
+    left: -$d-max * 2;
   }
+
   100% {
-    left: -100px;
+    left: -$d-max * 2;
+  }
+}
+
+/**
+ * ==============================================
+ * Dot Pulse
+ * ==============================================
+ */
+
+$leftPos: -9999px;
+$x1: -$leftPos - $dotSpacing;
+$x2: -$leftPos;
+$x3: -$leftPos + $dotSpacing;
+
+.dot-pulse {
+  position: relative;
+  left: $leftPos;
+
+  @include dot;
+
+  box-shadow: $x1 0 0 0 $dotBeforeColor, $x2 0 0 0 $dotColor,
+    $x3 0 0 0 $dotAfterColor;
+  animation: dotPulse 1.5s infinite linear;
+}
+
+@keyframes dotPulse {
+  0% {
+    box-shadow: $x1 0 0 -5px $dotBeforeColor, $x2 0 0 0 $dotColor,
+      $x3 0 0 2px $dotAfterColor;
+  }
+
+  25% {
+    box-shadow: $x1 0 0 0 $dotBeforeColor, $x2 0 0 2px $dotColor,
+      $x3 0 0 0 $dotAfterColor;
+  }
+
+  50% {
+    box-shadow: $x1 0 0 2px $dotBeforeColor, $x2 0 0 0 $dotColor,
+      $x3 0 0 -5px $dotAfterColor;
+  }
+
+  75% {
+    box-shadow: $x1 0 0 0 $dotBeforeColor, $x2 0 0 -5px $dotColor,
+      $x3 0 0 0 $dotAfterColor;
+  }
+
+  100% {
+    box-shadow: $x1 0 0 -5px $dotBeforeColor, $x2 0 0 0 $dotColor,
+      $x3 0 0 2px $dotAfterColor;
+  }
+}
+
+/**
+ * ==============================================
+ * Dot Windmill
+ * ==============================================
+ */
+
+$r: 15px;
+$originX: 5px;
+$originY: 5px + $r;
+
+.dot-windmill {
+  position: relative;
+  top: -$r;
+
+  @include dot;
+
+  transform-origin: $originX $originY;
+  animation: dotWindmill 2s infinite linear;
+
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+  }
+
+  &::before {
+    left: -($r/2 * 1.732);
+    top: $r + $r/2;
+
+    @include dot($bgColor: $dotBeforeColor);
+  }
+
+  &::after {
+    left: $r/2 * 1.732;
+    top: $r + $r/2;
+
+    @include dot($bgColor: $dotAfterColor);
+  }
+}
+
+@keyframes dotWindmill {
+  0% {
+    transform: rotateZ(0deg) translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: rotateZ(720deg) translate3d(0, 0, 0);
   }
 }
 </style>

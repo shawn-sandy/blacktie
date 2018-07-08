@@ -12561,6 +12561,10 @@ thread-loader@^1.1.5:
     loader-runner "^2.3.0"
     loader-utils "^1.1.0"
 
+"three-dots@https://github.com/nzbin/three-dots":
+  version "0.1.0"
+  resolved "https://github.com/nzbin/three-dots#e6a81199d31b22379ca15a0c11b28f7f8dd93fcc"
+
 throat@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/throat/-/throat-4.1.0.tgz#89037cbc92c56ab18926e6ba4cbb200e15672a6a"
