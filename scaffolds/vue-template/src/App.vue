@@ -1,6 +1,5 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div id="app" class="flex-elm">
     <HelloWorld msg="package-title demo"/>
   </div>
 </template>
@@ -16,13 +15,16 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "~bulma/bulma";
+@import "~blacktie-styles/app.scss";
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
+
 }
 </style>

@@ -17,7 +17,6 @@ const config = (env, argv) => ({
 
 	entry: {
 		app: __dirname + "/src/app.js",
-    vue_components: __dirname + "/src/vue/test.js",
     router: __dirname + "/src/router.js"
 	},
 	optimization: {
