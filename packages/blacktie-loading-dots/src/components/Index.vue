@@ -44,5 +44,6 @@ $dotSpacing: $dotWidth + $dotWidth/2;
 @import "~three-dots/sass/dot-floating";
 @import "~three-dots/sass/dot-pulse";
 @import "~three-dots/sass/dot-windmill";
+@import "~three-dots/sass/dot-carousel";
 
 </style>

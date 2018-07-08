@@ -7,8 +7,6 @@
     </p>
     <div id="loading">
     <blacktie-loading-dots></blacktie-loading-dots>
-    <blacktie-loading-dots loading-style="pulse"></blacktie-loading-dots>
-    <blacktie-loading-dots loading-style="windmill"></blacktie-loading-dots>
     </div>
   </section>
 
