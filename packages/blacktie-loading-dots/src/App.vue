@@ -1,6 +1,11 @@
 <template>
   <div id="app" class="flex-elm">
+    <div class="section">
+      <h1 class="title is-1">Blacktie Loading-dots demo</h1>
+    <hr>
     <HelloWorld msg="Blacktie Loading-dots demo"/>
+    </div>
+
   </div>
 </template>
 
@@ -16,8 +21,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~bulma/bulma";
-@import "~blacktie-styles/app.scss";
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
