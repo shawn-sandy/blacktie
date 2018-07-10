@@ -1,11 +1,10 @@
 @import "./dot-imports";
 
-
 $dotWidth: 10px;
 $dotHeight: 10px;
 $dotRadius: $dotWidth/2;
 
-$dotColor: #00B2DF;
+$dotColor: gray;
 $dotBgColor: $dotColor;
 $dotBeforeColor: $dotColor;
 $dotAfterColor: $dotColor;

@@ -12,6 +12,12 @@
 
 </template>
 
+<style lang="scss">
+@import "~blacktie-loading-dots/src/scss/dot-setting";
+@import "~blacktie-loading-dots/src/scss/loading-dots";
+</style>
+
+
 <script>
   import BlacktieLoadingDots from 'blacktie-loading-dots/src/components/Index.vue'
 
