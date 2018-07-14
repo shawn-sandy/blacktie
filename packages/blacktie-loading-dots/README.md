@@ -1,6 +1,6 @@
 # BlackTie loading dots
 
-Loading dots components built for Vue.js built with [Three dots](https://github.com/nzbin/three-dots)
+Really cool animated loading dots for use in your Vue.js apps, powered by [Three dots](https://github.com/nzbin/three-dots) a dot animation library.
 
 > The project is a set of CSS loading animations created with three dots which made by just single element. I think the project can not only enhance your CSS skills but also improve your imagination.
 
@@ -10,7 +10,7 @@ Loading dots components built for Vue.js built with [Three dots](https://github.
 yarn add blacktie-loading-dots
 ```
 
-### Import into your vue app
+### Import into your vue app and export as component
 
 ```js
 import BlacktieLoadingDots from "blacktie-loading-dots/src/components/Index.vue";
@@ -21,6 +21,15 @@ export default {
     BlacktieLoadingDots
   }
 };
+```
+
+### Load the required stylesheets in you vue app
+
+```scss
+<style lang="scss">
+@import "~blacktie-loading-dots/src/scss/dot-setting";
+@import "~blacktie-loading-dots/src/scss/loading-dots";
+</style>
 ```
 
 

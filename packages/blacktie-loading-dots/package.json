@@ -2,6 +2,7 @@
   "name": "blacktie-loading-dots",
   "description": "Loading dots components built for Vue.js",
   "version": "0.1.0",
+  "main": "src/components/Index.vue",
   "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/packages/blacktie-loading-dots",
   "license": "MIT",
   "author": {

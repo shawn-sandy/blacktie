@@ -19,7 +19,7 @@
 
 
 <script>
-  import BlacktieLoadingDots from 'blacktie-loading-dots/src/components/Index.vue'
+  import BlacktieLoadingDots from 'blacktie-loading-dots'
 
   export default {
     name: "loading",
