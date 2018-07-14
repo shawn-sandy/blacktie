@@ -9,7 +9,6 @@
     <blacktie-loading-dots></blacktie-loading-dots>
     </div>
   </section>
-
 </template>
 
 <style lang="scss">
@@ -24,7 +23,7 @@
   export default {
     name: "loading",
     components: {
-      BlacktieLoadingDots
+      BlacktieLoadingDots,
     }
   }
 </script>
