@@ -52,3 +52,24 @@ $font-sizes : (
 	'fs-5': 14px,
 	'fs-6': 12px
   );
+
+
+//screens resolutions
+
+// Small tablets and large smartphones (landscape view)
+$phone: 576px;
+
+// Small tablets (portrait view)
+$mobile: 768px;
+
+// Tablets and small desktops
+$tablet: 992px;
+
+// Large tablets and desktops
+$laptop: 1200px;
+
+// desktop
+$desktop: 1600px;
+
+// hd screens
+$hd: 1800;
