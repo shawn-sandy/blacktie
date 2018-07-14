@@ -1,5 +1,6 @@
 {
   "name": "blacktie-loading-dots",
+  "description": "Loading dots components built for Vue.js",
   "version": "0.1.0",
   "private": true,
   "scripts": {
