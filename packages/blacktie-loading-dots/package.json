@@ -2,7 +2,13 @@
   "name": "blacktie-loading-dots",
   "description": "Loading dots components built for Vue.js",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/packages/blacktie-loading-dots",
+  "license": "MIT",
+  "author": {
+    "name": "Shawn Sandy",
+    "email": "shawnsandy04@gmail.com",
+    "url": "http://shawnsandy.design"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
