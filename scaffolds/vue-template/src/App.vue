@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/Index.vue'
 
 export default {
   name: 'app',
@@ -16,8 +16,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~bulma/bulma";
 @import "~blacktie-styles/app.scss";
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
