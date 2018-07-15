@@ -6,7 +6,6 @@
 
 <script>
 export default {
-
   props: {
     cssClasses: {
       type: String,

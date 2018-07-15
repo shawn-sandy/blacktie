@@ -1,5 +1,5 @@
 <template>
-  <figure class="blacktie-img" :class=classes>
+  <figure class="blacktie-img" :class=classes :style=inlineStyles>
     <img :src=imgSrc alt="" :style=inlineStyles>
     <slot></slot>
   </figure>
@@ -7,21 +7,21 @@
 
 <script>
 export default {
-  name: "BlacktieImg",
+  name: 'BlacktieImg',
   props: {
     classes: {
       type: String,
-      default: "has-text-centered centered"
+      default: 'has-text-centered centered'
     },
     imgSrc: {
       type: String,
-      default: "//source.unsplash.com/collection/1278495/1300x400"
+      default: '//source.unsplash.com/collection/1278495/1300x400'
     },
     inlineStyles: {
       type: String
     }
   }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
