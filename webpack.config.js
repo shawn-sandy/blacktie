@@ -24,7 +24,7 @@ const config = (env, argv) => ({
 	},
 	output: {
 		path: path.join(__dirname, "dist"),
-		filename: "[name].[chunkhash:4].js",
+		filename: "js/[name].js",
 	},
 	devServer: {
 		host: HOST,
@@ -80,7 +80,7 @@ const config = (env, argv) => ({
 			filename: "./index.html"
 		}),
 		new MiniCssExtractPlugin({
-			filename: "[name].css"
+			filename: "styles/[name].css"
 		}),
 		new BrowserSync(
 			// BrowserSync options
