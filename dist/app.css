@@ -21,6 +21,18 @@
       -ms-flex-pack: start;
           justify-content: flex-start; }
 
+::-webkit-input-placeholder {
+  color: gray; }
+
+:-ms-input-placeholder {
+  color: gray; }
+
+::-ms-input-placeholder {
+  color: gray; }
+
+::placeholder {
+  color: gray; }
+
 .flex-elm, .flex-elm-left, .flex-elm-header > *, .flex-elm-right, .flex-elm-column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,11 +45,6 @@
           justify-content: center;
   height: 100%;
   width: 100%; }
-  .flex-elm > *, .flex-elm-left > *, .flex-elm-header > * > *, .flex-elm-right > *, .flex-elm-column > * {
-    padding: 0 0px;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1; }
 
 .flex-elm-left, .flex-elm-header > * {
   -webkit-box-pack: start;
@@ -76,13 +83,6 @@ body {
 
 .fs-6 {
   font-size: 0.75rem; }
-
-html {
-  -webkit-font-smoothing: antialiased;
-  height: 100%; }
-
-main {
-  min-height: 75vh; }
 
 .block-elm {
   min-height: 40vh; }
@@ -823,19 +823,27 @@ main {
 
 html {
   font-size: 16px; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 576px) {
     html {
       font-size: 11px; } }
-  @media (min-width: 575.98px + 1) {
+  @media (min-width: 768px) {
+    html {
+      font-size: 12px;
+      font-size: 0.75rem; } }
+  @media (min-width: 992px) {
     html {
       font-size: 14px;
       font-size: 0.875rem; } }
-  @media (min-width: 991.98px) {
+  @media (min-width: 1200px) {
     html {
       font-size: 16px;
       font-size: 1rem; } }
-  @media (min-width: 1199.98px) {
+  @media (min-width: 1600px) {
     html {
       font-size: 18px;
       font-size: 1.125rem; } }
+  @media (min-width: 1800) {
+    html {
+      font-size: 21px;
+      font-size: 1.3125rem; } }
 
