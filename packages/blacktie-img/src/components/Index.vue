@@ -1,19 +1,82 @@
 <template>
-  <div class="hello">
-    <h1 class="title is-1">{{ msg }}</h1>
-  </div>
+  <figure class="blacktie-img" :class=classes>
+    <img :src=img alt="">
+    <slot></slot>
+  </figure>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'BlacktieImg',
   props: {
-    msg: String
+    classes: {
+      type: String,
+      default: 'has-text-centered centered'
+    },
+    img: {
+      type: String,
+      default: '//source.unsplash.com/collection/1278495/1300x400'
+    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
+figure {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  figcaption.blacktie-img-caption {
+    color: azure;
+    position: absolute;
+    top: 0;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-image: -webkit-linear-gradient(
+      bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      transparent 100%
+    );
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7) 0%,
+      transparent 100%
+    );
+    display: flex;
+    flex-direction: column;
+    font-style: normal
+  }
+
+  .centered {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top {
+    justify-content: flex-start;
+  }
+
+  .bottom {
+    justify-content: flex-end;
+  }
+
+  .left {
+    align-items: flex-start;
+  }
+
+  .right {
+    align-items: flex-end;
+  }
+}
 </style>

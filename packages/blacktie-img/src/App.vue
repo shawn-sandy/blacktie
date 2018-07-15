@@ -1,16 +1,22 @@
 <template>
   <div id="app" class="flex-elm">
-    <HelloWorld msg="Blacktie Img demo"/>
+    <blacktie-img>
+      <blacktie-img-caption classes="left">
+        <h1 class="title is-1 has-text-white">Caption Text</h1>
+      </blacktie-img-caption>
+    </blacktie-img>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/Index.vue'
+import BlacktieImg from './components/Index.vue'
+import BlacktieImgCaption from './components/Caption.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    BlacktieImg,
+    BlacktieImgCaption
   }
 }
 </script>
