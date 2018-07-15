@@ -1,6 +1,6 @@
 <template>
   <figure class="blacktie-img" :class=classes>
-    <img :src=img alt="">
+    <img :src=imgSrc alt="">
     <slot></slot>
   </figure>
 </template>
@@ -13,7 +13,7 @@ export default {
       type: String,
       default: 'has-text-centered centered'
     },
-    img: {
+    imgSrc: {
       type: String,
       default: '//source.unsplash.com/collection/1278495/1300x400'
     }
