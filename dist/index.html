@@ -18,32 +18,31 @@
   <![endif]-->
 <link href="styles/app.css" rel="stylesheet"><link href="styles/router.css" rel="stylesheet"></head>
 
-<body id="body">
+<body id="body" class="content">
 
-    <nav class="navbar elm-bg-whitesmoke" role="navigation" aria-label="main navigation">
-      <div class="container is-size-7 is-uppercase">
-        <a class="navbar-item" href="/">Home</a>
-        <a class="navbar-item" href="#bt-page-component">Components</a>
-      </div>
-    </nav>
-    <main>
-
-
-  <div class="container">
-    <div class="content section">
-      <h1 class="title is-1" data-module="example">
-        <a href="/">BlackTie.....</a>
-        <small class="is-size-6 is-uppercase elm-color-gray">A small UI toolkit</small>
-      </h1>
+  <nav class="navbar elm-bg-whitesmoke" role="navigation" aria-label="main navigation">
+    <div class="container is-size-7 is-uppercase">
+      <a class="navbar-item" href="/">Home</a>
+      <a class="navbar-item" href="#bt-page-component">Components</a>
     </div>
-  </div>
+  </nav>
 
-  <div class="container">
-    <div id="routes">
-  </div>
+  <main>
+    <div class="container">
+      <div class="section">
+        <h1 class="title is-1" data-module="example">
+          <a href="/">BlackTie</a>
+          <small class="is-size-6 is-uppercase elm-color-gray">A small UI toolkit</small>
+        </h1>
+      </div>
+    </div>
 
-  </div>
-  <div class="container">
+    <div class="">
+      <div id="routes">
+      </div>
+
+    </div>
+    <div class="container">
       <div id="components-demo">
         <button-counter></button-counter>
         <button-counter></button-counter>
@@ -52,8 +51,8 @@
     </div>
 
 
-  <bt-page default-page="bt-landing-page"></bt-page>
-</main>
+    <bt-page default-page="bt-landing-page"></bt-page>
+  </main>
   <footer class="elm-bg-gray-dark">
     <section class="container section elm-color-lightgray">
       <div class="columns">

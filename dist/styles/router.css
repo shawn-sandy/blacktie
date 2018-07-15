@@ -57,6 +57,10 @@ figure .right[data-v-18593ed0] {
         -ms-flex-align: end;
             align-items: flex-end;
 }
+figure img[data-v-18593ed0] {
+    height: auto;
+    max-width: 100%;
+}
 
 
 .stage {
