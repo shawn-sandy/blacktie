@@ -1,24 +1,27 @@
 <template>
   <figure class="blacktie-img" :class=classes>
-    <img :src=imgSrc alt="">
+    <img :src=imgSrc alt="" :style=inlineStyles>
     <slot></slot>
   </figure>
 </template>
 
 <script>
 export default {
-  name: 'BlacktieImg',
+  name: "BlacktieImg",
   props: {
     classes: {
       type: String,
-      default: 'has-text-centered centered'
+      default: "has-text-centered centered"
     },
     imgSrc: {
       type: String,
-      default: '//source.unsplash.com/collection/1278495/1300x400'
+      default: "//source.unsplash.com/collection/1278495/1300x400"
+    },
+    inlineStyles: {
+      type: String
     }
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -55,7 +58,7 @@ figure {
     );
     display: flex;
     flex-direction: column;
-    font-style: normal
+    font-style: normal;
   }
 
   .centered {
@@ -77,6 +80,11 @@ figure {
 
   .right {
     align-items: flex-end;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
   }
 }
 </style>
