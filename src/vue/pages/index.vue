@@ -1,6 +1,6 @@
 <template>
   <section class="content">
-    <cover-img img-src="//source.unsplash.com/collection/1278495/1400x400">
+    <cover-img img-src="//source.unsplash.com/collection/1278495/1400x450">
       <h1 class="title is-1 has-text-white">BlackTie Cover Image</h1>
     </cover-img>
     <blacktie-loading-dots></blacktie-loading-dots>
