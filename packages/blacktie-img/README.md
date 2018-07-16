@@ -1,6 +1,6 @@
 # BlackTie Img
 
-Blacktie Img a simple set of common image patterns for web apps
+Blacktie Img a simple set of common image patterns packaged as reusable vue components
 
 ## Install
 
@@ -21,23 +21,22 @@ export default {
 };
 ```
 
-### Load the required stylesheets in you vue app
+### Cover Image
 
-```scss
-<style lang="scss">
-@import "~blacktie-loading-dots/src/scss/dot-setting";
-@import "~blacktie-loading-dots/src/scss/loading-dots";
-</style>
-```
-
-
-### Add code to your HTML
+Add the cover image
 
 ```html
- <div id="loading">
-   <blacktie-loading-dots></blacktie-loading-dots>
-</div>
+<cover-img img-src="//source.unsplash.com/collection/1278495/1400x450">
+  <h1 class="title is-1 has-text-white">BlackTie Cover Image</h1>
+</cover-img>
 ```
+
+### Default usage
+
+```html
+<blacktie-img  img-src="//source.unsplash.com/collection/1278495/1400x450" />
+```
+
 
 ### Options to change loading style `floating (default), windmill, pulse, carousel`
 
@@ -45,16 +44,15 @@ export default {
  <div id="loading">
    <blacktie-loading-dots loading-style="windmill"></blacktie-loading-dots>
 </div>
-```
+````
 
 ## Issues
 
 [Please submit issues here](https://github.com/shawn-sandy/blacktie/issues)
 
 ## Security Vulnerabilities
+
 If you discover a security vulnerability within Laravel, please send an e-mail to Shawn Sandy via shawnsandy04@gmail.com All security vulnerabilities will be promptly addressed.
-
-
 
 ## [Licence MIT](https://opensource.org/licenses/MIT)
 
