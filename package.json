@@ -10,7 +10,7 @@
     "dev": "webpack --hide-modules --progress",
     "start": "webpack-dev-server --mode development --watch",
     "reports": "gulp reports",
-    "styleguide": "vue-styleguidist server",
+    "styleguide": "vue-styleguidist server --open",
     "styleguide:build": "vue-styleguidist build"
   },
   "repository": "https://github.com/shawnsandy/blacktie.git",
