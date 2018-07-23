@@ -1,32 +1,23 @@
 {
   "name": "package-name",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "description": "POI vue Starter for rapid project development in Vue.js",
+  "main": "index.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "start": "poi src/index.js",
+    "build": "poi build src/index.js"
   },
-  "main": "src/components/Index.vue",
-  "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/packages/package-name",
+  "author": "",
   "license": "MIT",
-  "author": {
-    "name": "Shawn Sandy",
-    "email": "shawnsandy04@gmail.com",
-    "url": "http://shawnsandy.design"
+  "devDependencies": {
+    "bulma": "^0.7.1",
+    "node-sass": "^4.7.2",
+    "poi": "^9.6.1",
+    "sass-loader": "^6.0.6",
+    "vue-loader": "^13.7.0",
+    "webpack-bundle-analyzer": "^2.13.1"
   },
   "dependencies": {
     "vue": "^2.5.16"
-  },
-  "devDependencies": {
-    "blacktie-styles": "^0.0.1",
-    "bulma": "^0.7.1",
-    "file-loader": "^1.1.11",
-    "vue-template-compiler": "^2.5.16"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+  }
 }
