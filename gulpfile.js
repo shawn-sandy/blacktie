@@ -65,6 +65,10 @@ gulp.task("new:page", () => {
   scaffold("pages", "pages")
 })
 
+gulp.task("vue-component", () => {
+  scaffold("vue-poi")
+})
+
 gulp.task("new:component", () => {
   scaffold("vue-template")
 })
