@@ -1,0 +1,32 @@
+{
+  "name": "package-name",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "main": "src/components/Index.vue",
+  "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/packages/package-name",
+  "license": "MIT",
+  "author": {
+    "name": "Shawn Sandy",
+    "email": "shawnsandy04@gmail.com",
+    "url": "http://shawnsandy.design"
+  },
+  "dependencies": {
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "blacktie-styles": "^0.0.1",
+    "bulma": "^0.7.1",
+    "file-loader": "^1.1.11",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
