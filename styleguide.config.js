@@ -1,4 +1,7 @@
 module.exports = {
  components: 'packages/**/src/components/*.vue',
- styleguideDir: './dist/styleguide/index.html'
+ styleguideDir: './dist/docs/vue/index.html',
+ showUsage: true,
+ title: 'BlackTie Vue Components'
+
 };

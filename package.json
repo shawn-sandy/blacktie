@@ -76,7 +76,7 @@
     "validate": "cferdinandi/validate",
     "vue": "^2.5.16",
     "vue-loader": "^15.2.4",
-    "vue-styleguidist": "^1.7.12",
+    "vue-styleguidist": "^1.7.13",
     "webpack": "^4.10.0",
     "webpack-cli": "^2.1.4",
     "webpack-dashboard": "^1.0.2",
