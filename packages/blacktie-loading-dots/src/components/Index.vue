@@ -6,12 +6,15 @@
 
 <script>
 export default {
-  name: 'LoadingDots',
+  name: "LoadingDots",
   props: {
+    /**
+     * The name of the class selector
+     */
     loadingStyle: {
       type: String,
-      default: 'floating'
+      default: "floating"
     }
   }
-}
+};
 </script>

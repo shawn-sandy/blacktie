@@ -3,19 +3,19 @@
     <div class="section">
       <h1 class="title is-1">Blacktie Loading-dots demo</h1>
     <hr>
-    <HelloWorld loading-style="floating"/>
+    <LoadingDots loading-style="floating"/>
     </div>
 
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/Index.vue'
+import LoadingDots from './components/Index.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    LoadingDots
   }
 }
 </script>
