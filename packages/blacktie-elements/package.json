@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "blacktie-styles": "^0.0.1",
-    "vue": "^2.5.16"
+    "vue": "^2.5.16",
+    "vue-styleguidist": "^1.7.13"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.15",

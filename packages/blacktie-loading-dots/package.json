@@ -13,11 +13,15 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "styleguide": "vue-styleguidist server --open",
+    "styleguide:build": "vue-styleguidist build"
+
   },
   "dependencies": {
     "blacktie-styles": "^0.0.1",
-    "vue": "^2.5.16"
+    "vue": "^2.5.16",
+    "vue-styleguidist": "^1.7.13"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.15",

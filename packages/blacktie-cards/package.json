@@ -31,6 +31,7 @@
     "sass-loader": "^7.0.3",
     "vue": "^2.5.16",
     "vue-loader": "^15.2.4",
+    "vue-styleguidist": "^1.7.13",
     "vue-template-compiler": "^2.5.16"
   },
   "publishConfig": {
