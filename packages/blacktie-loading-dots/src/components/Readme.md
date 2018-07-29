@@ -27,14 +27,14 @@ __Add to your html page__
 
 - Load the default component `floating-dots`
 
-```jsx static
-  <LoadingDots/>
+```jsx
+  <BlacktieLoadingDots/>
 ```
 
 - Load Pulsing dots
 
 ```jsx static
-  <LoadingDots loading-style="pluse"/>
+  <BlacktieLoadingDots loading-style="pluse"/>
 ```
 
 - Load spinning windmill dots
