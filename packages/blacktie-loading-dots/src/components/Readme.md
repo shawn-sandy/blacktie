@@ -27,7 +27,7 @@ __Add to your html page__
 
 - Load the default component `floating-dots`
 
-```jsx
+```jsx static
   <BlacktieLoadingDots/>
 ```
 
