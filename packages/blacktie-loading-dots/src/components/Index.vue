@@ -1,5 +1,5 @@
 <template>
-  <div class="bt-component stage">
+  <div class="bt stage">
     <div :class="`dot-${loadingStyle}`"></div>
   </div>
 </template>
