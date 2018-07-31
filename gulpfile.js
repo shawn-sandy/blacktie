@@ -73,6 +73,10 @@ gulp.task("new:component", () => {
   scaffold("vue-template")
 })
 
+gulp.task('scaffold:vue', ['vue-component'], () => {
+
+})
+
 const scaffold = (sourceFolder, targetFolder = 'packages') => {
   let packageName = arg.name || arg.n
   let packageTitle = capitalize(packageName.replace('-', ' '))

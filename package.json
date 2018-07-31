@@ -43,6 +43,7 @@
     "cross-env": "^5.1.4",
     "css-loader": "^0.28.11",
     "cssnano": "^3.10.0",
+    "docute": "https://github.com/egoist/docute",
     "dompurify": "^1.0.3",
     "dotenv": "^5.0.0",
     "error-overlay-webpack-plugin": "^0.1.5",
