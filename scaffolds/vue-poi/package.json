@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "poi src/index.js",
-    "build": "poi build src/index.js"
+    "build": "poi build src/index.js",
+    "styleguide": "vue-styleguidist server --open",
+    "styleguide:build": "vue-styleguidist build"
   },
   "author": "",
   "license": "MIT",
@@ -15,6 +17,7 @@
     "poi": "^9.6.1",
     "sass-loader": "^6.0.6",
     "vue-loader": "^13.7.0",
+    "vue-styleguidist": "^1.7.13",
     "webpack-bundle-analyzer": "^2.13.1"
   },
   "dependencies": {

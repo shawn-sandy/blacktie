@@ -73,7 +73,7 @@ gulp.task("new:component", () => {
   scaffold("vue-template")
 })
 
-gulp.task('scaffold:vue', ['vue-component'], () => {})
+gulp.task('scaffold:vue', ['new:component'], () => {})
 
 gulp.task('scaffold:component', ['vue-component'], () => {})
 

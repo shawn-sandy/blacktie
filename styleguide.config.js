@@ -4,5 +4,4 @@ module.exports = {
   showUsage: true,
   title: 'BlackTie Components',
   navigation: true
-
 };
