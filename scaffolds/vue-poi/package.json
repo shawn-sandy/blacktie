@@ -1,7 +1,7 @@
 {
   "name": "package-name",
   "version": "0.0.1",
-  "description": "POI vue Starter for rapid project development in Vue.js",
+  "description": "package-title",
   "main": "index.js",
   "scripts": {
     "start": "poi src/index.js",

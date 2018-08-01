@@ -1,5 +1,5 @@
 <template>
-  <button class="button color is-large" @click="handleClick">
+  <button class="btn color btn-lg" @click="handleClick">
     <!-- @slot Use this slot to place the button content -->
     <slot>Button</slot>
   </button>
@@ -57,6 +57,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .color {
- color: darken($color: blue, $amount: 10%)
+ color: darken($color: black, $amount: 10%)
 }
 </style>
