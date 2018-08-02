@@ -20,7 +20,7 @@ export default {
   components: {
     BlacktieScrollbox
   }
-};
+}
 ```
 
 
@@ -28,12 +28,12 @@ export default {
 ### Add code to your HTML
 
 ```html
- <div id="loading">
+
    <blacktie-scrollbox></blacktie-scrollbox>
-</div>
+
 ```
 
-[__More info and options__](https://github.com/shawn-sandy/blacktie/blob/develop/packages/blacktie-scrollbar/Readme.md)
+### [Info and options](https://github.com/shawn-sandy/blacktie/blob/develop/packages/blacktie-scrollbar/src/components/Readme.md)
 
 
 
