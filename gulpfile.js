@@ -82,7 +82,8 @@ const scaffold = (sourceFolder, targetFolder = 'packages') => {
   let packageTitle = capitalize(packageName.replace('-', ' '))
   const dirs = [
     `scaffolds/${sourceFolder}/**/*`,
-    `scaffolds/${sourceFolder}/.*`
+    `scaffolds/${sourceFolder}/.*`,
+    `scaffolds/${sourceFolder}/*.*`
   ]
   gulp.src(dirs, {
       'base': `./scaffolds/${sourceFolder}`
