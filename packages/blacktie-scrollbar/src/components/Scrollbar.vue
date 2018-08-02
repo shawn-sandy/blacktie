@@ -45,9 +45,8 @@ export default {
 
   },
   mounted: function () {
-    //console.log('refs', this.$refs.scrollbox)
     new ScrollBar(this.$refs.scrollbox, {
-      autoHide: this.autoHideBars,
+      autoHide: this.autoHideBars
     })
   }
 }
