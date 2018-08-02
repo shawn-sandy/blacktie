@@ -1,7 +1,7 @@
 <template>
-  <div class="bt-simple-bar" :class=barClass data-simplebar data-simplebar-auto-hide="true">
-    <div className="simplebar-scroll-content" style="">
-      <div className="simplebar-content">
+  <div ref="scrollbox" class="bt-scrollbox" :class=scrollboxClass data-simplebar :style="`height: ${scrollboxHeight}`">
+    <div className="simplebar-scroll-content">
+      <div className="simplebar-content" :style=contentStyle>
         <!-- @slot add content inside scrollbar -->
         <slot></slot>
       </div>
@@ -16,12 +16,39 @@ export default {
   name: 'BlacktieScrollbar',
   props: {
     /**
-     *
+     * Add a custom class name to the scrollbox wrapper wrapper
      */
-    barClass: {
+    scrollboxClass: {
+      type: String
+    },
+    /**
+     * Set the height of the scrollbox
+     */
+    scrollboxHeight: {
       type: String,
-      default: 'bt-simple-bar-wrapper'
+      default: '300px'
+    },
+    /**
+     * Auto hide scrollbars
+     */
+    autoHideBars: {
+      type: Boolean,
+      default: false
+    },
+    /**
+     * Sets the style on the content in the scroll box
+     */
+    contentStyle: {
+      type: String,
+      default: 'padding: 10px'
     }
+
+  },
+  mounted: function () {
+    //console.log('refs', this.$refs.scrollbox)
+    new ScrollBar(this.$refs.scrollbox, {
+      autoHide: this.autoHideBars,
+    })
   }
 }
 </script>

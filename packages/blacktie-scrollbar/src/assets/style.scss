@@ -1,17 +1,16 @@
 
-.bt-simple-bar {
-  .simplebar-scroll-content {
-    height: 200px;
-    overflow: hidden;
-    overflow-y: scroll;
-  }
-
-  .simplebar-content {
-    padding-right: 10px;
-  }
+.bt-scrollbox {
 
   .simplebar-track.horizontal {
-    visibility: hidden;
-    opacity: 0;
+    //visibility: hidden;
+    //opacity: 0;
   }
+  .simplebar-track {
+    //background-color: lightgray;
+
+  }
+  .simplebar-scrollbar:before {
+    background: blue;
+  }
+
 }

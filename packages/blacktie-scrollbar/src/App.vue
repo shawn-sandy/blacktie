@@ -2,9 +2,12 @@
   <div id="app" class="flex-elm">
     <div class="container">
       <bt-scrollbar>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolor tenetur quae iste odio maiores laborum quisquam autem dolorem necessitatibus. Expedita aspernatur fugit incidunt? Molestias voluptates nisi nihil sint deserunt.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolor tenetur quae iste odio maiores laborum quisquam autem dolorem necessitatibus. Expedita aspernatur fugit incidunt? Molestias voluptates nisi nihil sint deserunt.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolor tenetur quae iste odio maiores laborum quisquam autem dolorem necessitatibus. Expedita aspernatur fugit incidunt? Molestias voluptates nisi nihil sint deserunt.</p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque quos odio vel! Quis inventore dolor, voluptatum totam, accusantium corporis quaerat aspernatur quos odio delectus optio! Nisi quae reiciendis minima animi quibusdam soluta in dicta optio ipsa unde et consectetur, commodi, qui ipsam aliquam! Neque necessitatibus iusto impedit officia dicta eius, iure pariatur molestiae obcaecati ut, quibusdam facere beatae asperiores eos ipsam perspiciatis temporibus aperiam. Impedit non consequuntur voluptates consectetur quae libero rem, ut quam reprehenderit et. Labore, minima.
+      </bt-scrollbar>
+    </div>
+    <div class="container">
+      <bt-scrollbar scrollbox-height="200px">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque quos odio vel! Quis inventore dolor, voluptatum totam, accusantium corporis quaerat aspernatur quos odio delectus optio! Nisi quae reiciendis minima animi quibusdam soluta in dicta optio ipsa unde et consectetur, commodi, qui ipsam aliquam! Neque necessitatibus iusto impedit officia dicta eius, iure pariatur molestiae obcaecati ut, quibusdam facere beatae asperiores eos ipsam perspiciatis temporibus aperiam. Impedit non consequuntur voluptates consectetur quae libero rem, ut quam reprehenderit et. Labore, minima.
       </bt-scrollbar>
     </div>
   </div>
@@ -34,10 +37,11 @@ export default {
 
   .container {
    width: 300px;
-   height: 250px;
+   height: 350px;
    margin-left: auto;
    margin-right: auto;
    overflow: hidden;
+   text-align: left;
   }
 }
 @import './assets/variables.scss';
