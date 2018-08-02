@@ -1,0 +1,17 @@
+
+.bt-simple-bar {
+  .simplebar-scroll-content {
+    height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .simplebar-content {
+    padding-right: 10px;
+  }
+
+  .simplebar-track.horizontal {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
