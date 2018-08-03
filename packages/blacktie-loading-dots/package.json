@@ -1,7 +1,7 @@
 {
   "name": "blacktie-loading-dots",
   "description": "Loading dots components built for Vue.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "src/components/Index.vue",
   "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/packages/blacktie-loading-dots",
   "license": "MIT",
@@ -17,7 +17,6 @@
     "styleguide": "vue-styleguidist server --open",
     "styleguide:build": "vue-styleguidist build",
     "test": "echo \"Error: no test specified\" && exit 1"
-
   },
   "dependencies": {
     "blacktie-styles": "^0.0.1",
