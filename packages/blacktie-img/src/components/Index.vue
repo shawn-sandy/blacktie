@@ -15,7 +15,7 @@ export default {
     },
     imgSrc: {
       type: String,
-      default: '//source.unsplash.com/collection/1278495/1300x400'
+      default: '//source.unsplash.com/collection/1278495/1300x400?='
     },
     inlineStyles: {
       type: String

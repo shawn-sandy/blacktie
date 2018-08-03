@@ -44,6 +44,6 @@ export default {
    text-align: left;
   }
 }
-@import './assets/variables.scss';
-@import './assets/style.scss';
+// @import './assets/variables.scss';
+// @import './assets/style.scss';
 </style>

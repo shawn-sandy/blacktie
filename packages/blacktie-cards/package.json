@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "riot ./src dist/index.js",
     "build": "npm run compile",
-    "publish": "npm run compile"
+    "publish": "npm run compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

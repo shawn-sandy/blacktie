@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "styleguide": "vue-styleguidist server --open",
-    "styleguide:build": "vue-styleguidist build"
+    "styleguide:build": "vue-styleguidist build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "main": "src/components/Index.vue",
   "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/packages/package-name",
