@@ -1,21 +1,21 @@
 <template>
-  <div id="app" class="flex-elm">
+  <div id="blacktie-dots" class="flex-elm">
     <div class="section">
       <h1 class="title is-1">Blacktie Loading-dots demo</h1>
     <hr>
-    <LoadingDots loading-style="floating"/>
+    <BlacktieLoadingDots loading-style="floating"/>
     </div>
 
   </div>
 </template>
 
 <script>
-import LoadingDots from './components/Index.vue'
+import BlacktieLoadingDots from './components/Index.vue'
 
 export default {
-  name: 'app',
+  name: 'BlacktieLoadingDots',
   components: {
-    LoadingDots
+    BlacktieLoadingDots
   }
 }
 </script>
@@ -33,4 +33,5 @@ export default {
   color: #2c3e50;
   height: 100vh;
 }
+
 </style>
