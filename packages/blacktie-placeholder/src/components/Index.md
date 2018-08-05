@@ -3,10 +3,10 @@
 __Install__
 
   ```bash
-  yarn add blacktie-placeholder
+  yarn add blacktie-placeholder -D
   ```
 
-__Default loading style__
+__Example..__
 
 ```js
 
