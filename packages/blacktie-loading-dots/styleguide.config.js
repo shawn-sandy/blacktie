@@ -1,7 +1,7 @@
 // const path = require('path')
 module.exports = {
   components: 'src/components/**/*.vue',
-  showUsage: false,
+  showUsage: true,
   showCode: true,
   title: 'Loading Dots',
   styleguideDir: './dist/docs',

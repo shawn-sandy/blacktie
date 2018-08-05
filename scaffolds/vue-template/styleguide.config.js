@@ -1,7 +1,10 @@
+// const path = require('path')
 module.exports = {
   components: 'src/components/**/*.vue',
-  showUsage: false,
+  showUsage: true,
   showCode: true,
-  title: 'package-title',
-  styleguideDir: './dist/docs'
+  title: 'page-title',
+  styleguideDir: './dist/docs',
+  navigation: true,
+  skipComponentsWithoutExample: true
 }
