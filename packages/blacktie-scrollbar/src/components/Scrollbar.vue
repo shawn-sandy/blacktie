@@ -42,7 +42,6 @@ export default {
      * Auto hide scrollbars
      */
     autoHideBars: {
-      type: Boolean,
       default: false
     },
     /**

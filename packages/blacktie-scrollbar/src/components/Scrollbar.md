@@ -19,7 +19,18 @@ Custom options
 ```js
 
 <BlacktieScrollbar scrollbox-height="300px" auto-hide-bars="true"
-       content-style="padding:30px" scrollbox-class="my-scroll-box"/>
+       content-style="padding:30px" scrollbox-class="my-scroll-box">
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque
+       </BlacktieScrollbar>
 
 ```
 

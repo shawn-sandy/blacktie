@@ -15,10 +15,11 @@
     "poi": "^9.6.1",
     "sass-loader": "^6.0.6",
     "vue-loader": "^13.7.0",
+    "vue-styleguidist": "^1.7.13",
     "webpack-bundle-analyzer": "^2.13.1"
   },
   "dependencies": {
     "vue": "^2.5.16",
-    "vue-styleguidist": "^1.7.13"
+    "vue-styleguidist": "1.7.8"
   }
 }
