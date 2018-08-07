@@ -18,6 +18,9 @@ module.exports = {
       name: "#FFF"
     }
   },
+  require: [
+    './src/javascripts/polyfill.min.js'
+  ],
   styles: {
     Logo: {
       logo: {
