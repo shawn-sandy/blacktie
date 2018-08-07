@@ -2,7 +2,7 @@
 
 __Default Example__
 
-```js
+```jsx
 
 <BlacktieScrollbar/>
 
@@ -16,23 +16,7 @@ Custom options
 - Add `30px` padding to the content in the scroll-box `content-style="padding:30px"`
 - Define a custom class `scrollbox-class="my-scroll-box"`
 
-```js
 
-<BlacktieScrollbar scrollbox-height="300px" auto-hide-bars="true"
-       content-style="padding:30px" scrollbox-class="my-scroll-box">
-       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque
-
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque
-
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque
-
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque
-
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore libero laborum similique quis praesentium minus facere enim hic alias, veritatis repudiandae ullam quisquam ipsum blanditiis laudantium dolorum mollitia totam ad itaque
-       </BlacktieScrollbar>
-
-```
 
 __Change the color of the scrollbar track__
 
@@ -42,3 +26,4 @@ __Change the color of the scrollbar track__
     background: blue;
   }
 </style>
+```

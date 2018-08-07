@@ -8,7 +8,7 @@ __Install__
 
 __Default loading style__
 
-```js
+```jsx
 
 const styles =  require('./demo-imports/scss-imports.vue').default
 <LoadingDots />
@@ -17,19 +17,19 @@ const styles =  require('./demo-imports/scss-imports.vue').default
 
 __Windmill style__
 
-```js
+```jsx
 <loadingDots loadingStyle="windmill" />
 ```
 
 __Pulse style__
 
-```js
+```jsx
 <loadingDots loadingStyle="pulse" />
 ```
 
 __Pulse style__
 
-```js
+```jsx
 <loadingDots loadingStyle="carousel" />
 ```
 
