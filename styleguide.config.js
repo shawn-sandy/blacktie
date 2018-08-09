@@ -1,7 +1,7 @@
 const path = require("path")
 module.exports = {
   components: "packages/**/src/components/*.vue",
-  styleguideDir: "./dist/docs/vue/",
+  styleguideDir: "./dist/guide/",
   showUsage: true,
   title: "BlackTie Components",
   navigation: true,
