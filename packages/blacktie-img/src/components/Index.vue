@@ -1,6 +1,6 @@
 <template>
   <figure class="blacktie-img" :class=classes :style=inlineStyles>
-    <img :src=imgSrc alt="" :style=inlineStyles>
+    <img ref="img" :src=imgSrc alt="" :style=inlineStyles :onLoad="imgLoaded()">
     <slot></slot>
   </figure>
 </template>
@@ -8,10 +8,15 @@
 <script>
 export default {
   name: 'BlacktieImg',
+  data: {
+    retun: {
+      loading: false
+    }
+  },
   props: {
     classes: {
       type: String,
-      default: 'has-text-centered centered'
+      default: 'has-text-centered centered hide'
     },
     imgSrc: {
       type: String,
@@ -20,6 +25,13 @@ export default {
     inlineStyles: {
       type: String
     }
+  },
+  methods: {
+    imgLoaded: function (event) {
+      console.log("loaded image");
+      this.loading = true;
+      this.classes = 'has-text-centered centered'
+    }
   }
 }
 </script>
@@ -27,6 +39,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 figure {
+  &.hide {
+    display: none;
+  }
   overflow: hidden;
   position: relative;
   display: inline-block;
@@ -86,5 +101,7 @@ figure {
     height: auto;
     max-width: 100%;
   }
+
+
 }
 </style>
