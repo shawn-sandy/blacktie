@@ -7,16 +7,17 @@
 
 <script>
 export default {
-  name: 'BlacktieImg',
-  data: {
-    retun: {
-      loading: false
+  name: 'Index',
+  data: function () {
+    return {
+      loading: false,
+      displayImg: 'hide'
     }
   },
   props: {
     classes: {
       type: String,
-      default: 'has-text-centered centered hide'
+      default: 'has-text-centered centered'
     },
     imgSrc: {
       type: String,
@@ -28,20 +29,25 @@ export default {
   },
   methods: {
     imgLoaded: function (event) {
-      console.log("loaded image");
-      this.loading = true;
-      this.classes = 'has-text-centered centered'
+      this.loading = true
+      setTimeout(function () {
+        this.loading = true
+        console.log('loaded', this.loading)
+      }, 5000)
     }
+  },
+  mounted: function () {
+    alert('loaded')
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+.hide {
+  display: none;
+}
 figure {
-  &.hide {
-    display: none;
-  }
   overflow: hidden;
   position: relative;
   display: inline-block;
@@ -101,7 +107,5 @@ figure {
     height: auto;
     max-width: 100%;
   }
-
-
 }
 </style>
