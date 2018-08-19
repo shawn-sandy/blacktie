@@ -14,7 +14,8 @@
     "styleguide:build": "vue-styleguidist build",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "11ty": "eleventy --serve"
+    "static": "eleventy --serve",
+    "static:build": "eleventy"
   },
   "repository": "https://github.com/shawnsandy/blacktie.git",
   "keywords": [
