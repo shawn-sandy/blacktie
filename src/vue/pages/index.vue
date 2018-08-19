@@ -1,6 +1,6 @@
 <template>
   <section class="content">
-    <cover-img img-src="//source.unsplash.com/collection/1278495/1400x450"/>
+    <cover-img img-src="//source.unsplash.com/collection/1278495/1400x450" />
     <blacktie-loading-dots/>
     <div class="container section">
       <div class="title is-3">Index page</div>
@@ -15,19 +15,19 @@
 </template>
 
 <style lang="scss">
-@import "~blacktie-loading-dots/src/scss/dot-setting";
-@import "~blacktie-loading-dots/src/scss/loading-dots";
+@import '~blacktie-loading-dots/src/scss/dot-setting';
+@import '~blacktie-loading-dots/src/scss/loading-dots';
 </style>
 
 
 <script>
-import BlacktieLoadingDots from "blacktie-loading-dots";
+import BlacktieLoadingDots from 'blacktie-loading-dots';
 // import BlacktieImg from "blacktie-img";
 // import ImgCaption from "blacktie-img/src/components/Caption.vue";
-import CoverImg from "blacktie-img/src/CoverImg.vue";
+import CoverImg from 'blacktie-img/src/CoverImg.vue';
 
 export default {
-  name: "PageContent",
+  name: 'PageContent',
   components: {
     BlacktieLoadingDots,
     // BlacktieImg,
