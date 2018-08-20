@@ -1,6 +1,6 @@
 {
   "name": "blacktie-styles",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Stylesheet utilities - blacktie",
   "main": "index.js",
   "author": "shawn sandy <creative@shawnsandy.design>",
@@ -23,6 +23,9 @@
     "webpack-cli": "^2.1.4"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1",
     "vue-styleguidist": "^1.7.13"
   }
 }

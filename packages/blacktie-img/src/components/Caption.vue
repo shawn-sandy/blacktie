@@ -1,7 +1,7 @@
 <template>
   <figcaption class="blacktie-img-caption" :class=cssClasses>
-    <!-- @slot add captions to images-->
-    <slot></slot>
+    <p>{{ captionTitle }}</p>
+    <p>{{ captionContent }}</p>
   </figcaption>
 </template>
 
@@ -12,6 +12,12 @@ export default {
     cssClasses: {
       type: String,
       default: 'centered'
+    },
+    captionTitle: {
+      type: String
+    },
+    captionContent: {
+      type: String
     }
   }
 }
