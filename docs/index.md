@@ -7,10 +7,19 @@ title: My Rad Blog
 
 <a href="" target="_blank">something</a>
 
+BlacktieBlackTie is a framework agnostic reusable collection of UX/UI
+patterns, libraries and tools created to make it easy to customize and
+enhance FrontEnd frameworks like bootstrap, adding missing utilities and
+elements.
 
-``` html
+```html
 
-<p>Some content</p>
+<p>
+  BlacktieBlackTie is a framework agnostic reusable collection of UX/UI
+  patterns, libraries and tools created to make it easy to customize and
+  enhance FrontEnd frameworks like bootstrap, adding missing utilities and
+  elements.
+  </p>
 
 <a href="" target="_blank">something</a>
 
