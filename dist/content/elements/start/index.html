@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
@@ -12,13 +11,22 @@
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.2.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/blacktie-styles@0.0.2/dist/app.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
-<link href="styles/app.css" rel="stylesheet"><link href="styles/router.css" rel="stylesheet"></head>
+</head>
 
 <body id="body" class="content">
+  <script id="__bs_script__">
+    //<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.24.4'><\/script>".replace("HOST",
+      location.hostname));
+    //]]>
+
+  </script>
+
 
   <nav class="navbar elm-bg-whitesmoke" role="navigation" aria-label="main navigation">
     <div class="container is-size-7 is-uppercase">
@@ -28,30 +36,13 @@
   </nav>
 
   <main>
-    <div class="container">
-      <div class="section">
-        <h1 class="title is-1" data-module="example">
-          <a href="/">BlackTie</a>
-          <small class="is-size-6 is-uppercase elm-color-gray">A small UI toolkit</small>
-        </h1>
-      </div>
-    </div>
-
     <div class="">
-      <div id="routes">
-      </div>
+      <div class="container section">
+        <h1>Get Started</h1>
+<p>Description</p>
 
-    </div>
-    <div class="container">
-      <div id="components-demo">
-        <button-counter></button-counter>
-        <button-counter></button-counter>
-        <button-counter></button-counter>
       </div>
     </div>
-
-
-    <bt-page default-page="bt-landing-page"></bt-page>
   </main>
   <footer class="elm-bg-gray-dark">
     <section class="container section elm-color-lightgray">
@@ -83,6 +74,7 @@
             alias modi?
           </p>
         </div>
+
       </div>
     </section>
 
@@ -93,16 +85,11 @@
 
     </div>
 
-    <bt-scroll-up>
-      <svg id="i-chevron-top" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round"
-        stroke-linejoin="round" stroke-width="3">
-        <path d="M30 20 L16 8 2 20" />
-      </svg>
-      </svg>
-    </bt-scroll-up>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/svg4everybody@2.1.9/dist/svg4everybody.min.js"></script>
-<script type="text/javascript" src="js/app.js"></script><script type="text/javascript" src="js/router.js"></script></body>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/router.js"></script>
+</body>
 
 </html>
