@@ -5,10 +5,6 @@ module.exports = {
   dest: 'dist/docs',
   themeConfig: {
     sidebar: 'auto',
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
-      { text: 'External', link: 'https://google.com' },
-    ]
+
   }
 }

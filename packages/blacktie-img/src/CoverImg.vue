@@ -1,11 +1,7 @@
 <template>
   <div class="cover-img">
     <blacktie-img inline-styles="width:100%" :img-src=imgSrc>
-
-        <blacktie-img-caption :css-classes=contentPosition>
-         <slot> <h1 class="title is-1 has-text-white">Caption Text</h1></slot>
-        </blacktie-img-caption>
-
+        <blacktie-img-caption caption-title="Caption" :css-classes=contentPosition />
     </blacktie-img>
   </div>
 </template>
@@ -15,6 +11,7 @@ import BlacktieImg from './components/Index.vue'
 import BlacktieImgCaption from './components/Caption.vue'
 
 export default {
+  name: 'Cover',
   components: {
     BlacktieImg,
     BlacktieImgCaption

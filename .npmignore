@@ -5,3 +5,8 @@ src/
 monitor/
 .env
 SassMagic
+packages/
+riotpackages/
+SassMagic/
+scaffolds/
+www/

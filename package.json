@@ -13,7 +13,9 @@
     "styleguide": "vue-styleguidist server --open",
     "styleguide:build": "vue-styleguidist build",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "content": "eleventy --serve",
+    "content:build": "eleventy"
   },
   "repository": "https://github.com/shawnsandy/blacktie.git",
   "keywords": [
@@ -27,6 +29,8 @@
   },
   "homepage": "https://github.com/shawnsandy/blacktie#readme",
   "devDependencies": {
+    "@11ty/eleventy": "^0.5.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^1.0.5",
     "@babel/plugin-transform-react-jsx": "^7.0.0-beta.40",
     "@webpack-cli/init": "^0.0.8",
     "autoprefixer": "^7.2.3",
@@ -48,7 +52,10 @@
     "docute": "https://github.com/egoist/docute",
     "dompurify": "^1.0.3",
     "dotenv": "^5.0.0",
+    "eleventy-plugin-toc": "^1.0.1",
     "error-overlay-webpack-plugin": "^0.1.5",
+    "eslint": "^5.4.0",
+    "eslint-plugin-vue": "^4.7.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "fast-sass-loader": "^1.4.5",
     "gulp": "^3.9.1",
@@ -64,6 +71,7 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "lerna": "^2.11.0",
+    "markdown-it": "^8.4.2",
     "micro-style-loader": "^0.1.0",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.7.2",

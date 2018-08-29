@@ -1,13 +1,19 @@
 <template>
   <figure class="blacktie-img" :class=classes :style=inlineStyles>
-    <img :src=imgSrc alt="" :style=inlineStyles>
+    <img ref="img" :src=imgSrc alt="" :style=inlineStyles :onLoad="imgLoaded()">
     <slot></slot>
   </figure>
 </template>
 
 <script>
 export default {
-  name: 'BlacktieImg',
+  name: 'Index',
+  data: function () {
+    return {
+      loading: false,
+      displayImg: 'hide'
+    }
+  },
   props: {
     classes: {
       type: String,
@@ -20,12 +26,27 @@ export default {
     inlineStyles: {
       type: String
     }
+  },
+  methods: {
+    imgLoaded: function (event) {
+      this.loading = true
+      setTimeout(function () {
+        this.loading = true
+        console.log('loaded', this.loading)
+      }, 5000)
+    }
+  },
+  mounted: function () {
+    alert('loaded')
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+.hide {
+  display: none;
+}
 figure {
   overflow: hidden;
   position: relative;
