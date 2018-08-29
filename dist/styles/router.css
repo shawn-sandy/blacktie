@@ -1,5 +1,8 @@
 
 
+.hide[data-v-18593ed0] {
+  display: none;
+}
 figure[data-v-18593ed0] {
   overflow: hidden;
   position: relative;
@@ -10,9 +13,6 @@ figure[data-v-18593ed0] {
   transition: all 0.35s;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-figure.hide[data-v-18593ed0] {
-    display: none;
 }
 figure figcaption.blacktie-img-caption[data-v-18593ed0] {
     color: azure;

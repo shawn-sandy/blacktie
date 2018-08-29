@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/package-name",
   "dependencies": {
-    "blacktie-styles": "^0.0.1",
+    "blacktie-styles": "^0.0.2",
     "bulma": "^0.7.1",
     "sass-loader": "^7.0.3",
     "vue": "^2.5.16",
