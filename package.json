@@ -87,7 +87,7 @@
     "validate": "cferdinandi/validate",
     "vue": "^2.5.17",
     "vue-loader": "^15.2.4",
-    "vue-styleguidist": "^1.7.13",
+    "vue-styleguidist": "^1.8.5",
     "vue-template-compiler": "^2.5.17",
     "vuepress": "^0.14.0",
     "webpack": "^4.10.0",

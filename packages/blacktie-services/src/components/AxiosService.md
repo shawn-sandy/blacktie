@@ -1,15 +1,15 @@
 **Basic Example.**
 
 ```jsx
-<axios-services>
+<axios-service>
   <template slot-scope="{ response, loading }">
     <pre>
-            <code>
-              {{ response.data }}
-            </code>
-          </pre>
+      <code>
+        {{ response.data }}
+      </code>
+    </pre>
   </template>
-</axios-services>
+</axios-service>
 ```
 
 
@@ -18,7 +18,7 @@
 Connect to the
 
 ```jsx
-<axios-services url="https://api.coindesk.com/v1/bpi/currentprice.json">
+<axios-service url="https://api.coindesk.com/v1/bpi/currentprice.json">
   <template slot-scope="{ response, loading }">
     <pre>
     <code>
@@ -26,13 +26,13 @@ Connect to the
     </code>
   </pre>
   </template>
-</axios-services>
+</axios-service>
 ```
 
 Return and format data using list
 
 ```jsx
-<axios-services>
+<axios-service>
   <template slot-scope="{ response, loading }">
     <ul>
       <li>Login: {{ response.data.login }}</li>
@@ -46,5 +46,5 @@ Return and format data using list
       </code>
     </pre>
   </template>
-</axios-services>
+</axios-service>
 ```

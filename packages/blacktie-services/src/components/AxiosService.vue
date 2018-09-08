@@ -4,13 +4,14 @@
   </span>
 </template>
 <script>
+
+import axios from 'axios'
 /**
- * An easy way to consume data from HTTP/REST APIs using axios
+ * An easy way to consume data from HTTP/REST services using axios
  * and Vue.js scoped slots
  */
-import axios from 'axios'
 export default {
-  name: 'AxiosServices',
+  name: 'AxiosService',
   props: {
     /**
      * URL of the rest API service

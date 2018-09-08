@@ -1,12 +1,12 @@
-# Blacktie Clients
+# Blacktie Services
 
-blacktie-clients brief description
+An easy way to consume data from HTTP/REST services using axios and Vue.js scoped slots
 
 ## Install
 
 ```
 
-yarn add blacktie-clients
+yarn add blacktie-services
 
 ```
 
@@ -14,12 +14,12 @@ yarn add blacktie-clients
 
 ```js
 
-import pacakge-name from "blacktie-scrollbar/src/components/Scrollbar.vue";
+import AxisoService from "blacktie-services/src/components/AxiosService.vue";
 
 export default {
-  name: "blacktie-clients",
+  name: "your-app",
   components: {
-    blacktie-clients
+    AxiosService
   }
 }
 
@@ -31,9 +31,12 @@ export default {
 
 ```html
 
-   <blacktie-clients></blacktie-clients>
+   <blacktie-services></blacktie-services>
 
 ```
+
+## Read the docs
+
 
 ## Issues
 
