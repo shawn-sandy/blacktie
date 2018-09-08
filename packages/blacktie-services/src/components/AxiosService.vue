@@ -1,30 +1,35 @@
 <template>
   <span>
-    <slot :data="data" :loading="loading"></slot>
+    <slot :response="response" :loading="loading"></slot>
   </span>
 </template>
 <script>
 /**
- * Axiso services component returns
+ * An easy way to consume data from HTTP/REST APIs using axios
+ * and Vue.js scoped slots
  */
 import axios from 'axios'
 export default {
+  name: 'AxiosServices',
   props: {
+    /**
+     * URL of the rest API service
+     */
     url: {
       type: String,
-      default: 'http://jsonplaceholder.typicode.com/posts'
+      default: 'https://api.github.com/users/shawn-sandy'
     }
   },
   data: function () {
     return {
-      data: [],
+      response: [],
       loading: true,
       errors: []
     }
   },
   created () {
     axios.get(this.url).then(response => {
-      this.data = response
+      this.response = response
       this.loading = false
     })
       .catch(e => {

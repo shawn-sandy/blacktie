@@ -10,13 +10,31 @@
       </p>
 
     </div>
-    <div class="container">
-      <axios-service>
-        <template slot-scope="{ data, loading }">
-          {{ data }}
-        </template>
-      </axios-service>
-    </div>
+
+    <axios-service>
+
+      <template slot-scope="{ response, loading }">
+        <div
+          v-if="loading"
+          class="container"><h1>Loading</h1></div>
+        <div
+          v-else
+          class="container section">
+          <ul>
+            <li>Login: {{ response.data.login }}</li>
+            <li>Avatar Url: {{ response.data.avatar_url }}</li>
+            <li>Url: {{ response.data.url }}</li>
+            <li>Repos: {{ response.data.public_repos }}</li>
+          </ul>
+          <pre>
+            <code>
+              {{ response.data }}
+            </code>
+          </pre>
+        </div>
+      </template>
+    </axios-service>
+
 
 
   </section>
