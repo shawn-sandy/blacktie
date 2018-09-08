@@ -2,6 +2,10 @@
 
 An easy way to consume data from HTTP/REST services using axios and Vue.js scoped slots
 
+## Documentation
+
+Read more about [blacktie-services](https://blacktie.netlify.com/guide/#/AxiosService)
+
 ## Install
 
 ```
@@ -35,7 +39,6 @@ export default {
 
 ```
 
-## Read the docs
 
 
 ## Issues
