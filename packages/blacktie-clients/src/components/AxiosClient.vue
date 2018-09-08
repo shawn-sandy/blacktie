@@ -3,10 +3,8 @@
     <slot :content="data" :loading="loading"></slot>
   </span>
 </template>
-
 <script>
 import axios from 'axios'
-
 export default {
   props: {
     url: {

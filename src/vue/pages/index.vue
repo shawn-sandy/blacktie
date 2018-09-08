@@ -31,7 +31,7 @@
 <script>
 import BlacktieLoadingDots from 'blacktie-loading-dots';
 import CoverImg from 'blacktie-img/src/CoverImg.vue';
-import AxiosElement from 'blacktie-elements/src/functions/AxiosElement.vue'
+import AxiosElement from 'blacktie-clients/src/components/AxiosClient.vue'
 
 export default {
   name: 'PageContent',
