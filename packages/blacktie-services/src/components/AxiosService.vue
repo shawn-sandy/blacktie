@@ -1,9 +1,12 @@
 <template>
   <span>
-    <slot :content="data" :loading="loading"></slot>
+    <slot :data="data" :loading="loading"></slot>
   </span>
 </template>
 <script>
+/**
+ * Axiso services component returns
+ */
 import axios from 'axios'
 export default {
   props: {
@@ -14,8 +17,9 @@ export default {
   },
   data: function () {
     return {
-      data: null,
-      loading: true
+      data: [],
+      loading: true,
+      errors: []
     }
   },
   created () {
@@ -23,6 +27,9 @@ export default {
       this.data = response
       this.loading = false
     })
+      .catch(e => {
+        this.errors.push(e)
+      })
   }
 }
 </script>

@@ -11,11 +11,11 @@
 
     </div>
     <div class="container">
-      <axios-element>
-        <template slot-scope="{ content, loading }">
-          {{ content.data[0] }}
+      <axios-service>
+        <template slot-scope="{ data, loading }">
+          {{ data }}
         </template>
-      </axios-element>
+      </axios-service>
     </div>
 
 
@@ -31,14 +31,14 @@
 <script>
 import BlacktieLoadingDots from 'blacktie-loading-dots';
 import CoverImg from 'blacktie-img/src/CoverImg.vue';
-import AxiosElement from 'blacktie-clients/src/components/AxiosClient.vue'
+import AxiosService from 'blacktie-services/src/components/AxiosService.vue'
 
 export default {
   name: 'PageContent',
   components: {
     BlacktieLoadingDots,
     // BlacktieImg,
-    AxiosElement,
+    AxiosService,
     CoverImg
   }
 };
