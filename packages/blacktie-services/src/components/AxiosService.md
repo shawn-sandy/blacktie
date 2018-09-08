@@ -1,14 +1,13 @@
 ### Install
 
-```
-
+``` bash
 yarn add blacktie-services
 
 ```
 
-### Import into your vue app and export as component
+**Import into your vue app and export as component**
 
-```js
+```js static
 
 import AxisoService from "blacktie-services/src/components/AxiosService.vue";
 
@@ -21,15 +20,7 @@ export default {
 
 ```
 
-
-
-### Add code to your HTML
-
-```html
-
-   <blacktie-services></blacktie-services>
-
-```
+### Usage
 
 **Basic Example.**
 
