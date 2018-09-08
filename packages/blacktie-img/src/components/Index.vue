@@ -37,7 +37,7 @@ export default {
     }
   },
   mounted: function () {
-    alert('loaded')
+    // alert('loaded')
   }
 }
 </script>

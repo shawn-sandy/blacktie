@@ -17,6 +17,7 @@
     "url": "http://shawnsandy.design"
   },
   "dependencies": {
+    "blacktie-elements": "^0.1.0",
     "blacktie-styles": "^0.0.2",
     "vue": "^2.5.16",
     "vue-styleguidist": "1.7.8"

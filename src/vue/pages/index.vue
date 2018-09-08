@@ -10,6 +10,14 @@
       </p>
 
     </div>
+    <div class="container">
+      <axios-element>
+        <template slot-scope="{ content, loading }">
+          {{ content.data[0] }}
+        </template>
+      </axios-element>
+    </div>
+
 
   </section>
 </template>
@@ -22,15 +30,15 @@
 
 <script>
 import BlacktieLoadingDots from 'blacktie-loading-dots';
-// import BlacktieImg from "blacktie-img";
-// import ImgCaption from "blacktie-img/src/components/Caption.vue";
 import CoverImg from 'blacktie-img/src/CoverImg.vue';
+import AxiosElement from 'blacktie-elements/src/functions/AxiosElement.vue'
 
 export default {
   name: 'PageContent',
   components: {
     BlacktieLoadingDots,
     // BlacktieImg,
+    AxiosElement,
     CoverImg
   }
 };
