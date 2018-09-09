@@ -81,6 +81,7 @@
     "optimize-css-assets-webpack-plugin": "^4.0.2",
     "postcss-loader": "^2.1.0",
     "raw-loader": "^0.5.1",
+    "sass-rem": "^2.0.1",
     "smooth-scroll": "^12.1.5",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.1.5",
