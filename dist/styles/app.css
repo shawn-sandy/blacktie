@@ -84,25 +84,25 @@ body {
 .fs-6 {
   font-size: 0.75rem; }
 
-.hl-sm {
-  font-size: 28px;
-  font-size: 1.75rem; }
+.fs-show-sm {
+  font-size: 36px;
+  font-size: 2.25rem; }
 
-.hl-md {
-  font-size: 26px;
-  font-size: 1.625rem; }
-
-.hl-lg {
+.fs-show-md {
   font-size: 48px;
   font-size: 3rem; }
 
-.hl-xl {
-  font-size: 61px;
-  font-size: 3.8125rem; }
+.fs-show-lg {
+  font-size: 56px;
+  font-size: 3.5rem; }
 
-.hl-xxl {
-  font-size: 80px;
-  font-size: 5rem; }
+.fs-show-xl {
+  font-size: 70px;
+  font-size: 4.375rem; }
+
+.fs-show-xxl {
+  font-size: 81px;
+  font-size: 5.0625rem; }
 
 .block-elm {
   min-height: 40vh; }
