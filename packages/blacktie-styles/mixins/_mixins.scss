@@ -23,6 +23,18 @@
   font-size: rem($size);
 }
 
+@mixin scaffoldFonts($font-sizes){
+
+  @each $attr, $value in ($font-sizes) {
+
+    .#{$attr} {
+      font-size: rem-calc($value);
+    }
+
+  }
+
+}
+
 @mixin placeholder() {
   input::-webkit-input-placeholder {@content}
   input:-moz-placeholder           {@content}
