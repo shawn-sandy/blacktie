@@ -539,12 +539,12 @@ body {
 .elm-bg-blue {
   background-color: #0070FF; }
   .elm-bg-blue:hover {
-    color: #005acc; }
+    background-color: #005acc; }
 
 .elm-bg-blue:hover {
   background-color: #0070FF; }
   .elm-bg-blue:hover:hover {
-    color: #005acc; }
+    background-color: #005acc; }
 
 .elm-stroke-blue {
   stroke: #0070FF; }
@@ -563,12 +563,12 @@ body {
 .elm-bg-red {
   background-color: #D72E3D; }
   .elm-bg-red:hover {
-    color: #b0222e; }
+    background-color: #b0222e; }
 
 .elm-bg-red:hover {
   background-color: #D72E3D; }
   .elm-bg-red:hover:hover {
-    color: #b0222e; }
+    background-color: #b0222e; }
 
 .elm-stroke-red {
   stroke: #D72E3D; }
@@ -587,12 +587,12 @@ body {
 .elm-bg-orange {
   background-color: #FD7215; }
   .elm-bg-orange:hover {
-    color: #dd5a02; }
+    background-color: #dd5a02; }
 
 .elm-bg-orange:hover {
   background-color: #FD7215; }
   .elm-bg-orange:hover:hover {
-    color: #dd5a02; }
+    background-color: #dd5a02; }
 
 .elm-stroke-orange {
   stroke: #FD7215; }
@@ -611,12 +611,12 @@ body {
 .elm-bg-yellow {
   background-color: #FFB90D; }
   .elm-bg-yellow:hover {
-    color: #d99a00; }
+    background-color: #d99a00; }
 
 .elm-bg-yellow:hover {
   background-color: #FFB90D; }
   .elm-bg-yellow:hover:hover {
-    color: #d99a00; }
+    background-color: #d99a00; }
 
 .elm-stroke-yellow {
   stroke: #FFB90D; }
@@ -635,12 +635,12 @@ body {
 .elm-bg-green {
   background-color: #249D3D; }
   .elm-bg-green:hover {
-    color: #1a742d; }
+    background-color: #1a742d; }
 
 .elm-bg-green:hover {
   background-color: #249D3D; }
   .elm-bg-green:hover:hover {
-    color: #1a742d; }
+    background-color: #1a742d; }
 
 .elm-stroke-green {
   stroke: #249D3D; }
@@ -659,12 +659,12 @@ body {
 .elm-bg-white {
   background-color: white; }
   .elm-bg-white:hover {
-    color: #e6e6e6; }
+    background-color: #e6e6e6; }
 
 .elm-bg-white:hover {
   background-color: white; }
   .elm-bg-white:hover:hover {
-    color: #e6e6e6; }
+    background-color: #e6e6e6; }
 
 .elm-stroke-white {
   stroke: white; }
@@ -683,12 +683,12 @@ body {
 .elm-bg-lightgray {
   background-color: lightgrey; }
   .elm-bg-lightgray:hover {
-    color: #bababa; }
+    background-color: #bababa; }
 
 .elm-bg-lightgray:hover {
   background-color: lightgrey; }
   .elm-bg-lightgray:hover:hover {
-    color: #bababa; }
+    background-color: #bababa; }
 
 .elm-stroke-lightgray {
   stroke: lightgrey; }
@@ -707,12 +707,12 @@ body {
 .elm-bg-darkgray {
   background-color: darkgray; }
   .elm-bg-darkgray:hover {
-    color: #909090; }
+    background-color: #909090; }
 
 .elm-bg-darkgray:hover {
   background-color: darkgray; }
   .elm-bg-darkgray:hover:hover {
-    color: #909090; }
+    background-color: #909090; }
 
 .elm-stroke-darkgray {
   stroke: darkgray; }
@@ -731,12 +731,12 @@ body {
 .elm-bg-whitesmoke, .block-elm {
   background-color: whitesmoke; }
   .elm-bg-whitesmoke:hover, .block-elm:hover {
-    color: gainsboro; }
+    background-color: gainsboro; }
 
 .elm-bg-whitesmoke:hover, .block-elm:hover {
   background-color: whitesmoke; }
   .elm-bg-whitesmoke:hover:hover, .block-elm:hover:hover {
-    color: gainsboro; }
+    background-color: gainsboro; }
 
 .elm-stroke-whitesmoke {
   stroke: whitesmoke; }
@@ -755,12 +755,12 @@ body {
 .elm-bg-gray {
   background-color: #7B838B; }
   .elm-bg-gray:hover {
-    color: #636a70; }
+    background-color: #636a70; }
 
 .elm-bg-gray:hover {
   background-color: #7B838B; }
   .elm-bg-gray:hover:hover {
-    color: #636a70; }
+    background-color: #636a70; }
 
 .elm-stroke-gray {
   stroke: #7B838B; }
@@ -779,12 +779,12 @@ body {
 .elm-bg-gray-dark {
   background-color: #2E3338; }
   .elm-bg-gray-dark:hover {
-    color: #171a1c; }
+    background-color: #171a1c; }
 
 .elm-bg-gray-dark:hover {
   background-color: #2E3338; }
   .elm-bg-gray-dark:hover:hover {
-    color: #171a1c; }
+    background-color: #171a1c; }
 
 .elm-stroke-gray-dark {
   stroke: #2E3338; }
@@ -803,12 +803,12 @@ body {
 .elm-bg-black {
   background-color: black; }
   .elm-bg-black:hover {
-    color: black; }
+    background-color: black; }
 
 .elm-bg-black:hover {
   background-color: black; }
   .elm-bg-black:hover:hover {
-    color: black; }
+    background-color: black; }
 
 .elm-stroke-black {
   stroke: black; }
@@ -827,12 +827,12 @@ body {
 .elm-bg-black-pearl {
   background-color: #1F2529; }
   .elm-bg-black-pearl:hover {
-    color: #090b0c; }
+    background-color: #090b0c; }
 
 .elm-bg-black-pearl:hover {
   background-color: #1F2529; }
   .elm-bg-black-pearl:hover:hover {
-    color: #090b0c; }
+    background-color: #090b0c; }
 
 .elm-stroke-black-pearl {
   stroke: #1F2529; }
@@ -851,12 +851,12 @@ body {
 .elm-bg-dark-blue {
   background-color: #132433; }
   .elm-bg-dark-blue:hover {
-    color: #050a0e; }
+    background-color: #050a0e; }
 
 .elm-bg-dark-blue:hover {
   background-color: #132433; }
   .elm-bg-dark-blue:hover:hover {
-    color: #050a0e; }
+    background-color: #050a0e; }
 
 .elm-stroke-dark-blue {
   stroke: #132433; }
@@ -887,7 +887,30 @@ html {
       font-size: 21px;
       font-size: 1.3125rem; } }
 
+html .elm-color-primary {
+  color: #2B3338; }
+
+html .elm-color-primary:hover {
+  color: #2B3338; }
+
+html .elm-border-primary {
+  border-color: #2B3338; }
+  html .elm-border-primary:hover {
+    color: #15191b; }
+
+html .elm-bg-primary {
+  background-color: #2B3338; }
+  html .elm-bg-primary:hover {
+    background-color: #15191b; }
+
+html .elm-bg-primary:hover {
+  background-color: #2B3338; }
+  html .elm-bg-primary:hover:hover {
+    background-color: #15191b; }
+
+html .elm-stroke-primary {
+  stroke: #2B3338; }
+
 body {
   padding: 1.25rem;
   border-bottom: 20px #2E3338 solid; }
-
