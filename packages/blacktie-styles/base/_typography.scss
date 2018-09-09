@@ -1,8 +1,6 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
   Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-
 }
 
 @each $attr, $value in ($font-sizes) {
@@ -12,6 +10,8 @@ body {
   }
 
 }
+
+
 
 .fs-show-sm {
   @include fontSize(36px)
@@ -31,4 +31,21 @@ body {
 
 .fs-show-xxl {
   @include fontSize(81px)
+}
+
+
+.fs-sm {
+  @include fontSize(12px)
+}
+.fs-md {
+  @include fontSize(18px)
+}
+.fs-lg {
+  @include fontSize(21px)
+}
+.fs-xl {
+  @include fontSize(24px)
+}
+.fs-xxl {
+  @include fontSize(28px)
 }

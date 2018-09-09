@@ -18,14 +18,14 @@
 	.elm-bg-#{$name} {
 		background-color: $color;
 		&:hover {
-			color: darken($color, 10%)
+			background-color: darken($color, 10%)
 		}
 	}
 
 	.elm-bg-#{$name}:hover {
 		background-color: $color;
 		&:hover {
-			color: darken($color, 10%)
+			background-color: darken($color, 10%)
 		}
 	}
 

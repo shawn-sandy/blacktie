@@ -23,6 +23,18 @@
   font-size: rem($size);
 }
 
+@mixin generateFonts($font-sizes){
+
+  @each $attr, $value in ($font-sizes) {
+
+    .#{$attr} {
+      font-size: rem-calc($value);
+    }
+
+  }
+
+}
+
 @mixin placeholder() {
   input::-webkit-input-placeholder {@content}
   input:-moz-placeholder           {@content}
@@ -50,5 +62,47 @@
     }
 
   }
+
+}
+
+@mixin generateColors($color_set: []){
+
+  @each $name, $color in ($color_set) {
+
+    .elm-color-#{$name} {
+      color: $color;
+    }
+
+    .elm-color-#{$name}:hover {
+      color: $color;
+    }
+
+    .elm-border-#{$name} {
+      border-color: $color;
+      &:hover {
+        color: darken($color, 10%)
+      }
+    }
+
+    .elm-bg-#{$name} {
+      background-color: $color;
+      &:hover {
+        background-color: darken($color, 10%)
+      }
+    }
+
+    .elm-bg-#{$name}:hover {
+      background-color: $color;
+      &:hover {
+        background-color: darken($color, 10%)
+      }
+    }
+
+    .elm-stroke-#{$name} {
+      stroke: $color;
+    }
+
+  }
+
 
 }
