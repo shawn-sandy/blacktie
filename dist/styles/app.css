@@ -911,6 +911,31 @@ html .elm-bg-primary:hover {
 html .elm-stroke-primary {
   stroke: #2B3338; }
 
+html .elm-color-electric-blue {
+  color: #51677A; }
+
+html .elm-color-electric-blue:hover {
+  color: #51677A; }
+
+html .elm-border-electric-blue {
+  border-color: #51677A; }
+  html .elm-border-electric-blue:hover {
+    color: #3d4d5b; }
+
+html .elm-bg-electric-blue {
+  background-color: #51677A; }
+  html .elm-bg-electric-blue:hover {
+    background-color: #3d4d5b; }
+
+html .elm-bg-electric-blue:hover {
+  background-color: #51677A; }
+  html .elm-bg-electric-blue:hover:hover {
+    background-color: #3d4d5b; }
+
+html .elm-stroke-electric-blue {
+  stroke: #51677A; }
+
 body {
   padding: 1.25rem;
   border-bottom: 20px #2E3338 solid; }
+
