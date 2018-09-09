@@ -84,6 +84,26 @@ body {
 .fs-6 {
   font-size: 0.75rem; }
 
+.hl-sm {
+  font-size: 28px;
+  font-size: 1.75rem; }
+
+.hl-md {
+  font-size: 26px;
+  font-size: 1.625rem; }
+
+.hl-lg {
+  font-size: 48px;
+  font-size: 3rem; }
+
+.hl-xl {
+  font-size: 61px;
+  font-size: 3.8125rem; }
+
+.hl-xxl {
+  font-size: 81px;
+  font-size: 5.0625rem; }
+
 .block-elm {
   min-height: 40vh; }
 

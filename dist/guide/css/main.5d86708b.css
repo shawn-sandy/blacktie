@@ -1,0 +1,524 @@
+
+.color[data-v-6046bc40] {
+  color: #0000cc;
+}
+
+
+
+.stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+  margin: 0 -5%;
+  overflow: hidden;
+}
+
+/**
+ * ==============================================
+ * Dot Floating
+ * ==============================================
+ */
+.dot-floating {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: gray;
+  color: gray;
+  -webkit-animation: dotFloating 3s infinite cubic-bezier(0.15, 0.6, 0.9, 0.1);
+          animation: dotFloating 3s infinite cubic-bezier(0.15, 0.6, 0.9, 0.1);
+}
+.dot-floating::before, .dot-floating::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+.dot-floating::before {
+    left: -12px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: gray;
+    color: gray;
+    -webkit-animation: dotFloatingBefore 3s infinite ease-in-out;
+            animation: dotFloatingBefore 3s infinite ease-in-out;
+}
+.dot-floating::after {
+    left: -24px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: gray;
+    color: gray;
+    -webkit-animation: dotFloatingAfter 3s infinite cubic-bezier(0.4, 0, 1, 1);
+            animation: dotFloatingAfter 3s infinite cubic-bezier(0.4, 0, 1, 1);
+}
+@-webkit-keyframes dotFloating {
+0% {
+    left: calc(-50% - 5px);
+}
+75% {
+    left: calc(50% + 105px);
+}
+100% {
+    left: calc(50% + 105px);
+}
+}
+@keyframes dotFloating {
+0% {
+    left: calc(-50% - 5px);
+}
+75% {
+    left: calc(50% + 105px);
+}
+100% {
+    left: calc(50% + 105px);
+}
+}
+@-webkit-keyframes dotFloatingBefore {
+0% {
+    left: -50px;
+}
+50% {
+    left: -12px;
+}
+75% {
+    left: -50px;
+}
+100% {
+    left: -50px;
+}
+}
+@keyframes dotFloatingBefore {
+0% {
+    left: -50px;
+}
+50% {
+    left: -12px;
+}
+75% {
+    left: -50px;
+}
+100% {
+    left: -50px;
+}
+}
+@-webkit-keyframes dotFloatingAfter {
+0% {
+    left: -100px;
+}
+50% {
+    left: -24px;
+}
+75% {
+    left: -100px;
+}
+100% {
+    left: -100px;
+}
+}
+@keyframes dotFloatingAfter {
+0% {
+    left: -100px;
+}
+50% {
+    left: -24px;
+}
+75% {
+    left: -100px;
+}
+100% {
+    left: -100px;
+}
+}
+
+/**
+ * ==============================================
+ * Dot Pulse
+ * ==============================================
+ */
+.dot-pulse {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: gray;
+  color: gray;
+  -webkit-box-shadow: 9999px 0 0 -5px gray;
+          box-shadow: 9999px 0 0 -5px gray;
+  -webkit-animation: dotPulse 1.5s infinite linear;
+          animation: dotPulse 1.5s infinite linear;
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
+}
+.dot-pulse::before, .dot-pulse::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: gray;
+    color: gray;
+}
+.dot-pulse::before {
+    -webkit-box-shadow: 9984px 0 0 -5px gray;
+            box-shadow: 9984px 0 0 -5px gray;
+    -webkit-animation: dotPulseBefore 1.5s infinite linear;
+            animation: dotPulseBefore 1.5s infinite linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+.dot-pulse::after {
+    -webkit-box-shadow: 10014px 0 0 -5px gray;
+            box-shadow: 10014px 0 0 -5px gray;
+    -webkit-animation: dotPulseAfter 1.5s infinite linear;
+            animation: dotPulseAfter 1.5s infinite linear;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+}
+@-webkit-keyframes dotPulseBefore {
+0% {
+    -webkit-box-shadow: 9984px 0 0 -5px gray;
+            box-shadow: 9984px 0 0 -5px gray;
+}
+30% {
+    -webkit-box-shadow: 9984px 0 0 2px gray;
+            box-shadow: 9984px 0 0 2px gray;
+}
+60%,
+  100% {
+    -webkit-box-shadow: 9984px 0 0 -5px gray;
+            box-shadow: 9984px 0 0 -5px gray;
+}
+}
+@keyframes dotPulseBefore {
+0% {
+    -webkit-box-shadow: 9984px 0 0 -5px gray;
+            box-shadow: 9984px 0 0 -5px gray;
+}
+30% {
+    -webkit-box-shadow: 9984px 0 0 2px gray;
+            box-shadow: 9984px 0 0 2px gray;
+}
+60%,
+  100% {
+    -webkit-box-shadow: 9984px 0 0 -5px gray;
+            box-shadow: 9984px 0 0 -5px gray;
+}
+}
+@-webkit-keyframes dotPulse {
+0% {
+    -webkit-box-shadow: 9999px 0 0 -5px gray;
+            box-shadow: 9999px 0 0 -5px gray;
+}
+30% {
+    -webkit-box-shadow: 9999px 0 0 2px gray;
+            box-shadow: 9999px 0 0 2px gray;
+}
+60%,
+  100% {
+    -webkit-box-shadow: 9999px 0 0 -5px gray;
+            box-shadow: 9999px 0 0 -5px gray;
+}
+}
+@keyframes dotPulse {
+0% {
+    -webkit-box-shadow: 9999px 0 0 -5px gray;
+            box-shadow: 9999px 0 0 -5px gray;
+}
+30% {
+    -webkit-box-shadow: 9999px 0 0 2px gray;
+            box-shadow: 9999px 0 0 2px gray;
+}
+60%,
+  100% {
+    -webkit-box-shadow: 9999px 0 0 -5px gray;
+            box-shadow: 9999px 0 0 -5px gray;
+}
+}
+@-webkit-keyframes dotPulseAfter {
+0% {
+    -webkit-box-shadow: 10014px 0 0 -5px gray;
+            box-shadow: 10014px 0 0 -5px gray;
+}
+30% {
+    -webkit-box-shadow: 10014px 0 0 2px gray;
+            box-shadow: 10014px 0 0 2px gray;
+}
+60%,
+  100% {
+    -webkit-box-shadow: 10014px 0 0 -5px gray;
+            box-shadow: 10014px 0 0 -5px gray;
+}
+}
+@keyframes dotPulseAfter {
+0% {
+    -webkit-box-shadow: 10014px 0 0 -5px gray;
+            box-shadow: 10014px 0 0 -5px gray;
+}
+30% {
+    -webkit-box-shadow: 10014px 0 0 2px gray;
+            box-shadow: 10014px 0 0 2px gray;
+}
+60%,
+  100% {
+    -webkit-box-shadow: 10014px 0 0 -5px gray;
+            box-shadow: 10014px 0 0 -5px gray;
+}
+}
+
+/**
+ * ==============================================
+ * Dot Windmill
+ * ==============================================
+ */
+.dot-windmill {
+  position: relative;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: gray;
+  color: gray;
+  -webkit-transform-origin: 5px 15px;
+          transform-origin: 5px 15px;
+  -webkit-animation: dotWindmill 2s infinite linear;
+          animation: dotWindmill 2s infinite linear;
+}
+.dot-windmill::before, .dot-windmill::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+}
+.dot-windmill::before {
+    left: -8.66px;
+    top: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: gray;
+    color: gray;
+}
+.dot-windmill::after {
+    left: 8.66px;
+    top: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: gray;
+    color: gray;
+}
+@-webkit-keyframes dotWindmill {
+0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 0, 0);
+            transform: rotateZ(0deg) translate3d(0, 0, 0);
+}
+100% {
+    -webkit-transform: rotateZ(720deg) translate3d(0, 0, 0);
+            transform: rotateZ(720deg) translate3d(0, 0, 0);
+}
+}
+@keyframes dotWindmill {
+0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 0, 0);
+            transform: rotateZ(0deg) translate3d(0, 0, 0);
+}
+100% {
+    -webkit-transform: rotateZ(720deg) translate3d(0, 0, 0);
+            transform: rotateZ(720deg) translate3d(0, 0, 0);
+}
+}
+
+/**
+ * ==============================================
+ * Dot Carousel
+ * ==============================================
+ */
+.dot-carousel {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: gray;
+  color: gray;
+  -webkit-box-shadow: 9984px 0 0 0 gray, 9999px 0 0 0 gray, 10014px 0 0 0 gray;
+          box-shadow: 9984px 0 0 0 gray, 9999px 0 0 0 gray, 10014px 0 0 0 gray;
+  -webkit-animation: dotCarousel 1.5s infinite linear;
+          animation: dotCarousel 1.5s infinite linear;
+}
+@-webkit-keyframes dotCarousel {
+0% {
+    -webkit-box-shadow: 9984px 0 0 -1px gray, 9999px 0 0 1px gray, 10014px 0 0 -1px gray;
+            box-shadow: 9984px 0 0 -1px gray, 9999px 0 0 1px gray, 10014px 0 0 -1px gray;
+}
+50% {
+    -webkit-box-shadow: 10014px 0 0 -1px gray, 9984px 0 0 -1px gray, 9999px 0 0 1px gray;
+            box-shadow: 10014px 0 0 -1px gray, 9984px 0 0 -1px gray, 9999px 0 0 1px gray;
+}
+100% {
+    -webkit-box-shadow: 9999px 0 0 1px gray, 10014px 0 0 -1px gray, 9984px 0 0 -1px gray;
+            box-shadow: 9999px 0 0 1px gray, 10014px 0 0 -1px gray, 9984px 0 0 -1px gray;
+}
+}
+@keyframes dotCarousel {
+0% {
+    -webkit-box-shadow: 9984px 0 0 -1px gray, 9999px 0 0 1px gray, 10014px 0 0 -1px gray;
+            box-shadow: 9984px 0 0 -1px gray, 9999px 0 0 1px gray, 10014px 0 0 -1px gray;
+}
+50% {
+    -webkit-box-shadow: 10014px 0 0 -1px gray, 9984px 0 0 -1px gray, 9999px 0 0 1px gray;
+            box-shadow: 10014px 0 0 -1px gray, 9984px 0 0 -1px gray, 9999px 0 0 1px gray;
+}
+100% {
+    -webkit-box-shadow: 9999px 0 0 1px gray, 10014px 0 0 -1px gray, 9984px 0 0 -1px gray;
+            box-shadow: 9999px 0 0 1px gray, 10014px 0 0 -1px gray, 9984px 0 0 -1px gray;
+}
+}
+
+
+h3[data-v-49c07a7c] {
+  margin: 40px 0 0;
+}
+ul[data-v-49c07a7c] {
+  list-style-type: none;
+  padding: 0;
+}
+li[data-v-49c07a7c] {
+  display: inline-block;
+  margin: 0 10px;
+}
+a[data-v-49c07a7c] {
+  color: #42b983;
+}
+
+
+[data-simplebar] {
+    position: relative;
+    z-index: 0;
+    overflow: hidden!important;
+    max-height: inherit;
+    -webkit-overflow-scrolling: touch; /* Trigger native scrolling for mobile, if not supported, plugin is used. */
+}
+[data-simplebar="init"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+[data-simplebar] .simplebar-scroll-content,
+[data-simplebar] .simplebar-content {
+    overflow: hidden;
+}
+[data-simplebar="init"] .simplebar-scroll-content,
+[data-simplebar="init"] .simplebar-content {
+    overflow: scroll;
+}
+.simplebar-scroll-content {
+    overflow-x: hidden!important;
+    min-width: 100%!important;
+    max-height: inherit!important;
+    -webkit-box-sizing: content-box!important;
+            box-sizing: content-box!important;
+}
+.simplebar-content {
+    overflow-y: hidden!important;
+    -webkit-box-sizing: border-box!important;
+            box-sizing: border-box!important;
+    min-height: 100%!important;
+}
+.simplebar-track {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 11px;
+    pointer-events: none;
+}
+.simplebar-scrollbar {
+    position: absolute;
+    right: 2px;
+    width: 7px;
+    min-height: 10px;
+}
+.simplebar-scrollbar:before {
+    position: absolute;
+    content: "";
+    background: black;
+    border-radius: 7px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+.simplebar-track:hover .simplebar-scrollbar:before,
+.simplebar-track .simplebar-scrollbar.visible:before {
+    /* When hovered, remove all transitions from drag handle */
+    opacity: 0.5;
+    -webkit-transition: opacity 0 linear;
+    transition: opacity 0 linear;
+}
+.simplebar-track.vertical {
+    top: 0;
+}
+.simplebar-track.vertical .simplebar-scrollbar:before {
+    top: 2px;
+    bottom: 2px;
+}
+.simplebar-track.horizontal {
+    left: 0;
+    width: auto;
+    height: 11px;
+}
+.simplebar-track.horizontal .simplebar-scrollbar:before {
+    height: 100%;
+    left: 2px;
+    right: 2px;
+}
+.horizontal.simplebar-track .simplebar-scrollbar {
+    right: auto;
+    left: 0;
+    top: 2px;
+    height: 7px;
+    min-height: 0;
+    min-width: 10px;
+    width: auto;
+}
+
+/* Rtl support */
+[data-simplebar-direction="rtl"] .simplebar-track {
+    right: auto;
+    left: 0;
+}
+[data-simplebar-direction="rtl"] .simplebar-track.horizontal {
+    right: 0;
+}
+
+
+
+h3[data-v-08414447] {
+  margin: 40px 0 0;
+}
+ul[data-v-08414447] {
+  list-style-type: none;
+  padding: 0;
+}
+li[data-v-08414447] {
+  display: inline-block;
+  margin: 0 10px;
+}
+a[data-v-08414447] {
+  color: #42b983;
+}
+

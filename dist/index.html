@@ -12,6 +12,19 @@
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.2.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Slab" rel="stylesheet">
+
+  <style>
+    .oswald {
+      font-family: 'Oswald', sans-serif;
+
+    }
+
+    .roboto {
+      font-family: 'Roboto Slab', serif;
+    }
+
+  </style>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -19,86 +32,48 @@
 <link href="styles/app.css" rel="stylesheet"><link href="styles/router.css" rel="stylesheet"></head>
 
 <body id="body" class="content">
-
-  <nav class="navbar elm-bg-whitesmoke" role="navigation" aria-label="main navigation">
-    <div class="container is-size-7 is-uppercase">
-      <a class="navbar-item" href="/">Home</a>
-      <a class="navbar-item" href="#bt-page-component">Components</a>
+  <header>
+    <div class="cover has-text-centered">
+      <img src="/images/blacktie-1.jpg" alt="">
     </div>
-  </nav>
-
+  </header>
   <main>
     <div class="container">
-      <div class="section">
-        <h1 class="title is-1" data-module="example">
-          <a href="/">BlackTie</a>
-          <small class="is-size-6 is-uppercase elm-color-gray">A small UI toolkit</small>
-        </h1>
-      </div>
-    </div>
 
-    <div class="">
-      <div id="routes">
-      </div>
-
-    </div>
-    <div class="container">
-      <div id="components-demo">
-        <button-counter></button-counter>
-        <button-counter></button-counter>
-        <button-counter></button-counter>
-      </div>
-    </div>
-
-
-    <bt-page default-page="bt-landing-page"></bt-page>
-  </main>
-  <footer class="elm-bg-gray-dark">
-    <section class="container section elm-color-lightgray">
       <div class="columns">
         <div class="column">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quis eius, modi natus magni numquam! Quae recusandae enim
-            alias modi?
-          </p>
+          <div class="hl-xxl title has-text-centered oswald is-uppercase">BlackTie</div>
         </div>
-
         <div class="column">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quis eius, modi natus magni numquam! Quae recusandae enim
-            alias modi?...
-          </p>
+          <p class="is-size-5 elm-color-gray">
+              <span class="is-uppercase">BlackTie</span> is a framework agnostic reusable collection of drop in UX/UI patterns, libraries and tools created to make it easy to customize and enhance FrontEnd frameworks like bootstrap, Bulma etc, adding missing utilities, elements and components.
+      </p>
+      <div class="section-off">
+          <div class="has-text-right">
+            <a href="/guide" class="support-links button is-large is-dark is-rounded oswald elm-width-half" target="_blank" >Guide</a>
+
+            <a href="https://github.com/shawn-sandy/blacktie" target="_blank" class="support-links button is-large is-rounded elm-quarter oswald is-outlined">Contribute</a>
+          </div>
         </div>
-
-        <div class="column">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quis eius, modi natus magni numquam! Quae recusandae enim
-            alias modi?
-          </p>
-        </div>
-
-        <div class="column">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quis eius, modi natus magni numquam! Quae recusandae enim
-            alias modi?
-          </p>
         </div>
       </div>
-    </section>
 
-    <div class="section elm-color-whitesmoke">
-      <p class="has-text-centered attributions col-xs-1">
-        Copyright / Attributions
       </p>
-
     </div>
+  </main>
+  <footer class="elm-bg-gray-dark-">
+    <hr/>
+      <div class="section elm-color-whitesmoke-">
 
-    <bt-scroll-up>
-      <svg id="i-chevron-top" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round"
-        stroke-linejoin="round" stroke-width="3">
-        <path d="M30 20 L16 8 2 20" />
-      </svg>
-    </bt-scroll-up>
+      <div class="has-text-centered text-uppercase attributions col-xs-1 is-size-6">
+
+          <a href="https://github.com/shawn-sandy/blacktie" target="_blank" class="support-links button is-rounded"> Github </a>
+
+          <a href="/guide" class="support-links button is-rounded" target="_blank" > Documentation </a>
+
+          <button class="button is-rounded">Beta</button>
+      </div>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/svg4everybody@2.1.9/dist/svg4everybody.min.js"></script>
