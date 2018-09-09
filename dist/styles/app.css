@@ -867,3 +867,7 @@ html {
       font-size: 21px;
       font-size: 1.3125rem; } }
 
+body {
+  padding: 1.25rem;
+  border-bottom: 20px #2E3338 solid; }
+

@@ -36,19 +36,6 @@ export default {
 </axios-service>
 ```
 
-```jsx
-<axios-service url="https://api.github.com/repos/shawn-sandy/blacktie/commits">
-  <template slot-scope="{ response, loading }">
-    <pre>
-      <code>
-        {{ response.data }}
-      </code>
-    </pre>
-  </template>
-</axios-service>
-```
-
-
 **Set the Url to api**
 
 Connect to the
