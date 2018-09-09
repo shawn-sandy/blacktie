@@ -1,0 +1,27 @@
+{
+  "name": "blacktie-buttons",
+  "version": "0.0.1",
+  "description": "POI vue Starter for rapid project development in Vue.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "poi src/index.js",
+    "build": "poi build src/index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bulma": "^0.7.1",
+    "node-sass": "^4.7.2",
+    "poi": "^9.6.1",
+    "sass-loader": "^6.0.6",
+    "vue-loader": "^13.7.0",
+    "vue-styleguidist": "^1.7.13",
+    "webpack-bundle-analyzer": "^2.13.1"
+  },
+  "dependencies": {
+    "blacktie-elements": "^0.1.0",
+    "blacktie-styles": "^0.0.2",
+    "vue": "^2.5.16",
+    "vue-styleguidist": "1.7.8"
+  }
+}

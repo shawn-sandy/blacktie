@@ -65,16 +65,25 @@ gulp.task("new:page", () => {
   scaffold("pages", "pages")
 })
 
+gulp.task("vue-component", () => {
+  scaffold("vue-poi")
+})
+
 gulp.task("new:component", () => {
   scaffold("vue-template")
 })
+
+gulp.task('scaffold:vue', ['new:component'], () => {})
+
+gulp.task('scaffold:component', ['vue-component'], () => {})
 
 const scaffold = (sourceFolder, targetFolder = 'packages') => {
   let packageName = arg.name || arg.n
   let packageTitle = capitalize(packageName.replace('-', ' '))
   const dirs = [
     `scaffolds/${sourceFolder}/**/*`,
-    `scaffolds/${sourceFolder}/.*`
+    `scaffolds/${sourceFolder}/.*`,
+    `scaffolds/${sourceFolder}/*.*`
   ]
   gulp.src(dirs, {
       'base': `./scaffolds/${sourceFolder}`

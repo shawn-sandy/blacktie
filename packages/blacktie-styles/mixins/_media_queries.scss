@@ -1,21 +1,6 @@
 
-// Small tablets and large smartphones (landscape view)
-$phone: 576px;
 
-// Small tablets (portrait view)
-$mobile: 768px;
-
-// Tablets and small desktops
-$tablet: 992px;
-
-// Large tablets and desktops
-$laptop: 1200px;
-
-// desktop
-$desktop: 1600px;
-
-// hd screens
-$hd: 1800;
+@import  "../base/variables";
 
 
 @mixin phone {
@@ -46,14 +31,14 @@ $hd: 1800;
 
 // XXLarge devices desktops
 @mixin desktop {
-  @media (min-width: #{$desktop}) {
+  @media (min-width: $desktop) {
       @content;
   }
 }
 
 // hdlarge devices
 @mixin hd {
-  @media (min-width: #{$hd}) {
+  @media (min-width: $hd) {
       @content;
   }
 }

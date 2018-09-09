@@ -12,3 +12,23 @@ body {
   }
 
 }
+
+.hl-sm {
+  @include fontSize(28px)
+}
+
+.hl-md {
+  @include fontSize(26px)
+}
+
+.hl-lg {
+  @include fontSize(48px)
+}
+
+.hl-xl {
+  @include fontSize(61px)
+}
+
+.hl-xxl {
+  @include fontSize(80px)
+}

@@ -1,17 +1,23 @@
 <template>
-  <div class="bt-component stage">
+  <div class="bt stage">
     <div :class="`dot-${loadingStyle}`"></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'LoadingDots',
+  name: "LoadingDots",
   props: {
+    /**
+     * The name of the class selector
+     */
     loadingStyle: {
       type: String,
-      default: 'floating'
+      default: "floating"
     }
   }
-}
+};
 </script>
+<style lang="scss">
+
+</style>

@@ -1,3 +1,7 @@
+@import "~blacktie-styles/mixins/mixins";
+@import "~blacktie-styles/base/variables";
 body {
-	background-color: aliceblue;
+  // background-color: aliceblue;
+  padding: rem-calc(20px);
+  border-bottom: 20px $gray-dark solid;
 }

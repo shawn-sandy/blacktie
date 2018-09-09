@@ -1,4 +1,4 @@
-
+@import "~sass-rem";
 @mixin color_sets($color_sets) {
   @each $name, $color in ($color_set) {
     .elm-color-#{$name} {
@@ -20,7 +20,7 @@
 
 @mixin fontSize($size) {
   font-size: $size; //Fallback in px
-  font-size: rem-calc($size);
+  font-size: rem($size);
 }
 
 @mixin placeholder() {

@@ -1,4 +1,5 @@
-import "./stylesheets/app.scss"
+import "blacktie-styles/app.scss"
+import "./css/styles.scss"
 
 
 // let test = new TestClass();

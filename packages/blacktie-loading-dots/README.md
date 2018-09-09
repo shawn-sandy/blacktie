@@ -1,4 +1,4 @@
-# BlackTie loading dots
+# BlackTie loading dots (beta)
 
 Really cool animated loading dots for use in your Vue.js apps, powered by [Three dots](https://github.com/nzbin/three-dots) a dot animation library.
 

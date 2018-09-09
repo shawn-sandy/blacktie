@@ -1,0 +1,41 @@
+{
+  "name": "blacktie-img",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "src/components/Index.vue",
+  "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/packages/blacktie-img",
+  "license": "MIT",
+  "author": {
+    "name": "Shawn Sandy",
+    "email": "shawnsandy04@gmail.com",
+    "url": "http://shawnsandy.design"
+  },
+  "dependencies": {
+    "blacktie-elements": "^0.1.0",
+    "blacktie-styles": "^0.0.2",
+    "vue": "^2.5.16",
+    "vue-styleguidist": "1.7.8"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-beta.15",
+    "@vue/cli-plugin-eslint": "^3.0.0-beta.15",
+    "@vue/cli-service": "^3.0.0-beta.15",
+    "@vue/eslint-config-standard": "^3.0.0-rc.3",
+    "blacktie-styles": "^0.0.1",
+    "bulma": "^0.7.1",
+    "file-loader": "^1.1.11",
+    "vue-styleguidist": "^1.7.13",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
