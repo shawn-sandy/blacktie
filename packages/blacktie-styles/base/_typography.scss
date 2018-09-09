@@ -13,22 +13,22 @@ body {
 
 }
 
-.hl-sm {
-  @include fontSize(28px)
+.fs-show-sm {
+  @include fontSize(36px)
 }
 
-.hl-md {
-  @include fontSize(26px)
-}
-
-.hl-lg {
+.fs-show-md {
   @include fontSize(48px)
 }
 
-.hl-xl {
-  @include fontSize(61px)
+.fs-show-lg {
+  @include fontSize(56px)
 }
 
-.hl-xxl {
-  @include fontSize(80px)
+.fs-show-xl {
+  @include fontSize(70px)
+}
+
+.fs-show-xxl {
+  @include fontSize(81px)
 }

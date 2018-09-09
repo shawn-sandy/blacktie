@@ -6,6 +6,7 @@ const OptimizeCss = require('optimize-css-assets-webpack-plugin')
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const Copy = require('copy-webpack-plugin')
+const Favicons = require('favicons-webpack-plugin')
 
 
 const HOST = process.env.HOST || 'localhost';
@@ -96,7 +97,10 @@ const config = (env, argv) => ({
     new Copy([{
       from: __dirname + "/src/images/",
       to: __dirname + "/dist/images"
-    }])
+    }]),
+    new Favicons({
+      logo: "./src/images/blk-logo.png"
+    })
   ],
 
 });
