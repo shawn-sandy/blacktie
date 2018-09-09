@@ -1,5 +1,14 @@
 @import "~blacktie-styles/mixins/mixins";
 @import "~blacktie-styles/base/variables";
+
+$colors :(
+  "primary": #2B3338
+);
+
+html {
+  @include generateColors($colors)
+}
+
 body {
   // background-color: aliceblue;
   padding: rem-calc(20px);
