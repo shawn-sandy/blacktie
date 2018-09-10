@@ -1,5 +1,5 @@
 <template>
-  <button class="">
+  <button class="button-elm">
     <!-- @slot Use this slot to place the button content -->
     <slot>Button</slot>
   </button>
@@ -11,7 +11,7 @@
  */
 export default {
   name: 'AppButton',
-  inheritAttrs: false,
+  // inheritAttrs: false,
   props: {
     /**
      * Sets the button font color
@@ -37,11 +37,9 @@ export default {
       }
     }
   },
-  methods: {
-
-  }
+  methods: {}
 }
 </script>
 <style lang="scss" scoped>
-@import './scss/app-button.scss'
+@import './scss/app-button.scss';
 </style>
