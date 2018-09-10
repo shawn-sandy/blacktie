@@ -21,7 +21,7 @@ export default {
       default: 'https://api.github.com/users/shawn-sandy'
     }
   },
-  data: function () {
+  data () {
     return {
       response: [],
       loading: true,

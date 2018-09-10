@@ -887,53 +887,77 @@ html {
       font-size: 21px;
       font-size: 1.3125rem; } }
 
-html .elm-color-primary {
+* .elm-color-primary {
   color: #2B3338; }
 
-html .elm-color-primary:hover {
+* .elm-color-primary:hover {
   color: #2B3338; }
 
-html .elm-border-primary {
+* .elm-border-primary {
   border-color: #2B3338; }
-  html .elm-border-primary:hover {
+  * .elm-border-primary:hover {
     color: #15191b; }
 
-html .elm-bg-primary {
+* .elm-bg-primary {
   background-color: #2B3338; }
-  html .elm-bg-primary:hover {
+  * .elm-bg-primary:hover {
     background-color: #15191b; }
 
-html .elm-bg-primary:hover {
+* .elm-bg-primary:hover {
   background-color: #2B3338; }
-  html .elm-bg-primary:hover:hover {
+  * .elm-bg-primary:hover:hover {
     background-color: #15191b; }
 
-html .elm-stroke-primary {
+* .elm-stroke-primary {
   stroke: #2B3338; }
 
-html .elm-color-electric-blue {
+* .elm-color-electric-blue {
   color: #51677A; }
 
-html .elm-color-electric-blue:hover {
+* .elm-color-electric-blue:hover {
   color: #51677A; }
 
-html .elm-border-electric-blue {
+* .elm-border-electric-blue {
   border-color: #51677A; }
-  html .elm-border-electric-blue:hover {
+  * .elm-border-electric-blue:hover {
     color: #3d4d5b; }
 
-html .elm-bg-electric-blue {
+* .elm-bg-electric-blue {
   background-color: #51677A; }
-  html .elm-bg-electric-blue:hover {
+  * .elm-bg-electric-blue:hover {
     background-color: #3d4d5b; }
 
-html .elm-bg-electric-blue:hover {
+* .elm-bg-electric-blue:hover {
   background-color: #51677A; }
-  html .elm-bg-electric-blue:hover:hover {
+  * .elm-bg-electric-blue:hover:hover {
     background-color: #3d4d5b; }
 
-html .elm-stroke-electric-blue {
+* .elm-stroke-electric-blue {
   stroke: #51677A; }
+
+* .elm-color-smoke {
+  color: whitesmoke; }
+
+* .elm-color-smoke:hover {
+  color: whitesmoke; }
+
+* .elm-border-smoke {
+  border-color: whitesmoke; }
+  * .elm-border-smoke:hover {
+    color: gainsboro; }
+
+* .elm-bg-smoke {
+  background-color: whitesmoke; }
+  * .elm-bg-smoke:hover {
+    background-color: gainsboro; }
+
+* .elm-bg-smoke:hover {
+  background-color: whitesmoke; }
+  * .elm-bg-smoke:hover:hover {
+    background-color: gainsboro; }
+
+* .elm-stroke-smoke {
+  stroke: whitesmoke; }
 
 body {
   padding: 1.25rem;

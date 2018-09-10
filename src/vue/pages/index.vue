@@ -47,9 +47,10 @@
 
 
 <script>
-import BlacktieLoadingDots from 'blacktie-loading-dots';
+const BlacktieLoadingDots = () => require('blacktie-loading-dots');
 import CoverImg from 'blacktie-img/src/CoverImg.vue';
 import AxiosService from 'blacktie-services/src/components/AxiosService.vue'
+
 
 export default {
   name: 'PageContent',
