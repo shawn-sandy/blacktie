@@ -10,7 +10,7 @@
 
 ``` jsx
 <p>
-<app-button class="rounded button-large" ></app-button>
+<app-button class="rounded button-lg" ></app-button>
 </p>
 ```
 
