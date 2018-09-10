@@ -11,11 +11,11 @@ module.exports = {
     maxWidth: "80%",
     sidebarWidth: 350,
     color: {
-      link: "#FFF",
+      link: "#79838A",
       linkHover: "rgb(70, 69, 171)",
       sidebarBackground: "#333333",
       errorBackground: "#e22d44",
-      name: "#FFF"
+      name: "#2176D7"
     }
   },
   require: [
