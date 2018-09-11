@@ -1,6 +1,6 @@
 @import '~sass-rem';
 
-.button-elm {
+.button-elm, a.button-elm {
   display: inline-block;
   border: none;
   padding: rem(14px 28px);
@@ -41,13 +41,13 @@
   transform: scale(0.98);
 }
 
-.button-elm.rounded {
+.button-elm.elm-rounded {
 
   border-radius: rem(100px);
 
 }
 
-.button-elm.button-lg {
+.button-elm.button-elm-lg {
   font-size: rem(24px);
    padding: rem(14px 48px);
 }

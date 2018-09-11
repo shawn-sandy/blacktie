@@ -1,7 +1,7 @@
 <template>
   <button class="button-elm">
-    <!-- @slot Use this slot to place the button content -->
-    <slot>Button</slot>
+    <!-- @slot Use the slot to place the button content -->
+    <slot>Click Here</slot>
   </button>
 </template>
 
@@ -10,7 +10,7 @@
  *  Custom button element (WIP)
  */
 export default {
-  name: 'AppButton',
+  name: 'ButtonElm',
   // inheritAttrs: false,
   props: {
     /**
@@ -40,6 +40,6 @@ export default {
   methods: {}
 }
 </script>
-<style lang="scss" scoped>
-@import './scss/app-button.scss';
+<style lang="scss">
+@import '../scss/style.scss';
 </style>
