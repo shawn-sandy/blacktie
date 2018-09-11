@@ -963,3 +963,7 @@ body {
   padding: 1.25rem;
   border-bottom: 20px #2E3338 solid; }
 
+.support-links.button.is-active, .support-links.button:active {
+  border-color: #4a4a4a;
+  color: whitesmoke; }
+
