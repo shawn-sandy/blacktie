@@ -13,9 +13,10 @@ module.exports = {
     color: {
       link: "#79838A",
       linkHover: "rgb(70, 69, 171)",
-      sidebarBackground: "#333333",
+      sidebarBackground: "#FFFFFF",
+      border: "#51677A",
       errorBackground: "#e22d44",
-      name: "#2176D7"
+      name: "#2B3338"
     }
   },
   require: [
@@ -24,7 +25,7 @@ module.exports = {
   styles: {
     Logo: {
       logo: {
-        color: "#fff",
+        color: "#2B3338",
         fontSize: 20
       }
     }
