@@ -967,3 +967,6 @@ body {
   border-color: #4a4a4a;
   color: whitesmoke; }
 
+.button:focus:not(:active) {
+  color: #ffffff; }
+
