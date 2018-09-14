@@ -3,10 +3,34 @@ module.exports = {
   components: 'packages/**/src/components/*.vue',
   styleguideDir: './dist/guide/',
   usageMode: 'expand',
+  exampleMode: 'expand',
   title: 'BlackTie Components',
   pagePerSection: true,
   skipComponentsWithoutExample: true,
   serverPort: 6069,
+  highlightTheme: 'oceanic-next',
+  editorConfig: {
+    type: 'object',
+    process: (value, config) => {
+      const defaults = {
+        theme: 'twilight',
+        mode: 'jsx',
+        lineWrapping: true,
+        smartIndent: false,
+        matchBrackets: true,
+        viewportMargin: Infinity,
+        lineNumbers: true
+      }
+      return Object.assign(
+        {},
+        defaults,
+        config.highlightTheme && {
+          theme: config.highlightTheme
+        },
+        value
+      )
+    }
+  },
   theme: {
     maxWidth: '80%',
     sidebarWidth: 350,

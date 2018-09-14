@@ -1,53 +1,46 @@
-const gulp = require("gulp");
-const print = require("gulp-print").default
-const reports = require("gulp-sizereport");
+const gulp = require('gulp')
+const print = require('gulp-print').default
+const reports = require('gulp-sizereport')
 const replace = require('gulp-string-replace')
 
 // fetch command line arguments
 const arg = (argList => {
-
   let arg = {},
-    a, opt, thisOpt, curOpt;
+    a,
+    opt,
+    thisOpt,
+    curOpt
   for (a = 0; a < argList.length; a++) {
-
-    thisOpt = argList[a].trim();
-    opt = thisOpt.replace(/^\-+/, '');
+    thisOpt = argList[a].trim()
+    opt = thisOpt.replace(/^\-+/, '')
 
     if (opt === thisOpt) {
-
       // argument value
-      if (curOpt) arg[curOpt] = opt;
-      curOpt = null;
-
+      if (curOpt) arg[curOpt] = opt
+      curOpt = null
     } else {
-
       // argument name
-      curOpt = opt;
-      arg[curOpt] = true;
-
+      curOpt = opt
+      arg[curOpt] = true
     }
-
   }
 
-  return arg;
-
+  return arg
 })(process.argv)
 
-gulp.task('default', function () {
+gulp.task('default', function() {
   console.log('Gulp default')
 })
 
-gulp.task("reports", () =>
-  gulp.src("./dist/**/*.*")
-  .pipe(reports({
-    gzip: true
-  }))
-);
+gulp.task('reports', () =>
+  gulp.src('./dist/**/*.*').pipe(
+    reports({
+      gzip: true
+    })
+  )
+)
 
-gulp.task('riot-html', () => {
-
-})
-
+gulp.task('riot-html', () => {})
 
 /**
  * Scaffold for components, pages
@@ -61,16 +54,16 @@ gulp.task('riot-html', () => {
 //   scaffold('component')
 // })
 
-gulp.task("new:page", () => {
-  scaffold("pages", "pages")
+gulp.task('new:page', () => {
+  scaffold('pages', 'pages')
 })
 
-gulp.task("vue-component", () => {
-  scaffold("vue-poi")
+gulp.task('vue-component', () => {
+  scaffold('vue-poi')
 })
 
-gulp.task("new:component", () => {
-  scaffold("vue-template")
+gulp.task('new:component', () => {
+  scaffold('vue-template')
 })
 
 gulp.task('scaffold:vue', ['new:component'], () => {})
@@ -85,8 +78,9 @@ const scaffold = (sourceFolder, targetFolder = 'packages') => {
     `scaffolds/${sourceFolder}/.*`,
     `scaffolds/${sourceFolder}/*.*`
   ]
-  gulp.src(dirs, {
-      'base': `./scaffolds/${sourceFolder}`
+  gulp
+    .src(dirs, {
+      base: `./scaffolds/${sourceFolder}`
     })
     .pipe(replace('package-name', packageName))
     .pipe(replace('package-title', packageTitle))
@@ -94,10 +88,10 @@ const scaffold = (sourceFolder, targetFolder = 'packages') => {
     .pipe(print())
 }
 
-const capitalize = function (str) {
-  str = str.toLowerCase().split(' ');
+const capitalize = function(str) {
+  str = str.toLowerCase().split(' ')
   for (var i = 0; i < str.length; i++) {
-    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1)
   }
-  return str.join(' ');
-};
+  return str.join(' ')
+}
