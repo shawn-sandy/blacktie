@@ -39,6 +39,7 @@
     "access": "public"
   },
   "devDependencies": {
+    "@vue/eslint-config-prettier": "^3.0.3",
     "blacktie-styles": "^0.0.1",
     "vue-styleguidist": "^1.7.13"
   }
