@@ -959,14 +959,20 @@ html {
 * .elm-stroke-smoke {
   stroke: whitesmoke; }
 
+.oswald {
+  font-family: 'Oswald', sans-serif; }
+
+.roboto {
+  font-family: 'Roboto Slab', serif; }
+
 body {
   padding: 1.25rem;
   border-bottom: 20px #2E3338 solid; }
 
 .support-links.button.is-active, .support-links.button:active {
   border-color: #4a4a4a;
-  color: whitesmoke; }
+  color: lightgray; }
 
 .button:focus:not(:active) {
-  color: #ffffff; }
+  color: lightgrey; }
 

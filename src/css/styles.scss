@@ -11,6 +11,16 @@ $colors :(
   @include generateColors($colors)
 }
 
+.oswald {
+  font-family: 'Oswald', sans-serif;
+
+}
+
+.roboto {
+  font-family: 'Roboto Slab', serif;
+}
+
+
 body {
   // background-color: aliceblue;
   padding: rem-calc(20px);
@@ -20,9 +30,9 @@ body {
 
 .support-links.button.is-active, .support-links.button:active {
   border-color: #4a4a4a;
-  color: whitesmoke;
+  color: lightgray;
 }
 
 .button:focus:not(:active) {
-  color: #ffffff
+  color: lightgrey
 }
