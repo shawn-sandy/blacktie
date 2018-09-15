@@ -1,0 +1,16 @@
+{
+  "basePath": "https://github.com/shawn-sandy/blacktie",
+  "shortcutIcon": "assets/images/favicon.png",
+  "display": {
+    "access": ["public", "private"],
+    "alias": false,
+    "watermark": true
+  },
+
+  "package": "./package.json",
+  "theme": "default",
+  "groups": {
+    "undefined": "General"
+  }
+
+}

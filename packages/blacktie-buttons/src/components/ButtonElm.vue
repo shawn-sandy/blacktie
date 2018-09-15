@@ -1,7 +1,11 @@
 <template>
   <button class="button-elm">
+    <!-- @slot use to place icon form button -->
+    <div slot="icons" class="elm-inline" :class="iconClass"></div>
     <!-- @slot Use the slot to place the button content -->
-    <slot>Click Here</slot>
+    <div slot class="elm-inline" :class="iconClass">
+    Click Here
+    </div>
   </button>
 </template>
 
@@ -26,6 +30,12 @@ export default {
     background: {
       type: String,
       default: 'white'
+    },
+    /**
+     * Icon class
+     */
+    iconClass: {
+      type: String
     }
   },
   computed: {

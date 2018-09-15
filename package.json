@@ -16,7 +16,8 @@
     "docs:build": "vuepress build docs",
     "content": "eleventy --serve",
     "content:build": "eleventy",
-    "build:production": "yarn build && yarn styleguide:build"
+    "build:production": "yarn build && yarn styleguide:build",
+    "sassdocs": "sassdoc packages/blacktie-styles/**/*.scss --config .sassdoc.json"
   },
   "repository": "https://github.com/shawnsandy/blacktie.git",
   "keywords": [
@@ -83,6 +84,8 @@
     "postcss-loader": "^2.1.0",
     "raw-loader": "^0.5.1",
     "sass-rem": "^2.0.1",
+    "sassdoc-theme-flippant": "^0.1.0",
+    "sassdoc-theme-neat": "^0.0.2",
     "smooth-scroll": "^12.1.5",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.1.5",
