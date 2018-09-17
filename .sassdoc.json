@@ -1,6 +1,6 @@
 {
   "basePath": "https://github.com/shawn-sandy/blacktie",
-  "shortcutIcon": "assets/images/favicon.png",
+  "dest": "./dist/sassdocs",
   "display": {
     "access": ["public", "private"],
     "alias": false,
