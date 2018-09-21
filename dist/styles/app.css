@@ -887,77 +887,65 @@ html {
       font-size: 21px;
       font-size: 1.3125rem; } }
 
-* .elm-color-primary {
-  color: #2B3338; }
+.text-red {
+  color: #ff3538; }
 
-* .elm-color-primary:hover {
-  color: #2B3338; }
+.text-grey {
+  color: #404145; }
 
-* .elm-border-primary {
-  border-color: #2B3338; }
-  * .elm-border-primary:hover {
-    color: #15191b; }
+.text-grey:light {
+  color: #c7c7cd; }
 
-* .elm-bg-primary {
-  background-color: #2B3338; }
-  * .elm-bg-primary:hover {
-    background-color: #15191b; }
+.text-yellow {
+  color: #ecaf2d; }
 
-* .elm-bg-primary:hover {
-  background-color: #2B3338; }
-  * .elm-bg-primary:hover:hover {
-    background-color: #15191b; }
+.text-green {
+  color: #5ad864; }
 
-* .elm-stroke-primary {
-  stroke: #2B3338; }
+.text-small {
+  font-size: 0.75rem; }
 
-* .elm-color-electric-blue {
-  color: #51677A; }
+.text-medium {
+  font-size: 0.875rem; }
 
-* .elm-color-electric-blue:hover {
-  color: #51677A; }
+.text-large {
+  font-size: 1rem; }
 
-* .elm-border-electric-blue {
-  border-color: #51677A; }
-  * .elm-border-electric-blue:hover {
-    color: #3d4d5b; }
+.text-x-large {
+  font-size: 1.125rem; }
 
-* .elm-bg-electric-blue {
-  background-color: #51677A; }
-  * .elm-bg-electric-blue:hover {
-    background-color: #3d4d5b; }
+.text-xx-large {
+  font-size: 1.25rem; }
 
-* .elm-bg-electric-blue:hover {
-  background-color: #51677A; }
-  * .elm-bg-electric-blue:hover:hover {
-    background-color: #3d4d5b; }
+.elm-red {
+  background-color: #ff3538;
+  color: #ffd7d7; }
+  .elm-red:hover {
+    background-color: #ff1c1f; }
 
-* .elm-stroke-electric-blue {
-  stroke: #51677A; }
+.elm-grey {
+  background-color: #404145;
+  color: #ececec; }
+  .elm-grey:hover {
+    background-color: #343538; }
 
-* .elm-color-smoke {
-  color: whitesmoke; }
+.elm-grey:light {
+  background-color: #c7c7cd;
+  color: #f4f4f5; }
+  .elm-grey:light:hover {
+    background-color: #babac1; }
 
-* .elm-color-smoke:hover {
-  color: whitesmoke; }
+.elm-yellow {
+  background-color: #ecaf2d;
+  color: #fbefd5; }
+  .elm-yellow:hover {
+    background-color: #eaa616; }
 
-* .elm-border-smoke {
-  border-color: whitesmoke; }
-  * .elm-border-smoke:hover {
-    color: gainsboro; }
-
-* .elm-bg-smoke {
-  background-color: whitesmoke; }
-  * .elm-bg-smoke:hover {
-    background-color: gainsboro; }
-
-* .elm-bg-smoke:hover {
-  background-color: whitesmoke; }
-  * .elm-bg-smoke:hover:hover {
-    background-color: gainsboro; }
-
-* .elm-stroke-smoke {
-  stroke: whitesmoke; }
+.elm-green {
+  background-color: #5ad864;
+  color: #def7e0; }
+  .elm-green:hover {
+    background-color: #45d351; }
 
 .oswald {
   font-family: 'Oswald', sans-serif; }
