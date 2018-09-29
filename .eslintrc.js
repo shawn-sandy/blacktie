@@ -1,18 +1,27 @@
 module.exports = {
   root: true,
+
   env: {
     node: true
   },
-  'extends': [
-    'plugin:vue/essential',
-    'plugin:prettier/recommended', // we added this line
-    '@vue/prettier'
-  ],
+
+  extends: ["plugin:vue/essential", "@vue/prettier"],
+
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-console': 'off',
+    'no-debugger': 'off',
+    'vue/no-use-v-if-with-v-for': 'warning',
+    'vue/no-v-html': 'warning',
+    'vue/prop-name-casing': 'warning',
+    'vue/script-indent': 'warning'
   },
+
   parserOptions: {
     parser: 'babel-eslint'
-  }
-}
+  },
+
+  'extends': [
+    'plugin:vue/essential',
+    '@vue/prettier'
+  ]
+};
