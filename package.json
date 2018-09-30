@@ -20,7 +20,12 @@
     "@vue/cli-plugin-pwa": "^3.0.4",
     "@vue/cli-service": "^3.0.4",
     "@vue/eslint-config-prettier": "^3.0.4",
-    "lerna": "^2.11.0",
+    "gulp": "^3.9.1",
+    "gulp-copy": "^4.0.0",
+    "gulp-print": "^5.0.0",
+    "gulp-sizereport": "^1.2.0",
+    "gulp-string-replace": "^1.1.1",
+    "lerna": "^3.4.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.17"
