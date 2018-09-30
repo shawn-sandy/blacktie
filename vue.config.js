@@ -7,7 +7,7 @@ module.exports = {
     sourceMap: true
   },
 
-  lintOnSave: true,
+  lintOnSave: process.env.NODE_ENV !== 'production',
   configureWebpack: {
     plugins: [
       new Copy([
@@ -16,9 +16,27 @@ module.exports = {
           to: __dirname + '/dist/images'
         }
       ]),
+      new Copy([
+        {
+          from: __dirname + '/eleventy/content/',
+          to: __dirname + '/dist/content'
+        }
+      ]),
+      new Copy([
+        {
+          from: __dirname + '/guide',
+          to: __dirname + '/dist/guide'
+        }
+      ]),
       new Favicons({
         logo: './src/images/blk-logo.png'
       })
     ]
+  },
+  devServer: {
+    overlay: {
+      warnings: true,
+      errors: true
+    }
   }
 }
