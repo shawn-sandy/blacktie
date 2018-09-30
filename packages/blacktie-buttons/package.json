@@ -10,10 +10,13 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@vue/eslint-config-prettier": "^3.0.3",
     "bulma": "^0.7.1",
     "node-sass": "^4.7.2",
     "poi": "^9.6.1",
     "sass-loader": "^6.0.6",
+    "sass-rem": "^2.0.1",
+    "sassdoc": "^2.5.0",
     "vue-loader": "^13.7.0",
     "vue-styleguidist": "^1.7.13",
     "webpack-bundle-analyzer": "^2.13.1"

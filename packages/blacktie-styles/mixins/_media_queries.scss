@@ -2,27 +2,27 @@
 
 @import  "../base/variables";
 
-
+/// Mixin for mobile devices
 @mixin phone {
 	@media (max-width: $phone) {
       @content;
   }
 }
 
-// Medium devices
+/// Medium devices
 @mixin mobile {
   @media (min-width: #{$mobile}) {
       @content;
   }
 }
 
-// XLarge devices
+/// XLarge devices
 @mixin tablet {
   @media (min-width: #{$tablet}) {
       @content;
   }
 }
-// XXLarge devices
+/// XXLarge devices
 @mixin laptop {
   @media (min-width: $laptop) {
       @content;

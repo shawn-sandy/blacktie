@@ -1,5 +1,5 @@
 <template>
-  <a :href="url" class="button-elm">
+  <a href="#" class="button-elm">
     <!-- @slot Button label / content icons etc -->
     <slot>
     Click Here
@@ -9,21 +9,10 @@
 
 <script>
 export default {
-  name: "UrlButtonElm",
-  inheritAttrs: false,
-  props: {
-    /**
-     * Url for button
-     */
-    url: {
-      default: "#"
-    }
-  }
-
-
+  name: 'UrlButtonElm'
 }
 </script>
 
 <style lang="scss">
-@import "../scss/style.scss";
+@import '../scss/style.scss';
 </style>

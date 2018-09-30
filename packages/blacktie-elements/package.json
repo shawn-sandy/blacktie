@@ -18,10 +18,13 @@
     "@vue/cli-plugin-babel": "^3.0.0-beta.15",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.15",
     "@vue/cli-service": "^3.0.0-beta.15",
+    "@vue/eslint-config-prettier": "^3.0.3",
     "@vue/eslint-config-standard": "^3.0.0-rc.3",
     "blacktie-styles": "^0.0.1",
     "bulma": "^0.7.1",
     "file-loader": "^1.1.11",
+    "sass-rem": "^2.0.1",
+    "sassdoc": "^2.5.0",
     "vue-styleguidist": "^1.7.13",
     "vue-template-compiler": "^2.5.16"
   },

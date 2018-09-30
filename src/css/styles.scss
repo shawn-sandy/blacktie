@@ -7,10 +7,20 @@ $colors :(
   "smoke": whitesmoke
 );
 
-* {
-  @include generateColors($colors)
+
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
+
 }
 
+.roboto {
+  font-family: 'Roboto Slab', serif;
+}
+
+/// Defines the body
+/// @param {*} 20px
+/// @param {*} ;border-bottom [20px$gray-darksolid;}]
 body {
   // background-color: aliceblue;
   padding: rem-calc(20px);
@@ -18,11 +28,13 @@ body {
 
 }
 
+/// Set the active style for support buttons
+///
 .support-links.button.is-active, .support-links.button:active {
   border-color: #4a4a4a;
-  color: whitesmoke;
+  color: lightgray;
 }
 
 .button:focus:not(:active) {
-  color: #ffffff
+  color: lightgrey
 }

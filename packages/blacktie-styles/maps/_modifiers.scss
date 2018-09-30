@@ -1,0 +1,63 @@
+// ----
+// Sass (v3.4.21)
+// Compass (v1.0.3)
+// ----
+
+// Sass modifiers mixin by Sarah Dayan
+// Generate All Your Utility Classes with Sass Maps: http://frontstuff.io/generate-all-your-utility-classes-with-sass-maps
+// http://frontstuff.io
+// https://github.com/sarahdayan
+@import "~sass-rem";
+$colors: (
+  red: #ff3538,
+  grey: (
+    base: #404145,
+    light: #c7c7cd
+  ),
+  yellow: (
+    base: #ecaf2d
+  ),
+  green: (
+    base: #5ad864
+  )
+);
+
+$font-sizes: (
+  small: rem(12px),
+  medium: rem(14px),
+  large: rem(16px),
+  x-large: rem(18px),
+  xx-large: rem(20px)
+);
+
+@mixin modifiers($map, $attribute, $prefix: '-', $separator: '-', $base: 'base') {
+  @each $key, $value in $map {
+    &#{if($key != $base, #{$prefix}#{$key}, '')} {
+      @if type-of($value) == 'map' {
+        @include modifiers($value, $attribute, $separator);
+      } @else if ( $attribute == 'elm') {
+        // #{$attribute}-color: $value;
+        background-color: $value;
+          @if(lightness($value) > 50) {
+            color: mix($value, #ffffff, 20%)
+          } @else {
+            color: mix($value, #fff, 10%)
+          }
+          &:hover {
+            background-color: darken($value, 5%);
+          }
+        } @else {
+        #{$attribute}: $value;
+        }
+    }
+  }
+}
+
+.text {
+  @include modifiers($colors, 'color', $separator: ':');
+  @include modifiers($font-sizes, 'font-size', '-');
+}
+
+.elm {
+  @include modifiers($colors, 'elm', $separator: ':');
+}
