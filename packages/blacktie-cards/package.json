@@ -41,6 +41,7 @@
   "devDependencies": {
     "@vue/eslint-config-prettier": "^3.0.3",
     "blacktie-styles": "^0.0.1",
+    "sass-rem": "^2.0.1",
     "sassdoc": "^2.5.0",
     "vue-styleguidist": "^1.7.13"
   }

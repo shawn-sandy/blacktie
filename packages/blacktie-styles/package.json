@@ -30,6 +30,7 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-sass": "^4.0.1",
+    "sass-rem": "^2.0.1",
     "sassdoc": "^2.5.0",
     "vue-styleguidist": "^1.7.13"
   }
