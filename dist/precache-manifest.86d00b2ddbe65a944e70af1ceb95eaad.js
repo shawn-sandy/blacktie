@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-16x16.png"
   },
   {
-    "revision": "b4ef6809bd2eae174b12",
-    "url": "/js/chunk-vendors.4d8a693c.js"
+    "revision": "199e7e61258fa50d94e2",
+    "url": "/js/chunk-vendors.6c3bb0e9.js"
   },
   {
     "revision": "8ccc27b27e4245f29569f31f1e0db9bb",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "5eb2535bccf79bf5ca40eaf471c3812d",
-    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_60x60.png"
+    "revision": "99c0166ce6e341a7cde1ae98f71afb86",
+    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_128x128.png"
   },
   {
     "revision": "e45bd9a96012a17122424396388547fb",
@@ -36,12 +36,12 @@ self.__precacheManifest = [
     "url": "/index-1.html"
   },
   {
-    "revision": "c37395473fefc83a248b647bf936a486",
+    "revision": "0f45f30591b198a3743fc06410dd16d5",
     "url": "/index.html"
   },
   {
-    "revision": "7b8a63418c34e9204bca0af9349ced52",
-    "url": "/iconstats-f25fe183176daa7d8c58.json"
+    "revision": "4b432e01e280e5bac257b67fbe1fc15a",
+    "url": "/iconstats-43222e2009c51c2c0c96.json"
   },
   {
     "revision": "29b12d41a6027f6cd0c8a71fd4f9ce5c",
@@ -72,6 +72,10 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1182x2208.png"
   },
   {
+    "revision": "9eabc2c89cb677d082248531d7f595b7",
+    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png"
+  },
+  {
     "revision": "d6c978184917795b6d35611b3631a6f5",
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png"
   },
@@ -80,20 +84,16 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-748x1024.png"
   },
   {
-    "revision": "9eabc2c89cb677d082248531d7f595b7",
-    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png"
+    "revision": "663cfafc615a8ad9ce955043e12c515e",
+    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png"
   },
   {
     "revision": "6c16d1117d364ae439e39844817cdd3d",
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x1096.png"
   },
   {
-    "revision": "663cfafc615a8ad9ce955043e12c515e",
-    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png"
-  },
-  {
-    "revision": "d84c0249d43cf7b26081",
-    "url": "/js/app.dce64bb2.js"
+    "revision": "4e95d5cd7c68c556a2e2",
+    "url": "/js/app.1e1b6b75.js"
   },
   {
     "revision": "abcf14f003aee399a6f9983dc46ca96c",
@@ -108,8 +108,8 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_512x512.png"
   },
   {
-    "revision": "99c0166ce6e341a7cde1ae98f71afb86",
-    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_128x128.png"
+    "revision": "5eb2535bccf79bf5ca40eaf471c3812d",
+    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_60x60.png"
   },
   {
     "revision": "2a6642ad6706957eddc225306c2ab288",
@@ -140,12 +140,12 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-152x152.png"
   },
   {
-    "revision": "69ce6a9cedb94d8673066ca0af926c14",
-    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-167x167.png"
-  },
-  {
     "revision": "bf299c20e61609706b153e80389b647b",
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-180x180.png"
+  },
+  {
+    "revision": "69ce6a9cedb94d8673066ca0af926c14",
+    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-167x167.png"
   },
   {
     "revision": "7fe3bfca6f0c1f367a7a9a3e01a7a46f",
@@ -180,11 +180,11 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-144x144.png"
   },
   {
-    "revision": "db87fe7c53f7c116a4528e7287da4e2f",
+    "revision": "e6d7219d8479ad4c279f76bde7341942",
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/.cache"
   },
   {
-    "revision": "d84c0249d43cf7b26081",
-    "url": "/css/app.dd8c17c8.css"
+    "revision": "4e95d5cd7c68c556a2e2",
+    "url": "/css/app.fb978b35.css"
   }
 ];

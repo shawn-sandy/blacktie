@@ -7,7 +7,9 @@ $colors :(
   "smoke": whitesmoke
 );
 
-
+* {
+  @include generateColors($colors)
+}
 
 .oswald {
   font-family: 'Oswald', sans-serif;

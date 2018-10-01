@@ -4,20 +4,21 @@ import './css/styles.scss'
 // let test = new TestClass();
 import { u } from 'umbrellajs'
 
-const validate = require('validate')
+//const validate = require('validate')
 const smoothScroll = require('smooth-scroll')
 
 /** simple and easy form validation */
-validate.init()
+//validate.init()
 
 /** scroll to anchors */
+// eslint-disable-next-line
 const scroll = new smoothScroll('a[href*="#"]')
 
 /**
  * Confirm actions before submit
  * Prompt user before deleting data
  */
-u('.confirm-actions').each((elm, i) => {
+u('.confirm-actions').each(elm => {
   if (elm) {
     // grab the default element html value
     const val = u(elm).html()
