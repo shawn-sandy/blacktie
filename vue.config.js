@@ -1,5 +1,8 @@
 const Copy = require('copy-webpack-plugin')
 const Favicons = require('favicons-webpack-plugin')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin
+
 module.exports = {
   runtimeCompiler: true,
 
@@ -30,6 +33,10 @@ module.exports = {
       ]),
       new Favicons({
         logo: './src/images/blk-logo.png'
+      }),
+      new BundleAnalyzerPlugin({
+        analyzerMode: 'disabled',
+        generateStatsFile: true
       })
     ]
   },
