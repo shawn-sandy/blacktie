@@ -31,12 +31,12 @@ module.exports = {
           to: __dirname + '/dist/guide'
         }
       ]),
-      new Favicons({
-        logo: './src/images/blk-logo.png'
-      }),
       new BundleAnalyzerPlugin({
         analyzerMode: 'disabled',
         generateStatsFile: true
+      }),
+      new Favicons({
+        logo: './src/images/blk-logo.png'
       })
     ]
   },
