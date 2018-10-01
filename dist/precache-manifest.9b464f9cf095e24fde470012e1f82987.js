@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "99c0166ce6e341a7cde1ae98f71afb86",
-    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_128x128.png"
+    "revision": "5eb2535bccf79bf5ca40eaf471c3812d",
+    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_60x60.png"
   },
   {
     "revision": "e45bd9a96012a17122424396388547fb",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/index.html"
   },
   {
-    "revision": "4b432e01e280e5bac257b67fbe1fc15a",
-    "url": "/iconstats-43222e2009c51c2c0c96.json"
+    "revision": "68c0c06e31558911465c1d4b36584d2a",
+    "url": "/iconstats-59399c54fa07ab104c2d.json"
   },
   {
     "revision": "29b12d41a6027f6cd0c8a71fd4f9ce5c",
@@ -84,12 +84,12 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-748x1024.png"
   },
   {
-    "revision": "663cfafc615a8ad9ce955043e12c515e",
-    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png"
-  },
-  {
     "revision": "6c16d1117d364ae439e39844817cdd3d",
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x1096.png"
+  },
+  {
+    "revision": "663cfafc615a8ad9ce955043e12c515e",
+    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png"
   },
   {
     "revision": "4e95d5cd7c68c556a2e2",
@@ -108,8 +108,8 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_512x512.png"
   },
   {
-    "revision": "5eb2535bccf79bf5ca40eaf471c3812d",
-    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_60x60.png"
+    "revision": "99c0166ce6e341a7cde1ae98f71afb86",
+    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_128x128.png"
   },
   {
     "revision": "2a6642ad6706957eddc225306c2ab288",
@@ -180,7 +180,7 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-144x144.png"
   },
   {
-    "revision": "e6d7219d8479ad4c279f76bde7341942",
+    "revision": "c908f1c9d18dcf3499903e33884d43f9",
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/.cache"
   },
   {

@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "yarn styleguide:build && yarn content:build && vue-cli-service build",
+    "build": "vue-cli-service build && yarn styleguide:build && yarn content:build",
     "lint": "vue-cli-service lint",
     "styleguide": "vue-styleguidist server --open",
     "styleguide:build": "vue-styleguidist build",
