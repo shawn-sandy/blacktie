@@ -7,12 +7,13 @@
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "yarn styleguide:build && yarn content:build && vue-cli-service build && yarn webpack-bundle-analyzer dist/stats.json",
+    "build": "yarn styleguide:build && yarn content:build && vue-cli-service build",
     "lint": "vue-cli-service lint",
     "styleguide": "vue-styleguidist server --open",
     "styleguide:build": "vue-styleguidist build",
     "content": "eleventy --serve",
-    "content:build": "eleventy"
+    "content:build": "eleventy",
+    "analyze": "yarn webpack-bundle-analyzer dist/stats.json"
   },
   "dependencies": {
     "register-service-worker": "^1.0.0",
