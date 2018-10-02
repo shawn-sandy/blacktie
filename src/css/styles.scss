@@ -1,5 +1,6 @@
 @import "~blacktie-styles/mixins/mixins";
 @import "~blacktie-styles/base/variables";
+@import "~blacktie-styles/maps/modifiers";
 
 $colors :(
   "primary": #2B3338,
@@ -39,4 +40,8 @@ body {
 
 .button:focus:not(:active) {
   color: lightgrey
+}
+
+.elements {
+  @include modifiers($colors, 'elm', ':');
 }

@@ -53,11 +53,11 @@ $font-sizes: (
   }
 }
 
-.text {
-  @include modifiers($colors, 'color', $separator: ':');
-  @include modifiers($font-sizes, 'font-size', '-');
-}
+// .text {
+//   @include modifiers($colors, 'color', $separator: ':');
+//   @include modifiers($font-sizes, 'font-size', '-');
+// }
 
-.elm {
-  @include modifiers($colors, 'elm', $separator: ':');
-}
+// .elm {
+//   @include modifiers($colors, 'elm', $separator: ':');
+// }
