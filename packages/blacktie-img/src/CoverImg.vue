@@ -1,12 +1,13 @@
 <template>
-  <div class="cover-img">
-    <blacktie-img inline-styles="width:100%" :img-src=imgSrc>
-        <blacktie-img-caption caption-title="Caption" :css-classes=contentPosition />
+  <div class="cover-img" :class="{ active: loading }">
+    <blacktie-img inline-styles="width:100%">
+      <blacktie-img-caption>
+        <slot></slot>
+      </blacktie-img-caption>
     </blacktie-img>
   </div>
 </template>
 <script>
-
 import BlacktieImg from './components/Index.vue'
 import BlacktieImgCaption from './components/Caption.vue'
 
@@ -16,12 +17,28 @@ export default {
     BlacktieImg,
     BlacktieImgCaption
   },
-  extends: BlacktieImg,
   props: {
     contentPosition: {
       type: String,
       default: 'centered'
     }
+    // loading: true
+  },
+  data () {
+    return {
+      loading: true
+    }
+  },
+  created () {
+    // this.loading = false
+    setTimeout(() => {
+      this.loading = false
+    }, 2000)
   }
 }
 </script>
+<style lang="scss">
+.active {
+  display: none;
+}
+</style>

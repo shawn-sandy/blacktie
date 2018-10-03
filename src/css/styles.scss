@@ -45,3 +45,6 @@ body {
 .blacktie {
   @include modifiers($colors, 'color', '-');
 }
+[v-cloak] {
+  display: none;
+}

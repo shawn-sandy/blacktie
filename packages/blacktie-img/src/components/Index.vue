@@ -1,6 +1,9 @@
 <template>
   <figure class="blacktie-img" :class=classes :style=inlineStyles>
-    <img ref="img" :src=imgSrc alt="" :style=inlineStyles :onLoad="imgLoaded()">
+    <img ref="img"
+    :src=imgSrc alt=""
+    :style=inlineStyles
+    >
     <slot></slot>
   </figure>
 </template>
@@ -10,7 +13,6 @@ export default {
   name: 'Index',
   data: function () {
     return {
-      loading: false,
       displayImg: 'hide'
     }
   },
@@ -28,13 +30,7 @@ export default {
     }
   },
   methods: {
-    imgLoaded: function (event) {
-      this.loading = true
-      setTimeout(function () {
-        this.loading = true
-        console.log('loaded', this.loading)
-      }, 5000)
-    }
+
   },
   mounted: function () {
     // alert('loaded')
