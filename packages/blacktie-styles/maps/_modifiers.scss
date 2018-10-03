@@ -46,15 +46,15 @@ $font-sizes: (
     &#{if($key != $base, #{$prefix}#{$key}, '')} {
       @if type-of($value) == 'map' {
         @include modifiers($value, $attribute, $separator);
-      } @else if ( $attribute == 'elm') {
+      } @else if ( $attribute == 'color') {
         // #{$attribute}-color: $value;
         background-color: $value;
           @if(lightness($value) > 50) {
-            color: mix($value, #1d1d1d, 5%)
+            @include mixColor($value)
           } @else {
-            color: mix($value, #ffffff, 10%)
+            @include mixColor($value)
           }
-          &:hover {
+          &:hover, &:focus {
             background-color: darken($value, 5%);
             @include mixColor($value)
           }
@@ -65,11 +65,11 @@ $font-sizes: (
   }
 }
 
-@mixin mixColor ($value, $light:#ffffff, $dark: #1d1d1d) {
-  @if(lightness($value) > 50) {
-    color: mix($value, $dark, 5%)
+@mixin mixColor ($color, $ratio: 5%, $light:#ffffff, $dark: #1d1d1d) {
+  @if(lightness($color) > 50) {
+    color: mix($color, $dark, $ratio)
   } @else {
-    color: mix($value, $light, 20%)
+    color: mix($color, $light, $ratio)
   }
 }
 

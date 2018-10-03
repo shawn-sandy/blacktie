@@ -42,6 +42,6 @@ body {
   color: lightgrey
 }
 
-.elements {
-  @include modifiers($colors, 'elm', ':');
+.blacktie {
+  @include modifiers($colors, 'color', '-');
 }

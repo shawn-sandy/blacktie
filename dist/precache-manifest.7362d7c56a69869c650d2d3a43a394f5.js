@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/index-1.html"
   },
   {
-    "revision": "0f45f30591b198a3743fc06410dd16d5",
+    "revision": "520dec522235e71566c89d6837e18496",
     "url": "/index.html"
   },
   {
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png"
   },
   {
-    "revision": "4e95d5cd7c68c556a2e2",
+    "revision": "0fea599c9a5555b51196",
     "url": "/js/app.1e1b6b75.js"
   },
   {
@@ -184,7 +184,7 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/.cache"
   },
   {
-    "revision": "4e95d5cd7c68c556a2e2",
-    "url": "/css/app.fb978b35.css"
+    "revision": "0fea599c9a5555b51196",
+    "url": "/css/app.0ca91812.css"
   }
 ];
