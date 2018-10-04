@@ -1,14 +1,17 @@
 @import '~sass-rem';
 
-.button-elm, a.button-elm {
+$background: lightgray;
+$color: #383838;
+
+.button-elm {
   display: inline-block;
   display: inline-flex;
   border: none;
   padding: rem(14px 28px);
   margin: 0;
   text-decoration: none;
-  color: black;
-  background: lightgray;
+  color: $color;
+  background: $background;
   font-size: rem(14px);
   font-style: normal;
   font-weight: 500;
@@ -20,26 +23,24 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: rem(2px);
+
+  * {
+    display: inline-block;
+    padding: rem(0 3px)
+  }
 }
 
 .button-elm:hover,
-.button-elm:focus
- {
-  background: darken($color: gray, $amount: 10);
+.button-elm:focus,
+  {
+  outline: none;
+  background: darken($background, $amount: 10);
   transform: scale(0.99);
 }
 
-
-.button-elm:focus
- {
-    outline: none;
-    background: darken($color: gray, $amount: 12);
-}
-
-
-.button-elm:active
- {
-  transform: scale(0.98);
+.button-elm:active {
+  outline: none;
+  background: darken($background, $amount: 5);
 }
 
 .button-elm.elm-rounded {
@@ -48,7 +49,17 @@
 
 }
 
+.button-elm.button-elm-sm {
+  font-size: rem(12px);
+  padding: rem(10px 16px);
+}
+
+.button-elm.button-elm-md {
+  font-size: rem(18px);
+  padding: rem(14px 36px);
+}
+
 .button-elm.button-elm-lg {
   font-size: rem(24px);
-   padding: rem(14px 48px);
+  padding: rem(14px 48px);
 }

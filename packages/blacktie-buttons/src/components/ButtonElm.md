@@ -1,22 +1,37 @@
-**Default example button**
+### Button Examples
 
-``` jsx
-<button-elm></button-elm>
+```jsx
+<button-elm />
 ```
 
-``` jsx
-<button-elm class="elm-rounded" ></button-elm>
+```jsx
+<button-elm class="elm-rounded" />
 ```
 
-``` jsx
+```jsx
 <p>
-<button-elm class="elm-rounded button-elm-lg" ></button-elm>
+  <button-elm class="elm-rounded button-elm-sm" display-confirmation>
+    <div>
+      <span>&#10094;</span>
+    </div>
+    <div> Small Button</div>
+  </button-elm>
 </p>
 ```
 
+```jsx
+<p>
+  <button-elm class="elm-rounded button-elm-sm">
+    <div>
+      <span>&#10094;</span>
+    </div>
+    <div> Small Button</div>
+  </button-elm>
+</p>
+```
 
-``` html
-<a class="button-elm">
-Another Burron
-</a>
+```jsx
+<p>
+  <button-elm class="elm-rounded button-elm-lg" display-confirmation />
+</p>
 ```

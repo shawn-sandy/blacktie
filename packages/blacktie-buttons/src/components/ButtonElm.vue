@@ -1,11 +1,13 @@
 <template>
-  <button class="button-elm">
-    <!-- @slot use to place icon form button -->
-    <div slot="icons" class="elm-inline" :class="iconClass"></div>
-    <!-- @slot Use the slot to place the button content -->
-    <div slot class="elm-inline" :class="iconClass">
-    Click Here
-    </div>
+  <button class="button-elm" @click="confirmAction">
+    <span v-if="confirmation">
+      <!-- @slot Use this slot to place the button confirmation content -->
+      <slot name="confirmation">Continue</slot>
+    </span>
+    <span v-else>
+      <!-- @slot Use the slot to place the button content -->
+      <slot>Click Here</slot>
+    </span>
   </button>
 </template>
 
@@ -13,9 +15,10 @@
 /**
  *  Custom button element (WIP)
  */
+import ButtonsMixin from '../mixins/buttons.js'
 export default {
   name: 'ButtonElm',
-  // inheritAttrs: false,
+  mixins: [ButtonsMixin],
   props: {
     /**
      * Sets the button font color
