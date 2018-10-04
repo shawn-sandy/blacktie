@@ -4,7 +4,6 @@
     :src=imgSrc :alt="imageAlt"
     :style=inlineStyles
     >
-    <!-- Content for image overlay -->
     <slot></slot>
   </figure>
 </template>
