@@ -1,39 +1,46 @@
 <template>
   <figure class="blacktie-img" :class=classes :style=inlineStyles>
     <img ref="img"
-    :src=imgSrc alt=""
+    :src=imgSrc :alt="imageAlt"
     :style=inlineStyles
     >
+    <!-- Content for image overlay -->
     <slot></slot>
   </figure>
 </template>
 
 <script>
 export default {
-  name: 'Index',
+  name: 'BlacktieImage',
   data: function () {
     return {
       displayImg: 'hide'
     }
   },
   props: {
+    /**
+     * Add classes to customise the style
+     */
     classes: {
       type: String,
       default: 'has-text-centered centered'
     },
+    /**
+     * Image src file
+     */
     imgSrc: {
       type: String,
       default: '//source.unsplash.com/collection/1278495/1300x400?='
     },
+    /**
+     * Add inline styles
+     */
     inlineStyles: {
       type: String
+    },
+    imageAlt: {
+      default: 'Cover Image'
     }
-  },
-  methods: {
-
-  },
-  mounted: function () {
-    // alert('loaded')
   }
 }
 </script>
