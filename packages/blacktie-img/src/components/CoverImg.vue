@@ -47,7 +47,5 @@ export default {
 }
 </script>
 <style lang="scss">
-.hidden {
-  display: none;
-}
+@import '../assets/style.scss'
 </style>

@@ -2,6 +2,9 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App..."/> -->
+    <div>
+      <cover-img></cover-img>
+    </div>
     <p>
     <button-element display-confirmation>
       <template slot="confirmation">Please Confirm</template>
@@ -13,7 +16,7 @@
     <url-button href="//getblacktie.com" class="button-elm-lg elm-rounded" display-confirmation>
       <template slot="confirmation">Please Confirm</template>
       <span>&#10094;</span>
-      <span>Confirmation Button</span>
+      <span>Confirmation Button.</span>
     </url-button>
     </p>
   </div>
