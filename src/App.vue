@@ -3,7 +3,7 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App..."/> -->
     <div>
-      <cover-img></cover-img>
+      <!-- <cover-img></cover-img> -->
     </div>
     <p>
     <button-element display-confirmation>
@@ -23,14 +23,14 @@
 </template>
 
 <script>
-import CoverImg from 'blacktie-img/src/components/CoverImg.vue'
+// import CoverImg from 'blacktie-img/src/components/CoverImg.vue'
 import ButtonElement from 'blacktie-buttons-v2/src/components/ButtonElm.vue'
 import UrlButton from 'blacktie-buttons-v2/src/components/UrlButtonElm.vue'
 
 export default {
   name: 'app',
   components: {
-    CoverImg,
+    // CoverImg,
     ButtonElement,
     UrlButton
   }
