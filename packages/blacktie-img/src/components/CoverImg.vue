@@ -33,12 +33,12 @@ export default {
       default: 2000
     }
   },
-  data () {
+  data: function () {
     return {
       loading: true
     }
   },
-  created: function () {
+  created () {
     // this.loading = false
     setTimeout(() => {
       this.loading = false
