@@ -1,7 +1,7 @@
 {
   "name": "blacktie-buttons",
   "version": "0.0.1",
-  "description": "POI vue Starter for rapid project development in Vue.js",
+  "description": "Custom button element (WIP)",
   "main": "index.js",
   "scripts": {
     "start": "poi src/index.js",

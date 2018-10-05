@@ -12,7 +12,7 @@
 
 <script>
 import CoverImg from 'blacktie-img/src/components/CoverImg.vue'
-import ButtonElement from 'blacktie-buttons/src/components/ButtonElm.vue'
+import ButtonElement from 'blacktie-buttons-v2/src/components/ButtonElm.vue'
 
 export default {
   name: 'app',
