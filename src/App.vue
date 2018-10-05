@@ -4,6 +4,8 @@
     <HelloWorld msg="Welcome to Your Vue.js App..."/> -->
     <button-element display-confirmation>
       <template slot="confirmation">Please Confirm</template>
+      <span>&#10094;</span>
+    <span>Confirmation Button</span>
     </button-element>
   </div>
 </template>
