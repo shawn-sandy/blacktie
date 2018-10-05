@@ -10,7 +10,7 @@
     </button-element>
     </p>
     <p>
-    <url-button class="button-elm-lg elm-rounded" display-confirmation>
+    <url-button href="//getblacktie.com" class="button-elm-lg elm-rounded" display-confirmation>
       <template slot="confirmation">Please Confirm</template>
       <span>&#10094;</span>
       <span>Confirmation Button</span>

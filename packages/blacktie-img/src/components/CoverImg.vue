@@ -38,7 +38,7 @@ export default {
       loading: true
     }
   },
-  created () {
+  created: function () {
     // this.loading = false
     setTimeout(() => {
       this.loading = false

@@ -6,17 +6,17 @@
     "webpack performance recommendations: \nYou can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.\nFor more info visit https://webpack.js.org/guides/code-splitting/"
   ],
   "version": "4.20.2",
-  "hash": "a3176e250a0bb9f53951",
-  "time": 14737,
-  "builtAt": 1538714449711,
+  "hash": "7d1722f2e3232f3291b0",
+  "time": 12953,
+  "builtAt": 1538739445433,
   "publicPath": "/",
   "outputPath": "/Users/shawnsandy/devboxes/blacktie/dist",
   "assetsByChunkName": {
     "app": [
       "css/app.adf02cdf.css",
-      "js/app.91572a43.js",
+      "js/app.663d1b52.js",
       "css/app.adf02cdf.css.map",
-      "js/app.91572a43.js.map"
+      "js/app.663d1b52.js.map"
     ],
     "chunk-vendors": [
       "js/chunk-vendors.86d16145.js",
@@ -306,8 +306,8 @@
       "emitted": true
     },
     {
-      "name": "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png",
-      "size": 113166,
+      "name": "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png",
+      "size": 115560,
       "chunks": [
       ],
       "chunkNames": [
@@ -315,8 +315,8 @@
       "emitted": true
     },
     {
-      "name": "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png",
-      "size": 115560,
+      "name": "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png",
+      "size": 113166,
       "chunks": [
       ],
       "chunkNames": [
@@ -398,8 +398,8 @@
       "emitted": true
     },
     {
-      "name": "js/app.91572a43.js",
-      "size": 6884,
+      "name": "js/app.663d1b52.js",
+      "size": 6918,
       "chunks": [
         "app"
       ],
@@ -431,8 +431,8 @@
       "emitted": true
     },
     {
-      "name": "js/app.91572a43.js.map",
-      "size": 47147,
+      "name": "js/app.663d1b52.js.map",
+      "size": 47245,
       "chunks": [
         "app"
       ],
@@ -471,6 +471,15 @@
       "emitted": true
     },
     {
+      "name": "img/icons/android-chrome-512x512.png",
+      "size": 29808,
+      "chunks": [
+      ],
+      "chunkNames": [
+      ],
+      "emitted": true
+    },
+    {
       "name": "favicon.ico",
       "size": 15086,
       "chunks": [
@@ -482,15 +491,6 @@
     {
       "name": "img/icons/apple-touch-icon-120x120.png",
       "size": 3369,
-      "chunks": [
-      ],
-      "chunkNames": [
-      ],
-      "emitted": true
-    },
-    {
-      "name": "img/icons/android-chrome-512x512.png",
-      "size": 29808,
       "chunks": [
       ],
       "chunkNames": [
@@ -543,15 +543,6 @@
       "emitted": true
     },
     {
-      "name": "img/icons/msapplication-icon-144x144.png",
-      "size": 1169,
-      "chunks": [
-      ],
-      "chunkNames": [
-      ],
-      "emitted": true
-    },
-    {
       "name": "img/icons/favicon-16x16.png",
       "size": 799,
       "chunks": [
@@ -570,17 +561,8 @@
       "emitted": true
     },
     {
-      "name": "manifest.json",
-      "size": 428,
-      "chunks": [
-      ],
-      "chunkNames": [
-      ],
-      "emitted": true
-    },
-    {
-      "name": "index-1.html",
-      "size": 8025,
+      "name": "img/icons/msapplication-icon-144x144.png",
+      "size": 1169,
       "chunks": [
       ],
       "chunkNames": [
@@ -599,6 +581,24 @@
     {
       "name": "img/icons/safari-pinned-tab.svg",
       "size": 10608,
+      "chunks": [
+      ],
+      "chunkNames": [
+      ],
+      "emitted": true
+    },
+    {
+      "name": "manifest.json",
+      "size": 428,
+      "chunks": [
+      ],
+      "chunkNames": [
+      ],
+      "emitted": true
+    },
+    {
+      "name": "index-1.html",
+      "size": 8025,
       "chunks": [
       ],
       "chunkNames": [
@@ -633,7 +633,7 @@
       "emitted": true
     },
     {
-      "name": "precache-manifest.3908f263d7d1c25c186c55205bb0dc27.js",
+      "name": "precache-manifest.c3c18ea9e8383e4092c52050ad6f9043.js",
       "size": 6275,
       "chunks": [
       ],
@@ -678,6 +678,15 @@
       "emitted": true
     },
     {
+      "name": "content/_eleventy_redirect/index.html",
+      "size": 163,
+      "chunks": [
+      ],
+      "chunkNames": [
+      ],
+      "emitted": true
+    },
+    {
       "name": "content/elements/index.html",
       "size": 3304,
       "chunks": [
@@ -705,8 +714,8 @@
       "emitted": true
     },
     {
-      "name": "content/_eleventy_redirect/index.html",
-      "size": 163,
+      "name": "content/posts/Hello/index.html",
+      "size": 4147,
       "chunks": [
       ],
       "chunkNames": [
@@ -716,15 +725,6 @@
     {
       "name": "content/posts/index.html",
       "size": 3534,
-      "chunks": [
-      ],
-      "chunkNames": [
-      ],
-      "emitted": true
-    },
-    {
-      "name": "content/posts/Hello/index.html",
-      "size": 4147,
       "chunks": [
       ],
       "chunkNames": [
@@ -780,9 +780,9 @@
         "js/chunk-vendors.86d16145.js",
         "js/chunk-vendors.86d16145.js.map",
         "css/app.adf02cdf.css",
-        "js/app.91572a43.js",
+        "js/app.663d1b52.js",
         "css/app.adf02cdf.css.map",
-        "js/app.91572a43.js.map"
+        "js/app.663d1b52.js.map"
       ],
       "children": {
       },
@@ -800,9 +800,9 @@
         "js/chunk-vendors.86d16145.js",
         "js/chunk-vendors.86d16145.js.map",
         "css/app.adf02cdf.css",
-        "js/app.91572a43.js",
+        "js/app.663d1b52.js",
         "css/app.adf02cdf.css.map",
-        "js/app.91572a43.js.map"
+        "js/app.663d1b52.js.map"
       ],
       "children": {
       },
@@ -816,17 +816,17 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 51856,
+      "size": 51894,
       "names": [
         "app"
       ],
       "files": [
         "css/app.adf02cdf.css",
-        "js/app.91572a43.js",
+        "js/app.663d1b52.js",
         "css/app.adf02cdf.css.map",
-        "js/app.91572a43.js.map"
+        "js/app.663d1b52.js.map"
       ],
-      "hash": "e6b42b195830b0d9eb7c",
+      "hash": "4da793f36e6316d09cc2",
       "siblings": [
         "chunk-vendors"
       ],
@@ -1010,7 +1010,7 @@
           "reasons": [
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -1482,7 +1482,7 @@
           "reasons": [
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -1500,11 +1500,11 @@
         },
         {
           "id": "56d7",
-          "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "name": "./src/main.js + 32 modules",
           "index": 1,
           "index2": 57,
-          "size": 17041,
+          "size": 17079,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -1801,7 +1801,7 @@
               "optimizationBailout": [
               ],
               "depth": 2,
-              "source": "import { render, staticRenderFns } from \"./App.vue?vue&type=template&id=bac70a7e&\"\nimport script from \"./App.vue?vue&type=script&lang=js&\"\nexport * from \"./App.vue?vue&type=script&lang=js&\"\nimport style0 from \"./App.vue?vue&type=style&index=0&lang=scss&\"\n\n\n/* normalize component */\nimport normalizer from \"!../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\ncomponent.options.__file = \"App.vue\"\nexport default component.exports"
+              "source": "import { render, staticRenderFns } from \"./App.vue?vue&type=template&id=3308d2e5&\"\nimport script from \"./App.vue?vue&type=script&lang=js&\"\nexport * from \"./App.vue?vue&type=script&lang=js&\"\nimport style0 from \"./App.vue?vue&type=style&index=0&lang=scss&\"\n\n\n/* normalize component */\nimport normalizer from \"!../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\ncomponent.options.__file = \"App.vue\"\nexport default component.exports"
             },
             {
               "id": null,
@@ -1892,8 +1892,8 @@
             },
             {
               "id": null,
-              "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=bac70a7e&",
-              "name": "./src/App.vue?vue&type=template&id=bac70a7e&",
+              "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=3308d2e5&",
+              "name": "./src/App.vue?vue&type=template&id=3308d2e5&",
               "index": 5,
               "index2": 3,
               "size": 368,
@@ -1935,7 +1935,7 @@
                   "module": "./src/App.vue",
                   "moduleName": "./src/App.vue",
                   "type": "harmony side effect evaluation",
-                  "userRequest": "./App.vue?vue&type=template&id=bac70a7e&",
+                  "userRequest": "./App.vue?vue&type=template&id=3308d2e5&",
                   "loc": "1:0-82"
                 },
                 {
@@ -1944,7 +1944,7 @@
                   "module": "./src/App.vue",
                   "moduleName": "./src/App.vue",
                   "type": "harmony import specifier",
-                  "userRequest": "./App.vue?vue&type=template&id=bac70a7e&",
+                  "userRequest": "./App.vue?vue&type=template&id=3308d2e5&",
                   "loc": "11:2-8"
                 },
                 {
@@ -1953,7 +1953,7 @@
                   "module": "./src/App.vue",
                   "moduleName": "./src/App.vue",
                   "type": "harmony import specifier",
-                  "userRequest": "./App.vue?vue&type=template&id=bac70a7e&",
+                  "userRequest": "./App.vue?vue&type=template&id=3308d2e5&",
                   "loc": "12:2-17"
                 }
               ],
@@ -1968,7 +1968,7 @@
               "optimizationBailout": [
               ],
               "depth": 3,
-              "source": "export * from \"-!cache-loader?{\\\"cacheDirectory\\\":\\\"node_modules/.cache/vue-loader\\\",\\\"cacheIdentifier\\\":\\\"1306905c-vue-loader-template\\\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=bac70a7e&\""
+              "source": "export * from \"-!cache-loader?{\\\"cacheDirectory\\\":\\\"node_modules/.cache/vue-loader\\\",\\\"cacheIdentifier\\\":\\\"1306905c-vue-loader-template\\\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=3308d2e5&\""
             },
             {
               "id": null,
@@ -2064,20 +2064,20 @@
             },
             {
               "id": null,
-              "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=bac70a7e&",
-              "name": "./node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=bac70a7e&",
+              "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=3308d2e5&",
+              "name": "./node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=3308d2e5&",
               "index": 6,
               "index2": 2,
-              "size": 636,
+              "size": 663,
               "cacheable": true,
               "built": true,
               "optional": false,
               "prefetched": false,
               "chunks": [
               ],
-              "issuer": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=bac70a7e&",
+              "issuer": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=3308d2e5&",
               "issuerId": null,
-              "issuerName": "./src/App.vue?vue&type=template&id=bac70a7e&",
+              "issuerName": "./src/App.vue?vue&type=template&id=3308d2e5&",
               "issuerPath": [
                 {
                   "id": 0,
@@ -2096,8 +2096,8 @@
                 },
                 {
                   "id": null,
-                  "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=bac70a7e&",
-                  "name": "./src/App.vue?vue&type=template&id=bac70a7e&"
+                  "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=3308d2e5&",
+                  "name": "./src/App.vue?vue&type=template&id=3308d2e5&"
                 }
               ],
               "failed": false,
@@ -2108,20 +2108,20 @@
               "reasons": [
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=bac70a7e&",
-                  "module": "./src/App.vue?vue&type=template&id=bac70a7e&",
-                  "moduleName": "./src/App.vue?vue&type=template&id=bac70a7e&",
+                  "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=3308d2e5&",
+                  "module": "./src/App.vue?vue&type=template&id=3308d2e5&",
+                  "moduleName": "./src/App.vue?vue&type=template&id=3308d2e5&",
                   "type": "harmony side effect evaluation",
-                  "userRequest": "-!cache-loader?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=bac70a7e&",
+                  "userRequest": "-!cache-loader?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=3308d2e5&",
                   "loc": "1:0-368"
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=bac70a7e&",
-                  "module": "./src/App.vue?vue&type=template&id=bac70a7e&",
-                  "moduleName": "./src/App.vue?vue&type=template&id=bac70a7e&",
+                  "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=3308d2e5&",
+                  "module": "./src/App.vue?vue&type=template&id=3308d2e5&",
+                  "moduleName": "./src/App.vue?vue&type=template&id=3308d2e5&",
                   "type": "harmony export imported specifier",
-                  "userRequest": "-!cache-loader?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=bac70a7e&",
+                  "userRequest": "-!cache-loader?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=3308d2e5&",
                   "loc": "1:0-368"
                 }
               ],
@@ -2136,7 +2136,7 @@
               "optimizationBailout": [
               ],
               "depth": 4,
-              "source": "var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{\"id\":\"app\"}},[_c('p',[_c('button-element',{attrs:{\"display-confirmation\":\"\"}},[_c('template',{slot:\"confirmation\"},[_vm._v(\"Please Confirm\")]),_c('span',[_vm._v(\"❮\")]),_c('span',[_vm._v(\"Confirmation Button\")])],2)],1),_c('p',[_c('url-button',{staticClass:\"button-elm-lg elm-rounded\",attrs:{\"display-confirmation\":\"\"}},[_c('template',{slot:\"confirmation\"},[_vm._v(\"Please Confirm\")]),_c('span',[_vm._v(\"❮\")]),_c('span',[_vm._v(\"Confirmation Button\")])],2)],1)])}\nvar staticRenderFns = []\n\nexport { render, staticRenderFns }"
+              "source": "var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{\"id\":\"app\"}},[_c('p',[_c('button-element',{attrs:{\"display-confirmation\":\"\"}},[_c('template',{slot:\"confirmation\"},[_vm._v(\"Please Confirm\")]),_c('span',[_vm._v(\"❮\")]),_c('span',[_vm._v(\"Confirmation Button\")])],2)],1),_c('p',[_c('url-button',{staticClass:\"button-elm-lg elm-rounded\",attrs:{\"href\":\"//getblacktie.com\",\"display-confirmation\":\"\"}},[_c('template',{slot:\"confirmation\"},[_vm._v(\"Please Confirm\")]),_c('span',[_vm._v(\"❮\")]),_c('span',[_vm._v(\"Confirmation Button\")])],2)],1)])}\nvar staticRenderFns = []\n\nexport { render, staticRenderFns }"
             },
             {
               "id": null,
@@ -2215,7 +2215,7 @@
               "optimizationBailout": [
               ],
               "depth": 5,
-              "source": "import { render, staticRenderFns } from \"./CoverImg.vue?vue&type=template&id=15384b67&\"\nimport script from \"./CoverImg.vue?vue&type=script&lang=js&\"\nexport * from \"./CoverImg.vue?vue&type=script&lang=js&\"\nimport style0 from \"./CoverImg.vue?vue&type=style&index=0&lang=scss&\"\n\n\n/* normalize component */\nimport normalizer from \"!../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\ncomponent.options.__file = \"CoverImg.vue\"\nexport default component.exports"
+              "source": "import { render, staticRenderFns } from \"./CoverImg.vue?vue&type=template&id=1e576569&\"\nimport script from \"./CoverImg.vue?vue&type=script&lang=js&\"\nexport * from \"./CoverImg.vue?vue&type=script&lang=js&\"\nimport style0 from \"./CoverImg.vue?vue&type=style&index=0&lang=scss&\"\n\n\n/* normalize component */\nimport normalizer from \"!../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\ncomponent.options.__file = \"CoverImg.vue\"\nexport default component.exports"
             },
             {
               "id": null,
@@ -2676,8 +2676,8 @@
             },
             {
               "id": null,
-              "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
-              "name": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
+              "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
+              "name": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
               "index": 10,
               "index2": 5,
               "size": 400,
@@ -2734,7 +2734,7 @@
                   "module": "./packages/blacktie-img/src/components/CoverImg.vue",
                   "moduleName": "./packages/blacktie-img/src/components/CoverImg.vue",
                   "type": "harmony side effect evaluation",
-                  "userRequest": "./CoverImg.vue?vue&type=template&id=15384b67&",
+                  "userRequest": "./CoverImg.vue?vue&type=template&id=1e576569&",
                   "loc": "1:0-87"
                 },
                 {
@@ -2743,7 +2743,7 @@
                   "module": "./packages/blacktie-img/src/components/CoverImg.vue",
                   "moduleName": "./packages/blacktie-img/src/components/CoverImg.vue",
                   "type": "harmony import specifier",
-                  "userRequest": "./CoverImg.vue?vue&type=template&id=15384b67&",
+                  "userRequest": "./CoverImg.vue?vue&type=template&id=1e576569&",
                   "loc": "11:2-8"
                 },
                 {
@@ -2752,7 +2752,7 @@
                   "module": "./packages/blacktie-img/src/components/CoverImg.vue",
                   "moduleName": "./packages/blacktie-img/src/components/CoverImg.vue",
                   "type": "harmony import specifier",
-                  "userRequest": "./CoverImg.vue?vue&type=template&id=15384b67&",
+                  "userRequest": "./CoverImg.vue?vue&type=template&id=1e576569&",
                   "loc": "12:2-17"
                 }
               ],
@@ -2767,7 +2767,7 @@
               "optimizationBailout": [
               ],
               "depth": 6,
-              "source": "export * from \"-!cache-loader?{\\\"cacheDirectory\\\":\\\"node_modules/.cache/vue-loader\\\",\\\"cacheIdentifier\\\":\\\"1306905c-vue-loader-template\\\"}!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/cache-loader/dist/cjs.js??ref--0-0!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CoverImg.vue?vue&type=template&id=15384b67&\""
+              "source": "export * from \"-!cache-loader?{\\\"cacheDirectory\\\":\\\"node_modules/.cache/vue-loader\\\",\\\"cacheIdentifier\\\":\\\"1306905c-vue-loader-template\\\"}!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/cache-loader/dist/cjs.js??ref--0-0!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CoverImg.vue?vue&type=template&id=1e576569&\""
             },
             {
               "id": null,
@@ -3123,8 +3123,8 @@
             },
             {
               "id": null,
-              "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
-              "name": "./node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
+              "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
+              "name": "./node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
               "index": 11,
               "index2": 4,
               "size": 392,
@@ -3134,9 +3134,9 @@
               "prefetched": false,
               "chunks": [
               ],
-              "issuer": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
+              "issuer": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
               "issuerId": null,
-              "issuerName": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
+              "issuerName": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
               "issuerPath": [
                 {
                   "id": 0,
@@ -3170,8 +3170,8 @@
                 },
                 {
                   "id": null,
-                  "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
-                  "name": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&"
+                  "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
+                  "name": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&"
                 }
               ],
               "failed": false,
@@ -3182,20 +3182,20 @@
               "reasons": [
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
-                  "module": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
-                  "moduleName": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
+                  "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
+                  "module": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
+                  "moduleName": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
                   "type": "harmony side effect evaluation",
-                  "userRequest": "-!cache-loader?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/cache-loader/dist/cjs.js??ref--0-0!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CoverImg.vue?vue&type=template&id=15384b67&",
+                  "userRequest": "-!cache-loader?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/cache-loader/dist/cjs.js??ref--0-0!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CoverImg.vue?vue&type=template&id=1e576569&",
                   "loc": "1:0-400"
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
-                  "module": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
-                  "moduleName": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
+                  "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
+                  "module": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
+                  "moduleName": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
                   "type": "harmony export imported specifier",
-                  "userRequest": "-!cache-loader?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/cache-loader/dist/cjs.js??ref--0-0!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CoverImg.vue?vue&type=template&id=15384b67&",
+                  "userRequest": "-!cache-loader?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/cache-loader/dist/cjs.js??ref--0-0!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CoverImg.vue?vue&type=template&id=1e576569&",
                   "loc": "1:0-400"
                 }
               ],
@@ -3218,7 +3218,7 @@
               "name": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./packages/blacktie-img/src/components/CoverImg.vue?vue&type=script&lang=js&",
               "index": 13,
               "index2": 20,
-              "size": 641,
+              "size": 652,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -3317,7 +3317,7 @@
               "optimizationBailout": [
               ],
               "depth": 7,
-              "source": "//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\nimport ElmImg from './Index.vue';\nimport BlacktieImgCaption from './Caption.vue';\n/**\n * The CoverImg component display and image with a custom overlay overlay greate for landing pages etc\n */\nexport default {\n  name: 'CoverImage',\n  components: {\n    ElmImg,\n    BlacktieImgCaption\n  },\n  props: {\n    contentPosition: {\n      type: String,\n      default: 'centered'\n    },\n    timeout: {\n      default: 2000\n    }\n  },\n  data() {\n    return {\n      loading: true\n    };\n  },\n  created() {\n    // this.loading = false\n    setTimeout(() => {\n      this.loading = false;\n    }, this.timeout);\n  }\n};"
+              "source": "//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\nimport ElmImg from './Index.vue';\nimport BlacktieImgCaption from './Caption.vue';\n/**\n * The CoverImg component display and image with a custom overlay overlay greate for landing pages etc\n */\nexport default {\n  name: 'CoverImage',\n  components: {\n    ElmImg,\n    BlacktieImgCaption\n  },\n  props: {\n    contentPosition: {\n      type: String,\n      default: 'centered'\n    },\n    timeout: {\n      default: 2000\n    }\n  },\n  data() {\n    return {\n      loading: true\n    };\n  },\n  created: function () {\n    // this.loading = false\n    setTimeout(() => {\n      this.loading = false;\n    }, this.timeout);\n  }\n};"
             },
             {
               "id": null,
@@ -4660,7 +4660,7 @@
           "reasons": [
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -5068,7 +5068,7 @@
           "reasons": [
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -5141,7 +5141,7 @@
           "reasons": [
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -5331,7 +5331,7 @@
           "reasons": [
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -5340,7 +5340,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -5349,7 +5349,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -5358,7 +5358,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -5555,7 +5555,7 @@
           "reasons": [
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -5613,7 +5613,7 @@
           "reasons": [
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -5710,7 +5710,7 @@
           "reasons": [
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -5719,7 +5719,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -5728,7 +5728,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -5737,7 +5737,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -5746,7 +5746,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -5755,7 +5755,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -5764,7 +5764,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -5773,7 +5773,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -5782,7 +5782,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -5791,7 +5791,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -5800,7 +5800,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -5809,7 +5809,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -5870,7 +5870,7 @@
           "reasons": [
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -5879,7 +5879,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -5888,7 +5888,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -5897,7 +5897,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -5906,7 +5906,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -5915,7 +5915,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -5924,7 +5924,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -5933,7 +5933,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -5942,7 +5942,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -5951,7 +5951,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -6011,7 +6011,7 @@
           "reasons": [
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -6020,7 +6020,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -6077,7 +6077,7 @@
           "reasons": [
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony side effect evaluation",
@@ -6086,7 +6086,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -6095,7 +6095,7 @@
             },
             {
               "moduleId": "56d7",
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
               "module": "./src/main.js + 32 modules",
               "moduleName": "./src/main.js + 32 modules",
               "type": "harmony import specifier",
@@ -6611,7 +6611,7 @@
       "reasons": [
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -6824,7 +6824,7 @@
       "reasons": [
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -6833,7 +6833,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -6842,7 +6842,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -6851,7 +6851,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -6860,7 +6860,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -6869,7 +6869,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -6878,7 +6878,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -6887,7 +6887,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -6896,7 +6896,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -6905,7 +6905,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -6914,7 +6914,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -6923,7 +6923,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -7106,7 +7106,7 @@
       "reasons": [
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -7124,11 +7124,11 @@
     },
     {
       "id": "56d7",
-      "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+      "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
       "name": "./src/main.js + 32 modules",
       "index": 1,
       "index2": 57,
-      "size": 17041,
+      "size": 17079,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -7425,7 +7425,7 @@
           "optimizationBailout": [
           ],
           "depth": 2,
-          "source": "import { render, staticRenderFns } from \"./App.vue?vue&type=template&id=bac70a7e&\"\nimport script from \"./App.vue?vue&type=script&lang=js&\"\nexport * from \"./App.vue?vue&type=script&lang=js&\"\nimport style0 from \"./App.vue?vue&type=style&index=0&lang=scss&\"\n\n\n/* normalize component */\nimport normalizer from \"!../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\ncomponent.options.__file = \"App.vue\"\nexport default component.exports"
+          "source": "import { render, staticRenderFns } from \"./App.vue?vue&type=template&id=3308d2e5&\"\nimport script from \"./App.vue?vue&type=script&lang=js&\"\nexport * from \"./App.vue?vue&type=script&lang=js&\"\nimport style0 from \"./App.vue?vue&type=style&index=0&lang=scss&\"\n\n\n/* normalize component */\nimport normalizer from \"!../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\ncomponent.options.__file = \"App.vue\"\nexport default component.exports"
         },
         {
           "id": null,
@@ -7516,8 +7516,8 @@
         },
         {
           "id": null,
-          "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=bac70a7e&",
-          "name": "./src/App.vue?vue&type=template&id=bac70a7e&",
+          "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=3308d2e5&",
+          "name": "./src/App.vue?vue&type=template&id=3308d2e5&",
           "index": 5,
           "index2": 3,
           "size": 368,
@@ -7559,7 +7559,7 @@
               "module": "./src/App.vue",
               "moduleName": "./src/App.vue",
               "type": "harmony side effect evaluation",
-              "userRequest": "./App.vue?vue&type=template&id=bac70a7e&",
+              "userRequest": "./App.vue?vue&type=template&id=3308d2e5&",
               "loc": "1:0-82"
             },
             {
@@ -7568,7 +7568,7 @@
               "module": "./src/App.vue",
               "moduleName": "./src/App.vue",
               "type": "harmony import specifier",
-              "userRequest": "./App.vue?vue&type=template&id=bac70a7e&",
+              "userRequest": "./App.vue?vue&type=template&id=3308d2e5&",
               "loc": "11:2-8"
             },
             {
@@ -7577,7 +7577,7 @@
               "module": "./src/App.vue",
               "moduleName": "./src/App.vue",
               "type": "harmony import specifier",
-              "userRequest": "./App.vue?vue&type=template&id=bac70a7e&",
+              "userRequest": "./App.vue?vue&type=template&id=3308d2e5&",
               "loc": "12:2-17"
             }
           ],
@@ -7592,7 +7592,7 @@
           "optimizationBailout": [
           ],
           "depth": 3,
-          "source": "export * from \"-!cache-loader?{\\\"cacheDirectory\\\":\\\"node_modules/.cache/vue-loader\\\",\\\"cacheIdentifier\\\":\\\"1306905c-vue-loader-template\\\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=bac70a7e&\""
+          "source": "export * from \"-!cache-loader?{\\\"cacheDirectory\\\":\\\"node_modules/.cache/vue-loader\\\",\\\"cacheIdentifier\\\":\\\"1306905c-vue-loader-template\\\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=3308d2e5&\""
         },
         {
           "id": null,
@@ -7688,20 +7688,20 @@
         },
         {
           "id": null,
-          "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=bac70a7e&",
-          "name": "./node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=bac70a7e&",
+          "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=3308d2e5&",
+          "name": "./node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=3308d2e5&",
           "index": 6,
           "index2": 2,
-          "size": 636,
+          "size": 663,
           "cacheable": true,
           "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
           ],
-          "issuer": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=bac70a7e&",
+          "issuer": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=3308d2e5&",
           "issuerId": null,
-          "issuerName": "./src/App.vue?vue&type=template&id=bac70a7e&",
+          "issuerName": "./src/App.vue?vue&type=template&id=3308d2e5&",
           "issuerPath": [
             {
               "id": 0,
@@ -7720,8 +7720,8 @@
             },
             {
               "id": null,
-              "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=bac70a7e&",
-              "name": "./src/App.vue?vue&type=template&id=bac70a7e&"
+              "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=3308d2e5&",
+              "name": "./src/App.vue?vue&type=template&id=3308d2e5&"
             }
           ],
           "failed": false,
@@ -7732,20 +7732,20 @@
           "reasons": [
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=bac70a7e&",
-              "module": "./src/App.vue?vue&type=template&id=bac70a7e&",
-              "moduleName": "./src/App.vue?vue&type=template&id=bac70a7e&",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=3308d2e5&",
+              "module": "./src/App.vue?vue&type=template&id=3308d2e5&",
+              "moduleName": "./src/App.vue?vue&type=template&id=3308d2e5&",
               "type": "harmony side effect evaluation",
-              "userRequest": "-!cache-loader?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=bac70a7e&",
+              "userRequest": "-!cache-loader?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=3308d2e5&",
               "loc": "1:0-368"
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=bac70a7e&",
-              "module": "./src/App.vue?vue&type=template&id=bac70a7e&",
-              "moduleName": "./src/App.vue?vue&type=template&id=bac70a7e&",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/src/App.vue?vue&type=template&id=3308d2e5&",
+              "module": "./src/App.vue?vue&type=template&id=3308d2e5&",
+              "moduleName": "./src/App.vue?vue&type=template&id=3308d2e5&",
               "type": "harmony export imported specifier",
-              "userRequest": "-!cache-loader?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=bac70a7e&",
+              "userRequest": "-!cache-loader?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=3308d2e5&",
               "loc": "1:0-368"
             }
           ],
@@ -7760,7 +7760,7 @@
           "optimizationBailout": [
           ],
           "depth": 4,
-          "source": "var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{\"id\":\"app\"}},[_c('p',[_c('button-element',{attrs:{\"display-confirmation\":\"\"}},[_c('template',{slot:\"confirmation\"},[_vm._v(\"Please Confirm\")]),_c('span',[_vm._v(\"❮\")]),_c('span',[_vm._v(\"Confirmation Button\")])],2)],1),_c('p',[_c('url-button',{staticClass:\"button-elm-lg elm-rounded\",attrs:{\"display-confirmation\":\"\"}},[_c('template',{slot:\"confirmation\"},[_vm._v(\"Please Confirm\")]),_c('span',[_vm._v(\"❮\")]),_c('span',[_vm._v(\"Confirmation Button\")])],2)],1)])}\nvar staticRenderFns = []\n\nexport { render, staticRenderFns }"
+          "source": "var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{\"id\":\"app\"}},[_c('p',[_c('button-element',{attrs:{\"display-confirmation\":\"\"}},[_c('template',{slot:\"confirmation\"},[_vm._v(\"Please Confirm\")]),_c('span',[_vm._v(\"❮\")]),_c('span',[_vm._v(\"Confirmation Button\")])],2)],1),_c('p',[_c('url-button',{staticClass:\"button-elm-lg elm-rounded\",attrs:{\"href\":\"//getblacktie.com\",\"display-confirmation\":\"\"}},[_c('template',{slot:\"confirmation\"},[_vm._v(\"Please Confirm\")]),_c('span',[_vm._v(\"❮\")]),_c('span',[_vm._v(\"Confirmation Button\")])],2)],1)])}\nvar staticRenderFns = []\n\nexport { render, staticRenderFns }"
         },
         {
           "id": null,
@@ -7839,7 +7839,7 @@
           "optimizationBailout": [
           ],
           "depth": 5,
-          "source": "import { render, staticRenderFns } from \"./CoverImg.vue?vue&type=template&id=15384b67&\"\nimport script from \"./CoverImg.vue?vue&type=script&lang=js&\"\nexport * from \"./CoverImg.vue?vue&type=script&lang=js&\"\nimport style0 from \"./CoverImg.vue?vue&type=style&index=0&lang=scss&\"\n\n\n/* normalize component */\nimport normalizer from \"!../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\ncomponent.options.__file = \"CoverImg.vue\"\nexport default component.exports"
+          "source": "import { render, staticRenderFns } from \"./CoverImg.vue?vue&type=template&id=1e576569&\"\nimport script from \"./CoverImg.vue?vue&type=script&lang=js&\"\nexport * from \"./CoverImg.vue?vue&type=script&lang=js&\"\nimport style0 from \"./CoverImg.vue?vue&type=style&index=0&lang=scss&\"\n\n\n/* normalize component */\nimport normalizer from \"!../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\ncomponent.options.__file = \"CoverImg.vue\"\nexport default component.exports"
         },
         {
           "id": null,
@@ -8300,8 +8300,8 @@
         },
         {
           "id": null,
-          "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
-          "name": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
+          "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
+          "name": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
           "index": 10,
           "index2": 5,
           "size": 400,
@@ -8358,7 +8358,7 @@
               "module": "./packages/blacktie-img/src/components/CoverImg.vue",
               "moduleName": "./packages/blacktie-img/src/components/CoverImg.vue",
               "type": "harmony side effect evaluation",
-              "userRequest": "./CoverImg.vue?vue&type=template&id=15384b67&",
+              "userRequest": "./CoverImg.vue?vue&type=template&id=1e576569&",
               "loc": "1:0-87"
             },
             {
@@ -8367,7 +8367,7 @@
               "module": "./packages/blacktie-img/src/components/CoverImg.vue",
               "moduleName": "./packages/blacktie-img/src/components/CoverImg.vue",
               "type": "harmony import specifier",
-              "userRequest": "./CoverImg.vue?vue&type=template&id=15384b67&",
+              "userRequest": "./CoverImg.vue?vue&type=template&id=1e576569&",
               "loc": "11:2-8"
             },
             {
@@ -8376,7 +8376,7 @@
               "module": "./packages/blacktie-img/src/components/CoverImg.vue",
               "moduleName": "./packages/blacktie-img/src/components/CoverImg.vue",
               "type": "harmony import specifier",
-              "userRequest": "./CoverImg.vue?vue&type=template&id=15384b67&",
+              "userRequest": "./CoverImg.vue?vue&type=template&id=1e576569&",
               "loc": "12:2-17"
             }
           ],
@@ -8391,7 +8391,7 @@
           "optimizationBailout": [
           ],
           "depth": 6,
-          "source": "export * from \"-!cache-loader?{\\\"cacheDirectory\\\":\\\"node_modules/.cache/vue-loader\\\",\\\"cacheIdentifier\\\":\\\"1306905c-vue-loader-template\\\"}!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/cache-loader/dist/cjs.js??ref--0-0!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CoverImg.vue?vue&type=template&id=15384b67&\""
+          "source": "export * from \"-!cache-loader?{\\\"cacheDirectory\\\":\\\"node_modules/.cache/vue-loader\\\",\\\"cacheIdentifier\\\":\\\"1306905c-vue-loader-template\\\"}!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/cache-loader/dist/cjs.js??ref--0-0!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CoverImg.vue?vue&type=template&id=1e576569&\""
         },
         {
           "id": null,
@@ -8747,8 +8747,8 @@
         },
         {
           "id": null,
-          "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
-          "name": "./node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
+          "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
+          "name": "./node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
           "index": 11,
           "index2": 4,
           "size": 392,
@@ -8758,9 +8758,9 @@
           "prefetched": false,
           "chunks": [
           ],
-          "issuer": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
+          "issuer": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
           "issuerId": null,
-          "issuerName": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
+          "issuerName": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
           "issuerPath": [
             {
               "id": 0,
@@ -8794,8 +8794,8 @@
             },
             {
               "id": null,
-              "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
-              "name": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&"
+              "identifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
+              "name": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&"
             }
           ],
           "failed": false,
@@ -8806,20 +8806,20 @@
           "reasons": [
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
-              "module": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
-              "moduleName": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
+              "module": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
+              "moduleName": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
               "type": "harmony side effect evaluation",
-              "userRequest": "-!cache-loader?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/cache-loader/dist/cjs.js??ref--0-0!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CoverImg.vue?vue&type=template&id=15384b67&",
+              "userRequest": "-!cache-loader?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/cache-loader/dist/cjs.js??ref--0-0!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CoverImg.vue?vue&type=template&id=1e576569&",
               "loc": "1:0-400"
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
-              "module": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
-              "moduleName": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=15384b67&",
+              "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/shawnsandy/devboxes/blacktie/node_modules/vue-loader/lib/index.js??vue-loader-options!/Users/shawnsandy/devboxes/blacktie/packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
+              "module": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
+              "moduleName": "./packages/blacktie-img/src/components/CoverImg.vue?vue&type=template&id=1e576569&",
               "type": "harmony export imported specifier",
-              "userRequest": "-!cache-loader?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/cache-loader/dist/cjs.js??ref--0-0!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CoverImg.vue?vue&type=template&id=15384b67&",
+              "userRequest": "-!cache-loader?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"1306905c-vue-loader-template\"}!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/cache-loader/dist/cjs.js??ref--0-0!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CoverImg.vue?vue&type=template&id=1e576569&",
               "loc": "1:0-400"
             }
           ],
@@ -8842,7 +8842,7 @@
           "name": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./packages/blacktie-img/src/components/CoverImg.vue?vue&type=script&lang=js&",
           "index": 13,
           "index2": 20,
-          "size": 641,
+          "size": 652,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -8941,7 +8941,7 @@
           "optimizationBailout": [
           ],
           "depth": 7,
-          "source": "//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\nimport ElmImg from './Index.vue';\nimport BlacktieImgCaption from './Caption.vue';\n/**\n * The CoverImg component display and image with a custom overlay overlay greate for landing pages etc\n */\nexport default {\n  name: 'CoverImage',\n  components: {\n    ElmImg,\n    BlacktieImgCaption\n  },\n  props: {\n    contentPosition: {\n      type: String,\n      default: 'centered'\n    },\n    timeout: {\n      default: 2000\n    }\n  },\n  data() {\n    return {\n      loading: true\n    };\n  },\n  created() {\n    // this.loading = false\n    setTimeout(() => {\n      this.loading = false;\n    }, this.timeout);\n  }\n};"
+          "source": "//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\nimport ElmImg from './Index.vue';\nimport BlacktieImgCaption from './Caption.vue';\n/**\n * The CoverImg component display and image with a custom overlay overlay greate for landing pages etc\n */\nexport default {\n  name: 'CoverImage',\n  components: {\n    ElmImg,\n    BlacktieImgCaption\n  },\n  props: {\n    contentPosition: {\n      type: String,\n      default: 'centered'\n    },\n    timeout: {\n      default: 2000\n    }\n  },\n  data() {\n    return {\n      loading: true\n    };\n  },\n  created: function () {\n    // this.loading = false\n    setTimeout(() => {\n      this.loading = false;\n    }, this.timeout);\n  }\n};"
         },
         {
           "id": null,
@@ -10391,7 +10391,7 @@
       "reasons": [
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -10464,7 +10464,7 @@
       "reasons": [
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -10537,7 +10537,7 @@
       "reasons": [
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -10595,7 +10595,7 @@
       "reasons": [
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -10604,7 +10604,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -10613,7 +10613,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -10622,7 +10622,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -10631,7 +10631,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -10640,7 +10640,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -10649,7 +10649,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -10658,7 +10658,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -10667,7 +10667,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -10676,7 +10676,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -10843,7 +10843,7 @@
       "reasons": [
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -10852,7 +10852,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -10939,7 +10939,7 @@
       "reasons": [
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -10948,7 +10948,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -10957,7 +10957,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -10966,7 +10966,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -11021,7 +11021,7 @@
       "reasons": [
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -11030,7 +11030,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -11039,7 +11039,7 @@
         },
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony import specifier",
@@ -11354,7 +11354,7 @@
       "reasons": [
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -11470,7 +11470,7 @@
       "reasons": [
         {
           "moduleId": "56d7",
-          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 2f5e4b7cccb6ca8900603b568490bd34",
+          "moduleIdentifier": "/Users/shawnsandy/devboxes/blacktie/node_modules/cache-loader/dist/cjs.js??ref--12-0!/Users/shawnsandy/devboxes/blacktie/node_modules/thread-loader/dist/cjs.js!/Users/shawnsandy/devboxes/blacktie/node_modules/babel-loader/lib/index.js!/Users/shawnsandy/devboxes/blacktie/src/main.js 9b083e0e84c16856144fb0308988fc9b",
           "module": "./src/main.js + 32 modules",
           "moduleName": "./src/main.js + 32 modules",
           "type": "harmony side effect evaluation",
@@ -11779,8 +11779,8 @@
           "emitted": true
         },
         {
-          "name": "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png",
-          "size": 113166,
+          "name": "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png",
+          "size": 115560,
           "chunks": [
           ],
           "chunkNames": [
@@ -11788,8 +11788,8 @@
           "emitted": true
         },
         {
-          "name": "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png",
-          "size": 115560,
+          "name": "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png",
+          "size": 113166,
           "chunks": [
           ],
           "chunkNames": [
@@ -11862,7 +11862,7 @@
           "emitted": true
         },
         {
-          "name": "iconstats-7cb9dbde9e3a0f14de0f.json",
+          "name": "iconstats-cb62619100164cb7423b.json",
           "size": 7097,
           "chunks": [
             "chunk-2d0c5389"
@@ -11878,7 +11878,7 @@
             "chunk-2d0c5389"
           ],
           "assets": [
-            "iconstats-7cb9dbde9e3a0f14de0f.json"
+            "iconstats-cb62619100164cb7423b.json"
           ],
           "children": {
           },
@@ -11892,7 +11892,7 @@
             "chunk-2d0c5389"
           ],
           "assets": [
-            "iconstats-7cb9dbde9e3a0f14de0f.json"
+            "iconstats-cb62619100164cb7423b.json"
           ],
           "children": {
           },
@@ -11910,9 +11910,9 @@
           "names": [
           ],
           "files": [
-            "iconstats-7cb9dbde9e3a0f14de0f.json"
+            "iconstats-cb62619100164cb7423b.json"
           ],
-          "hash": "70e28f0946191305aacf",
+          "hash": "f1a2a689e00d79ab4096",
           "siblings": [
           ],
           "parents": [
@@ -11975,8 +11975,8 @@
                 "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png",
                 "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x1096.png",
                 "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-748x1024.png",
-                "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png",
                 "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png",
+                "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png",
                 "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1182x2208.png",
                 "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1242x2148.png",
                 "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1496x2048.png",
@@ -12001,7 +12001,7 @@
                 "ModuleConcatenation bailout: Module is not an ECMAScript module"
               ],
               "depth": 0,
-              "source": "module.exports = {\"outputFilePrefix\":\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/\",\"html\":[\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"57x57\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-57x57.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"60x60\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-60x60.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"72x72\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-72x72.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"76x76\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-76x76.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"114x114\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-114x114.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"120x120\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-120x120.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"144x144\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-144x144.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"152x152\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-152x152.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"180x180\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-180x180.png\\\">\",\"<meta name=\\\"apple-mobile-web-app-capable\\\" content=\\\"yes\\\">\",\"<meta name=\\\"apple-mobile-web-app-status-bar-style\\\" content=\\\"black-translucent\\\">\",\"<meta name=\\\"apple-mobile-web-app-title\\\" content=\\\"blacktie\\\">\",\"<meta name=\\\"mobile-web-app-capable\\\" content=\\\"yes\\\">\",\"<meta name=\\\"theme-color\\\" content=\\\"#fff\\\">\",\"<meta name=\\\"application-name\\\" content=\\\"blacktie\\\">\",\"<link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"32x32\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-32x32.png\\\">\",\"<link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"16x16\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-16x16.png\\\">\",\"<link rel=\\\"shortcut icon\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon.ico\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-320x460.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x1096.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1182x2208.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1242x2148.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-748x1024.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1496x2048.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1536x2008.png\\\">\"],\"files\":[\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-57x57.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-60x60.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-72x72.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-76x76.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-114x114.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-120x120.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-144x144.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-152x152.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-180x180.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-precomposed.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-167x167.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-36x36.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-48x48.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-72x72.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-96x96.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-144x144.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-192x192.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-256x256.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-384x384.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-512x512.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-16x16.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-32x32.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon.ico\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_60x60.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_128x128.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_512x512.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-320x460.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x1096.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-748x1024.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1182x2208.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1242x2148.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1496x2048.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1536x2008.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/manifest.json\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/manifest.webapp\"]}"
+              "source": "module.exports = {\"outputFilePrefix\":\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/\",\"html\":[\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"57x57\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-57x57.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"60x60\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-60x60.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"72x72\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-72x72.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"76x76\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-76x76.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"114x114\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-114x114.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"120x120\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-120x120.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"144x144\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-144x144.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"152x152\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-152x152.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"180x180\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-180x180.png\\\">\",\"<meta name=\\\"apple-mobile-web-app-capable\\\" content=\\\"yes\\\">\",\"<meta name=\\\"apple-mobile-web-app-status-bar-style\\\" content=\\\"black-translucent\\\">\",\"<meta name=\\\"apple-mobile-web-app-title\\\" content=\\\"blacktie\\\">\",\"<meta name=\\\"mobile-web-app-capable\\\" content=\\\"yes\\\">\",\"<meta name=\\\"theme-color\\\" content=\\\"#fff\\\">\",\"<meta name=\\\"application-name\\\" content=\\\"blacktie\\\">\",\"<link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"32x32\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-32x32.png\\\">\",\"<link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"16x16\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-16x16.png\\\">\",\"<link rel=\\\"shortcut icon\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon.ico\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-320x460.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x1096.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1182x2208.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1242x2148.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-748x1024.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1496x2048.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1536x2008.png\\\">\"],\"files\":[\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-57x57.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-60x60.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-72x72.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-76x76.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-114x114.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-120x120.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-144x144.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-152x152.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-180x180.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-precomposed.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-167x167.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-36x36.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-48x48.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-72x72.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-96x96.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-144x144.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-192x192.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-256x256.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-384x384.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-512x512.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-16x16.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-32x32.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon.ico\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_60x60.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_128x128.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_512x512.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-320x460.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x1096.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-748x1024.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1182x2208.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1242x2148.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1496x2048.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1536x2008.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/manifest.json\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/manifest.webapp\"]}"
             }
           ],
           "filteredModules": 0,
@@ -12072,8 +12072,8 @@
             "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png",
             "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x1096.png",
             "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-748x1024.png",
-            "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png",
             "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png",
+            "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png",
             "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1182x2208.png",
             "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1242x2148.png",
             "icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1496x2048.png",
@@ -12098,7 +12098,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 0,
-          "source": "module.exports = {\"outputFilePrefix\":\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/\",\"html\":[\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"57x57\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-57x57.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"60x60\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-60x60.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"72x72\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-72x72.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"76x76\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-76x76.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"114x114\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-114x114.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"120x120\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-120x120.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"144x144\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-144x144.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"152x152\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-152x152.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"180x180\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-180x180.png\\\">\",\"<meta name=\\\"apple-mobile-web-app-capable\\\" content=\\\"yes\\\">\",\"<meta name=\\\"apple-mobile-web-app-status-bar-style\\\" content=\\\"black-translucent\\\">\",\"<meta name=\\\"apple-mobile-web-app-title\\\" content=\\\"blacktie\\\">\",\"<meta name=\\\"mobile-web-app-capable\\\" content=\\\"yes\\\">\",\"<meta name=\\\"theme-color\\\" content=\\\"#fff\\\">\",\"<meta name=\\\"application-name\\\" content=\\\"blacktie\\\">\",\"<link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"32x32\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-32x32.png\\\">\",\"<link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"16x16\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-16x16.png\\\">\",\"<link rel=\\\"shortcut icon\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon.ico\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-320x460.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x1096.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1182x2208.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1242x2148.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-748x1024.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1496x2048.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1536x2008.png\\\">\"],\"files\":[\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-57x57.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-60x60.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-72x72.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-76x76.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-114x114.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-120x120.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-144x144.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-152x152.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-180x180.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-precomposed.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-167x167.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-36x36.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-48x48.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-72x72.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-96x96.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-144x144.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-192x192.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-256x256.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-384x384.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-512x512.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-16x16.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-32x32.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon.ico\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_60x60.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_128x128.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_512x512.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-320x460.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x1096.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-748x1024.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1182x2208.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1242x2148.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1496x2048.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1536x2008.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/manifest.json\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/manifest.webapp\"]}"
+          "source": "module.exports = {\"outputFilePrefix\":\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/\",\"html\":[\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"57x57\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-57x57.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"60x60\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-60x60.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"72x72\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-72x72.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"76x76\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-76x76.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"114x114\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-114x114.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"120x120\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-120x120.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"144x144\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-144x144.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"152x152\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-152x152.png\\\">\",\"<link rel=\\\"apple-touch-icon\\\" sizes=\\\"180x180\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-180x180.png\\\">\",\"<meta name=\\\"apple-mobile-web-app-capable\\\" content=\\\"yes\\\">\",\"<meta name=\\\"apple-mobile-web-app-status-bar-style\\\" content=\\\"black-translucent\\\">\",\"<meta name=\\\"apple-mobile-web-app-title\\\" content=\\\"blacktie\\\">\",\"<meta name=\\\"mobile-web-app-capable\\\" content=\\\"yes\\\">\",\"<meta name=\\\"theme-color\\\" content=\\\"#fff\\\">\",\"<meta name=\\\"application-name\\\" content=\\\"blacktie\\\">\",\"<link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"32x32\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-32x32.png\\\">\",\"<link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"16x16\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-16x16.png\\\">\",\"<link rel=\\\"shortcut icon\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon.ico\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-320x460.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x1096.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1182x2208.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1242x2148.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-748x1024.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1496x2048.png\\\">\",\"<link rel=\\\"apple-touch-startup-image\\\" media=\\\"(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)\\\" href=\\\"/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1536x2008.png\\\">\"],\"files\":[\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-57x57.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-60x60.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-72x72.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-76x76.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-114x114.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-120x120.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-144x144.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-152x152.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-180x180.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-precomposed.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-167x167.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-36x36.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-48x48.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-72x72.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-96x96.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-144x144.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-192x192.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-256x256.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-384x384.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-512x512.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-16x16.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon-32x32.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/favicon.ico\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_60x60.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_128x128.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_512x512.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-320x460.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x1096.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-748x1024.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1182x2208.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1242x2148.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1496x2048.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1536x2008.png\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/manifest.json\",\"icons-2c17fdfb7035eb23774cbf4f9efd7a56/manifest.webapp\"]}"
         }
       ],
       "filteredModules": 0,
