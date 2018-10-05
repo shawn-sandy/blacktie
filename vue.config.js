@@ -45,5 +45,6 @@ module.exports = {
       warnings: true,
       errors: true
     }
-  }
+  },
+  productionSourceMap: false
 }

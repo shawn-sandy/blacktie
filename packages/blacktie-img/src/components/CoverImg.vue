@@ -33,17 +33,23 @@ export default {
       default: 2000
     }
   },
-  data: function () {
+  data () {
     return {
       loading: true
     }
   },
   created () {
-    // this.loading = false
-    setTimeout(() => {
-      this.loading = false
-    }, this.timeout)
+    this.timer()
+  },
+  methods: {
+    timer () {
+      // this.loading = false
+      setTimeout(() => {
+        this.loading = false
+      }, this.timeout)
+    }
   }
+
 }
 </script>
 <style lang="scss">

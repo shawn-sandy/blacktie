@@ -36,12 +36,12 @@ self.__precacheManifest = [
     "url": "/index-1.html"
   },
   {
-    "revision": "7b93769af64ab2a244d91db3c6113846",
+    "revision": "b487c5dad93258e8ff00f4606675c448",
     "url": "/index.html"
   },
   {
-    "revision": "0f14486a5c01da54da28c2553679cb31",
-    "url": "/iconstats-03f8021ab1ebbda3c520.json"
+    "revision": "42e6c4f8bcbd3ceebe27a30ceb858a61",
+    "url": "/iconstats-d46ef4ef6c9170c008d5.json"
   },
   {
     "revision": "29b12d41a6027f6cd0c8a71fd4f9ce5c",
@@ -72,28 +72,28 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1182x2208.png"
   },
   {
-    "revision": "d6c978184917795b6d35611b3631a6f5",
-    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png"
-  },
-  {
     "revision": "9eabc2c89cb677d082248531d7f595b7",
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-750x1294.png"
+  },
+  {
+    "revision": "d6c978184917795b6d35611b3631a6f5",
+    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-768x1004.png"
   },
   {
     "revision": "3faf8237e54b236a58c4284a1f1246b2",
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-748x1024.png"
   },
   {
-    "revision": "663cfafc615a8ad9ce955043e12c515e",
-    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png"
-  },
-  {
     "revision": "6c16d1117d364ae439e39844817cdd3d",
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x1096.png"
   },
   {
-    "revision": "98b734c6c5042df65586",
-    "url": "/js/app.0bb4bdbb.js"
+    "revision": "663cfafc615a8ad9ce955043e12c515e",
+    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png"
+  },
+  {
+    "revision": "4032d77a2b5286d66484",
+    "url": "/js/app.ba4e1763.js"
   },
   {
     "revision": "abcf14f003aee399a6f9983dc46ca96c",
@@ -180,11 +180,11 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-144x144.png"
   },
   {
-    "revision": "74c47e32ba46dc845f6696c4cdb235e3",
+    "revision": "099ed2c230936519aa250501467721be",
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/.cache"
   },
   {
-    "revision": "98b734c6c5042df65586",
-    "url": "/css/app.7dcf4a9d.css"
+    "revision": "4032d77a2b5286d66484",
+    "url": "/css/app.ba9f593c.css"
   }
 ];
