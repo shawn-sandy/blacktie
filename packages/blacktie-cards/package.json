@@ -9,6 +9,7 @@
     "build": "npm run compile",
     "publish": "npm run compile"
   },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/shawn-sandy/blacktie.git"
