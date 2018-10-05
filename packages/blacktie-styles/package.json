@@ -1,6 +1,6 @@
 {
   "name": "blacktie-styles",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Stylesheet utilities - blacktie",
   "main": "index.js",
   "author": "shawn sandy <creative@shawnsandy.design>",
@@ -9,7 +9,7 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "bable-loader": "^0.0.1-security",
-    "blacktie-elements": "^0.1.0",
+    "blacktie-elements": "^0.1.1",
     "bulma": "^0.7.1",
     "cross-env": "^5.1.5",
     "css-loader": "^0.28.11",
