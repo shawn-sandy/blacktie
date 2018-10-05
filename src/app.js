@@ -5,14 +5,14 @@ import './css/styles.scss'
 import { u } from 'umbrellajs'
 
 //const validate = require('validate')
-const smoothScroll = require('smooth-scroll')
+// const smoothScroll = require('smooth-scroll')
 
 /** simple and easy form validation */
 //validate.init()
 
 /** scroll to anchors */
 // eslint-disable-next-line
-const scroll = new smoothScroll('a[href*="#"]')
+// const scroll = new smoothScroll('a[href*="#"]')
 
 /**
  * Confirm actions before submit

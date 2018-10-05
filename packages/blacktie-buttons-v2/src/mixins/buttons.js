@@ -9,7 +9,7 @@ module.exports = {
      */
     timeout: {
       type: Number,
-      default: 5000
+      default: 3000
     },
     /**
      * Set timeout in secs default 5 secs before the confirmation disppears
@@ -30,11 +30,13 @@ module.exports = {
   data() {
     return {
       confirmation: false,
+      confirmationEnabled: false,
       formControl: null
     }
   },
   mounted() {
     this.formControll = document.getElementById(this.fromID)
+    this.confirmationEnabled = this.displayConfirmation
   },
   methods: {
     /**
@@ -45,17 +47,17 @@ module.exports = {
      * @public
      */
     confirmAction(event) {
-      if (this.displayConfirmation) {
-        if (this.formControl) {
-          this.formControl.addEventListener('submit', e => {
-            e.preventDefault()
-          })
-        }
+      if (this.confirmationEnabled) {
+        this.confirmationEnabled = false
         this.confirmation = true
+        //console.log(event)
         event.preventDefault()
         setTimeout(() => {
+          this.confirmationEnabled = true
           this.confirmation = false
         }, this.timeout)
+      } else {
+        this.confirmationEnabled = true
       }
     }
   }
