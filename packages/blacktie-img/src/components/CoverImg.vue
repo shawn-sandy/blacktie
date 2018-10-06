@@ -38,7 +38,7 @@ export default {
       loading: true
     }
   },
-  created () {
+  created: function () {
     this.timer()
   },
   methods: {
@@ -53,5 +53,5 @@ export default {
 }
 </script>
 <style lang="scss">
-@import '../assets/style.scss'
+@import '../assets/style.scss';
 </style>
