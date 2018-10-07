@@ -3,21 +3,22 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App..."/> -->
     <div>
-      <cover-img></cover-img>
+      <cover-img/>
     </div>
     <p>
-    <button-element display-confirmation>
-      <template slot="confirmation">Please Confirm</template>
-      <span>&#10094;</span>
-      <span>Confirmation Button</span>
-    </button-element>
+      <button-element display-confirmation>
+        <template slot="confirmation">Please Confirm</template>
+        <span>&#10094;</span>
+        <span>Confirmation Button</span>
+      </button-element>
     </p>
     <p>
-    <url-button href="//getblacktie.com" class="button-elm-lg elm-rounded" display-confirmation>
-      <template slot="confirmation">Please Confirm</template>
-      <span>&#10094;</span>
-      <span>Confirmation Button.</span>
-    </url-button>
+      <url-button href="//getblacktie.com"
+class="button-elm-lg elm-rounded" display-confirmation>
+        <template slot="confirmation">Please Confirm</template>
+        <span>&#10094;</span>
+        <span>Confirmation Button.</span>
+      </url-button>
     </p>
   </div>
 </template>
@@ -28,7 +29,7 @@ import ButtonElement from 'blacktie-buttons-v2/src/components/ButtonElm.vue'
 import UrlButton from 'blacktie-buttons-v2/src/components/UrlButtonElm.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     CoverImg,
     ButtonElement,

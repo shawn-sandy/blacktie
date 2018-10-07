@@ -4,10 +4,11 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin
 
 module.exports = {
-  runtimeCompiler: true,
-
+  runtimeCompiler: false,
+  transpileDependencies: ['blacktie-buttons-v2/src/components/*.vue'],
   css: {
-    sourceMap: true
+    sourceMap: false,
+    extract: false
   },
 
   lintOnSave: process.env.NODE_ENV !== 'production',
@@ -42,7 +43,7 @@ module.exports = {
   },
   devServer: {
     overlay: {
-      warnings: true,
+      warnings: false,
       errors: true
     }
   },

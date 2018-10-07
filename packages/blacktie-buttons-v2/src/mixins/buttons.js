@@ -1,7 +1,7 @@
 /**
  * @mixin
  */
-module.exports = {
+export default {
   props: {
     /**
      * Set timeout for how long confirmation prompt displays

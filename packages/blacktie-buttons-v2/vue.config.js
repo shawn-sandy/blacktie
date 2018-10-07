@@ -7,6 +7,12 @@ module.exports = {
   outputDir: undefined,
   assetsDir: 'assets',
   runtimeCompiler: undefined,
-  productionSourceMap: false,
-  parallel: undefined
+  productionSourceMap: undefined,
+  parallel: undefined,
+  lintOnSave: undefined,
+  configureWebpack: {
+    output: {
+      libraryExport: 'default'
+    }
+  }
 }
