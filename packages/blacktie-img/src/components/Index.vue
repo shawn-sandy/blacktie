@@ -1,43 +1,45 @@
 <template>
   <figure class="blacktie-img" :class=classes :style=inlineStyles>
-    <img ref="img" :src=imgSrc alt="" :style=inlineStyles :onLoad="imgLoaded()">
+    <img ref="img"
+    :src=imgSrc :alt="imageAlt"
+    :style=inlineStyles
+    >
     <slot></slot>
   </figure>
 </template>
 
 <script>
 export default {
-  name: 'Index',
+  name: 'BlacktieImage',
   data: function () {
     return {
-      loading: false,
       displayImg: 'hide'
     }
   },
   props: {
+    /**
+     * Add classes to customise the style
+     */
     classes: {
       type: String,
       default: 'has-text-centered centered'
     },
+    /**
+     * Image src file
+     */
     imgSrc: {
       type: String,
       default: '//source.unsplash.com/collection/1278495/1300x400?='
     },
+    /**
+     * Add inline styles
+     */
     inlineStyles: {
       type: String
+    },
+    imageAlt: {
+      default: 'Cover Image'
     }
-  },
-  methods: {
-    imgLoaded: function (event) {
-      this.loading = true
-      setTimeout(function () {
-        this.loading = true
-        console.log('loaded', this.loading)
-      }, 5000)
-    }
-  },
-  mounted: function () {
-    // alert('loaded')
   }
 }
 </script>

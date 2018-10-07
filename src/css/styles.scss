@@ -1,5 +1,6 @@
 @import "~blacktie-styles/mixins/mixins";
 @import "~blacktie-styles/base/variables";
+@import "~blacktie-styles/maps/modifiers";
 
 $colors :(
   "primary": #2B3338,
@@ -7,7 +8,9 @@ $colors :(
   "smoke": whitesmoke
 );
 
-
+* {
+  @include generateColors($colors)
+}
 
 .oswald {
   font-family: 'Oswald', sans-serif;
@@ -37,4 +40,11 @@ body {
 
 .button:focus:not(:active) {
   color: lightgrey
+}
+
+.blacktie {
+  @include modifiers($colors, 'color', '-');
+}
+[v-cloak] {
+  display: none;
 }

@@ -1,6 +1,6 @@
 {
   "name": "blacktie-cards",
-  "version": "0.0.11",
+  "version": "0.0.13",
   "description": "A simple page routing component",
   "main": "dist/index.js",
   "scripts": {
@@ -9,6 +9,7 @@
     "build": "npm run compile",
     "publish": "npm run compile"
   },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/shawn-sandy/blacktie.git"
@@ -26,8 +27,8 @@
   },
   "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/package-name",
   "dependencies": {
-    "blacktie-elements": "^0.1.0",
-    "blacktie-styles": "^0.0.2",
+    "blacktie-elements": "^0.1.2",
+    "blacktie-styles": "^0.0.4",
     "bulma": "^0.7.1",
     "sass-loader": "^7.0.3",
     "vue": "^2.5.16",

@@ -1,7 +1,6 @@
 <template>
   <figcaption class="blacktie-img-caption" :class=cssClasses>
-    <p>{{ captionTitle }}</p>
-    <p>{{ captionContent }}</p>
+    <slot></slot>
   </figcaption>
 </template>
 

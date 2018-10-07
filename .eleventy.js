@@ -25,7 +25,7 @@ eleventyConfig.addPlugin(toc)
   return {
     dir: {
       input: "docs",
-      output: "eleventy/content"
+      output: "dist/content"
     },
     templateFormats: ["njk", "md"],
     htmlTemplateEngine: "njk",

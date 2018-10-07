@@ -6,13 +6,14 @@
     "packages/*"
   ],
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "yarn styleguide:build && yarn content:build && vue-cli-service build",
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build && yarn styleguide:build && yarn content:build",
     "lint": "vue-cli-service lint",
     "styleguide": "vue-styleguidist server --open",
     "styleguide:build": "vue-styleguidist build",
     "content": "eleventy --serve",
-    "content:build": "eleventy"
+    "content:build": "eleventy",
+    "analyze": "yarn webpack-bundle-analyzer dist/stats.json"
   },
   "dependencies": {
     "register-service-worker": "^1.0.0",
@@ -39,6 +40,9 @@
     "markdown-it-anchor": "^5.0.2",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
+    "smooth-scroll": "^14.2.1",
+    "umbrellajs": "^3.1.0",
+    "validate": "^4.5.1",
     "vue-styleguidist": "^1.8.9",
     "vue-template-compiler": "^2.5.17"
   }
