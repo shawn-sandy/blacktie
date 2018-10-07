@@ -11,8 +11,11 @@
       <button-element
         class="blacktie-primary-elm"
         display-confirmation >
-        <template slot="confirmation">Please Confirm</template>
-        <span>&#10094;</span>
+        <template slot="confirmation">
+          <span>&#10095;</span>
+          Please Confirm
+        </template>
+        <span>&#10095;</span>
         <span>Confirmation Button</span>
       </button-element>
     </p>
@@ -21,9 +24,9 @@
         href="//getblacktie.com"
         class="button-elm-lg elm-rounded"
         display-confirmation>
-        <template slot="confirmation">Please Confirm</template>
-        <span>&#10094;</span>
-        <span>Confirmation Button.</span>
+        <template slot="confirmation"><span>&#10095;</span>Please Confirm</template>
+        <span>&#10095;</span>
+        <span>Confirmation Button</span>
       </url-button>
     </p>
   </div>
