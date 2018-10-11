@@ -2,7 +2,6 @@
   <div class="cover-img" :class="{ hidden: loading }">
     <elm-img inline-styles="width:100%">
       <blacktie-img-caption>
-        <!--  -->
         <slot>
           <h1>
             Cover Caption
@@ -13,7 +12,7 @@
   </div>
 </template>
 <script>
-import ElmImg from './Index.vue'
+import ElmImg from './Image.vue'
 import BlacktieImgCaption from './Caption.vue'
 /**
  * The CoverImg component display and image with a custom overlay overlay greate for landing pages etc

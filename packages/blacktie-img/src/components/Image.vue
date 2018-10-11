@@ -4,11 +4,15 @@
     :src=imgSrc :alt="imageAlt"
     :style=inlineStyles
     >
+    <figcaption v-if="caption" class="blacktie-img-caption" :class=cssClasses>
+      <!-- @slot add content for image caption -->
     <slot></slot>
+    </figcaption>
   </figure>
 </template>
 
 <script>
+/** Image component - resuable image component with captions and  */
 export default {
   name: 'BlacktieImage',
   data: function () {
@@ -37,8 +41,19 @@ export default {
     inlineStyles: {
       type: String
     },
+    /**
+     * Image alt tag
+     */
     imageAlt: {
       default: 'Cover Image'
+    },
+    /**
+     * Add a caption to Image
+     * via prop `caption="My cool image"`
+     * via default image slot `<image>My cool image</image>`
+     */
+    caption: {
+      default: null
     }
   }
 }
