@@ -40,21 +40,7 @@ $font-sizes: (
       }  @else {
         #{$attribute}: $value !important;
       }
-    @if ( $attribute == 'color') {
-      // #{$attribute}-color: $value;
-      &-elm {
-        background-color: $value;
-        @if(lightness($value) > 50) {
-          @include mixColor($value)
-        } @else {
-          @include mixColor($value)
-        }
-        &:hover, &:focus {
-          background-color: darken($value, 5%);
-          @include mixColor($value)
-        }
-      }
-      }
+    @include element($value, $attribute)
 
     }
   }
@@ -67,6 +53,26 @@ $font-sizes: (
   } @else {
     color: mix($color, $light, $ratio) !important
   }
+}
+
+@mixin element($value, $attribute) {
+
+  @if ( $attribute == 'color') {
+    // #{$attribute}-color: $value;
+    &-elm {
+      background-color: $value;
+      @if(lightness($value) > 50) {
+        @include mixColor($value)
+      } @else {
+        @include mixColor($value)
+      }
+      &:hover, &:focus {
+        background-color: darken($value, 5%);
+        @include mixColor($value)
+      }
+    }
+  }
+
 }
 
 // .text {

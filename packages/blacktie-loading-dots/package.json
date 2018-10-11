@@ -34,6 +34,7 @@
     "blacktie-styles": "^0.0.1",
     "bulma": "^0.7.1",
     "file-loader": "^1.1.11",
+    "lodash": "^4.17.11",
     "sass-rem": "^2.0.1",
     "sassdoc": "^2.5.0",
     "three-dots": "https://github.com/nzbin/three-dots",
