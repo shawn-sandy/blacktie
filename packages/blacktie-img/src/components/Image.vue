@@ -1,27 +1,29 @@
 <template>
   <figure class="blacktie-img" :style=inlineStyles>
-    <template v-if="isInView">
-      <img ref="img" :src="imgSrc" :alt="imageAlt">
-      <figcaption v-if="caption" class="blacktie-img-caption">
-        <!-- @slot add content for image caption -->
-        <slot>
-          <h1>
-            {{ caption }}
-          </h1>
-        </slot>
-      </figcaption>
-    </template>
-    <template v-else>
-      <svg width="100%" height="300" viewBox="0 0 100% 100%" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100%" height="300" rx="20" fill="url(#paint0_linear)" />
-        <defs>
-          <linearGradient id="paint0_linear" x1="150" y1="0" x2="150" y2="300" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#C4C4C4" />
-            <stop offset="1" stop-color="#D0D0D0" stop-opacity="0.57" />
-          </linearGradient>
-        </defs>
-      </svg>
-    </template>
+    <transition name="fade">
+      <template v-if="isInView">
+        <img ref="img" :src="imgSrc" :alt="imageAlt">
+        <figcaption v-if="caption" class="blacktie-img-caption">
+          <!-- @slot add content for image caption -->
+          <slot>
+            <h1>
+              {{ caption }}
+            </h1>
+          </slot>
+        </figcaption>
+      </template>
+      <template v-else>
+        <svg width="100%" height="300" viewBox="0 0 100% 100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100%" height="300" rx="20" fill="url(#paint0_linear)" />
+          <defs>
+            <linearGradient id="paint0_linear" x1="150" y1="0" x2="150" y2="300" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#C4C4C4" />
+              <stop offset="1" stop-color="#D0D0D0" stop-opacity="0.57" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </template>
+    </transition>
   </figure>
 </template>
 
@@ -148,6 +150,5 @@ figure {
     height: auto;
     max-width: 100%;
   }
-
 }
 </style>

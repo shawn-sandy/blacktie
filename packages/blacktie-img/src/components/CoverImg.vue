@@ -24,7 +24,7 @@ export default {
       default: 'centered'
     },
     timeout: {
-      default: 1000
+      default: 2000
     }
   },
   data () {
