@@ -1,8 +1,19 @@
 <template>
-  <figure class="blacktie-img" :class=classes :style=inlineStyles>
-    <template v-show="isImageLoading">
-      <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="300" height="300" rx="20" fill="url(#paint0_linear)" />
+  <figure class="blacktie-img" :style=inlineStyles>
+    <template v-if="isInView">
+      <img ref="img" :src="imgSrc" :alt="imageAlt">
+      <figcaption v-if="caption" class="blacktie-img-caption">
+        <!-- @slot add content for image caption -->
+        <slot>
+          <h1>
+            {{ caption }}
+          </h1>
+        </slot>
+      </figcaption>
+    </template>
+    <template v-else>
+      <svg width="100%" height="300" viewBox="0 0 100% 100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100%" height="300" rx="20" fill="url(#paint0_linear)" />
         <defs>
           <linearGradient id="paint0_linear" x1="150" y1="0" x2="150" y2="300" gradientUnits="userSpaceOnUse">
             <stop stop-color="#C4C4C4" />
@@ -11,24 +22,23 @@
         </defs>
       </svg>
     </template>
-    <img ref="img" :src="imgSrc" :alt="imageAlt">
-    <figcaption v-if="caption" class="blacktie-img-caption" :class=cssClasses>
-      <!-- @slot add content for image caption -->
-      <slot>{{ caption }}</slot>
-    </figcaption>
   </figure>
 </template>
 
 <script>
+import ViewPort from './../mixins'
+
 /**
  * Image component - resuable image component with captions and
  */
 export default {
   name: 'BlacktieImage',
+  mixins: [ViewPort],
   data: function () {
     return {
       displayImg: 'hide',
-      isImageLoading: true
+      isImageLoading: true,
+      inView: false
     }
   },
   props: {
@@ -67,11 +77,7 @@ export default {
       default: null
     }
   },
-  methods: {
-    name () {
-
-    }
-  }
+  mounted () {}
 }
 </script>
 
@@ -81,16 +87,18 @@ export default {
   display: none;
 }
 figure {
-  overflow: hidden;
+  overflow: hidden !important;
   position: relative;
   display: inline-block;
-  margin: 0;
-  padding: 0;
-
-  -webkit-transition: all 0.35s;
+  margin: 0 !important;
+  padding: 0 !important;
   transition: all 0.35s;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  transition: all 0.5s ease;
+
+  img {
+    transition: all 3s ease;
+  }
 
   figcaption.blacktie-img-caption {
     color: azure;
@@ -140,5 +148,6 @@ figure {
     height: auto;
     max-width: 100%;
   }
+
 }
 </style>
