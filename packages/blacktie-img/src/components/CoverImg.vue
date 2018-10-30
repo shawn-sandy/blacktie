@@ -7,7 +7,7 @@
   </transition>
 </template>
 <script>
-import ElmImg from './Image.vue'
+// import ElmImg from './Image.vue'
 import BlacktieImgCaption from './Caption.vue'
 /**
  * The CoverImg component display and image with a custom overlay overlay greate for landing pages etc
@@ -15,7 +15,7 @@ import BlacktieImgCaption from './Caption.vue'
 export default {
   name: 'CoverImage',
   components: {
-    ElmImg,
+    'ElmImg': () => import('./Image'),
     BlacktieImgCaption
   },
   props: {
