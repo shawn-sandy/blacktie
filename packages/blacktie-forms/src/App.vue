@@ -1,8 +1,16 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <input-component type="email" required></input-component>
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <form action="">
+      <input-component v-model="email" @error-msg="emailError" type="email" required>
+    </input-component>
+    <div v-if="errorMsg" class="error-msg">
+      {{ errorMsg }} {{ email }}
+    </div>
+    <button>Submit</button>
+    </form>
+
   </div>
 </template>
 
@@ -15,6 +23,19 @@ export default {
   components: {
     HelloWorld,
     InputComponent
+  },
+  props: {},
+  data() {
+    return {
+      errorMsg: null,
+      email: null
+    }
+  },
+  methods: {
+    emailError(msg) {
+      this.errorMsg = msg
+      console.log('event error', msg)
+    }
   }
 }
 </script>
