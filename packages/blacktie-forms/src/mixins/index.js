@@ -1,28 +1,61 @@
+/**
+ * @mixins
+ */
 export default {
   props: {
+    /**
+     * default from value
+     */
     value: {
       default: null
     },
-    required: {
+    /**
+     * Default name for error class adds a red border on error style `.field-error` styling required .field-error `{ border: solid 1px red; }`
+     */
+    errorClass: {
+      default: 'field-error'
+    },
+    /**
+     * Default error message
+     */
+    errorMessage: {
       default: null
     },
-    errorClass: {
-      default: 'error'
-    },
-    errorMessage: {
-      default: 'Please enter/select a valid'
+    /**
+     * Turn custom validation on or off
+     */
+    enableValidation: {
+      default: true
     }
   },
   methods: {
+    /**
+     * @public
+     * Validates the input on blur and adds/ removes error class
+     * Emits and error-msg event that passes a validation msg and input type
+     * @param {* event} e - focus event
+     */
     validate(e) {
+      if (!this.enableValidation) {
+        return
+      }
+      e.target.setCustomValidity('')
       if (!e.target.validity.valid) {
-        e.target.setCustomValidity(`${this.errorMessage} ${e.target.type}`)
+        if (e.target.validity.valueMissing && this.errorMessage) {
+          e.target.setCustomValidity(`${this.errorMessage}`)
+        }
         e.target.classList.add(this.errorClass)
-        this.$emit('error-msg', e.target.validationMessage)
+        this.$emit(
+          'error-msg',
+          e.target.validationMessage.trim(),
+          e.target.type,
+          e.target.validity.valid
+        )
       } else {
         e.target.classList.remove(this.errorClass)
-        this.$emit('error-msg', '')
+        this.$emit('error-msg', null, null, false)
       }
+      console.log('input', e)
     }
   },
   data() {

@@ -1,16 +1,16 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <form action="" @submit.prevent="">
-      <input-component v-model="email" @error-msg="errorMsg" type="email" required>
-    </input-component>
-    <div v-if="errorMsg" class="error-msg">
-      {{ errorMsg }} {{ email }}
-    </div>
-    <div>
-    <button formnovalidate>Submit</button>
-    </div>
+      <input-elm >
+        <template slot="default" slot-scope="{ onError }">
+          <input-component v-model="email" @error-msg="onError" type="email" max-length="5" required error-message="Please enter a valid email address"/>
+          <button formnovalidate>Submit</button>
+        </template>
+      </input-elm>
+
+      <div/>
     </form>
 
   </div>
@@ -18,13 +18,15 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import InputComponent from './components/inputs.vue'
+import InputComponent from './components/input-elm.vue'
+import InputElm from './components/input-container.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     HelloWorld,
-    InputComponent
+    InputComponent,
+    InputElm
   },
   props: {},
   data() {
@@ -34,7 +36,7 @@ export default {
     }
   },
   methods: {
-    emailError(msg) {
+    emailError(msg, type) {
       this.errorMsg = msg
       console.log('event error', msg)
     }
@@ -50,5 +52,26 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  input {
+    padding: 10px;
+    margin: 10px;
+    min-width: 30%;
+  }
+  p {
+    font-size: 12px;
+  }
+  button {
+    padding: 10px 20px;
+  }
+  .field-error {
+    border: solid 1px red;
+  }
+  .error-msg {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    margin: 5px;
+    border-radius: 5px;
+  }
 }
 </style>
