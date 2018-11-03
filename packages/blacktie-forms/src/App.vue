@@ -3,7 +3,7 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <form action="" @submit.prevent="">
-      <input-component v-model="email" @error-msg="emailError" type="email" required>
+      <input-component v-model="email" @error-msg="errorMsg" type="email" required>
     </input-component>
     <div v-if="errorMsg" class="error-msg">
       {{ errorMsg }} {{ email }}

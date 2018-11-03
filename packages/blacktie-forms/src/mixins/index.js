@@ -9,20 +9,20 @@ export default {
     errorClass: {
       default: 'error'
     },
-
+    errorMessage: {
+      default: 'Please enter/select a valid'
+    }
   },
   methods: {
     validate(e) {
-      console.log('type', e.target.type)
-      e.target.setCustomValidity('')
       if (!e.target.validity.valid) {
-        e.target.setCustomValidity('Please enter a valid email address')
+        e.target.setCustomValidity(`${this.errorMessage} ${e.target.type}`)
         e.target.classList.add(this.errorClass)
+        this.$emit('error-msg', e.target.validationMessage)
       } else {
         e.target.classList.remove(this.errorClass)
+        this.$emit('error-msg', '')
       }
-      this.$emit('error-msg', e.target.validationMessage)
-      console.log('message', e.target.validationMessage)
     }
   },
   data() {
