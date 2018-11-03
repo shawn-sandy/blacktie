@@ -8,7 +8,8 @@ export default {
     },
     errorClass: {
       default: 'error'
-    }
+    },
+
   },
   methods: {
     validate(e) {
