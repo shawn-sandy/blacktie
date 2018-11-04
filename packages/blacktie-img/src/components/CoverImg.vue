@@ -19,7 +19,7 @@ export default {
     BlacktieImgCaption
   },
   props: {
-    contentPosition: {
+    contentPositiongu: {
       type: String,
       default: 'centered'
     },

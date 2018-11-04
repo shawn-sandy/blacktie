@@ -58,19 +58,24 @@
 </template>
 
 <script>
-import CoverImg from 'blacktie-img/src/components/CoverImg.vue'
+// import CoverImg from 'blacktie-img/src/components/CoverImg.vue'
 import ButtonElement from 'blacktie-buttons-v2/src/components/ButtonElm.vue'
 import UrlButton from 'blacktie-buttons-v2/src/components/UrlButtonElm.vue'
 import InputComponent from 'blacktie-forms/src/components/input-elm.vue'
-import InputElm from 'blacktie-forms/src/components/input-container.vue'
+// import InputElm from 'blacktie-forms/src/components/input-container.vue'
 export default {
   name: 'App',
   components: {
-    CoverImg,
     ButtonElement,
     UrlButton,
     InputComponent,
-    InputElm
+    // ButtonElement: () =>
+    //   import('blacktie-buttons-v2/src/components/ButtonElm.vue'),
+    // UrlButton: () =>
+    //   import('blacktie-buttons-v2/src/components/UrlButtonElm.vue'),
+    // InputComponent: () => import('blacktie-forms/src/components/input-elm.vue'),
+    CoverImg: () => import('blacktie-img/src/components/CoverImg.vue'),
+    InputElm: () => import('blacktie-forms/src/components/input-container.vue')
   }
 }
 </script>
