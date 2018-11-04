@@ -10,10 +10,10 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'no-debugger': 'off',
-    'vue/no-use-v-if-with-v-for': 'warning',
-    'vue/no-v-html': 'warning',
-    'vue/prop-name-casing': 'warning',
-    'vue/script-indent': 'warning'
+    'vue/no-use-v-if-with-v-for': 1,
+    'vue/no-v-html': 1,
+    'vue/prop-name-casing': 2,
+    'vue/script-indent': 2
   },
 
   parserOptions: {

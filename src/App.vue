@@ -29,6 +29,31 @@
         <span>Confirmation Button</span>
       </url-button>
     </p>
+    <hr>
+    <form
+      @submit.prevent="">
+      <input-elm class="field">
+        <template slot-scope="{ onError }">
+          <div class="field">
+            <div class="control">
+              <input-component
+                @error-msg="onError"
+                type="email"
+                max-length="5"
+                required
+                class="input"
+                error-message="Please enter a valid email address"/>
+            </div>
+          </div>
+          <p class="has-text-right">
+            <button
+              class="button"
+              formnovalidate>Submit</button>
+          </p>
+        </template>
+      </input-elm>
+      <div/>
+    </form>
   </div>
 </template>
 
@@ -36,13 +61,16 @@
 import CoverImg from 'blacktie-img/src/components/CoverImg.vue'
 import ButtonElement from 'blacktie-buttons-v2/src/components/ButtonElm.vue'
 import UrlButton from 'blacktie-buttons-v2/src/components/UrlButtonElm.vue'
-
+import InputComponent from 'blacktie-forms/src/components/input-elm.vue'
+import InputElm from 'blacktie-forms/src/components/input-container.vue'
 export default {
   name: 'App',
   components: {
     CoverImg,
     ButtonElement,
-    UrlButton
+    UrlButton,
+    InputComponent,
+    InputElm
   }
 }
 </script>
