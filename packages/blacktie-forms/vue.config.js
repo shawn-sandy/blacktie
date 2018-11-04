@@ -1,13 +1,13 @@
 module.exports = {
   lintOnSave: undefined,
-  'max-attributes-per-line': [
-    1,
-    {
-      singleline: 1,
-      multiline: {
-        max: 1,
-        allowFirstLine: false
-      }
-    }
-  ]
+  baseUrl: undefined,
+  outputDir: undefined,
+  assetsDir: undefined,
+  runtimeCompiler: undefined,
+  productionSourceMap: false,
+  parallel: undefined,
+
+  css: {
+    sourceMap: true
+  }
 }

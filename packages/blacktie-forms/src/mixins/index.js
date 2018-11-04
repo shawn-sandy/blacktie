@@ -1,5 +1,5 @@
 /**
- * @mixins
+ * @mixin
  */
 export default {
   props: {
@@ -30,10 +30,9 @@ export default {
   },
   methods: {
     /**
-     * @public
      * Validates the input on blur and adds/ removes error class
      * Emits and error-msg event that passes a validation msg and input type
-     * @param {* event} e - focus event
+     * @param {*} e - focus event
      */
     validate(e) {
       if (!this.enableValidation) {
@@ -45,6 +44,11 @@ export default {
           e.target.setCustomValidity(`${this.errorMessage}`)
         }
         e.target.classList.add(this.errorClass)
+        /**
+         * Emits error on field validation event
+         *
+         * @event
+         */
         this.$emit(
           'error-msg',
           e.target.validationMessage.trim(),

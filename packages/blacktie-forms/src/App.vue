@@ -3,8 +3,8 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <form action="" @submit.prevent="">
-      <input-elm >
-        <template slot="default" slot-scope="{ onError }">
+      <input-elm>
+        <template slot-scope="{ onError }">
           <input-component v-model="email" @error-msg="onError" type="email" max-length="5" required error-message="Please enter a valid email address"/>
           <button formnovalidate>Submit</button>
         </template>
@@ -35,12 +35,7 @@ export default {
       email: null
     }
   },
-  methods: {
-    emailError(msg, type) {
-      this.errorMsg = msg
-      console.log('event error', msg)
-    }
-  }
+  methods: {}
 }
 </script>
 
@@ -72,6 +67,7 @@ export default {
     border: 1px solid lightgray;
     margin: 5px;
     border-radius: 5px;
+    font-size: 12px;
   }
 }
 </style>

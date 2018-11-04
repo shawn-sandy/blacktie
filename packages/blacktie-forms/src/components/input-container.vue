@@ -1,10 +1,10 @@
 <template>
   <div class="input-container">
     <div class="input-elm-wrapper" ref="inWrapper" >
-      <slot name="default" :onError="onError"/>
+      <slot :onError="onError"/>
     </div>
     <slot name="error-elm">
-      <transition name="slide-fade">
+      <transition name="fade">
         <div ref="inErrors" v-show="showErrors" class="error-msg">
           {{ errorMsg }}
         </div>
@@ -14,6 +14,9 @@
 </template>
 
 <script>
+/**
+ * BlackTie input container with baked pop-up error notifications powered by popper.js
+ */
 import containerMixin from './../mixins/input-container.js'
 export default {
   name: 'InputContainer',
@@ -23,12 +26,10 @@ export default {
 <style lang="scss">
 /* Enter and leave animations can use different */
 /* durations and timing functions.              */
-.slide-fade-enter-active {
-  transition: all 0.3s ease;
+.fade-enter-active {
+  transition: opacity 0.5s;
 }
-.slide-fade-enter
-/* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: translateX(10px);
+.fade-enter /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
 </style>
