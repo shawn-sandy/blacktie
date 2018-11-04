@@ -68,6 +68,7 @@ export default {
     margin: 5px;
     border-radius: 5px;
     font-size: 12px;
+    background-color: whitesmoke;
   }
 }
 </style>
