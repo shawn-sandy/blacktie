@@ -4,8 +4,8 @@
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <form action="" @submit.prevent="">
       <input-elm>
-        <template slot-scope="{ onError }">
-          <input-component v-model="email" @error-msg="onError" type="email" max-length="5" required error-message="Please enter a valid email address"/>
+        <template slot-scope="{ errorNotify }">
+          <input-component v-model="email" @error-msg="errorNotify" type="email" max-length="5" required error-message="Please enter a valid email address"/>
           <button formnovalidate>Submit</button>
         </template>
       </input-elm>

@@ -47,7 +47,7 @@ export default {
      * @param {bool} [isValid=null] - Field validation bool
      * @return null
      */
-    onError(msg = null, type = null, isValid = null) {
+    errorNotify(msg = null, type = null, isValid = null) {
       console.log('msg', msg, isValid)
       if (!msg) {
         this.showErrors = false

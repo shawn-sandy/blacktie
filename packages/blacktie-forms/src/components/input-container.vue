@@ -1,7 +1,7 @@
 <template>
   <div class="input-container">
     <div class="input-elm-wrapper" ref="inWrapper" >
-      <slot :onError="onError"/>
+      <slot :errorNotify="errorNotify"/>
     </div>
     <slot name="error-elm">
       <transition name="fade">

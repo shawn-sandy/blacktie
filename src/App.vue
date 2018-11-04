@@ -15,7 +15,7 @@
           <span>&#10095;</span>
           Please Confirm
         </template>
-        <span>&#10095;</span>
+        <span>&#10095;</span>devel
         <span>Confirmation Button</span>
       </button-element>
     </p>
@@ -33,11 +33,11 @@
     <form
       @submit.prevent="">
       <input-elm class="field">
-        <template slot-scope="{ onError }">
+        <template slot-scope="{ errorNotify }">
           <div class="field">
             <div class="control">
               <input-component
-                @error-msg="onError"
+                @error-msg="errorNotify"
                 type="email"
                 max-length="5"
                 required
