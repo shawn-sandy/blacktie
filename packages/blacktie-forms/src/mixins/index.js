@@ -35,6 +35,7 @@ export default {
      * @param {*} e - focus event
      */
     validate(e) {
+      this.isValid = !e.target.validity.valid
       if (!this.enableValidation) {
         return
       }
@@ -43,7 +44,7 @@ export default {
         if (e.target.validity.valueMissing && this.errorMessage) {
           e.target.setCustomValidity(`${this.errorMessage}`)
         }
-        e.target.classList.add(this.errorClass)
+        //e.target.classList.add(this.errorClass)
         /**
          * Emits error on field validation event
          *
@@ -51,15 +52,16 @@ export default {
          */
         this.$emit(
           'error-msg',
+          e.target,
           e.target.validationMessage.trim(),
           e.target.type,
           e.target.validity.valid
         )
       } else {
-        e.target.classList.remove(this.errorClass)
+        //e.target.classList.remove(this.errorClass)
         this.$emit('error-msg', null, null, false)
       }
-      console.log('input', e)
+      //console.log('input', e)
     }
   },
   data() {
@@ -68,15 +70,3 @@ export default {
     }
   }
 }
-// validity: ValidityState
-// badInput: false
-// customError: false
-// patternMismatch: false
-// rangeOverflow: false
-// rangeUnderflow: false
-// stepMismatch: false
-// tooLong: false
-// tooShort: false
-// typeMismatch: true
-// valid: false
-// valueMissing: false

@@ -3,29 +3,25 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <form action="" @submit.prevent="">
-      <input-elm>
+      <validate-field>
         <template slot-scope="{ errorNotify }">
-          <input-component v-model="email" @error-msg="errorNotify" type="email" max-length="5" required error-message="Please enter a valid email address"/>
+          <input-elm v-model="email" @error-msg="errorNotify" type="email" max-length="5" required error-message="Please enter a valid email address"/>
           <button formnovalidate>Submit</button>
         </template>
-      </input-elm>
-
+      </validate-field>
       <div/>
     </form>
-
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import InputComponent from './components/input-elm.vue'
-import InputElm from './components/input-container.vue'
+import InputElm from './components/input-elm.vue'
+import ValidateField from './components/input-container.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    InputComponent,
+    ValidateField,
     InputElm
   },
   props: {},
@@ -61,7 +57,7 @@ export default {
   .field-error {
     border: solid 1px red;
   }
-  .error-msg {
+  .validation-msg {
     padding: 10px 20px;
     background-color: #fff;
     border: 1px solid lightgray;

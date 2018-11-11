@@ -15,8 +15,8 @@
           <span>&#10095;</span>
           Please Confirm
         </template>
-        <span>&#10095;</span>devel
-        <span>Confirmation Button</span>
+        <span>&#10095;</span>
+        <span>Confirmation Buttons</span>
       </button-element>
     </p>
     <p>
@@ -30,10 +30,10 @@
       </url-button>
     </p>
     <hr>
-    <form
+    <validation-form
       @submit.prevent="">
-      <input-elm class="field">
-        <template slot-scope="{ errorNotify }">
+      <template slot-scope="{ errorNotify }">
+        <input-elm class="field">
           <div class="field">
             <div class="control">
               <input-component
@@ -45,15 +45,28 @@
                 error-message="Please enter a valid email address"/>
             </div>
           </div>
+        </input-elm>
+        <input-elm>
+          <div class="field">
+            <div class="control">
+              <input-component
+                @error-msg="errorNotify"
+                type="email"
+                max-length="5"
+                required
+                class="input"
+                error-message="Please enter a valid email address..."/>
+            </div>
+          </div>
           <p class="has-text-right">
             <button
               class="button"
               formnovalidate>Submit</button>
           </p>
-        </template>
-      </input-elm>
+        </input-elm>
+      </template>
       <div/>
-    </form>
+    </validation-form>
   </div>
 </template>
 
@@ -62,13 +75,14 @@
 import ButtonElement from 'blacktie-buttons-v2/src/components/ButtonElm.vue'
 import UrlButton from 'blacktie-buttons-v2/src/components/UrlButtonElm.vue'
 import InputComponent from 'blacktie-forms/src/components/input-elm.vue'
-// import InputElm from 'blacktie-forms/src/components/input-container.vue'
+import ValidationForm from 'blacktie-forms/src/functions/forms.vue'
 export default {
   name: 'App',
   components: {
     ButtonElement,
     UrlButton,
     InputComponent,
+    ValidationForm,
     // ButtonElement: () =>
     //   import('blacktie-buttons-v2/src/components/ButtonElm.vue'),
     // UrlButton: () =>

@@ -1,11 +1,11 @@
 <template>
   <div class="input-container">
-    <div class="input-elm-wrapper" ref="inWrapper" >
+    <div class="input-elm-wrapper" ref="field-wrapper" >
       <slot :errorNotify="errorNotify"/>
     </div>
     <slot name="error-elm">
       <transition name="fade">
-        <div ref="inErrors" v-show="showErrors" class="error-msg">
+        <div ref="inErrors" v-show="showErrors" class="validation-msg">
           {{ errorMsg }}
         </div>
       </transition>
@@ -25,11 +25,12 @@ export default {
 </script>
 <style lang="scss">
 /* Enter and leave animations can use different */
-/* durations and timing functions.              */
+/* durations and timing functions.*/
 .fade-enter-active {
   transition: opacity 0.5s;
 }
-.fade-enter /* .fade-leave-active below version 2.1.8 */ {
+/* .fade-leave-active below version 2.1.8 */
+.fade-enter {
   opacity: 0;
 }
 </style>

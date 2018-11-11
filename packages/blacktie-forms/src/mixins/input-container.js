@@ -9,30 +9,43 @@ export default {
      */
     errorPlacement: {
       type: String,
-      default: 'bottom-end'
+      default: 'bottom-start'
+    },
+    /**
+     * Sets the selector for wrapper element for each form fields - se
+     */
+    wrapper: {
+      default: '.input-container'
+    },
+    /**
+     * Validation message class - set the class for your validation msg container
+     */
+    validationMsg: {
+      default: '.validation-msg'
     }
   },
   data() {
     return {
       showErrors: false,
       errorMsg: null,
-      inputType: null
+      inputType: null,
+      inputElm: null
     }
   },
   beforeDestroy() {
-    this.popper.destroy()
+    if (this.popper) {
+      this.popper.destroy()
+    }
   },
   methods: {
-    loadPopper() {
-      console.log('wrapper', this.$refs.inWrapper.querySelector('.input-elm'))
+    loadPopper(el) {
+      const wrapper = el.closest(this.wrapper)
+      const errorElm = wrapper.querySelector(this.validationMsg)
+      console.log('wrapper', wrapper, wrapper.querySelector('.error-msg'))
       if (this.popper === undefined) {
-        this.popper = new Popper(
-          this.$refs.inWrapper.children[0],
-          this.$refs.inErrors,
-          {
-            placment: this.errorPlacement
-          }
-        )
+        this.popper = new Popper(el, errorElm, {
+          placement: this.errorPlacement
+        })
       } else {
         this.popper.scheduleUpdate()
       }
@@ -47,20 +60,21 @@ export default {
      * @param {bool} [isValid=null] - Field validation bool
      * @return null
      */
-    errorNotify(msg = null, type = null, isValid = null) {
-      console.log('msg', msg, isValid)
-      if (!msg) {
+    errorNotify(el) {
+      console.log('msg', el.validationMessage.trim())
+      console.log(el)
+
+      if (!el.validationMessage.trim()) {
         this.showErrors = false
         this.errorMsg = ''
         return
       }
-      this.errorMsg = msg
-      this.inputType = type
+      this.errorMsg = el.validationMessage.trim()
+      this.inputType = el.type
       this.showErrors = true
       this.$nextTick(() => {
-        this.loadPopper()
+        this.loadPopper(el)
       })
     }
-  },
-  computed: {}
+  }
 }

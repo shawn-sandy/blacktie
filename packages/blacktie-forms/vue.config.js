@@ -6,8 +6,12 @@ module.exports = {
   runtimeCompiler: undefined,
   productionSourceMap: false,
   parallel: undefined,
-
   css: {
     sourceMap: true
+  },
+  configureWebpack: {
+    output: {
+      libraryExport: 'default'
+    }
   }
 }

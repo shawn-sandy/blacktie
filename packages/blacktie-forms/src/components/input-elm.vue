@@ -5,6 +5,7 @@
     @input="$emit('input', $event.target.value)"
     @blur="validate($event)"
     class="input-elm"
+    :class="{'field-validation': isValid }"
   >
 </template>
 
