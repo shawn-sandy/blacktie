@@ -1,6 +1,6 @@
 <template>
   <form :name="formName" class="from-elm" :class="formName">
-    <slot :errorNotify="errorNotify"/>
+    <slot />
   </form>
 </template>
 

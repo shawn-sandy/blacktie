@@ -32,8 +32,9 @@
     <hr>
     <validation-form
       @submit.prevent="">
-      <template slot-scope="{ errorNotify }">
-        <input-elm class="field">
+      <input-elm class="field">
+        <template slot-scope="{ errorNotify }">
+
           <div class="field">
             <div class="control">
               <input-component
@@ -45,26 +46,26 @@
                 error-message="Please enter a valid email address"/>
             </div>
           </div>
-        </input-elm>
-        <input-elm>
+
           <div class="field">
             <div class="control">
               <input-component
                 @error-msg="errorNotify"
-                type="email"
+                type="text"
+                name="text"
                 max-length="5"
                 required
                 class="input"
-                error-message="Please enter a valid email address..."/>
+                error-message="Please enter text"/>
             </div>
           </div>
-          <p class="has-text-right">
-            <button
-              class="button"
-              formnovalidate>Submit</button>
-          </p>
-        </input-elm>
-      </template>
+        </template>
+        <p class="has-text-right">
+          <button
+            class="button"
+            formnovalidate>Submit</button>
+        </p>
+      </input-elm>
       <div/>
     </validation-form>
   </div>
@@ -75,6 +76,7 @@
 import ButtonElement from 'blacktie-buttons-v2/src/components/ButtonElm.vue'
 import UrlButton from 'blacktie-buttons-v2/src/components/UrlButtonElm.vue'
 import InputComponent from 'blacktie-forms/src/components/input-elm.vue'
+import InputElm from 'blacktie-forms/src/components/input-container.vue'
 import ValidationForm from 'blacktie-forms/src/functions/forms.vue'
 export default {
   name: 'App',
@@ -83,13 +85,14 @@ export default {
     UrlButton,
     InputComponent,
     ValidationForm,
+    InputElm,
     // ButtonElement: () =>
     //   import('blacktie-buttons-v2/src/components/ButtonElm.vue'),
     // UrlButton: () =>
     //   import('blacktie-buttons-v2/src/components/UrlButtonElm.vue'),
     // InputComponent: () => import('blacktie-forms/src/components/input-elm.vue'),
-    CoverImg: () => import('blacktie-img/src/components/CoverImg.vue'),
-    InputElm: () => import('blacktie-forms/src/components/input-container.vue')
+    CoverImg: () => import('blacktie-img/src/components/CoverImg.vue')
+    // InputElm: () => import('blacktie-forms/src/components/input-container.vue')
   }
 }
 </script>
@@ -101,5 +104,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   margin-top: 60px;
+  .validation-msg {
+    z-index: 99;
+    background-color: whitesmoke;
+    padding: 5px;
+    margin: 5px;
+    border: solid 1px lightgray;
+  }
 }
 </style>

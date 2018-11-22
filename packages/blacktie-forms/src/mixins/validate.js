@@ -1,8 +1,6 @@
 /**
  * @mixin
  */
-import Popper from 'popper.js'
-
 export default {
   props: {
     /**
@@ -34,32 +32,8 @@ export default {
       targetName: null
     }
   },
-  beforeDestroy() {
-    if (this.popper) {
-      this.popper.destroy()
-    }
-  },
+  beforeDestroy() {},
   methods: {
-    loadPopper(el) {
-      console.log('name ', el.name)
-      if (this.targetName !== el.name) {
-        if (this.pooper) {
-          this.pooper.destroy()
-        }
-        console.log('target-name', this.targetName)
-      }
-      const wrapper = el.closest(this.wrapper)
-      const errorElm = wrapper.querySelector(this.validationMsg)
-      console.log('wrapper', wrapper, wrapper.querySelector('.error-msg'))
-      if (this.popper === undefined) {
-        this.targetName = el.name
-        this.popper = new Popper(el, errorElm, {
-          placement: this.errorPlacement
-        })
-      } else {
-        this.popper.scheduleUpdate()
-      }
-    },
     /**
      * Process and displays the error notification
      *
@@ -82,9 +56,7 @@ export default {
       this.errorMsg = el.validationMessage.trim()
       this.inputType = el.type
       this.showErrors = true
-      this.$nextTick(() => {
-        this.loadPopper(el)
-      })
+      this.$nextTick(() => {})
     }
   }
 }
