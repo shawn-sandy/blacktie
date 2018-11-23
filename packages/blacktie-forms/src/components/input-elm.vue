@@ -1,11 +1,11 @@
 <template>
   <input
     :value="value"
+    :class="{'field-validation': isValid }"
+    class="input-elm"
     type="text"
     @input="$emit('input', $event.target.value)"
     @blur="validate($event)"
-    class="input-elm"
-    :class="{'field-validation': isValid }"
   >
 </template>
 

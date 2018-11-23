@@ -1,17 +1,22 @@
 <template>
   <div class="input-container">
-    <div class="input-elm-wrapper" ref="field-wrapper" >
+    <div
+      ref="field-wrapper"
+      class="input-elm-wrapper">
       <slot :errorNotify="errorNotify"/>
     </div>
     <slot name="error-elm">
       <transition name="fade">
-        <div ref="inErrors" v-show="showErrors" class="validation-msg">
+        <div v-show="showErrors"
+             ref="inErrors"
+             class="validation-msg">
           {{ errorMsg }}
         </div>
       </transition>
     </slot>
   </div>
 </template>
+
 
 <script>
 /**

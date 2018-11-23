@@ -1,5 +1,5 @@
 <template>
-  <form :name="formName" class="from-elm" :class="formName">
+  <form :class="formName" :name="formName" class="from-elm" >
     <slot />
   </form>
 </template>
