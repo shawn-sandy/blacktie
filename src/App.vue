@@ -33,12 +33,13 @@
     <validation-form
       @submit.prevent="">
       <input-elm class="field">
-        <template slot-scope="{ errorNotify }">
+        <template slot-scope="{ errorNotify, removeError }">
 
           <div class="field">
             <div class="control">
               <input-component
                 @error-msg="errorNotify"
+                @mousedown="removeError"
                 type="email"
                 max-length="5"
                 required
@@ -51,6 +52,7 @@
             <div class="control">
               <input-component
                 @error-msg="errorNotify"
+                @mousedown="removeError"
                 type="text"
                 name="text"
                 max-length="5"
@@ -63,7 +65,9 @@
         <p class="has-text-right">
           <button
             class="button"
-            formnovalidate>Submit</button>
+            formnovalidate>
+            Submit
+          </button>
         </p>
       </input-elm>
       <div/>
@@ -86,13 +90,7 @@ export default {
     InputComponent,
     ValidationForm,
     InputElm,
-    // ButtonElement: () =>
-    //   import('blacktie-buttons-v2/src/components/ButtonElm.vue'),
-    // UrlButton: () =>
-    //   import('blacktie-buttons-v2/src/components/UrlButtonElm.vue'),
-    // InputComponent: () => import('blacktie-forms/src/components/input-elm.vue'),
     CoverImg: () => import('blacktie-img/src/components/CoverImg.vue')
-    // InputElm: () => import('blacktie-forms/src/components/input-container.vue')
   }
 }
 </script>

@@ -3,7 +3,7 @@
     <div
       ref="field-wrapper"
       class="input-elm-wrapper">
-      <slot :errorNotify="errorNotify"/>
+      <slot :errorNotify="errorNotify" :removeError="removePopper"/>
     </div>
     <slot name="error-elm">
       <transition name="fade">

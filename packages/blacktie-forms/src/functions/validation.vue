@@ -57,6 +57,9 @@ export default {
       this.inputType = el.type
       this.showErrors = true
       this.$nextTick(() => {})
+    },
+    addError(el) {
+      el.add
     }
   },
   render() {

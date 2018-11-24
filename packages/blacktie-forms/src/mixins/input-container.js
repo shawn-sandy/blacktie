@@ -40,12 +40,17 @@ export default {
     }
   },
   methods: {
+    removePopper() {
+      if (this.popper) {
+        this.popper.destroy()
+        this.targetName = null
+        console.log('popper removed')
+      }
+    },
     loadPopper(el) {
       console.log('name ', el.name)
       if (this.targetName !== el.name) {
-        if (this.pooper) {
-          this.pooper.destroy()
-        }
+        this.removePopper()
         console.log('target-name', this.targetName)
       }
       const wrapper = el.closest(this.wrapper)
