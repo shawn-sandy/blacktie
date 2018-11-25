@@ -1,7 +1,7 @@
 <template>
-    <form action="">
-        <slot :errorNotify="errorNotify"/>      
-    </form>
+  <form class="form-elm">
+    <slot :errorNotify="errorNotify"/>      
+  </form>
 </template>
 
 <script>
@@ -15,6 +15,5 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
 </style>
