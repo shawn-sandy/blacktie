@@ -19,7 +19,7 @@ module.exports = {
     parser: 'babel-eslint'
   },
   'extends': [
-    'plugin:vue/strongly-recommended',
+    'plugin:vue/recommended',
     '@vue/prettier'
   ]
 };

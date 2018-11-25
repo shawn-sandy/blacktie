@@ -32,6 +32,19 @@ export default {
       targetName: null
     }
   },
+  mounted() {
+    const fields = document.querySelectorAll("input, select, textarea");
+
+    fields.forEach(input => {
+      input.addEventListener(
+        "invalid",
+        event => {
+          input.classList.add("error");
+        },
+        false
+      )
+      })
+  },
   beforeDestroy() {},
   methods: {
     /**
