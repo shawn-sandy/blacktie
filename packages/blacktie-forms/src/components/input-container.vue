@@ -3,13 +3,16 @@
     <div
       ref="field-wrapper"
       class="input-elm-wrapper">
-      <slot :errorNotify="errorNotify" :removeError="removePopper"/>
+      <slot
+        :errorNotify="errorNotify"
+        :removeError="removePopper"/>
     </div>
     <slot name="error-elm">
       <transition name="fade">
-        <div v-show="showErrors"
-             ref="inErrors"
-             class="validation-msg">
+        <div
+          v-show="showErrors"
+          ref="inErrors"
+          class="validation-msg">
           {{ errorMsg }}
         </div>
       </transition>

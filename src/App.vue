@@ -33,40 +33,40 @@
     <validation-form
       @submit.prevent="">
       <!-- <input-elm class="field"> -->
-        <template slot-scope="{ errorNotify  }">
+      <template slot-scope="{ errorNotify  }">
 
-          <div class="field">
-            <div class="control">
-              <input-component
-                @error-msg="errorNotify"
-                type="email"
-                max-length="5"
-                required
-                class="input"
-                error-message="Please enter a valid email address"/>
-            </div>
+        <div class="field">
+          <div class="control">
+            <input-component
+              type="email"
+              max-length="5"
+              required
+              class="input"
+              error-message="Please enter a valid email address"
+              @error-msg="errorNotify"/>
           </div>
+        </div>
 
-          <div class="field">
-            <div class="control">
-              <input-component
-                @error-msg="errorNotify"
-                type="text"
-                name="text"
-                max-length="5"
-                required
-                class="input"
-                error-message="Please enter text"/>
-            </div>
+        <div class="field">
+          <div class="control">
+            <input-component
+              type="text"
+              name="text"
+              max-length="5"
+              required
+              class="input"
+              error-message="Please enter text"
+              @error-msg="errorNotify"/>
           </div>
-        </template>
-        <p class="has-text-right">
-          <button
-            class="button"
-            formnovalidate>
-            Submit
-          </button>
-        </p>
+        </div>
+      </template>
+      <p class="has-text-right">
+        <button
+          class="button"
+          formnovalidate>
+          Submit
+        </button>
+      </p>
       <!-- </input-elm> -->
       <div/>
     </validation-form>
