@@ -15,11 +15,9 @@ module.exports = {
     'vue/prop-name-casing': 2,
     'vue/script-indent': 2
   },
-
   parserOptions: {
     parser: 'babel-eslint'
   },
-
   'extends': [
     'plugin:vue/strongly-recommended',
     '@vue/prettier'
