@@ -9,7 +9,9 @@ module.exports = {
 
   rules: {
     'no-console': 'off',
-    'no-debugger': 'off'
+    'no-debugger': 'off',
+    'vue/max-attributes-per-line': 1,
+    'vue/mustache-interpolation-spacing': 1
   },
 
   parserOptions: {

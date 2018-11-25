@@ -32,6 +32,7 @@
     <hr>
     <validation-form
       @submit.prevent="">
+      <!-- <input-elm class="field"> -->
       <template slot-scope="{ errorNotify  }">
 
         <div class="field">
@@ -66,6 +67,7 @@
           Submit
         </button>
       </p>
+      <!-- </input-elm> -->
       <div/>
     </validation-form>
   </div>
