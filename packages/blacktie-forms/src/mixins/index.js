@@ -17,6 +17,12 @@ export default {
       default: 'field-error'
     },
     /**
+     * Default input class
+     */
+    elmClass: {
+      default: 'input-elm'
+    },
+    /**
      * Default error message
      */
     errorMessage: {
@@ -28,9 +34,15 @@ export default {
     enableValidation: {
       default: true
     },
+    /**
+     * Field Label text / value
+     */
     label: {
       default: 'Field Name'
     },
+    /**
+     * Field name
+     */
     name: {
       required: true,
       type: String
@@ -49,14 +61,15 @@ export default {
       }
       e.target.setCustomValidity('')
       if (!e.target.validity.valid) {
+        this.hasError = true
         if (e.target.validity.valueMissing && this.errorMessage) {
           e.target.setCustomValidity(`${this.errorMessage}`)
         }
         this.validationMessage = e.target.validationMessage.trim()
-        console.log('message', e.target.validationMessage.trim())
+        //console.log('element', e.target)
 
-        console.log('input', e)
-        //e.target.classList.add(this.errorClass)
+        e.target.classList.add(this.errorClass)
+
         /**
          * Emits error on field validation event
          *
@@ -69,9 +82,16 @@ export default {
           e.target.type,
           e.target.validity.valid
         )
+        this.$nextTick(() => {
+          // this.loadPopper()
+          if (this.hasError) {
+            e.target.classList.add(this.errorClass)
+          }
+        })
       } else {
-        //e.target.classList.remove(this.errorClass)
+        e.target.classList.remove(this.errorClass)
         this.isValid = false
+        this.hasError = false
         this.validationMessage = null
         this.$emit('error-msg', null, null, false)
       }
@@ -80,13 +100,14 @@ export default {
   data() {
     return {
       isValid: false,
+      hasError: false,
       validationMessage: ''
     }
   },
   computed: {
     listeners() {
       return {
-        ...this.$listensrs,
+        ...this.$listeners,
         input: event => this.$emit('input', event.target.value)
       }
     }

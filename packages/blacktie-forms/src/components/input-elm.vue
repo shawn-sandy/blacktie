@@ -8,8 +8,8 @@
     <input
       v-bind="$attrs"
       :value="value"
-      :class="{'field-validation': isValid }"
-      class="input-elm"
+      :class=" elmClass "
+
       v-on="listeners"
       @blur="validate($event)"
     >

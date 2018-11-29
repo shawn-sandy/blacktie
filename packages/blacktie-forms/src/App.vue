@@ -15,6 +15,17 @@
         required
         error-message="Please enter a valid email address"
         @error-msg="alert"/>
+
+      <hr>
+      <input-elm
+        id="myfielsz-"
+        v-model="numbers"
+        name="field-name"
+        type="text"
+        maxlength="5"
+        required
+        error-message="This field is required"
+        @error-msg="alert"/>
       <button formnovalidate>Submit</button>
       <div/>
     </form>
@@ -33,12 +44,14 @@ export default {
   data() {
     return {
       errorMsg: null,
-      email: null
+      email: null,
+      numbers: 0
     }
   },
   methods: {
     alert(el) {
       console.log('error', el)
+      //el.classList.add('field-error')
     }
   }
 }
@@ -63,8 +76,7 @@ export default {
   button {
     padding: 10px 20px;
   }
-  .field-error,
-  .field-validation {
+  .field-error {
     border: dotted 1px red;
   }
   .validation-msg {
