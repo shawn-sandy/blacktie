@@ -15,6 +15,7 @@
     >
     <slot
       :validationMessage="validationMessage"
+      :valid="isValid"
       name="errors">
       <div>{{ validationMessage }}</div>
     </slot>
