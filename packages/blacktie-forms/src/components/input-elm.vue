@@ -1,6 +1,10 @@
 <template>
   <div>
-    <slot>
+    <!-- @slot default slot default label display - scope validationMessage, isValid -->
+    <slot
+      :validationMessage="validationMessage"
+      :isValid="isValid"
+      :hasError="hasError">
       <div>
         <label>{{ label }}</label>
       </div>
@@ -13,9 +17,11 @@
       v-on="listeners"
       @blur="validate($event)"
     >
+    <!-- @slot Displays error messages - scope validationMessage, isValid -->
     <slot
       :validationMessage="validationMessage"
-      :valid="isValid"
+      :isValid="isValid"
+      :hasError="hasError"
       name="errors">
       <div>{{ validationMessage }}</div>
     </slot>
