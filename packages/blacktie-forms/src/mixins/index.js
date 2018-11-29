@@ -2,6 +2,7 @@
  * @mixin
  */
 export default {
+  inheritAttrs: false,
   props: {
     /**
      * default from value
@@ -26,6 +27,13 @@ export default {
      */
     enableValidation: {
       default: true
+    },
+    label: {
+      default: 'Field Name'
+    },
+    name: {
+      required: true,
+      type: String
     }
   },
   methods: {
@@ -67,6 +75,14 @@ export default {
   data() {
     return {
       isValid: false
+    }
+  },
+  computed: {
+    listeners() {
+      return {
+        ...this.$listensrs,
+        input: event => this.$emit('input', event)
+      }
     }
   }
 }

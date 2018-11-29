@@ -78,7 +78,7 @@
 import ButtonElement from 'blacktie-buttons-v2/src/components/ButtonElm.vue'
 import UrlButton from 'blacktie-buttons-v2/src/components/UrlButtonElm.vue'
 import InputComponent from 'blacktie-forms/src/components/input-elm.vue'
-import InputElm from 'blacktie-forms/src/components/input-container.vue'
+// import InputElm from 'blacktie-forms/src/components/input-container.vue'
 import ValidationForm from 'blacktie-forms/src/components/FormElement.vue'
 export default {
   name: 'App',
@@ -87,7 +87,7 @@ export default {
     UrlButton,
     InputComponent,
     ValidationForm,
-    InputElm,
+
     CoverImg: () => import('blacktie-img/src/components/CoverImg.vue')
   }
 }

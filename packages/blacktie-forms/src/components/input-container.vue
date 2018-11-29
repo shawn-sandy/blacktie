@@ -2,7 +2,7 @@
   <div class="input-container">
     <label
       :lableClass="labelClass"
-      for="labelFor(label)" />
+      for="{labelFor(label)}" />
     <slot />
   </div>
 </template>

@@ -1,12 +1,20 @@
 <template>
-  <input
-    :value="value"
-    :class="{'field-validation': isValid }"
-    class="input-elm"
-    type="text"
-    @input="$emit('input', $event.target.value)"
-    @blur="validate($event)"
-  >
+  <div>
+    <slot>       
+      <div>
+        <label>{{ label }} huhu</label>
+      </div>
+    </slot>
+    <input
+      v-bind="$attrs"
+      :value="value"
+      :class="{'field-validation': isValid }"
+      class="input-elm"
+      type="text"
+      v-on="listeners"
+      @blur="validate($event)"
+    >
+  </div>
 </template>
 
 <script>

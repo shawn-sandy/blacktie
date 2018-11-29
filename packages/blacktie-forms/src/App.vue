@@ -1,14 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img 
+      alt="Vue logo" 
+      src="./assets/logo.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-    <form action="" @submit.prevent="">
-      <validate-field>
-        <template slot-scope="{ errorNotify }">
-          <input-elm v-model="email" @error-msg="errorNotify" type="email" max-length="5" required error-message="Please enter a valid email address"/>
-          <button formnovalidate>Submit</button>
-        </template>
-      </validate-field>
+    <form 
+      action="" 
+      @submit.prevent="">  
+      <input-elm 
+        id="myfiels"
+        v-model="email" 
+        name="field-name"
+        type="email" 
+        max-length="5" 
+        required 
+        error-message="Please enter a valid email address" 
+        @error-msg="alert"/>
+      <button formnovalidate>Submit</button>
       <div/>
     </form>
   </div>
@@ -16,12 +24,10 @@
 
 <script>
 import InputElm from './components/input-elm.vue'
-import ValidateField from './components/input-container.vue'
 
 export default {
   name: 'App',
   components: {
-    ValidateField,
     InputElm
   },
   props: {},
@@ -31,7 +37,11 @@ export default {
       email: null
     }
   },
-  methods: {}
+  methods: {
+    alert(el) {
+      console.log('error', el)
+    }
+  }
 }
 </script>
 
