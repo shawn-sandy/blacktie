@@ -1,8 +1,8 @@
 <template>
   <div>
-    <slot>       
+    <slot>
       <div>
-        <label>{{ label }} huhu</label>
+        <label>{{ label }}</label>
       </div>
     </slot>
     <input
@@ -10,10 +10,14 @@
       :value="value"
       :class="{'field-validation': isValid }"
       class="input-elm"
-      type="text"
       v-on="listeners"
       @blur="validate($event)"
     >
+    <slot
+      :validationMessage="validationMessage"
+      name="errors">
+      <div>{{ validationMessage }}</div>
+    </slot>
   </div>
 </template>
 

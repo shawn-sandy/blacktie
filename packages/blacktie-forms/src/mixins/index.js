@@ -52,6 +52,10 @@ export default {
         if (e.target.validity.valueMissing && this.errorMessage) {
           e.target.setCustomValidity(`${this.errorMessage}`)
         }
+        this.validationMessage = e.target.validationMessage.trim()
+        console.log('message', e.target.validationMessage.trim())
+
+        console.log('input', e)
         //e.target.classList.add(this.errorClass)
         /**
          * Emits error on field validation event
@@ -67,21 +71,23 @@ export default {
         )
       } else {
         //e.target.classList.remove(this.errorClass)
+        this.isValid = false
+        this.validationMessage = null
         this.$emit('error-msg', null, null, false)
       }
-      //console.log('input', e)
     }
   },
   data() {
     return {
-      isValid: false
+      isValid: false,
+      validationMessage: ''
     }
   },
   computed: {
     listeners() {
       return {
         ...this.$listensrs,
-        input: event => this.$emit('input', event)
+        input: event => this.$emit('input', event.target.value)
       }
     }
   }

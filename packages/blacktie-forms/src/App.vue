@@ -1,20 +1,19 @@
 <template>
   <div id="app">
-    <img 
-      alt="Vue logo" 
+    <img
+      alt="Vue logo"
       src="./assets/logo.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-    <form 
-      action="" 
-      @submit.prevent="">  
-      <input-elm 
+    <form
+      action=""
+      @submit.prevent="">
+      <input-elm
         id="myfiels"
-        v-model="email" 
+        v-model="email"
         name="field-name"
-        type="email" 
-        max-length="5" 
-        required 
-        error-message="Please enter a valid email address" 
+        type="email"
+        required
+        error-message="Please enter a valid email address"
         @error-msg="alert"/>
       <button formnovalidate>Submit</button>
       <div/>
@@ -64,8 +63,9 @@ export default {
   button {
     padding: 10px 20px;
   }
-  .field-error {
-    border: solid 1px red;
+  .field-error,
+  .field-validation {
+    border: dotted 1px red;
   }
   .validation-msg {
     padding: 10px 20px;
