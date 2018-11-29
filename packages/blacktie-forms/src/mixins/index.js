@@ -5,7 +5,7 @@ export default {
   inheritAttrs: false,
   props: {
     /**
-     * default from value
+     * Default from value
      */
     value: {
       default: null
