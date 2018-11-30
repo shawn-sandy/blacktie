@@ -6,14 +6,15 @@
       :isValid="isValid"
       :hasError="hasError">
       <div>
-        <label>{{ label }}</label>
+        <label :label="name">{{ label }}</label>
       </div>
     </slot>
     <input
       v-bind="$attrs"
       :value="value"
       :class=" elmClass "
-
+      :name="name"
+      :aria-label="name"
       v-on="listeners"
       @blur="validate($event)"
     >

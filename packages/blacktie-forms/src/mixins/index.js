@@ -17,6 +17,12 @@ export default {
       default: 'field-error'
     },
     /**
+     * Default name for error class adds a red border on error style `.field-error` styling required .field-error `{ border: solid 1px red; }`
+     */
+    successClass: {
+      default: 'field-success'
+    },
+    /**
      * Default input class
      */
     elmClass: {
@@ -68,7 +74,8 @@ export default {
         this.validationMessage = e.target.validationMessage.trim()
         //console.log('element', e.target)
 
-        e.target.classList.add(this.errorClass)
+        // e.target.classList.add(this.errorClass)
+        e.target.classList.remove(this.successClass)
 
         /**
          * Emits error on field validation event
@@ -85,15 +92,21 @@ export default {
         this.$nextTick(() => {
           // this.loadPopper()
           if (this.hasError) {
+            e.target.classList.remove(this.successClass)
             e.target.classList.add(this.errorClass)
           }
         })
       } else {
-        e.target.classList.remove(this.errorClass)
         this.isValid = false
         this.hasError = false
         this.validationMessage = null
         this.$emit('error-msg', null, null, false)
+        this.$nextTick(() => {
+          if (!this.hasError) {
+            e.target.classList.remove(this.errorClass)
+            e.target.classList.add(this.successClass)
+          }
+        })
       }
     }
   },

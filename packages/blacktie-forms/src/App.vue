@@ -10,13 +10,15 @@
       <input-elm
         id="myfiels"
         v-model="email"
+        label="Email Address"
         name="field-name"
         type="email"
+        placeholder="Enter your Em@il address"
         required
         error-message="Please enter a valid email address"
         @error-msg="alert"/>
 
-      <hr>
+      
       <input-elm
         id="myfielsz-"
         v-model="numbers"
@@ -78,6 +80,9 @@ export default {
   }
   .field-error {
     border: dotted 1px red;
+  }
+  .field-success {
+    border: solid 1px green;
   }
   .validation-msg {
     padding: 10px 20px;
