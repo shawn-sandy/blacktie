@@ -30,36 +30,36 @@
       </url-button>
     </p>
     <hr>
-    <validation-form
-      @submit.prevent="">
-      <!-- <input-elm class="field"> -->
-      <template slot-scope="{ errorNotify  }">
-
-        <div class="field">
-          <div class="control">
-            <input-component
-              type="email"
-              max-length="5"
-              required
-              class="input"
-              error-message="Please enter a valid email address"
-              @error-msg="errorNotify"/>
-          </div>
+    <validation-form @submit.prevent="">
+      <div class="field">
+        <div class="control">
+          <input-component
+            id="myfield"
+            v-model="email"
+            elm-class="input"
+            label="Email Address"
+            name="field-name"
+            type="email"
+            placeholder="Enter your Em@il address"
+            required
+            error-message="Please enter a valid email address"
+            @error-msg="alert"/>
         </div>
+      </div>
 
-        <div class="field">
-          <div class="control">
-            <input-component
-              type="text"
-              name="text"
-              max-length="5"
-              required
-              class="input"
-              error-message="Please enter text"
-              @error-msg="errorNotify"/>
-          </div>
-        </div>
-      </template>
+      <input-component
+        id="myfielsz-"
+        v-model="numbers"
+        elm-class="input"
+        name="field-name"
+        type="text"
+        label="Full Name"
+        minlength="5"
+        required
+        error-message="Please enter your full name"
+        @error-msg="alert"/>
+
+
       <p class="has-text-right">
         <button
           class="button"
@@ -89,6 +89,11 @@ export default {
     ValidationForm,
 
     CoverImg: () => import('blacktie-img/src/components/CoverImg.vue')
+  },
+  methods: {
+    alert() {
+      return
+    }
   }
 }
 </script>

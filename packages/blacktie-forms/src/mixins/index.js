@@ -17,7 +17,7 @@ export default {
       default: 'field-error'
     },
     /**
-     * Default name for error class adds a red border on error style `.field-error` styling required .field-error `{ border: solid 1px red; }`
+     * Default name for success class adds a red border on success style `.field-success` styling required .field-success `{ border: solid 1px red; }`
      */
     successClass: {
       default: 'field-success'

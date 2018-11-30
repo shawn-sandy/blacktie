@@ -18,13 +18,15 @@
       v-on="listeners"
       @blur="validate($event)"
     >
-    <!-- @slot Displays error messages - scope validationMessage, isValid, hasError -->
+    <!-- @slot errors : Displays error messages - scope validationMessage, isValid, hasError -->
     <slot
       :validationMessage="validationMessage"
       :isValid="isValid"
       :hasError="hasError"
       name="errors">
-      <div>{{ validationMessage }}</div>
+      <div>
+        <small>{{ validationMessage }}</small>
+      </div>
     </slot>
   </div>
 </template>
