@@ -39,6 +39,15 @@
         error-message="This field is required"
         @error-msg="alert"/>
 
+      <checkbox-elm
+        id="myfielsz-"
+        v-model="checkbox"
+        name="checkbox"
+        required
+        placeholder="Select one"
+        error-message="This field is required"
+        @error-msg="alert"/>
+
       <textarea-elm
         label="Add your comment"
         name="comment"
@@ -47,8 +56,6 @@
         minlength="20"
         placeholder="Please add your comment"
       />
-
-
       <button formnovalidate>Submit</button>
       <div/>
     </form>
@@ -59,13 +66,15 @@
 import InputElm from './components/input-elm.vue'
 import TextareaElm from './components/textarea-elm.vue'
 import SelectElm from './components/select-elm.vue'
+import CheckboxElm from './components/Checkbox.vue'
 
 export default {
   name: 'App',
   components: {
     InputElm,
     TextareaElm,
-    SelectElm
+    SelectElm,
+    CheckboxElm
   },
   props: {},
   data() {
@@ -73,7 +82,8 @@ export default {
       errorMsg: null,
       email: null,
       numbers: 0,
-      select: null
+      select: null,
+      checkbox: null
     }
   },
   methods: {
