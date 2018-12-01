@@ -8,7 +8,6 @@
         v-bind="$attrs"
         :value="value"
         :class=" elmClass"
-        :style="`height: ${elmSize}; width: ${elmSize}`"
         :name="name"
         :aria-label="name"
         type="checkbox"
@@ -54,14 +53,15 @@ export default {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  height: 20px;
   input[type='checkbox'] {
     opacity: 0;
-    height: 20px;
-    width: 20px;
+    cursor: pointer;
   }
   label::before {
     content: '';
-    border: 1px solid;
+    box-sizing: border-box;
+    border: 2px solid;
     height: 20px;
     width: 20px;
     position: absolute;
