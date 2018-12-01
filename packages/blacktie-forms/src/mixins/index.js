@@ -23,12 +23,6 @@ export default {
       default: 'field-success'
     },
     /**
-     * Default input class
-     */
-    elmClass: {
-      default: 'input-elm'
-    },
-    /**
      * Default error message
      */
     errorMessage: {

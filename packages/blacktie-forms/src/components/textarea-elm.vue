@@ -9,7 +9,7 @@
         <label :label="name">{{ label }}</label>
       </div>
     </slot>
-    <input
+    <textarea
       v-bind="$attrs"
       :value="value"
       :class=" elmClass "
@@ -17,7 +17,7 @@
       :aria-label="name"
       v-on="listeners"
       @blur="validate($event)"
-    >
+    />
     <!-- @slot errors : Displays error messages - scope validationMessage, isValid, hasError -->
     <slot
       :validationMessage="validationMessage"
@@ -45,8 +45,14 @@ export default {
      */
     elmClass: {
       type: String,
-      default: 'input-elm'
+      default: 'textarea-elm'
     }
   }
 }
 </script>
+<style lang="scss">
+.textarea-elm {
+  min-width: 300px;
+  min-height: 150px;
+}
+</style>

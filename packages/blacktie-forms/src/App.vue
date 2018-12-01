@@ -18,7 +18,6 @@
         error-message="Please enter a valid email address"
         @error-msg="alert"/>
 
-      
       <input-elm
         id="myfielsz-"
         v-model="numbers"
@@ -28,6 +27,17 @@
         required
         error-message="This field is required"
         @error-msg="alert"/>
+
+      <textarea-elm
+        label="Add your comment"
+        name="comment"
+        required
+        error-message="Please add a comment"
+        minlength="20"
+        placeholder="Please add your comment"
+      />
+
+
       <button formnovalidate>Submit</button>
       <div/>
     </form>
@@ -36,11 +46,13 @@
 
 <script>
 import InputElm from './components/input-elm.vue'
+import TextareaElm from './components/textarea-elm.vue'
 
 export default {
   name: 'App',
   components: {
-    InputElm
+    InputElm,
+    TextareaElm
   },
   props: {},
   data() {
