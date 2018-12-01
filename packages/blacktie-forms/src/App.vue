@@ -28,6 +28,17 @@
         error-message="This field is required"
         @error-msg="alert"/>
 
+      <select-elm
+        id="myfielsz-"
+        v-model="select"
+        name="field-name"
+        type="text"
+        maxlength="5"
+        required
+        placeholder="Select one"
+        error-message="This field is required"
+        @error-msg="alert"/>
+
       <textarea-elm
         label="Add your comment"
         name="comment"
@@ -47,19 +58,22 @@
 <script>
 import InputElm from './components/input-elm.vue'
 import TextareaElm from './components/textarea-elm.vue'
+import SelectElm from './components/select-elm.vue'
 
 export default {
   name: 'App',
   components: {
     InputElm,
-    TextareaElm
+    TextareaElm,
+    SelectElm
   },
   props: {},
   data() {
     return {
       errorMsg: null,
       email: null,
-      numbers: 0
+      numbers: 0,
+      select: null
     }
   },
   methods: {
@@ -79,7 +93,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  input {
+  input,
+  select {
     padding: 10px;
     margin: 10px;
     min-width: 30%;

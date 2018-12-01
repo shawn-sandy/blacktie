@@ -30,7 +30,7 @@
       </url-button>
     </p>
     <hr>
-    <validation-form @submit.prevent="">
+    <form @submit.prevent="">
       <div class="field">
         <div class="control">
           <input-component
@@ -69,7 +69,7 @@
       </p>
       <!-- </input-elm> -->
       <div/>
-    </validation-form>
+    </form>
   </div>
 </template>
 
@@ -89,6 +89,12 @@ export default {
     ValidationForm,
 
     CoverImg: () => import('blacktie-img/src/components/CoverImg.vue')
+  },
+  data() {
+    return {
+      email: null,
+      numbers: null
+    }
   },
   methods: {
     alert() {
