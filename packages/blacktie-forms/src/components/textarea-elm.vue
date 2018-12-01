@@ -37,7 +37,7 @@
  */
 import _mixins from './../mixins/index.js'
 export default {
-  name: 'InputElm',
+  name: 'TextareaElm',
   mixins: [_mixins],
   props: {
     /**

@@ -1,15 +1,6 @@
 <template>
   <div>
-    <!-- @slot lebel-elm : label display - scope validationMessage, isValid, hasError -->
-    <slot
-      :validationMessage="validationMessage"
-      :isValid="isValid"
-      :hasError="hasError"
-      name="label-elm">
-      <div>
-        <label :label="name">{{ label }}</label>
-      </div>
-    </slot>
+
     <select
       v-bind="$attrs"
       :value="value"
@@ -31,16 +22,7 @@
         <option value="three">three</option>
       </slot>
     </select>
-    <!-- @slot errors : Displays error messages - scope validationMessage, isValid, hasError -->
-    <slot
-      :validationMessage="validationMessage"
-      :isValid="isValid"
-      :hasError="hasError"
-      name="errors">
-      <div>
-        <small>{{ validationMessage }}</small>
-      </div>
-    </slot>
+
   </div>
 </template>
 
@@ -50,7 +32,7 @@
  */
 import _mixins from './../mixins/index.js'
 export default {
-  name: 'SelectElm',
+  name: 'Select',
   mixins: [_mixins],
   props: {
     /**
