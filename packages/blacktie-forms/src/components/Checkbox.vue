@@ -85,7 +85,7 @@ export default {
       } else {
         e.target.value = this.unChecked
       }
-      console.log('clicked', e)
+      console.log('er', this.$el)
     }
   }
 }
