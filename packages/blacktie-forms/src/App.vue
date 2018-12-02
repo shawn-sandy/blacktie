@@ -43,9 +43,6 @@
         id="myfielsz-"
         v-model="checkbox"
         name="checkbox"
-        required
-        placeholder="Select one"
-        error-message="This field is required"
         @error-msg="alert"/>
 
       <textarea-elm
@@ -83,7 +80,7 @@ export default {
       email: null,
       numbers: 0,
       select: null,
-      checkbox: null
+      checkbox: 1
     }
   },
   methods: {

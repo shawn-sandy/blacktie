@@ -6,7 +6,7 @@
       :isValid="isValid"
       :hasError="hasError">
       <div>
-        <label :label="name">{{ label }}</label>
+        <label :for="name">{{ label }}</label>
       </div>
     </slot>
     <textarea

@@ -7,7 +7,7 @@
       :hasError="hasError"
       name="label-elm">
       <div>
-        <label :label="name">{{ label }}</label>
+        <label :for="name">{{ label }}</label>
       </div>
     </slot>
     <select

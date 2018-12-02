@@ -5,6 +5,7 @@
       :style="`height: ${elmSize}`">
       <!-- @slot default slot default label display - scope validationMessage, isValid, hasError -->
       <input
+        :id="name"
         v-bind="$attrs"
         :value="value"
         :class=" elmClass"
@@ -14,7 +15,7 @@
         v-on="listeners"
         @blur="validate($event)"
       >
-      <label :labelFor="name">{{ label }}</label>
+      <label :for="name">{{ label }}</label>
     </div>
   </div>
 </template>
@@ -55,18 +56,36 @@ export default {
   align-items: center;
   height: 20px;
   input[type='checkbox'] {
-    opacity: 0;
+    display: none;
+    cursor: crosshair;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  label {
+    display: inline-block;
     cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
   }
   label::before {
     content: '';
-    box-sizing: border-box;
-    border: 2px solid;
-    height: 20px;
+    display: inline-block;
     width: 20px;
+    height: 20px;
+    margin-right: 10px;
     position: absolute;
-    top: 0;
     left: 0;
+    top: 0;
+    box-sizing: border-box;
+    border: 2px solid currentColor;
+  }
+  input[type='checkbox']:checked + label:before {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    // line-height: 15px;
+    background-color: currentColor;
+    // border: 4px solid currentColor;
   }
 }
 </style>
