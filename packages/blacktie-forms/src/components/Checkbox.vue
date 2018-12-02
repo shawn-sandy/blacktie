@@ -77,8 +77,9 @@ export default {
     position: absolute;
     left: 0;
     top: 0;
+    border-radius: 3px;
     box-sizing: border-box;
-    border: 2px solid currentColor;
+    border: 3px solid currentColor;
   }
   input[type='checkbox']:checked + label:before {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
