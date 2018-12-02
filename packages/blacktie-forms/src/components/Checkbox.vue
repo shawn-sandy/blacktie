@@ -29,10 +29,9 @@
     </slot>
   </div>
 </template>
-
 <script>
 /**
- * BlackTie input element with baked in HTML5 validation, light fast and easy to cutomize
+ * BlackTie Checkbox element with baked in HTML5 validation, light fast and easy to cutomize
  */
 import _mixins from './../mixins/index.js'
 export default {
@@ -48,7 +47,7 @@ export default {
     },
     elmSize: {
       type: String,
-      default: '20px'
+      default: '15px'
     },
 
     /**
@@ -89,7 +88,6 @@ export default {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: 20px;
   input[type='checkbox'] {
     display: none;
     cursor: crosshair;
@@ -99,15 +97,14 @@ export default {
   label {
     display: inline-block;
     cursor: pointer;
-    position: relative;
     padding-left: 25px;
     margin-right: 15px;
   }
   label::before {
     content: '';
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    min-width: 15px;
+    min-height: 15px;
     margin-right: 10px;
     position: absolute;
     left: 0;
