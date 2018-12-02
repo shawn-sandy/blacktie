@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="$style['input-wrapper']">
     <!-- @slot default slot default label display - scope validationMessage, isValid, hasError -->
     <slot
       :validationMessage="validationMessage"
@@ -51,3 +51,21 @@ export default {
   }
 }
 </script>
+<style lang="scss" module>
+.input-wrapper {
+  label {
+    display: inline-block;
+    padding-left: 25px;
+    margin-right: 15px;
+  }
+  input[required] {
+    border: 1px solid;
+    border-right: solid 3px red;
+  }
+  input[required] + label {
+    position: absolute;
+    font-weight: bold;
+    right: 0;
+  }
+}
+</style>

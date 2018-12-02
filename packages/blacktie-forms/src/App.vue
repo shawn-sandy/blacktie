@@ -11,7 +11,7 @@
         id="myfiels"
         v-model="email"
         label="Email Address"
-        name="field-name"
+        name="field-name1"
         type="email"
         placeholder="Enter your Em@il address"
         required
@@ -21,7 +21,7 @@
       <input-elm
         id="myfielsz-"
         v-model="numbers"
-        name="field-name"
+        name="field-name2"
         type="text"
         maxlength="5"
         required
@@ -31,7 +31,7 @@
       <select-elm
         id="myfielsz-"
         v-model="select"
-        name="field-name"
+        name="field-name3"
         type="text"
         maxlength="5"
         required

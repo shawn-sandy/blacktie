@@ -127,5 +127,13 @@ export default {
     background-color: currentColor;
     // border: 4px solid currentColor;
   }
+  input[required] + label:after {
+    content: '*';
+    color: red;
+    font-weight: 700;
+  }
+  input[required] + label {
+    font-weight: bold;
+  }
 }
 </style>
