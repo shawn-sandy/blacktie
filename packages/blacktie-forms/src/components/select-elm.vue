@@ -19,6 +19,7 @@
       :aria-label="name"
       v-on="listeners"
       @blur="validate($event)"
+
     >
       <option
         v-if="placeholder"

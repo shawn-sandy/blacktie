@@ -14,9 +14,19 @@
         type="checkbox"
         v-on="listeners"
         @blur="validate($event)"
+        @change="_setValue($event), validate($event)"
       >
       <label :for="name">{{ label }}</label>
     </div>
+    <slot
+      :validationMessage="validationMessage"
+      :isValid="isValid"
+      :hasError="hasError"
+      name="errors">
+      <div>
+        <small>{{ validationMessage }}</small>
+      </div>
+    </slot>
   </div>
 </template>
 
@@ -39,11 +49,36 @@ export default {
     elmSize: {
       type: String,
       default: '20px'
+    },
+
+    /**
+     * Set the checked value for checkbox - set on changes
+     */
+    checked: {
+      type: [String, Number, Boolean],
+      default: null
+    },
+    /**
+     * Set the un-checked value for checkbox - set on mount
+     */
+    unChecked: {
+      type: [String, Number, Boolean],
+      default: null
     }
   },
   computed: {
     checkboxStyle() {
       return {}
+    }
+  },
+  methods: {
+    _setValue(e) {
+      if (e.target.checked) {
+        e.target.value = this.checked
+      } else {
+        e.target.value = this.unChecked
+      }
+      console.log('clicked', e)
     }
   }
 }

@@ -40,9 +40,11 @@
         @error-msg="alert"/>
 
       <checkbox-elm
-        id="myfielsz-"
         v-model="checkbox"
         name="checkbox"
+        set-value="1"
+        required
+        label="Agree to terms and conditions"
         @error-msg="alert"/>
 
       <textarea-elm
@@ -80,7 +82,7 @@ export default {
       email: null,
       numbers: 0,
       select: null,
-      checkbox: 1
+      checkbox: null
     }
   },
   methods: {

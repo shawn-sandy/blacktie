@@ -41,7 +41,7 @@ export default {
       default: 'Field Name'
     },
     /**
-     * Field name
+     * Field name - sets the attribute for the label, label for, id and name attributes
      */
     name: {
       required: true,
