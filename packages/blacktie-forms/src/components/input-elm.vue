@@ -55,17 +55,6 @@ export default {
 .input-wrapper {
   label {
     display: inline-block;
-    padding-left: 25px;
-    margin-right: 15px;
-  }
-  input[required] {
-    border: 1px solid;
-    border-right: solid 3px red;
-  }
-  input[required] + label {
-    position: absolute;
-    font-weight: bold;
-    right: 0;
   }
 }
 </style>
