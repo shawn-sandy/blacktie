@@ -10,6 +10,7 @@
       </div>
     </slot>
     <input
+      :id="name"
       v-bind="$attrs"
       :value="value"
       :class=" elmClass "

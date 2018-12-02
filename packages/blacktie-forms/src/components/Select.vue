@@ -2,6 +2,7 @@
   <div>
 
     <select
+      :id="name"
       v-bind="$attrs"
       :value="value"
       :class=" elmClass "

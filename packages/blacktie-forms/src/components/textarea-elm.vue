@@ -10,6 +10,7 @@
       </div>
     </slot>
     <textarea
+      :id="name"
       v-bind="$attrs"
       :value="value"
       :class=" elmClass "

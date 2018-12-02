@@ -11,6 +11,7 @@
       </div>
     </slot>
     <select
+      :id="name"
       v-bind="$attrs"
       :value="value"
       :class=" elmClass "

@@ -1,10 +1,11 @@
 <template>
   <div>
     <textarea
+      :id="name"
+      :name="name"
       v-bind="$attrs"
       :value="value"
-      :class=" elmClass "
-      :name="name"
+      :class=" elmClass"
       :aria-label="name"
       v-on="listeners"
       @blur="validate($event)"
