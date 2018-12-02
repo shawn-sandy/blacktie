@@ -3,7 +3,7 @@
     <div
       :class="$style['checkbox-elm-wrapper']"
       :style="`height: ${elmSize}`">
-      <!-- @slot default slot default label display - scope validationMessage, isValid, hasError -->
+
       <input
         :id="name"
         v-bind="$attrs"
@@ -16,8 +16,16 @@
         @blur="validate($event)"
         @change="_setValue($event), validate($event)"
       >
-      <label :for="name">{{ label }}</label>
+      <!-- @slot default slot default label display - scope validationMessage, isValid, hasError -->
+      <slot
+        :validationMessage="validationMessage"
+        :isValid="isValid"
+        :hasError="hasError"
+      >
+        <label :for="name">{{ label }}</label>
+      </slot>
     </div>
+    <!-- @slot errors : Displays error messages - scope validationMessage, isValid, hasError -->
     <slot
       :validationMessage="validationMessage"
       :isValid="isValid"
@@ -114,7 +122,6 @@ export default {
     border: 3px solid currentColor;
   }
   input[type='checkbox']:checked + label:before {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     text-align: center;
     // line-height: 15px;
     background-color: currentColor;
