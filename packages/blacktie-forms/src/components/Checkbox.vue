@@ -5,6 +5,7 @@
       :style="`height: ${elmSize}`">
 
       <input
+        ref="input-field"
         :id="name"
         v-bind="$attrs"
         :value="value"

@@ -11,6 +11,7 @@
       </div>
     </slot>
     <select
+      ref="input-field"
       :id="name"
       v-bind="$attrs"
       :value="value"

@@ -49,6 +49,15 @@ export default {
     }
   },
   methods: {
+    isRequired() {
+      const field = this.$refs['input-field']
+      if (field.hasAttribute('required')) {
+        // document.getElementsByTag('label').classList.add('required')
+        console.log(this.$el.querySelector('label'))
+        this.$el.querySelector('label').classList.add('required')
+        // console.log('fields', field)
+      }
+    },
     /**
      * Validates the input on blur and adds/ removes error class
      * Emits and error-msg event that passes a validation msg and input type
@@ -118,5 +127,8 @@ export default {
         input: event => this.$emit('input', event.target.value)
       }
     }
+  },
+  mounted() {
+    this.isRequired()
   }
 }

@@ -10,6 +10,7 @@
       </div>
     </slot>
     <textarea
+      ref="input-field"
       :id="name"
       v-bind="$attrs"
       :value="value"
