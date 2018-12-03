@@ -24,7 +24,6 @@
         name="field-name2"
         type="text"
         maxlength="5"
-        required
         error-message="This field is required"
         @error-msg="alert"/>
 
@@ -128,6 +127,11 @@ export default {
     border-radius: 5px;
     font-size: 12px;
     background-color: whitesmoke;
+  }
+
+  label.required::after {
+    content: '*';
+    color: red;
   }
 }
 </style>

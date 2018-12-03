@@ -52,16 +52,13 @@ export default {
     isRequired() {
       const field = this.$refs['input-field']
       if (field.hasAttribute('required')) {
-        // document.getElementsByTag('label').classList.add('required')
-        console.log(this.$el.querySelector('label'))
         this.$el.querySelector('label').classList.add('required')
-        // console.log('fields', field)
       }
     },
     /**
      * Validates the input on blur and adds/ removes error class
      * Emits and error-msg event that passes a validation msg and input type
-     * @param {*} e - focus event
+     * @param {*} e - input focus event
      */
     validate(e) {
       this.isValid = !e.target.validity.valid
