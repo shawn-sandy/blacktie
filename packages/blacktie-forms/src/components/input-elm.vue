@@ -54,8 +54,9 @@ export default {
 </script>
 <style lang="scss" module>
 .input-wrapper {
-  label {
-    display: inline-block;
+  label.required::after {
+    content: '*';
+    color: red;
   }
 }
 </style>

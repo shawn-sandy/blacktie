@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="$style['select-elm']">
     <!-- @slot lebel-elm : label display - scope validationMessage, isValid, hasError -->
     <slot
       :validationMessage="validationMessage"
@@ -70,3 +70,11 @@ export default {
   }
 }
 </script>
+<style lang="scss" module>
+.select-elm {
+  label.required::after {
+    content: '*';
+    color: red;
+  }
+}
+</style>

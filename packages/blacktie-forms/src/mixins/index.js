@@ -46,13 +46,20 @@ export default {
     name: {
       required: true,
       type: String
+    },
+    /**
+     * Label required class name
+     */
+    requiredClass: {
+      type: String,
+      default: 'required'
     }
   },
   methods: {
     isRequired() {
       const field = this.$refs['input-field']
       if (field.hasAttribute('required')) {
-        this.$el.querySelector('label').classList.add('required')
+        this.$el.querySelector('label').classList.add(this.requiredClass)
       }
     },
     /**

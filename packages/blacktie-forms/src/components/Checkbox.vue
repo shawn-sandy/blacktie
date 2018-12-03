@@ -136,5 +136,10 @@ export default {
   input[required] + label {
     font-weight: bold;
   }
+
+  label.required::after {
+    content: '*';
+    color: red;
+  }
 }
 </style>
