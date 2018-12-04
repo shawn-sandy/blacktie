@@ -99,7 +99,6 @@ export default {
   align-items: center;
   input[type='checkbox'] {
     display: none;
-    cursor: crosshair;
     margin: 0 !important;
     padding: 0 !important;
   }
