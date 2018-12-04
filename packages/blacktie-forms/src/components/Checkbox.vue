@@ -124,22 +124,7 @@ export default {
   }
   input[type='checkbox']:checked + label:before {
     text-align: center;
-    // line-height: 15px;
     background-color: currentColor;
-    // border: 4px solid currentColor;
-  }
-  input[required] + label:after {
-    content: '';
-    color: red;
-    font-weight: 700;
-  }
-  input[required] + label {
-    font-weight: bold;
-  }
-
-  label.required::after {
-    content: '*';
-    color: red;
   }
 }
 </style>

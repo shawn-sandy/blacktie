@@ -128,10 +128,6 @@ export default {
     font-size: 12px;
     background-color: whitesmoke;
   }
-
-  label.required::after {
-    content: '*';
-    color: red;
-  }
+  @import './styles/global';
 }
 </style>

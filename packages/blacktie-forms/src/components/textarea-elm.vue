@@ -58,9 +58,5 @@ export default {
     min-width: 300px;
     min-height: 150px;
   }
-  label.required::after {
-    content: '*';
-    color: red;
-  }
 }
 </style>
