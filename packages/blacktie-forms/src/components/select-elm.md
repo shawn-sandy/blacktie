@@ -1,7 +1,7 @@
 ### Select Element example
 
 ``` jsx
-  <select-elm
+  <SelectElm
         id="myfielsz-"
         v-model="select"
         name="field-name"

@@ -1,15 +1,15 @@
 ### Example
 
-``` jsx
- <input-elm
-      v-bind="$attrs"
-      :value="value"
-      :class=" elmClass "
-      :name="name"
-      type="email"
-      :aria-label="name"
-      v-on="listeners"
-      @blur="validate($event)"
-      required
-    >
+```jsx
+ <InputElm
+  id="myfiels"
+  v-model="email"
+  label="Email Address"
+  name="field-name1"
+  type="email"
+  placeholder="Enter your Em@il address"
+  required
+  error-message="Please enter a valid email address"
+  @error-msg="alert"
+  />
 ```
