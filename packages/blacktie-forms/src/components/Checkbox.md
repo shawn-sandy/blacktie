@@ -1,7 +1,7 @@
 ### Checkbox Example
 
 ``` jsx
-<Checkbox name="checkbox"></Checkbox>
+<Checkbox name="checkbox" required></Checkbox>
 ```
 
 ``` jsx

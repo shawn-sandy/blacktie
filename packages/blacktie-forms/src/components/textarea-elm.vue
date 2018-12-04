@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style['textarea-elm-wrapper']">
+  <div :class="$style['textarea-wrapper']">
     <!-- @slot default slot default label display - scope validationMessage, isValid, hasError -->
     <slot
       :validationMessage="validationMessage"
@@ -14,7 +14,7 @@
       :id="name"
       v-bind="$attrs"
       :value="value"
-      :class=" elmClass "
+      :class="elmClass"
       :name="name"
       :aria-label="name"
       v-on="listeners"
@@ -53,8 +53,8 @@ export default {
 }
 </script>
 <style lang="scss" module>
-.textarea-elm-wrapper {
-  textarea {
+.textarea-wrapper {
+  .textarea-elm {
     min-width: 300px;
     min-height: 150px;
   }

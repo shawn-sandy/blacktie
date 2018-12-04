@@ -46,6 +46,14 @@
         label="Agree to terms and conditions"
         @error-msg="alert"/>
 
+      <checkbox-elm
+        v-model="checkbox1"
+        name="checkbox-1"
+        set-value="1"
+        required
+        label="Agree to terms and conditions"
+        @error-msg="alert"/>
+
       <textarea-elm
         label="Add your comment"
         name="comment"
@@ -81,7 +89,8 @@ export default {
       email: null,
       numbers: 0,
       select: null,
-      checkbox: null
+      checkbox: null,
+      checkbox1: null
     }
   },
   methods: {
