@@ -10,6 +10,7 @@
   "dependencies": {
     "dexie": "^2.0.4",
     "eslint-loader": "^2.1.1",
+    "localforage": "^1.7.3",
     "vue": "^2.5.17"
   },
   "devDependencies": {
