@@ -10,7 +10,7 @@ export default {
   },
   computed: {
     newID() {
-      return Format(new Date())
+      return Format(new Date(), 'YYYYMMDDTHHmmss')
     }
   }
 }
