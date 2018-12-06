@@ -1,8 +1,5 @@
 <template>
-
-<span>
-
-</span>
+  <div><slot :results="results"></slot></div>
 </template>
 
 <script>
@@ -36,9 +33,7 @@ export default {
         console.log('error', e)
       })
     // eslint-disable-next-line prettier/prettier
-    console.log('db', this.db);
-
-
+      console.log('db', this.db)
   }
 }
 </script>

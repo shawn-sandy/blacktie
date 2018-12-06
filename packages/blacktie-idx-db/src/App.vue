@@ -1,7 +1,15 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <d-b></d-b>
+    <div style="text-align: left; width: 75vw !important; margin: auto;">
+      <d-b>
+        <template slot-scope="{ results }">
+          <code>
+            <pre>{{ results }}</pre>
+          </code>
+        </template>
+      </d-b>
+    </div>
   </div>
 </template>
 
