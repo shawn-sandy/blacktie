@@ -2,7 +2,9 @@
  * @mixin
  */
 import Dexie from 'dexie'
+import helper from './helpers'
 export default {
+  mixins: [helper],
   data: function() {
     return {
       db: null,
@@ -10,6 +12,7 @@ export default {
     }
   },
   mounted() {
+    console.log('ID', this.generateID())
     this.db = new Dexie('idx_todo1')
     this.db.version(2).stores({
       contacts: 'name,email,phone'

@@ -19,20 +19,23 @@
         </template>
       </db-store>
     </div>
-    <df-store></df-store>
+    <df-store db-name="contacts"></df-store>
+    <idb-store></idb-store>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import DbStore from './components/Idx.vue'
+import DbStore from './components/Dexie.vue'
 import DfStore from './components/LocalIdx'
+import IdbStore from './components/Idb.vue'
 
 export default {
   name: 'app',
   components: {
     DbStore,
-    DfStore
+    DfStore,
+    IdbStore
   }
 }
 </script>
