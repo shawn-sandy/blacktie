@@ -1,2 +1,22 @@
 {
+
+    "files.autoSave": "onFocusChange",
+    "eslint.validate": [
+        {
+          "language": "vue",
+          "autoFix": true
+        },
+        {
+          "language": "html",
+          "autoFix": true
+        },
+        {
+          "language": "javascript",
+          "autoFix": true
+        }
+      ],
+      "eslint.autoFixOnSave": true,
+      "git.autofetch": true,
+      "breadcrumbs.enabled": true,
+      "editor.renderIndentGuides": false
 }
