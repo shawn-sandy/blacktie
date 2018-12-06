@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import idb from 'dexie'
 export default {
   name: 'Idx',
   data: function() {
@@ -12,7 +13,7 @@ export default {
     }
   },
   mounted() {
-    this.db = new this.$idb('idx_todo1')
+    this.db = new idb('idx_todo1')
     this.db.version(2).stores({
       contacts: 'name,email,phone'
     })
