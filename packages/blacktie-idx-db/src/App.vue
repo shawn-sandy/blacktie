@@ -2,25 +2,40 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <div style="text-align: left; width: 75vw !important; margin: auto;">
-      <d-b>
+      <db-store>
         <template slot-scope="{ results }">
           <code>
             <pre>{{ results }}</pre>
           </code>
         </template>
-      </d-b>
+      </db-store>
     </div>
+    <div style="text-align: left; width: 75vw !important; margin: auto;">
+      <db-store>
+        <template slot-scope="{ results }">
+          <code>
+            <pre>{{ results }}</pre>
+          </code>
+        </template>
+      </db-store>
+    </div>
+    <df-store db-name="contacts"></df-store>
+    <idb-store></idb-store>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import DB from './components/Idx.vue'
+import DbStore from './components/Dexie.vue'
+import DfStore from './components/LocalIdx'
+import IdbStore from './components/Idb.vue'
 
 export default {
   name: 'app',
   components: {
-    DB
+    DbStore,
+    DfStore,
+    IdbStore
   }
 }
 </script>
