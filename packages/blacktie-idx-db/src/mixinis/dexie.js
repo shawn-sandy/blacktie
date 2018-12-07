@@ -110,7 +110,10 @@ export default {
     },
     delete(store, key = null) {
       if (key) {
-        store.delete(key).then(() => console.log('updated'))
+        store
+          .delete(key)
+          .then(() => console.log('record deleted'))
+          .catch(e => console.log('errors', e))
       }
     }
   }

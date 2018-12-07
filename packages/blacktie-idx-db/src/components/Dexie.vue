@@ -6,9 +6,9 @@
     />
     <div class="small">
       <small>
-        Info -  Database : {{ database }} | <br>
-        Version: {{ version }} | <br>
-        Connection: {{ connection }} <br>
+        [ Info -  Database : {{ database }} .
+        Version: {{ version }} .
+        Connection: {{ connection }} ]
       </small>
     </div>
   </span>
