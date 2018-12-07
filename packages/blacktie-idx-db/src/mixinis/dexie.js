@@ -1,8 +1,9 @@
 /**
  * @mixin
  */
-import Dexie from 'dexie'
+
 import faker from 'faker'
+import Dexie from 'dexie'
 export default {
   props: {
     connection: {
@@ -10,22 +11,28 @@ export default {
       default: function() {
         return { contacts: '++id,name,email,phone' }
       }
+    },
+    database: {
+      type: String,
+      default: 'dexie'
     }
   },
   created() {
-    this.db = new Dexie('idx_contacts')
+    this.db = new Dexie(this.database)
     this.db.version(1).stores(this.connection)
   },
   methods: {
     getResults(store) {
       store
         .toArray(results => {
-          this.results = results
-          this.ready = true
-          console.log('retults', this.results.length)
-          if (!this.results.length) {
-            this.createDummy(this.db.contacts)
-          }
+          this.$nextTick(() => {
+            this.results = results
+            this.ready = true
+            console.log('results', this.results.length)
+            if (!this.results.length) {
+              this.createDummy(this.db.contacts)
+            }
+          })
         })
         .catch(e => console.log('error', e))
     },
@@ -61,7 +68,9 @@ export default {
     },
     create(store, data = null) {
       if (data) {
-        store.add(data)
+        store.add(data).then(results => {
+          console.log('saved results', results)
+        })
       }
     }
   }

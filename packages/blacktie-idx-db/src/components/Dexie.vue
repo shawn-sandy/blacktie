@@ -12,10 +12,10 @@ export default {
     return {
       db: null,
       results: [],
-      dbName: null,
       ready: false
     }
   },
+
   mounted() {
     if (!this.db.contacts) {
       // console.log('setup contacts')
