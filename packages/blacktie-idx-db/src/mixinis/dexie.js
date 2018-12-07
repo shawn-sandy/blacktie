@@ -21,12 +21,19 @@ export default {
       default: 1
     }
   },
+  data: function() {
+    return {
+      db: null,
+      results: [],
+      ready: false
+    }
+  },
   created() {
     this.db = new Dexie(this.database)
     this.db.version(this.version).stores(this.connection)
   },
   methods: {
-    getResults(store) {
+    getAll(store) {
       store
         .toArray(results => {
           this.$nextTick(() => {
@@ -70,14 +77,40 @@ export default {
           console.log('errors', e)
         })
     },
-    create(store, data = null) {
+    save(store, data = null, key = null) {
       if (data) {
         store
-          .add(data)
+          .put(data, key)
           .then(results => {
+            this.getAll(store)
             console.log('saved results', results)
           })
           .catch(e => console.log('error', e))
+      }
+    },
+    getById(store, key = null) {
+      store.get(key, result => {
+        this.item = result
+      })
+    },
+    update(store, key = null, data = null) {
+      if (data && key) {
+        store
+          .update(key, data)
+          .then(res => {
+            if (res) {
+              this.getAll(store)
+              console.log('record updates', res)
+            } else {
+              console.log('Update failed')
+            }
+          })
+          .catch(e => console.log('error', e))
+      }
+    },
+    delete(store, key = null) {
+      if (key) {
+        store.delete(key).then(() => console.log('updated'))
       }
     }
   }

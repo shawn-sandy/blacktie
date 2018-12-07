@@ -4,6 +4,13 @@
       :results="results"
       :ready="ready"
     />
+    <div class="small">
+      <small>
+        Info -  Database : {{ database }} | <br>
+        Version: {{ version }} | <br>
+        Connection: {{ connection }} <br>
+      </small>
+    </div>
   </span>
 </template>
 
@@ -13,19 +20,11 @@ import dex from './../mixinis/dexie.js'
 export default {
   name: 'DexieStore',
   mixins: [helper, dex],
-  data: function() {
-    return {
-      db: null,
-      results: [],
-      ready: false
-    }
-  },
-
   mounted() {
     if (!this.db.contacts) {
       // console.log('setup contacts')
     } else {
-      this.getResults(this.db.contacts)
+      this.getAll(this.db.contacts)
       //console.log('getting results')
     }
     this.$nextTick(() => {
