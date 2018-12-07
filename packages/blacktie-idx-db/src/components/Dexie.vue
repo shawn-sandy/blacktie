@@ -21,12 +21,11 @@ export default {
       // console.log('setup contacts')
     } else {
       this.getResults(this.db.contacts)
-      // console.log('set contacts', this.db.contacts)
-      if (this.results.length < 0) {
-        this.dummy(this.db.contacts)
-      }
+      //console.log('getting results')
     }
-    this.$nextTick(() => {})
+    this.$nextTick(() => {
+      // console.log('empty', this.results.length)
+    })
   }
 }
 </script>
