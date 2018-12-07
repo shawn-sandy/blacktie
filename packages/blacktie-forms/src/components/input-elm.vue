@@ -4,14 +4,17 @@
     <slot
       :validationMessage="validationMessage"
       :isValid="isValid"
-      :hasError="hasError">
+      :hasError="hasError"
+    >
       <div>
-        <label :for="name">{{ label }}</label>
+        <label :for="name">
+          {{ label }}
+        </label>
       </div>
     </slot>
     <input
-      ref="input-field"
       :id="name"
+      ref="input-field"
       v-bind="$attrs"
       :value="value"
       :class=" elmClass "
@@ -25,7 +28,8 @@
       :validationMessage="validationMessage"
       :isValid="isValid"
       :hasError="hasError"
-      name="errors">
+      name="errors"
+    >
       <div>
         <small>{{ validationMessage }}</small>
       </div>
