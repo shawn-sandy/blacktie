@@ -15,11 +15,15 @@ export default {
     database: {
       type: String,
       default: 'dexie'
+    },
+    version: {
+      type: Number,
+      default: 1
     }
   },
   created() {
     this.db = new Dexie(this.database)
-    this.db.version(1).stores(this.connection)
+    this.db.version(this.version).stores(this.connection)
   },
   methods: {
     getResults(store) {
@@ -68,9 +72,12 @@ export default {
     },
     create(store, data = null) {
       if (data) {
-        store.add(data).then(results => {
-          console.log('saved results', results)
-        })
+        store
+          .add(data)
+          .then(results => {
+            console.log('saved results', results)
+          })
+          .catch(e => console.log('error', e))
       }
     }
   }
