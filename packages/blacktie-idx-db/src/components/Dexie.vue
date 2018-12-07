@@ -21,8 +21,12 @@ export default {
       // console.log('setup contacts')
     } else {
       this.getResults(this.db.contacts)
-      console.log('set contacts', this.db.contacts)
+      // console.log('set contacts', this.db.contacts)
+      if (this.results.length < 0) {
+        this.dummy(this.db.contacts)
+      }
     }
+    this.$nextTick(() => {})
   }
 }
 </script>

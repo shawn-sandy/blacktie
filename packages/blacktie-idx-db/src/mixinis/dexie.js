@@ -21,8 +21,28 @@ export default {
         .toArray(results => {
           this.results = results
           this.ready = true
+          // console.table(this.results)
         })
         .catch(e => console.log('error', e))
+    },
+    dummy(store) {
+      store.bulkPut([
+        {
+          name: 'John Hannock',
+          email: 'joh@hannock.com',
+          phone: '000 000 0000'
+        },
+        {
+          name: 'jane Hannock',
+          email: 'jane@hannock.com',
+          phone: '000 000 0000'
+        },
+        {
+          name: 'mary Hannock',
+          email: 'mary@hannock.com',
+          phone: '000 000 0000'
+        }
+      ])
     }
   }
 }
