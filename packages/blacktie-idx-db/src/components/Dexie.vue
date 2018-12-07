@@ -1,16 +1,27 @@
 <template>
-  <span><slot :results="results"></slot></span>
+  <span><slot :results="results" :ready="ready"></slot></span>
 </template>
 
 <script>
-import dexie from './../mixinis/dexie.js'
+import helper from './../mixinis/helpers.js'
+import dex from './../mixinis/dexie.js'
 export default {
-  name: 'Idx',
-  mixins: [dexie],
+  name: 'DexieStore',
+  mixins: [helper, dex],
   data: function() {
     return {
       db: null,
-      results: null
+      results: [],
+      dbName: null,
+      ready: false
+    }
+  },
+  mounted() {
+    if (!this.db.contacts) {
+      // console.log('setup contacts')
+    } else {
+      this.getResults(this.db.contacts)
+      console.log('set contacts', this.db.contacts)
     }
   }
 }

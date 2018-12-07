@@ -3,16 +3,10 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <div style="text-align: left; width: 75vw !important; margin: auto;">
       <db-store>
-        <template slot-scope="{ results }">
-          <code>
-            <pre>{{ results }}</pre>
-          </code>
-        </template>
-      </db-store>
-    </div>
-    <div style="text-align: left; width: 75vw !important; margin: auto;">
-      <db-store>
-        <template slot-scope="{ results }">
+        <template slot-scope="{ results, ready }">
+          <p v-if="ready">
+            {{ results.length }}
+          </p>
           <code>
             <pre>{{ results }}</pre>
           </code>
