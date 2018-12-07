@@ -1,6 +1,6 @@
 <template>
   <span>
-local forage
+    local forage
   </span>
 </template>
 

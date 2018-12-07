@@ -1,8 +1,11 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <img
+      alt="Vue logo"
+      src="./assets/logo.png"
+    >
     <div style="text-align: left; width: 75vw !important; margin: auto;">
-      <db-store>
+      <DbStore>
         <template slot-scope="{ results, ready }">
           <p v-if="ready">
             {{ results.length }}
@@ -11,25 +14,23 @@
             <pre>{{ results }}</pre>
           </code>
         </template>
-      </db-store>
+      </DbStore>
     </div>
-    <df-store db-name="contacts"></df-store>
-    <idb-store></idb-store>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import DbStore from './components/Dexie.vue'
-import DfStore from './components/LocalIdx'
-import IdbStore from './components/Idb.vue'
+// import DfStore from './components/LocalIdx'
+// import IdbStore from './components/Idb.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    DbStore,
-    DfStore,
-    IdbStore
+    DbStore
+    // DfStore,
+    // IdbStore
   }
 }
 </script>

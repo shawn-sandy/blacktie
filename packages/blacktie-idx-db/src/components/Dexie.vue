@@ -1,5 +1,10 @@
 <template>
-  <span><slot :results="results" :ready="ready"></slot></span>
+  <span>
+    <slot
+      :results="results"
+      :ready="ready"
+    />
+  </span>
 </template>
 
 <script>
