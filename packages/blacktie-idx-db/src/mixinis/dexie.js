@@ -85,7 +85,7 @@ export default {
             this.getAll(store)
             console.log('saved results', results)
           })
-          .catch(e => console.log('error', e))
+          .catch(e => console.log('error', e, key))
       }
     },
     getById(store, key = null) {
@@ -108,11 +108,14 @@ export default {
           .catch(e => console.log('error', e))
       }
     },
-    delete(store, key = null) {
+    del(store, key = null) {
       if (key) {
         store
           .delete(key)
-          .then(() => console.log('record deleted'))
+          .then(() => {
+            console.log('record deleted')
+            this.getAll(store)
+          })
           .catch(e => console.log('errors', e))
       }
     }

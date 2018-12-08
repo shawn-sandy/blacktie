@@ -14,6 +14,7 @@
       :results="results"
       :ready="ready"
       :save="save"
+      :deleteContact="deleteContact"
     />
     <hr>
     <div class="small has-text-centered">
@@ -54,6 +55,9 @@ export default {
       }
 
       this.save(this.db.contacts, data)
+    },
+    deleteContact(id) {
+      this.del(this.db.contacts, id)
     }
   }
 }
