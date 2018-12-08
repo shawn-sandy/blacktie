@@ -30,6 +30,7 @@
     "blacktie-elements": "^0.1.3",
     "blacktie-styles": "^0.0.5",
     "bulma": "^0.7.1",
+    "lodash": "^4.17.11",
     "sass-loader": "^7.0.3",
     "vue": "^2.5.16",
     "vue-loader": "^15.2.4",

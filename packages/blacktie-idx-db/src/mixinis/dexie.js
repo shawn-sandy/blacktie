@@ -4,6 +4,7 @@
 
 import faker from 'faker'
 import Dexie from 'dexie'
+import _sortBy from 'lodash/sortBy'
 export default {
   props: {
     connection: {
@@ -51,6 +52,7 @@ export default {
   created() {
     if (!Dexie.isOpen) {
       this.createDatabase()
+      console.log('Database name', this.db.name)
     } else {
       console.log('DB closed')
     }
@@ -65,7 +67,7 @@ export default {
       //console.log(table)
       table
         .toArray(results => {
-          this.results = results
+          this.results = _sortBy(results, 'name')
           this.ready = true
           console.log('Records found', this.results.length)
           if (!this.results.length) {

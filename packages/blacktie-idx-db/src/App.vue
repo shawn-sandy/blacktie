@@ -42,9 +42,9 @@
               :key="item.id"
               class="columns"
             >
-              <div class="column is-1">
+              <!-- <div class="column is-1">
                 {{ item.id }}
-              </div>
+              </div> -->
               <div class="column">
                 {{ item.name }}
               </div>
