@@ -66,6 +66,13 @@ module.exports = {
       filename: 'components.html',
       title: 'Index Page',
       chunks: ['chunk-vendors', 'chunk-common', 'components']
+    },
+    indb: {
+      entry: './src/indb.js',
+      template: 'public/components.html',
+      filename: 'dixe.html',
+      title: 'Index DB',
+      chunks: ['chunk-vendors', 'chunk-common', 'indb']
     }
   },
   devServer: {
