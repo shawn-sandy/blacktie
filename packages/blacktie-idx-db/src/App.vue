@@ -6,21 +6,26 @@
     <div class="subtitle is-3">
       Index DB Component
     </div>
+    <hr>
     <div style="text-align: left; width: 75vw !important; margin: auto;">
       <DbStore>
         <template slot-scope="{ results, ready, deleteContact, save, fakeUser }">
-          <p>
+          <div class="columns">
             <template v-if="ready">
-              Contacts : {{ results.length }}
-                       <button
-                         class="button is-small"
-                         @click="fakeUser"
-                       >
-                         Add Contact
-                       </button>
-                       <hr>
+              <div class="column">
+                <button
+                  class="button is-small"
+                  @click="fakeUser"
+                >
+                  Add Contact
+                </button>
+              </div>
+              <div class="column has-text-right">
+                Contacts : {{ results.length }}
+              </div>
             </template>
-          </p>
+          </div>
+
           <div
             v-for="item in results"
             :key="item.id"
@@ -38,7 +43,7 @@
             <div class="column has-text-left">
               {{ item.phone }}
             </div>
-            <div class="column is-1">
+            <div class="column is-1 has-text-right">
               <button
                 class="button is-small"
                 @click="deleteContact(item.id)"

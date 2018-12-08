@@ -1,6 +1,5 @@
 <template>
   <span>
-    <hr>
     <slot
       :results="results"
       :ready="ready"
