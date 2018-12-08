@@ -72,8 +72,8 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-precomposed.png"
   },
   {
-    "revision": "83a8dd47f2ccaf69193c0607aab61a94",
-    "url": "/iconstats-e2c5fbe275e09b102478.json"
+    "revision": "0b98b16606f192f8c9ad991190ebf577",
+    "url": "/iconstats-d07824bca3c22032efd0.json"
   },
   {
     "revision": "29b12d41a6027f6cd0c8a71fd4f9ce5c",
@@ -140,16 +140,16 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-152x152.png"
   },
   {
-    "revision": "69ce6a9cedb94d8673066ca0af926c14",
-    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-167x167.png"
+    "revision": "bf299c20e61609706b153e80389b647b",
+    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-180x180.png"
   },
   {
     "revision": "7fe3bfca6f0c1f367a7a9a3e01a7a46f",
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-57x57.png"
   },
   {
-    "revision": "bf299c20e61609706b153e80389b647b",
-    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-180x180.png"
+    "revision": "69ce6a9cedb94d8673066ca0af926c14",
+    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-167x167.png"
   },
   {
     "revision": "29d400cd059bf9fb401f232f1ae32fb6",
@@ -164,7 +164,7 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-icon-144x144.png"
   },
   {
-    "revision": "95f903b81ac02daa82865883c3e81a4b",
+    "revision": "1133047975e6390f7d66ea7c8da19bdb",
     "url": "/components.html"
   },
   {
@@ -200,11 +200,11 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/android-chrome-144x144.png"
   },
   {
-    "revision": "c8501a582c2d62e71e81850f413acd02",
+    "revision": "0c3c63a346da8f5f60704b6b44f23e33",
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/.cache"
   },
   {
-    "revision": "bfde0f4a46c2988fce113451172862e3",
+    "revision": "6bc802761a585e49c663396acd5ad029",
     "url": "/dixe.html"
   }
 ];
