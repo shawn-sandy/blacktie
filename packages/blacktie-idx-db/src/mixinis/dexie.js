@@ -80,7 +80,7 @@ export default {
     save(store, data = null, key = null) {
       if (data) {
         store
-          .put(data, key)
+          .put(data)
           .then(results => {
             this.getAll(store)
             console.log('saved results', results)

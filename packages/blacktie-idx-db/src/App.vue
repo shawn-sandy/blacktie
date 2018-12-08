@@ -10,9 +10,7 @@
           <p v-if="ready">
             {{ results.length }}
           </p>
-          <code>
-            <pre>{{ results }}</pre>
-          </code>
+          <code><pre>{{ results }}</pre></code>
         </template>
       </DbStore>
     </div>

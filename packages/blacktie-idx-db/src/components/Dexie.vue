@@ -1,9 +1,21 @@
 <template>
   <span>
+    <hr>
+    <p>
+      <button
+        class="button"
+        @click="fakeUser"
+      >
+        Add contact
+      </button>
+    </p>
+    <hr>
     <slot
       :results="results"
       :ready="ready"
+      :save="save"
     />
+    <hr>
     <div class="small">
       <small>
         [ Info -  Database : {{ database }} .
@@ -11,12 +23,14 @@
         Connection: {{ connection }} ]
       </small>
     </div>
+    <hr>
   </span>
 </template>
 
 <script>
 import helper from './../mixinis/helpers.js'
 import dex from './../mixinis/dexie.js'
+import faker from 'faker'
 export default {
   name: 'DexieStore',
   mixins: [helper, dex],
@@ -30,6 +44,17 @@ export default {
     this.$nextTick(() => {
       // console.log('empty', this.results.length)
     })
+  },
+  methods: {
+    fakeUser() {
+      let data = {
+        name: faker.name.findName(),
+        email: faker.internet.exampleEmail(),
+        phone: faker.phone.phoneNumber()
+      }
+
+      this.save(this.db.contacts, data)
+    }
   }
 }
 </script>
