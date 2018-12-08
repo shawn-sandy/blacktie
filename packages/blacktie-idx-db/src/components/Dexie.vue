@@ -16,7 +16,7 @@
       :save="save"
     />
     <hr>
-    <div class="small">
+    <div class="small has-text-centered">
       <small>
         [ Info -  Database : {{ database }} .
         Version: {{ version }} .

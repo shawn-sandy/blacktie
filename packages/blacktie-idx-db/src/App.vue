@@ -1,16 +1,35 @@
 <template>
   <div id="app">
-    <img
-      alt="Vue logo"
-      src="./assets/logo.png"
-    >
+    <h1 class="title is-1">
+BlackTie
+</h1>
+    <div class="subtitle is-3">
+Index DB Component
+</div>
     <div style="text-align: left; width: 75vw !important; margin: auto;">
       <DbStore>
         <template slot-scope="{ results, ready }">
-          <p v-if="ready">
-            {{ results.length }}
+          <p>
+            <template v-if="ready">
+              Contacts : {{ results.length }}
+                       <hr >
+            </template>
           </p>
-          <code><pre>{{ results }}</pre></code>
+          <div v-for="item in results"
+:key="item.id" class="columns">
+            <div class="column is-1">
+{{ item.id }}
+</div>
+            <div class="column">
+{{ item.name }}
+</div>
+            <div class="column has-text-left">
+{{ item.email }}
+</div>
+            <div class="column has-text-left">
+{{ item.phone }}
+</div>
+          </div>
         </template>
       </DbStore>
     </div>
