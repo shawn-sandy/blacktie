@@ -21,6 +21,7 @@
     "url": "http://shawnsandy.design"
   },
   "dependencies": {
+    "lodash": "^4.17.11",
     "vue": "^2.5.16"
   },
   "devDependencies": {
