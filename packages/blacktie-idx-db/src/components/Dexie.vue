@@ -1,20 +1,12 @@
 <template>
   <span>
     <hr>
-    <p>
-      <button
-        class="button"
-        @click="fakeUser"
-      >
-        Add contact
-      </button>
-    </p>
-    <hr>
     <slot
       :results="results"
       :ready="ready"
       :save="save"
       :deleteContact="deleteContact"
+      :fakeUser="fakeUser"
     />
     <hr>
     <div class="small has-text-centered">

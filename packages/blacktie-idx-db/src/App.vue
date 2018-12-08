@@ -8,10 +8,16 @@
     </div>
     <div style="text-align: left; width: 75vw !important; margin: auto;">
       <DbStore>
-        <template slot-scope="{ results, ready, deleteContact, save }">
+        <template slot-scope="{ results, ready, deleteContact, save, fakeUser }">
           <p>
             <template v-if="ready">
               Contacts : {{ results.length }}
+                       <button
+                         class="button is-small"
+                         @click="fakeUser"
+                       >
+                         Add Contact
+                       </button>
                        <hr>
             </template>
           </p>
