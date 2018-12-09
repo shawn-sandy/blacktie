@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from 'blacktie-forms/src/App.vue'
+import App from './App.vue'
 import './registerServiceWorker'
 import './app.js'
 

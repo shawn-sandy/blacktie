@@ -73,6 +73,13 @@ module.exports = {
       filename: 'index-db.html',
       title: 'Index DB',
       chunks: ['chunk-vendors', 'chunk-common', 'indb']
+    },
+    forms: {
+      entry: './src/forms.js',
+      template: 'public/components.html',
+      filename: 'forms.html',
+      title: 'Blacktie Forms',
+      chunks: ['chunk-vendors', 'chunk-common', 'forms']
     }
   },
   devServer: {
