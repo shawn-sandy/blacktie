@@ -2,11 +2,11 @@
   <div>
     <div
       :class="$style['checkbox-elm-wrapper']"
-      :style="`height: ${elmSize}`">
-
+      :style="`height: ${elmSize}`"
+    >
       <input
-        ref="input-field"
         :id="name"
+        ref="input-field"
         v-bind="$attrs"
         :value="value"
         :class=" elmClass"
@@ -23,7 +23,9 @@
         :isValid="isValid"
         :hasError="hasError"
       >
-        <label :for="name">{{ label }}</label>
+        <label :for="name">
+          {{ label }}
+        </label>
       </slot>
     </div>
     <!-- @slot errors : Displays error messages - scope validationMessage, isValid, hasError -->
@@ -31,7 +33,8 @@
       :validationMessage="validationMessage"
       :isValid="isValid"
       :hasError="hasError"
-      name="errors">
+      name="errors"
+    >
       <div>
         <small>{{ validationMessage }}</small>
       </div>

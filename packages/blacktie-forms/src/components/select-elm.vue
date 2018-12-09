@@ -5,14 +5,17 @@
       :validationMessage="validationMessage"
       :isValid="isValid"
       :hasError="hasError"
-      name="label-elm">
+      name="label-elm"
+    >
       <div>
-        <label :for="name">{{ label }}</label>
+        <label :for="name">
+          {{ label }}
+        </label>
       </div>
     </slot>
     <select
-      ref="input-field"
       :id="name"
+      ref="input-field"
       v-bind="$attrs"
       :value="value"
       :class=" elmClass "
@@ -20,18 +23,24 @@
       :aria-label="name"
       v-on="listeners"
       @blur="validate($event)"
-
     >
       <option
         v-if="placeholder"
-        value="">
+        value=""
+      >
         {{ placeholder }}
       </option>
       <!-- @slot default slot allows you to add options -->
       <slot>
-        <option value="two">two</option>
-        <option value="one">one</option>
-        <option value="three">three</option>
+        <option value="two">
+          two
+        </option>
+        <option value="one">
+          one
+        </option>
+        <option value="three">
+          three
+        </option>
       </slot>
     </select>
     <!-- @slot errors : Displays error messages - scope validationMessage, isValid, hasError -->
@@ -39,7 +48,8 @@
       :validationMessage="validationMessage"
       :isValid="isValid"
       :hasError="hasError"
-      name="errors">
+      name="errors"
+    >
       <div>
         <small>{{ validationMessage }}</small>
       </div>
