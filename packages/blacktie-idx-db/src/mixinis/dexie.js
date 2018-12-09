@@ -5,6 +5,7 @@
 import faker from 'faker'
 import Dexie from 'dexie'
 import _sortBy from 'lodash/sortBy'
+import { reset } from 'ansi-colors'
 export default {
   props: {
     connection: {
@@ -141,6 +142,15 @@ export default {
           })
           .catch(e => console.log('errors', e))
       }
+    },
+
+    resetDB(table) {
+      table
+        .clear()
+        .then(() => {
+          this.createDummy(table)
+        })
+        .catch(err => console.log('Error resetting database', err))
     }
   }
 }

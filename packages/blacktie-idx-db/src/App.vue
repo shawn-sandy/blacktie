@@ -10,27 +10,31 @@ Index DB Component
       </div>
       <div>
         <p class="is-size-4">
-          A simple INDEXDB wrapper componenent that gives you access to the
-          browsers built in Database (INDEXDB), you allowing your to perform
-          created, read, update and delete operations client-side. Making it
-          easy to build components that can quickly deliever prototypes / mocks
-          for demo.
+          A simple scoped componenent that gives you access to the browsers
+          built in Database INDEXDB, you allowing your to perform create, read,
+          update and delete operations client-side. Making it easy to build
+          components that can quickly deliever prototypes / mocks for demo.
         </p>
         <hr >
       </div>
-      <div class="columns">
-        <div class="column has-text-right">
-          <button class="button is-small">
-Reset Database
-</button>
-          <hr >
-        </div>
-      </div>
+
       <div class="container">
         <DbStore>
           <template
-            slot-scope="{ results, ready, deleteContact, save, fakeUser }"
+            slot-scope="{ results, ready, deleteContact, save, fakeUser, resetDB }"
           >
+            <div class="columns">
+              <div class="column has-text-right">
+                <button
+                  class="button is-small"
+                  :disabled="results.length <= 3"
+                  @click="resetDB()"
+                >
+                  Reset Database
+                </button>
+                <hr >
+              </div>
+            </div>
             <div class="columns">
               <template v-if="ready">
                 <div class="column">

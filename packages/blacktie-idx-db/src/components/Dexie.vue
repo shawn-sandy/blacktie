@@ -6,6 +6,7 @@
       :save="save"
       :deleteContact="deleteContact"
       :fakeUser="fakeUser"
+      :resetDB="resetContacts"
     />
     <hr>
     <div class="small has-text-centered">
@@ -49,6 +50,9 @@ export default {
     },
     deleteContact(id) {
       this.del(this.db.contacts, id)
+    },
+    resetContacts() {
+      this.resetDB(this.db.contacts)
     }
   }
 }
