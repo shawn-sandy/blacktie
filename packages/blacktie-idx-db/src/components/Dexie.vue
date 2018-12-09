@@ -8,15 +8,6 @@
       :fakeUser="fakeUser"
       :resetDB="resetContacts"
     />
-    <hr>
-    <div class="small has-text-centered">
-      <small>
-        [ Info -  Database : {{ database }} .
-        Version: {{ version }} .
-        Connection: {{ connection }} ]
-      </small>
-    </div>
-    <hr>
   </span>
 </template>
 
