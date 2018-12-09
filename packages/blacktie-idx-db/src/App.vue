@@ -1,6 +1,19 @@
 <template>
   <div id="app">
     <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h3 class="subtitle is-2 oswald is-uppercase">
+            Index DB Component
+          </h3>
+          <div class="is-size-5">
+            A Dexie.js powered scoped vue.js componenent that gives you access to the browsers
+            built in INDEXDB Database, allowing you to perform create, read,
+            update and delete database operations client-side. Making it easy to build interactive demos and prototypes without the need for a complex serverside setup and services.
+          </div>
+          <hr>
+        </div>
+      </div>
       <div class="container">
         <DbStore>
           <template
@@ -66,20 +79,8 @@
             </div>
           </template>
         </DbStore>
-        <div class="columns">
-          <div class="column">
-            <h3 class="subtitle is-2 oswald is-uppercase">
-              Index DB Component
-            </h3>
-          </div>
-        </div>
+
         <div>
-          <div class="is-size-4">
-            A scoped componenent that gives you access to the browsers
-            built in Database INDEXDB, allowing you to perform create, read,
-            update and delete operations client-side. Making it easy to build
-            components that can quickly build interactive prototypes.
-          </div>
           <hr>
         </div>
       </div>
@@ -105,7 +106,6 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // text-align: center;

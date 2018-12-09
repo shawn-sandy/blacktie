@@ -50,14 +50,7 @@ export default {
       ]
     }
   },
-  created() {
-    if (!Dexie.isOpen) {
-      this.createDatabase()
-      console.log('Database name', this.db.name)
-    } else {
-      console.log('DB closed')
-    }
-  },
+
   methods: {
     createDatabase() {
       this.db = new Dexie(this.database)
