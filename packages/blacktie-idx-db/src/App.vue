@@ -9,7 +9,7 @@
           <div class="is-size-5">
             A Dexie.js powered scoped vue.js componenent that gives you access to the browsers
             built in INDEXDB Database, allowing you to perform create, read,
-            update and delete operations client-side. Making it easy to build interactive demos and prototypes without the need for a complex serverside setup and services.
+            update and delete database operations client-side. Making it easy to build interactive demos and prototypes without the need for a complex serverside setup and services.
           </div>
           <hr>
         </div>
