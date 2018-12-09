@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import BlacktieImg from './components/Index.vue'
+import BlacktieImg from './components/Image.vue'
 import BlacktieImgCaption from './components/Caption.vue'
 import CoverImg from './CoverImg'
 

@@ -1,6 +1,6 @@
 {
   "name": "blacktie-buttons-v2",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Custom button element (WIP)",
   "author": "",
   "license": "MIT",
@@ -33,8 +33,8 @@
     "@vue/cli-plugin-eslint": "^3.0.4",
     "@vue/cli-service": "^3.0.4",
     "@vue/eslint-config-prettier": "^3.0.4",
-    "blacktie-elements": "^0.1.2",
-    "blacktie-styles": "^0.0.4",
+    "blacktie-elements": "^0.1.3",
+    "blacktie-styles": "^0.0.5",
     "lodash": "^4.17.11",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",

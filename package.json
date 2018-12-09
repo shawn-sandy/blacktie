@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "serve": "vue-cli-service serve --open",
-    "build": "vue-cli-service build && yarn styleguide:build && yarn content:build",
+    "build": "vue-cli-service build && yarn styleguide:build && yarn content:build gulp reports",
     "lint": "vue-cli-service lint",
     "styleguide": "vue-styleguidist server --open",
     "styleguide:build": "vue-styleguidist build",
@@ -36,6 +36,7 @@
     "gulp-sizereport": "^1.2.0",
     "gulp-string-replace": "^1.1.1",
     "lerna": "^3.4.0",
+    "localforage": "^1.7.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.0.2",
     "node-sass": "^4.9.0",
