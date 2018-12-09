@@ -25,10 +25,10 @@
               <template v-if="ready">
                 <div class="column">
                   <button
-                    class="button is-info"
+                    class="button is-info has-text-weight-bold"
                     @click="fakeUser"
                   >
-                    <span class="has-text-weight-bold">
+                    <span class="">
                       &#43;
                     </span> Add Contact
                   </button>
