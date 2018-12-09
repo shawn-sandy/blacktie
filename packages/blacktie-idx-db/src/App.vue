@@ -7,7 +7,7 @@
             Index DB Component
           </h3>
           <div class="is-size-5">
-            A Dexie.js powered scoped vue.js componenent that gives you access to the browsers
+            A Dexie.js powered vue.js scoped componenent that gives you access to the browsers
             built in INDEXDB Database, allowing you to perform create, read,
             update and delete database operations client-side. Making it easy to build interactive demos and prototypes without the need for a complex serverside setup and services.
           </div>
@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="container">
-        <DbStore>
+        <IndexDb>
           <template
             slot-scope="{ results, ready, deleteContact, save, fakeUser, resetDB }"
           >
@@ -78,7 +78,7 @@
               </div>
             </div>
           </template>
-        </DbStore>
+        </IndexDb>
 
         <div>
           <hr>
@@ -90,14 +90,14 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import DbStore from './components/Dexie.vue'
+import IndexDb from './components/Dexie.vue'
 // import DfStore from './components/LocalIdx'
 // import IdbStore from './components/Idb.vue'
 
 export default {
   name: 'App',
   components: {
-    DbStore
+    IndexDb
     // DfStore,
     // IdbStore
   }
