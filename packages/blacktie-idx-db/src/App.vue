@@ -3,24 +3,34 @@
     <div class="container">
       <div class="columns">
         <div class="column">
-          <h1 class="title is-1">
-            BlackTie
-          </h1>
-          <h3 class="subtitle is-3">
-            Index DB Component
-          </h3>
-        </div>
-        <div class="column has-text-right">
-          <button class="button is-small">
-            Reset Database
-          </button>
+          <h3 class="subtitle is-2 oswald is-uppercase">
+Index DB Component
+</h3>
         </div>
       </div>
-
-      <hr>
+      <div>
+        <p class="is-size-4">
+          A simple INDEXDB wrapper componenent that gives you access to the
+          browsers built in Database (INDEXDB), you allowing your to perform
+          created, read, update and delete operations client-side. Making it
+          easy to build components that can quickly deliever prototypes / mocks
+          for demo.
+        </p>
+        <hr >
+      </div>
+      <div class="columns">
+        <div class="column has-text-right">
+          <button class="button is-small">
+Reset Database
+</button>
+          <hr >
+        </div>
+      </div>
       <div class="container">
         <DbStore>
-          <template slot-scope="{ results, ready, deleteContact, save, fakeUser }">
+          <template
+            slot-scope="{ results, ready, deleteContact, save, fakeUser }"
+          >
             <div class="columns">
               <template v-if="ready">
                 <div class="column">
@@ -29,8 +39,8 @@
                     @click="fakeUser"
                   >
                     <span class="">
-                      &#43;
-                    </span> Add Contact
+&#43;
+</span> Add Contact
                   </button>
                 </div>
                 <div class="column has-text-right">
@@ -39,28 +49,25 @@
               </template>
             </div>
 
-            <div
-              v-for="item in results"
-              :key="item.id"
-              class="columns"
-            >
-              <!-- <div class="column is-1">
-                {{ item.id }}
-              </div> -->
+            <div v-for="item in results"
+:key="item.id" class="columns">
+              <!--
+                <div class="column is-1">
+                  {{ item.id }}
+                </div>
+              -->
               <div class="column">
-                {{ item.name }}
-              </div>
+{{ item.name }}
+</div>
               <div class="column has-text-left">
-                {{ item.email }}
-              </div>
+{{ item.email }}
+</div>
               <div class="column has-text-left">
-                {{ item.phone }}
-              </div>
+{{ item.phone }}
+</div>
               <div class="column is-1 has-text-right">
-                <button
-                  class="button is-small"
-                  @click="deleteContact(item.id)"
-                >
+                <button class="button is-small"
+@click="deleteContact(item.id)">
                   Delete
                 </button>
               </div>

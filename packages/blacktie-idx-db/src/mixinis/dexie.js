@@ -28,6 +28,7 @@ export default {
     return {
       db: null,
       results: [],
+      redord: null,
       ready: false,
       dbExists: false,
       faker: [
