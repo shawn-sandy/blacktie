@@ -1,13 +1,10 @@
 <template>
   <div id="app">
-    <img
-      alt="Vue logo"
-      src="./assets/logo.png">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <form
       action=""
-      @submit.prevent="">
-      <input-elm
+      @submit.prevent=""
+    >
+      <InputElm
         id="myfiels"
         v-model="email"
         label="Email Address"
@@ -16,18 +13,20 @@
         placeholder="Enter your Em@il address"
         required
         error-message="Please enter a valid email address"
-        @error-msg="alert"/>
+        @error-msg="alert"
+      />
 
-      <input-elm
+      <InputElm
         id="myfielsz-"
         v-model="numbers"
         name="field-name2"
         type="text"
         maxlength="5"
         error-message="This field is required"
-        @error-msg="alert"/>
+        @error-msg="alert"
+      />
 
-      <select-elm
+      <SelectElm
         id="myfielsz-"
         v-model="select"
         name="field-name3"
@@ -36,25 +35,28 @@
         required
         placeholder="Select one"
         error-message="This field is required"
-        @error-msg="alert"/>
+        @error-msg="alert"
+      />
 
-      <checkbox-elm
+      <CheckboxElm
         v-model="checkbox"
         name="checkbox"
         set-value="1"
         required
         label="Agree to terms and conditions"
-        @error-msg="alert"/>
+        @error-msg="alert"
+      />
 
-      <checkbox-elm
+      <CheckboxElm
         v-model="checkbox1"
         name="checkbox-1"
         set-value="1"
         required
         label="Agree to terms and conditions"
-        @error-msg="alert"/>
+        @error-msg="alert"
+      />
 
-      <textarea-elm
+      <TextareaElm
         label="Add your comment"
         name="comment"
         required
@@ -62,8 +64,9 @@
         minlength="20"
         placeholder="Please add your comment"
       />
-      <button formnovalidate>Submit</button>
-      <div/>
+      <button formnovalidate>
+        Submit
+      </button>
     </form>
   </div>
 </template>
@@ -110,6 +113,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+
   input,
   select {
     padding: 10px;
