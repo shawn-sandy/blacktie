@@ -70,7 +70,7 @@ module.exports = {
     indb: {
       entry: './src/indb.js',
       template: 'public/components.html',
-      filename: 'dixe.html',
+      filename: 'index-db.html',
       title: 'Index DB',
       chunks: ['chunk-vendors', 'chunk-common', 'indb']
     }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.4f7f98d103335174e7f42238c1d56097.js"
+  "/precache-manifest.8d1822d72563ed8e407e477aaab1ac83.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "blacktie"});
