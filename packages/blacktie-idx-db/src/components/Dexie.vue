@@ -22,11 +22,20 @@
 
 <script>
 import helper from './../mixinis/helpers.js'
+import Dexie from 'dexie'
 import dex from './../mixinis/dexie.js'
 import faker from 'faker'
 export default {
   name: 'DexieStore',
   mixins: [helper, dex],
+  created() {
+    if (!Dexie.isOpen) {
+      this.createDatabase()
+      console.log('Database name', this.db.name)
+    } else {
+      console.log('DB closed')
+    }
+  },
   mounted() {
     if (!this.db.contacts) {
       // console.log('setup contacts')

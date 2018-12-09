@@ -71,15 +71,15 @@
             <h3 class="subtitle is-2 oswald is-uppercase">
               Index DB Component
             </h3>
+            <div class="is-size-5">
+              A scoped componenent that gives you access to the browsers
+              built in INDEXDB Database , allowing you to perform create, read,
+              update and delete operations client-side. Making it easy to build
+              components that can quickly build interactive prototypes without the need for serverside complications or support.
+            </div>
           </div>
         </div>
         <div>
-          <div class="is-size-4">
-            A scoped componenent that gives you access to the browsers
-            built in Database INDEXDB, allowing you to perform create, read,
-            update and delete operations client-side. Making it easy to build
-            components that can quickly build interactive prototypes.
-          </div>
           <hr>
         </div>
       </div>
@@ -105,7 +105,6 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // text-align: center;
