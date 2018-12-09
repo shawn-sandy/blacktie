@@ -5,7 +5,6 @@
 import faker from 'faker'
 import Dexie from 'dexie'
 import _sortBy from 'lodash/sortBy'
-import { reset } from 'ansi-colors'
 export default {
   props: {
     connection: {

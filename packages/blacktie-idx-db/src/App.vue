@@ -1,23 +1,6 @@
 <template>
   <div id="app">
     <div class="container">
-      <div class="columns">
-        <div class="column">
-          <h3 class="subtitle is-2 oswald is-uppercase">
-Index DB Component
-</h3>
-        </div>
-      </div>
-      <div>
-        <p class="is-size-4">
-          A simple scoped componenent that gives you access to the browsers
-          built in Database INDEXDB, you allowing your to perform create, read,
-          update and delete operations client-side. Making it easy to build
-          components that can quickly deliever prototypes / mocks for demo.
-        </p>
-        <hr >
-      </div>
-
       <div class="container">
         <DbStore>
           <template
@@ -32,7 +15,7 @@ Index DB Component
                 >
                   Reset Database
                 </button>
-                <hr >
+                <hr>
               </div>
             </div>
             <div class="columns">
@@ -43,8 +26,8 @@ Index DB Component
                     @click="fakeUser"
                   >
                     <span class="">
-&#43;
-</span> Add Contact
+                      &#43;
+                    </span> Add Contact
                   </button>
                 </div>
                 <div class="column has-text-right">
@@ -53,31 +36,52 @@ Index DB Component
               </template>
             </div>
 
-            <div v-for="item in results"
-:key="item.id" class="columns">
+            <div
+              v-for="item in results"
+              :key="item.id"
+              class="columns"
+            >
               <!--
                 <div class="column is-1">
                   {{ item.id }}
                 </div>
               -->
               <div class="column">
-{{ item.name }}
-</div>
+                {{ item.name }}
+              </div>
               <div class="column has-text-left">
-{{ item.email }}
-</div>
+                {{ item.email }}
+              </div>
               <div class="column has-text-left">
-{{ item.phone }}
-</div>
+                {{ item.phone }}
+              </div>
               <div class="column is-1 has-text-right">
-                <button class="button is-small"
-@click="deleteContact(item.id)">
+                <button
+                  class="button is-small"
+                  @click="deleteContact(item.id)"
+                >
                   Delete
                 </button>
               </div>
             </div>
           </template>
         </DbStore>
+        <div class="columns">
+          <div class="column">
+            <h3 class="subtitle is-2 oswald is-uppercase">
+              Index DB Component
+            </h3>
+          </div>
+        </div>
+        <div>
+          <div class="is-size-4">
+            A scoped componenent that gives you access to the browsers
+            built in Database INDEXDB, allowing you to perform create, read,
+            update and delete operations client-side. Making it easy to build
+            components that can quickly build interactive prototypes.
+          </div>
+          <hr>
+        </div>
       </div>
     </div>
   </div>
