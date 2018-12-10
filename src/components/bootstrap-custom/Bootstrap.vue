@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bs-lite">
     <main>
       <div class="container">
         <div class="">
@@ -15,13 +15,40 @@
               </a>
             </div>
             <div class="col-md-7">
-              <p class="h3 py-4 oswald text-uppercase">
+              <p class="h3 py-5 oswald text-uppercase">
                 A reusable collection of drop in UX/UI libraries, tools and patterns
               </p>
             </div>
           </div>
           <hr>
         </div>
+
+        <main class="py-4 lead">
+          <p class="h1 oswald text-uppercase py-2">
+            Bootstrap-Lite
+          </p>
+          <p class="">
+            Bootstrap is one of the most popular CSS frameworks around, allowing users to quickly layout websites and apps with very minimal effort. Unfortunately most of the sites built with bootstrap only use a fraction of CSS classes and utilities provided leading to un-optimized files in production.
+          </p>
+          <p>
+            BootstrapLite is a barebones version of bootstrap that gives designer and developers a bit more control of what parts of bootstrap apps require and when. Reducing the bolat and boilerplate and allowing for customization and flexibility.
+          </p>
+
+          <p class="small py-4 ml-5">
+            <pre>
+              <code>
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/_mixins.scss';
+// custom
+@import '~bootstrap/scss/_reboot.scss';
+@import '~bootstrap/scss/_grid.scss';
+
+              </code>
+            </pre>
+          </p><hr>
+          <p />
+        </main>
 
         <div class="text-center section py-5">
           <a
@@ -35,7 +62,7 @@
           <a
             href="https://github.com/shawn-sandy/blacktie"
             target="_blank"
-            class="m-2 support-links btn elm-quarter btn-lg oswald is-outlined blacktie-primary-elm"
+            class="m-2 support-links btn elm-quarter btn-lg oswald btn-outline-dark"
           >
             Contribute
           </a>
@@ -104,5 +131,9 @@ export default {}
 @import '~bootstrap/scss/_type.scss';
 @import '~bootstrap/scss/_grid.scss';
 @import '~bootstrap/scss/_buttons.scss';
+@import '~bootstrap/scss/_code.scss';
 @import '~bootstrap/scss/_utilities.scss';
+.bs-lite {
+  min-height: 90vh;
+}
 </style>
