@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="container"
-    :class="$style.vh90"
-  >
+  <div>
     <main>
       <div class="container">
         <div class="">
@@ -98,10 +95,7 @@
 export default {}
 </script>
 
-<style lang="scss" module>
-.vh90 {
-  min-height: 90vh !important;
-}
+<style lang="scss">
 @import '~bootstrap/scss/_functions.scss';
 @import '~bootstrap/scss/_variables.scss';
 @import '~bootstrap/scss/_mixins.scss';
