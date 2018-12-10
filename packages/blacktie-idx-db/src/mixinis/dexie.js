@@ -2,7 +2,9 @@
  * @mixin
  */
 
-import faker from 'faker'
+// import faker from 'faker'
+import _chance from 'chance'
+const chance = new _chance()
 import Dexie from 'dexie'
 import _sortBy from 'lodash/sortBy'
 export default {
@@ -33,19 +35,19 @@ export default {
       dbExists: false,
       faker: [
         {
-          name: faker.name.findName(),
-          email: faker.internet.exampleEmail(),
-          phone: faker.phone.phoneNumber()
+          name: chance.name(),
+          email: chance.email(),
+          phone: chance.phone()
         },
         {
-          name: faker.name.findName(),
-          email: faker.internet.exampleEmail(),
-          phone: faker.phone.phoneNumber()
+          name: chance.name(),
+          email: chance.email(),
+          phone: chance.phone()
         },
         {
-          name: faker.name.findName(),
-          email: faker.internet.exampleEmail(),
-          phone: faker.phone.phoneNumber()
+          name: chance.name(),
+          email: chance.email(),
+          phone: chance.phone()
         }
       ]
     }

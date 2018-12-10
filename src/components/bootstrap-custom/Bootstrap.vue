@@ -3,9 +3,9 @@
     <main>
       <div class="container">
         <div class="">
-          <div class="row">
+          <div class="row py-2 ">
             <div
-              class="col-md-5 py-3 fs-show-xxl title oswald text-uppercase"
+              class="col-md-12 fs-show-xxl title oswald text-uppercase"
             >
               <a
                 href="/"
@@ -13,17 +13,15 @@
               >
                 BlackTie
               </a>
-            </div>
-            <div class="col-md-7">
-              <p class="h3 py-5 oswald text-uppercase">
-                A reusable collection of drop in UX/UI libraries, tools and patterns
-              </p>
-            </div>
+            </div> 
+            <div class="h3 py-2 col-md-12 oswald text-uppercase">
+              A reusable collection of drop in UX/UI libraries, tools and patterns
+            </div>        
           </div>
           <hr>
         </div>
 
-        <main class="py-4 lead">
+        <main class="py- lead">
           <p class="h1 oswald text-uppercase py-2">
             Bootstrap-Lite
           </p>

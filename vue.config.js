@@ -34,6 +34,7 @@ module.exports = {
       ]),
       new BundleAnalyzerPlugin({
         analyzerMode: 'disabled',
+        // generateStatsFile: true
         generateStatsFile: process.env.NODE_ENV === 'production'
       }),
       new Favicons({

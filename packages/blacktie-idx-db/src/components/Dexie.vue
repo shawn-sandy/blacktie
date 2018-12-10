@@ -15,7 +15,9 @@
 import helper from './../mixinis/helpers.js'
 import Dexie from 'dexie'
 import dex from './../mixinis/dexie.js'
-import faker from 'faker'
+// import faker from 'faker'
+import _chance from 'chance'
+const chance = new _chance()
 export default {
   name: 'DexieStore',
   mixins: [helper, dex],
@@ -41,9 +43,9 @@ export default {
   methods: {
     fakeUser() {
       let data = {
-        name: faker.name.findName(),
-        email: faker.internet.exampleEmail(),
-        phone: faker.phone.phoneNumber()
+        name: chance.name(),
+        email: chance.email(),
+        phone: chance.phone()
       }
 
       this.save(this.db.contacts, data)
