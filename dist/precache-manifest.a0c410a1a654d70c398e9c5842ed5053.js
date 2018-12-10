@@ -52,8 +52,8 @@ self.__precacheManifest = [
     "url": "/js/forms.42a1588a.js"
   },
   {
-    "revision": "5eb2535bccf79bf5ca40eaf471c3812d",
-    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_60x60.png"
+    "revision": "abcf14f003aee399a6f9983dc46ca96c",
+    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-320x460.png"
   },
   {
     "revision": "fed14c12efa52b677ac8",
@@ -160,18 +160,6 @@ self.__precacheManifest = [
     "url": "/index-db.html"
   },
   {
-    "revision": "99c0166ce6e341a7cde1ae98f71afb86",
-    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_128x128.png"
-  },
-  {
-    "revision": "d4dc63081bc9e21b09b0c25d736d5c66",
-    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_512x512.png"
-  },
-  {
-    "revision": "abcf14f003aee399a6f9983dc46ca96c",
-    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-320x460.png"
-  },
-  {
     "revision": "663cfafc615a8ad9ce955043e12c515e",
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-640x920.png"
   },
@@ -208,16 +196,28 @@ self.__precacheManifest = [
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/apple-touch-startup-image-1536x2008.png"
   },
   {
+    "revision": "5eb2535bccf79bf5ca40eaf471c3812d",
+    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_60x60.png"
+  },
+  {
+    "revision": "99c0166ce6e341a7cde1ae98f71afb86",
+    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_128x128.png"
+  },
+  {
+    "revision": "d4dc63081bc9e21b09b0c25d736d5c66",
+    "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/firefox_app_512x512.png"
+  },
+  {
     "revision": "29b12d41a6027f6cd0c8a71fd4f9ce5c",
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/manifest.webapp"
   },
   {
-    "revision": "c908f1c9d18dcf3499903e33884d43f9",
+    "revision": "0c3c63a346da8f5f60704b6b44f23e33",
     "url": "/icons-2c17fdfb7035eb23774cbf4f9efd7a56/.cache"
   },
   {
-    "revision": "68c0c06e31558911465c1d4b36584d2a",
-    "url": "/iconstats-59399c54fa07ab104c2d.json"
+    "revision": "0b98b16606f192f8c9ad991190ebf577",
+    "url": "/iconstats-d07824bca3c22032efd0.json"
   },
   {
     "revision": "8843db06baeafdf6f0abf04cb47a5639",
