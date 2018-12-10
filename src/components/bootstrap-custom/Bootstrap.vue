@@ -123,16 +123,11 @@ export default {}
 </script>
 
 <style lang="scss">
-@import '~bootstrap/scss/_functions.scss';
-@import '~bootstrap/scss/_variables.scss';
-@import '~bootstrap/scss/_mixins.scss';
-// custom
-@import '~bootstrap/scss/_reboot.scss';
+@import './bootstrap-lite.scss';
 @import '~bootstrap/scss/_type.scss';
-@import '~bootstrap/scss/_grid.scss';
 @import '~bootstrap/scss/_buttons.scss';
 @import '~bootstrap/scss/_code.scss';
-@import '~bootstrap/scss/_utilities.scss';
+
 .bs-lite {
   min-height: 90vh;
 }

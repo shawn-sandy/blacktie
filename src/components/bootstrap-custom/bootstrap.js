@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import App from './Bootstrap.vue'
-import 'blacktie-styles/app.scss'
 import './../../app'
 import './app'
 
