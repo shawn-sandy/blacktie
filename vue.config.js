@@ -8,7 +8,7 @@ module.exports = {
   transpileDependencies: ['blacktie-buttons-v2/src/components/*.vue'],
   css: {
     sourceMap: false,
-    extract: false
+    extract: true
   },
 
   lintOnSave: process.env.NODE_ENV !== 'production',
@@ -80,6 +80,13 @@ module.exports = {
       filename: 'forms.html',
       title: 'Blacktie Forms',
       chunks: ['chunk-vendors', 'chunk-common', 'forms']
+    },
+    'bootstrap-lite': {
+      entry: './src/components/bootstrap-custom/bootstrap.js',
+      template: 'public/_layout.html',
+      filename: 'bootstrap.html',
+      title: 'Bootstrap Custom',
+      chunks: ['chunk-vendors', 'chunk-common', 'bootstrap-lite']
     }
   },
   devServer: {
