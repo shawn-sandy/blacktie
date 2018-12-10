@@ -28,7 +28,7 @@
             Bootstrap-Lite
           </p>
           <p class="">
-            Bootstrap is one of the most popular CSS frameworks around, allowing users to quickly layout websites and apps with very minimal effort. Unfortunately most of the sites built with bootstrap only use a fraction of CSS classes and utilities provided leading to un-optimized files in production.
+            Bootstrap is one of the most popular CSS frameworks around, allowing users to quickly layout websites and apps with very minimal effort. Unfortunately most of the sites built with bootstrap only use a fraction of CSS classes and utilities provided leading to un-optimized files in production, check the chrome dev tools - coverage panel for unused bytes.
           </p>
           <p>
             BootstrapLite is a barebones version of bootstrap that gives designer and developers a bit more control of what parts of bootstrap apps require and when. Reducing the bolat and boilerplate and allowing for customization and flexibility.
