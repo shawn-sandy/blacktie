@@ -34,7 +34,8 @@ module.exports = {
       ]),
       new BundleAnalyzerPlugin({
         analyzerMode: 'disabled',
-        generateStatsFile: process.env.NODE_ENV === 'production'
+        generateStatsFile: true
+        // generateStatsFile: process.env.NODE_ENV === 'production'
       }),
       new Favicons({
         logo: './src/images/blk-logo.png'
