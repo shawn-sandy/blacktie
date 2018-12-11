@@ -1,6 +1,6 @@
 {
   "name": "blacktie-cards",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "A simple page routing component",
   "main": "dist/index.js",
   "scripts": {
@@ -27,8 +27,8 @@
   },
   "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/package-name",
   "dependencies": {
-    "blacktie-elements": "^0.1.3",
-    "blacktie-styles": "^0.0.5",
+    "blacktie-elements": "^0.1.4",
+    "blacktie-styles": "^0.0.6",
     "bulma": "^0.7.1",
     "lodash": "^4.17.11",
     "sass-loader": "^7.0.3",
