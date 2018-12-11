@@ -1,6 +1,6 @@
 {
   "name": "blacktie-elements",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "blacktie-styles": "^0.0.5",
+    "blacktie-styles": "^0.0.6",
     "lodash": "^4.17.11",
     "vue": "^2.5.16",
     "vue-styleguidist": "1.7.8"
