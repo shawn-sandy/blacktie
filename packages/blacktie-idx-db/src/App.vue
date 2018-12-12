@@ -4,14 +4,20 @@
       <div class="columns">
         <div class="column">
           <h3 class="subtitle is-2 oswald is-uppercase">
-            Index DB Component
-          </h3>
+Index DB Component
+</h3>
           <div class="is-size-5">
-            A Dexie.js powered vue.js scoped componenent that gives you access to the browsers
-            built in INDEXDB Database, allowing you to perform create, read,
-            update and delete database operations client-side. Making it easy to build interactive demos and prototypes without the need for a complex serverside setup and services.
+            A <a href="//dexie.org"
+target="_blank">
+Dexie.js
+</a>powered vue.js
+            scoped componenent that gives you access to the browsers built in
+            INDEXDB Database, allowing you to perform create, read, update and
+            delete database operations client-side. Making it easy to build
+            interactive demos and prototypes without the need for a complex
+            serverside setup and services.
           </div>
-          <hr>
+          <hr >
         </div>
       </div>
       <div class="container">
@@ -28,7 +34,7 @@
                 >
                   Reset Database
                 </button>
-                <hr>
+                <hr >
               </div>
             </div>
             <div class="columns">
@@ -39,8 +45,8 @@
                     @click="fakeUser"
                   >
                     <span class="">
-                      &#43;
-                    </span> Add Contact
+&#43;
+</span> Add Contact
                   </button>
                 </div>
                 <div class="column has-text-right">
@@ -49,30 +55,25 @@
               </template>
             </div>
 
-            <div
-              v-for="item in results"
-              :key="item.id"
-              class="columns"
-            >
+            <div v-for="item in results"
+:key="item.id" class="columns">
               <!--
                 <div class="column is-1">
                   {{ item.id }}
                 </div>
               -->
               <div class="column">
-                {{ item.name }}
-              </div>
+{{ item.name }}
+</div>
               <div class="column has-text-left">
-                {{ item.email }}
-              </div>
+{{ item.email }}
+</div>
               <div class="column has-text-left">
-                {{ item.phone }}
-              </div>
+{{ item.phone }}
+</div>
               <div class="column is-1 has-text-right">
-                <button
-                  class="button is-small"
-                  @click="deleteContact(item.id)"
-                >
+                <button class="button is-small"
+@click="deleteContact(item.id)">
                   Delete
                 </button>
               </div>
@@ -80,9 +81,7 @@
           </template>
         </IndexDb>
 
-        <div>
-          <hr>
-        </div>
+        <div><hr ></div>
       </div>
     </div>
   </div>
