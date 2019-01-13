@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-var jskit = (function() {
+var _js = (function() {
   'use strict'
 
   // Create the methods object
