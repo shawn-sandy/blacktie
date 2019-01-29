@@ -51,6 +51,79 @@ var _js = (function() {
     elem.addEventListener(event, callback, useCapture || false)
   }
 
+  /**
+   * Get the URL parameters
+   * source: https://css-tricks.com/snippets/javascript/get-url-variables/
+   * @param  {String} url The URL
+   * @return {Object}     The URL parameters
+   */
+  methods.getParams = function(url) {
+    var params = {}
+    var parser = document.createElement('a')
+    parser.href = url || window.location.href
+    var query = parser.search.substring(1)
+    var vars = query.split('&')
+    if (vars.length < 2) return params
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split('=')
+      params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1])
+    }
+    return params
+  }
+
+  /*!
+ * Run event after the DOM is ready
+ * (c) 2017 Chris Ferdinandi, MIT License, https://gomakethings.com
+ * @param  {Function} fn Callback function
+ */
+  methods.ready = function(fn) {
+    // Sanity check
+    if (typeof fn !== 'function') return
+
+    // If document is already loaded, run method
+    if (
+      document.readyState === 'interactive' ||
+      document.readyState === 'complete'
+    ) {
+      return fn()
+    }
+
+    // Otherwise, wait until document is loaded
+    document.addEventListener('DOMContentLoaded', fn, false)
+  }
+
+  /**
+   * Traverse loop and call a method
+   */
+  methods.each = function(selector, callback) {
+    if (!selector) throw new Error('Please provide a selector.')
+    if (!callback || typeof callback !== 'function')
+      throw new Error('Please provide a valid callback function to run')
+
+    var elms = document.querySelectorAll(selector)
+
+    Array.prototype.forEach.call(elms, callback)
+  }
+
+  /*!
+ * Determine if an element is in the viewport
+ * (c) 2017 Chris Ferdinandi, MIT License, https://gomakethings.com
+ * @param  {Node}    elem The element
+ * @return {Boolean}      Returns true if element is in the viewport
+ */
+  methods.isInViewport = function(elem) {
+    var distance = elem.getBoundingClientRect()
+    return (
+      distance.top >= 0 &&
+      distance.left >= 0 &&
+      distance.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      distance.right <=
+        (window.innerWidth || document.documentElement.clientWidth)
+    )
+  }
+
   // Expose the public methods
   return methods
 })()
+bla
