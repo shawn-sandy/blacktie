@@ -1,45 +1,17 @@
-# Blacktie Services
+# BootstrapLite
 
-An easy way to consume data from HTTP/REST services using axios and Vue.js scoped slots
+#### Bootstrap without the Guilt (152kb > 52kb )
 
-## Documentation
+A lightweight alternative to <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>, created to allow developers access to bootstrap core utilities and functions. Yet lightweight enough to customize the look and feel without the guilt
 
-Read more about [blacktie-services](https://blacktie.netlify.com/guide/#/AxiosService)
+### Usage
 
-## Install
+To install bootstrap lite follow any one of the options below or to roll your own please follow the instructions the <a href="https://getbootstrap.com/docs/4.2/getting-started/theming/#importing" target="_blank"> bootstrap instructions here </a>
 
-```
-
-yarn add blacktie-services
-
-```
-
-### Import into your vue app and export as component
-
-```js
-
-import AxiosService from "blacktie-services/src/components/AxiosService.vue";
-
-export default {
-  name: "your-app",
-  components: {
-    AxiosService
-  }
-}
-
-```
-
-
-
-### Add code to your HTML
-
-```html
-
-   <blacktie-services></blacktie-services>
-
-```
-
-
+- **Install via npm**
+- **Use a CDN**
+- **Copy repo with Degit**
+- **Clone the repo**
 
 ## Issues
 
@@ -47,8 +19,6 @@ export default {
 
 ## Security Vulnerabilities
 If you discover a security vulnerability within Laravel, please send an e-mail to Shawn Sandy via shawnsandy04@gmail.com All security vulnerabilities will be promptly addressed.
-
-
 
 ## [Licence MIT](https://opensource.org/licenses/MIT)
 
