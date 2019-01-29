@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap-lite",
+  "version": "0.0.1",
+  "description": "Bootstrap Lite",
+  "main": "index.js",
+  "repository": "http://github.com/shawn-sandy/blacktie",
+  "author": "Shawn Sandy",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^4.2.1",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "private": false
+}
