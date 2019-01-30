@@ -1,6 +1,6 @@
 # BootstrapLite
 
-#### Bootstrap without the Guilt (152kb < 52kb )
+#### Bootstrap without the Guilt (152kb < 70kb )
 
 A lightweight alternative to <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>, created to allow developers access to bootstrap core utilities and functions. Yet lightweight enough to customize the look and feel without guilt.
 
@@ -15,7 +15,7 @@ A lightweight alternative to <a href="https://getbootstrap.com" target="_blank">
 - Grid
 - Utilities
 
-### Usage
+### Install
 
 To install bootstrap lite follow any one of the options below or you can very well roll your own just follow the instructions the <a href="https://getbootstrap.com/docs/4.2/getting-started/theming/#importing" target="_blank"> bootstrap instructions here </a>
 
@@ -23,6 +23,8 @@ To install bootstrap lite follow any one of the options below or you can very we
 - **Use a CDN (JS Delivr)**
 - **Copy repo with Degit**
 - **Clone the repo using Git**
+
+### Usage
 
 ## Issues
 
