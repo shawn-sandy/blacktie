@@ -1,24 +1,35 @@
 # BootstrapLite
 
-#### Bootstrap without the Guilt (152kb > 52kb )
+#### Bootstrap without the Guilt (152kb < 52kb )
 
-A lightweight alternative to <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>, created to allow developers access to bootstrap core utilities and functions. Yet lightweight enough to customize the look and feel without the guilt
+A lightweight alternative to <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>, created to allow developers access to bootstrap core utilities and functions. Yet lightweight enough to customize the look and feel without guilt.
+
+**BootstrapLite is more of a utility library than a css framework and requires a greater knowledge css/scss that the full blown version of Bootstrap**
+
+**Inside**
+
+- Function
+- Variables
+- Mixins
+- Reboot
+- Grid
+- Utilities
 
 ### Usage
 
-To install bootstrap lite follow any one of the options below or to roll your own please follow the instructions the <a href="https://getbootstrap.com/docs/4.2/getting-started/theming/#importing" target="_blank"> bootstrap instructions here </a>
+To install bootstrap lite follow any one of the options below or you can very well roll your own just follow the instructions the <a href="https://getbootstrap.com/docs/4.2/getting-started/theming/#importing" target="_blank"> bootstrap instructions here </a>
 
 - **Install via npm**
-- **Use a CDN**
+- **Use a CDN (JS Delivr)**
 - **Copy repo with Degit**
-- **Clone the repo**
+- **Clone the repo using Git**
 
 ## Issues
 
 [Please submit issues here](https://github.com/shawn-sandy/blacktie/issues)
 
 ## Security Vulnerabilities
-If you discover a security vulnerability within Laravel, please send an e-mail to Shawn Sandy via shawnsandy04@gmail.com All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within BootstrapLite, please send an e-mail to Shawn Sandy via shawnsandy04@gmail.com All security vulnerabilities will be promptly addressed.
 
 ## [Licence MIT](https://opensource.org/licenses/MIT)
 

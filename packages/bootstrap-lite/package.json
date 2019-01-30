@@ -10,6 +10,7 @@
     "bootstrap": "^4.2.1",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
     "gulp-dart-sass": "^0.9.1",
     "gulp-print": "^5.0.0",
     "gulp-sass": "^4.0.2",
