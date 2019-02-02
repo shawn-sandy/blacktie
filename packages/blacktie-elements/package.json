@@ -11,6 +11,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "blacktie-styles": "^0.0.6",
+    "bootstrap-lite": "^0.0.1",
     "lodash": "^4.17.11",
     "vue": "^2.5.16",
     "vue-styleguidist": "1.7.8"
