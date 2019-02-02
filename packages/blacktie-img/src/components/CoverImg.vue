@@ -8,15 +8,15 @@
 </template>
 <script>
 // import ElmImg from './Image.vue'
-import BlacktieImgCaption from './Caption.vue'
+// import BlacktieImgCaption from './Caption.vue'
 /**
  * The CoverImg component display and image with a custom overlay overlay greate for landing pages etc
  */
 export default {
   name: 'CoverImage',
   components: {
-    'ElmImg': () => import('./Image'),
-    BlacktieImgCaption
+    'ElmImg': () => import('./Image')
+    // BlacktieImgCaption
   },
   props: {
     contentPositiongu: {

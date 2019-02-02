@@ -96,5 +96,13 @@ module.exports = {
       errors: true
     }
   },
-  productionSourceMap: true
+  productionSourceMap: true,
+  chainWebpack: config => {
+    config.module
+      .rule('hbs')
+      .test(/\.hbs$/)
+      .use('handlebars-loader')
+      .loader('handlebars-loader')
+      .end()
+  }
 }

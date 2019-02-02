@@ -7,9 +7,17 @@
             Index DB Component
           </h3>
           <div class="is-size-5">
-            A Dexie.js powered vue.js scoped componenent that gives you access to the browsers
-            built in INDEXDB Database, allowing you to perform create, read,
-            update and delete database operations client-side. Making it easy to build interactive demos and prototypes without the need for a complex serverside setup and services.
+            A <a
+              href="//dexie.org"
+              target="_blank"
+            >
+              Dexie.js
+            </a>powered vue.js
+            scoped componenent that gives you access to the browsers built in
+            INDEXDB Database, allowing you to perform create, read, update and
+            delete database operations client-side. Making it easy to build
+            interactive demos and prototypes without the need for a complex
+            serverside setup and services.
           </div>
           <hr>
         </div>
@@ -80,9 +88,7 @@
           </template>
         </IndexDb>
 
-        <div>
-          <hr>
-        </div>
+        <div><hr></div>
       </div>
     </div>
   </div>
