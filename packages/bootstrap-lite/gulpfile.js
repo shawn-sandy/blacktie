@@ -18,10 +18,10 @@ gulp.task('sass', () => {
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(prefixer())
+    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./dist'))
     .pipe(cleanCss())
     .pipe(rename({ extname: '.min.css' }))
-    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./dist'))
 })
 
