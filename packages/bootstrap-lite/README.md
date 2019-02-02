@@ -21,10 +21,10 @@ To install bootstrap lite follow any one of the options below or you can very we
 
 - **Install via npm**
 - **Use a CDN (JS Delivr)**
-- **Copy repo with Degit**
-- **Clone the repo using Git**
 
 ### Usage
+
+
 
 ## Issues
 

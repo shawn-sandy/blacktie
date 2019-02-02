@@ -6,6 +6,11 @@ const print = require('gulp-print').default
 const reports = require('gulp-sizereport')
 const rename = require('gulp-rename')
 const sourcemaps = require('gulp-sourcemaps')
+const clean = require('gulp-clean')
+
+gulp.task('clean', () => {
+  return gulp.src('./dist').pipe(clean())
+})
 
 gulp.task('sass', () => {
   return gulp
@@ -15,20 +20,19 @@ gulp.task('sass', () => {
     .pipe(prefixer())
     .pipe(gulp.dest('./dist'))
     .pipe(cleanCss())
-    .pipe(rename('bootstrap-lite.min.css'))
+    .pipe(rename({ extname: '.min.css' }))
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./dist'))
-      .pipe(print())
 })
 
 gulp.task('reports', () => {
-  return gulp.src('./dist/*')
-  .pipe(reports({
-    gzip: true
-  }))
-}
-)
+  return gulp.src('./dist/*').pipe(
+    reports({
+      gzip: true
+    })
+  )
+})
 
-gulp.task("watch", () =>
-  gulp.watch("./src/**/*.scss", gulp.parallel("sass"))
-);
+gulp.task('default', gulp.parallel('clean', 'sass'))
+
+gulp.task('watch', () => gulp.watch('./src/**/*.scss', gulp.parallel('sass')))
