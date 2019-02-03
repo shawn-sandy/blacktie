@@ -1,0 +1,44 @@
+{
+  "name": "blacktie-buttons-v2",
+  "version": "0.2.2",
+  "description": "Custom button element (WIP)",
+  "author": "",
+  "license": "MIT",
+  "main": "./dist/buttons.common.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-components": "vue-cli-service build --target lib ./src/components/index.js --mode production --name buttons --report --report-json",
+    "build-button": "vue-cli-service build --target lib --name button-elm ./src/components/ButtonElm.vue --no-clean --report --report-html --watch",
+    "lint": "vue-cli-service lint"
+  },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "private": false,
+  "dependencies": {
+    "bootstrap-lite": "^0.0.1",
+    "lodash": "^4.17.11",
+    "vue": "^2.5.17"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-plugin-eslint": "^3.0.4",
+    "@vue/cli-service": "^3.0.4",
+    "@vue/eslint-config-prettier": "^3.0.4",
+    "blacktie-elements": "^0.1.4",
+    "blacktie-styles": "^0.0.6",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17"
+  }
+}

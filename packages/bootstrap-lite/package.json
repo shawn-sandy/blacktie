@@ -1,0 +1,29 @@
+{
+  "name": "bootstrap-lite",
+  "version": "0.0.1",
+  "description": "Bootstrap Lite",
+  "main": "index.js",
+  "repository": "http://github.com/shawn-sandy/blacktie",
+  "license": "MIT",
+  "author": {
+    "name": "Shawn Sandy",
+    "email": "shawnsandy04@gmail.com",
+    "url": "http://shawnsandy.design"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.2.1",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-dart-sass": "^0.9.1",
+    "gulp-print": "^5.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sizereport": "^1.2.1",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "private": false,
+  "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/packages/bootstrap-lite"
+}

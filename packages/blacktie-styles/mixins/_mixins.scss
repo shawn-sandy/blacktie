@@ -71,8 +71,14 @@
 
     .elm-color-#{$name} {
       color: $color;
+      &:hover {
+        color: darken($color, 10);
+      }
     }
 
+    .elm-color-#{$name}:hover {
+      color: $color;
+    }
     .elm-color-#{$name}:hover {
       color: $color;
     }

@@ -31,33 +31,55 @@ $font-sizes: (
 );
 
 @mixin modifiers($map, $attribute, $prefix: '-', $separator: '-', $base: 'base') {
+
   @each $key, $value in $map {
-    &#{if($key != $base, #{$prefix}#{$key}, '')} {
+    &#{if($key != $base, #{$prefix}#{$key}, '')}
+    {
       @if type-of($value) == 'map' {
         @include modifiers($value, $attribute, $separator);
-      } @else if ( $attribute == 'elm') {
-        // #{$attribute}-color: $value;
-        background-color: $value;
-          @if(lightness($value) > 50) {
-            color: mix($value, #ffffff, 20%)
-          } @else {
-            color: mix($value, #fff, 10%)
-          }
-          &:hover {
-            background-color: darken($value, 5%);
-          }
-        } @else {
-        #{$attribute}: $value;
-        }
+      }  @else {
+        #{$attribute}: $value !important;
+      }
+    @include element($value, $attribute)
+
     }
+  }
+
+}
+
+@mixin mixColor ($color, $ratio: 5%, $light:#ffffff, $dark: #1d1d1d) {
+  @if(lightness($color) > 50) {
+    color: mix($color, $dark, $ratio) !important
+  } @else {
+    color: mix($color, $light, $ratio) !important
   }
 }
 
-.text {
-  @include modifiers($colors, 'color', $separator: ':');
-  @include modifiers($font-sizes, 'font-size', '-');
+@mixin element($value, $attribute) {
+
+  @if ( $attribute == 'color') {
+    // #{$attribute}-color: $value;
+    &-elm {
+      background-color: $value;
+      @if(lightness($value) > 50) {
+        @include mixColor($value)
+      } @else {
+        @include mixColor($value)
+      }
+      &:hover, &:focus {
+        background-color: darken($value, 5%);
+        @include mixColor($value)
+      }
+    }
+  }
+
 }
 
-.elm {
-  @include modifiers($colors, 'elm', $separator: ':');
-}
+// .text {
+//   @include modifiers($colors, 'color', $separator: ':');
+//   @include modifiers($font-sizes, 'font-size', '-');
+// }
+
+// .elm {
+//   @include modifiers($colors, 'elm', $separator: ':');
+// }

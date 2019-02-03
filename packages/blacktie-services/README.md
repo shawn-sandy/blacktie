@@ -18,7 +18,7 @@ yarn add blacktie-services
 
 ```js
 
-import AxisoService from "blacktie-services/src/components/AxiosService.vue";
+import AxiosService from "blacktie-services/src/components/AxiosService.vue";
 
 export default {
   name: "your-app",
