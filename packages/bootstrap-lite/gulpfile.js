@@ -18,10 +18,10 @@ gulp.task('sass', () => {
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(prefixer())
+    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./dist'))
     .pipe(cleanCss())
     .pipe(rename({ extname: '.min.css' }))
-    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./dist'))
 })
 
@@ -33,6 +33,6 @@ gulp.task('reports', () => {
   )
 })
 
-gulp.task('default', gulp.parallel('clean', 'sass'))
+gulp.task('default', gulp.series('clean', 'sass'))
 
 gulp.task('watch', () => gulp.watch('./src/**/*.scss', gulp.parallel('sass')))

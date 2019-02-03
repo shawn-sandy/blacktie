@@ -21,6 +21,7 @@
   "dependencies": {
     "blacktie-elements": "^0.1.4",
     "blacktie-styles": "^0.0.3",
+    "bootstrap-lite": "^0.0.1",
     "lodash": "^4.17.11",
     "simplebar": "^3.0.0-beta.1",
     "vue": "^2.5.16"
