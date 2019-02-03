@@ -33,6 +33,6 @@ gulp.task('reports', () => {
   )
 })
 
-gulp.task('default', gulp.parallel('clean', 'sass'))
+gulp.task('default', gulp.series('clean', 'sass'))
 
 gulp.task('watch', () => gulp.watch('./src/**/*.scss', gulp.parallel('sass')))

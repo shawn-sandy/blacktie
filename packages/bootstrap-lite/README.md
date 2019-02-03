@@ -2,7 +2,7 @@
 
 ### Bootstrap without the Guilt (152kb < 70kb )
 
-A lightweight alternative to <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>, created to allow developers access to bootstrap core utilities and functions. Yet lightweight enough to customize the look and feel without guilt.
+A lightweight build of <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>, created to allow developers access to bootstrap core utilities and functions, but flexible lightweight enough to customize without guilt.
 
 **BootstrapLite is more of a utility library than a css framework (bootstrap) and requires a greater knowledge css/scss that the full blown version of Bootstrap**
 
