@@ -4,8 +4,12 @@
   "description": "Bootstrap Lite",
   "main": "index.js",
   "repository": "http://github.com/shawn-sandy/blacktie",
-  "author": "Shawn Sandy",
   "license": "MIT",
+  "author": {
+    "name": "Shawn Sandy",
+    "email": "shawnsandy04@gmail.com",
+    "url": "http://shawnsandy.design"
+  },
   "devDependencies": {
     "bootstrap": "^4.2.1",
     "browser-sync": "^2.26.3",
@@ -20,5 +24,6 @@
     "gulp-sizereport": "^1.2.1",
     "gulp-sourcemaps": "^2.6.4"
   },
-  "private": false
+  "private": false,
+  "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/packages/bootstrap-lite"
 }
