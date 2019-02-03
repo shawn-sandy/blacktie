@@ -1,6 +1,6 @@
 {
   "name": "blacktie-services",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "publishConfig": {
     "access": "public"
   },
@@ -21,7 +21,7 @@
     "url": "http://shawnsandy.design"
   },
   "dependencies": {
-    "bootstrap-lite": "^0.0.1",
+    "bootstrap-lite": "^0.0.2",
     "lodash": "^4.17.11",
     "vue": "^2.5.16"
   },
