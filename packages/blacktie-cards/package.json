@@ -1,6 +1,6 @@
 {
   "name": "blacktie-cards",
-  "version": "0.0.13",
+  "version": "0.0.15",
   "description": "A simple page routing component",
   "main": "dist/index.js",
   "scripts": {
@@ -27,9 +27,11 @@
   },
   "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/package-name",
   "dependencies": {
-    "blacktie-elements": "^0.1.2",
-    "blacktie-styles": "^0.0.4",
+    "blacktie-elements": "^0.1.4",
+    "blacktie-styles": "^0.0.6",
+    "bootstrap-lite": "^0.0.1",
     "bulma": "^0.7.1",
+    "lodash": "^4.17.11",
     "sass-loader": "^7.0.3",
     "vue": "^2.5.16",
     "vue-loader": "^15.2.4",
@@ -42,6 +44,7 @@
   "devDependencies": {
     "@vue/eslint-config-prettier": "^3.0.3",
     "blacktie-styles": "^0.0.1",
+    "lodash": "^4.17.11",
     "sass-rem": "^2.0.1",
     "sassdoc": "^2.5.0",
     "vue-styleguidist": "^1.7.13"

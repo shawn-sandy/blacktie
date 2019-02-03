@@ -1,31 +1,25 @@
 <template>
-  <div class="cover-img" :class="{ hidden: loading }">
-    <elm-img inline-styles="width:100%">
-      <blacktie-img-caption>
-        <!--  -->
-        <slot>
-          <h1>
-            Cover Caption
-          </h1>
-        </slot>
-      </blacktie-img-caption>
-    </elm-img>
-  </div>
+  <transition name="fade">
+    <div class="cover-img" v-show="loading">
+      <elm-img inline-styles="width:100%">
+      </elm-img>
+    </div>
+  </transition>
 </template>
 <script>
-import ElmImg from './Index.vue'
-import BlacktieImgCaption from './Caption.vue'
+// import ElmImg from './Image.vue'
+// import BlacktieImgCaption from './Caption.vue'
 /**
  * The CoverImg component display and image with a custom overlay overlay greate for landing pages etc
  */
 export default {
   name: 'CoverImage',
   components: {
-    ElmImg,
-    BlacktieImgCaption
+    'ElmImg': () => import('./Image')
+    // BlacktieImgCaption
   },
   props: {
-    contentPosition: {
+    contentPositiongu: {
       type: String,
       default: 'centered'
     },
@@ -35,7 +29,7 @@ export default {
   },
   data () {
     return {
-      loading: true
+      loading: false
     }
   },
   created: function () {
@@ -45,11 +39,10 @@ export default {
     timer () {
       // this.loading = false
       setTimeout(() => {
-        this.loading = false
+        this.loading = true
       }, this.timeout)
     }
   }
-
 }
 </script>
 <style lang="scss">

@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "serve": "vue-cli-service serve --open",
-    "build": "vue-cli-service build && yarn styleguide:build && yarn content:build",
+    "build": "vue-cli-service build && yarn styleguide:build && yarn content:build && yarn analyze",
     "lint": "vue-cli-service lint",
     "styleguide": "vue-styleguidist server --open",
     "styleguide:build": "vue-styleguidist build",
@@ -28,6 +28,8 @@
     "@vue/cli-plugin-pwa": "^3.0.4",
     "@vue/cli-service": "^3.0.4",
     "@vue/eslint-config-prettier": "^3.0.4",
+    "bootstrap": "^4.1.3",
+    "chance": "^1.0.18",
     "copy-webpack-plugin": "^4.5.2",
     "favicons-webpack-plugin": "^0.0.9",
     "gulp": "^3.9.1",
@@ -35,7 +37,9 @@
     "gulp-print": "^5.0.0",
     "gulp-sizereport": "^1.2.0",
     "gulp-string-replace": "^1.1.1",
+    "handlebars-loader": "^1.7.0",
     "lerna": "^3.4.0",
+    "localforage": "^1.7.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.0.2",
     "node-sass": "^4.9.0",
@@ -44,6 +48,7 @@
     "umbrellajs": "^3.1.0",
     "validate": "^4.5.1",
     "vue-styleguidist": "^1.8.9",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "webpack-bundle-analyzer": "^3.0.3"
   }
 }

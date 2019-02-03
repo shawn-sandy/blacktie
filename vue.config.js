@@ -4,11 +4,11 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin
 
 module.exports = {
-  runtimeCompiler: false,
+  runtimeCompiler: true,
   transpileDependencies: ['blacktie-buttons-v2/src/components/*.vue'],
   css: {
     sourceMap: false,
-    extract: false
+    extract: true
   },
 
   lintOnSave: process.env.NODE_ENV !== 'production',
@@ -34,6 +34,7 @@ module.exports = {
       ]),
       new BundleAnalyzerPlugin({
         analyzerMode: 'disabled',
+        // generateStatsFile: true
         generateStatsFile: process.env.NODE_ENV === 'production'
       }),
       new Favicons({
@@ -61,18 +62,32 @@ module.exports = {
     // and falls back to `public/index.html` if not found.
     // Output filename is inferred to be `subpage.html`.
     components: {
-      // entry for the page
       entry: './src/components.js',
-      // the source template
       template: 'public/components.html',
-      // output as dist/index.html
       filename: 'components.html',
-      // when using title option,
-      // template title tag needs to be <title><%= htmlWebpackPlugin.options.title %></title>
       title: 'Index Page',
-      // chunks to include on this page, by default includes
-      // extracted common chunks and vendor chunks.
       chunks: ['chunk-vendors', 'chunk-common', 'components']
+    },
+    indb: {
+      entry: './src/indb.js',
+      template: 'public/components.html',
+      filename: 'index-db.html',
+      title: 'Index DB',
+      chunks: ['chunk-vendors', 'chunk-common', 'indb']
+    },
+    forms: {
+      entry: './src/forms.js',
+      template: 'public/components.html',
+      filename: 'forms.html',
+      title: 'Blacktie Forms',
+      chunks: ['chunk-vendors', 'chunk-common', 'forms']
+    },
+    'bootstrap-lite': {
+      entry: './src/components/bootstrap-custom/bootstrap.js',
+      template: 'public/_layout.html',
+      filename: 'bootstrap.html',
+      title: 'Bootstrap Custom',
+      chunks: ['chunk-vendors', 'chunk-common', 'bootstrap-lite']
     }
   },
   devServer: {
@@ -81,5 +96,13 @@ module.exports = {
       errors: true
     }
   },
-  productionSourceMap: false
+  productionSourceMap: true,
+  chainWebpack: config => {
+    config.module
+      .rule('hbs')
+      .test(/\.hbs$/)
+      .use('handlebars-loader')
+      .loader('handlebars-loader')
+      .end()
+  }
 }

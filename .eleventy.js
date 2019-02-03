@@ -1,35 +1,37 @@
 const syntax = require('@11ty/eleventy-plugin-syntaxhighlight')
 const toc = require('eleventy-plugin-toc')
 
-module.exports = function (eleventyConfig) {
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(toc)
 
-eleventyConfig.addPlugin(toc)
+  /* Markdown */
+  let markdownIt = require('markdown-it')
+  let markdownItAnchor = require('markdown-it-anchor')
+  let options = {
+    html: true,
+    breaks: true,
+    linkify: true
+  }
+  let opts = {
+    permalink: true,
+    permalinkClass: 'direct-link',
+    permalinkSymbol: '#',
+    level: [1, 2, 3, 4]
+  }
 
-  	/* Markdown */
-	let markdownIt = require("markdown-it");
-	let markdownItAnchor = require("markdown-it-anchor");
-	let options = {
-		html: true,
-		breaks: true,
-		linkify: true
-	};
-	let opts = {
-		permalink: true,
-		permalinkClass: "direct-link",
-		permalinkSymbol: "#",
-		level: [1,2,3,4]
-	};
-
-	eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItAnchor, opts));
+  eleventyConfig.setLibrary(
+    'md',
+    markdownIt(options).use(markdownItAnchor, opts)
+  )
 
   return {
     dir: {
-      input: "docs",
-      output: "dist/content"
+      input: 'html',
+      output: 'dist/content'
     },
-    templateFormats: ["njk", "md"],
-    htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk",
-    pathPrefix: "/content/"
+    templateFormats: ['njk', 'md'],
+    htmlTemplateEngine: 'njk',
+    markdownTemplateEngine: 'njk',
+    pathPrefix: '/content/'
   }
-};
+}

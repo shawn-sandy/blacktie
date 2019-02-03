@@ -1,8 +1,13 @@
 <template>
-  <button class="button-elm" @click="confirmAction($event)">
+  <button
+    class="button-elm"
+    @click="confirmAction($event)"
+  >
     <span v-if="confirmation">
       <!-- @slot Use this slot to place the button confirmation content -->
-      <slot name="confirmation">Continue</slot>
+      <slot name="confirmation">
+        Continue
+      </slot>
     </span>
     <span v-else>
       <!-- @slot Use the slot to place the button content -->
