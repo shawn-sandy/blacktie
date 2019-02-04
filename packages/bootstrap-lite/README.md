@@ -4,7 +4,7 @@
 
 A lightweight build of <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>, created to allow developers access to bootstrap core utilities and functions, allowing you to choose the parts you need giving flexibility and control.
 
-**BootstrapLite is more of a utility library than a css framework (bootstrap) and may requires some working knowledge scss/sass**
+**BootstrapLite is more of a utility library than a css framework (bootstrap) and may require a working knowledge scss/sass**
 
 **Inside**
 
