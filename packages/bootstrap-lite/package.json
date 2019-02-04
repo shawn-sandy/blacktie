@@ -1,8 +1,8 @@
 {
   "name": "blacktie-bootstrap-lite",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Bootstrap Lite",
-  "main": "index.js",
+  "main": "dist/bootstrap-lite.min.css",
   "repository": "http://github.com/shawn-sandy/blacktie",
   "license": "MIT",
   "author": {
