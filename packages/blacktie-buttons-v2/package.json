@@ -22,7 +22,6 @@
   ],
   "private": false,
   "dependencies": {
-    "bootstrap-lite": "^0.0.2",
     "lodash": "^4.17.11",
     "vue": "^2.5.17"
   },
