@@ -19,7 +19,6 @@
   "dependencies": {
     "blacktie-elements": "^0.1.5",
     "blacktie-styles": "^0.0.3",
-    "bootstrap-lite": "^0.0.2",
     "lodash": "^4.17.11",
     "vue": "^2.5.16",
     "vue-styleguidist": "1.7.8"
