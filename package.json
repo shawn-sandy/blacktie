@@ -11,7 +11,7 @@
     "lint": "vue-cli-service lint",
     "styleguide": "vue-styleguidist server --open",
     "styleguide:build": "vue-styleguidist build",
-    "content": "eleventy --serve",
+    "start": "eleventy --serve",
     "content:build": "eleventy",
     "analyze": "yarn webpack-bundle-analyzer dist/stats.json"
   },
@@ -20,7 +20,7 @@
     "vue": "^2.5.17"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.5.4",
+    "@11ty/eleventy": "^0.8.1",
     "@11ty/eleventy-plugin-rss": "^1.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.0",
     "@vue/cli-plugin-babel": "^3.4.0",

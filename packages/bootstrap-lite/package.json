@@ -11,7 +11,7 @@
     "url": "http://shawnsandy.design"
   },
   "devDependencies": {
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
@@ -25,5 +25,8 @@
     "gulp-sourcemaps": "^2.6.4"
   },
   "private": false,
-  "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/packages/bootstrap-lite"
+  "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/packages/bootstrap-lite",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
 }

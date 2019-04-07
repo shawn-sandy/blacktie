@@ -1,4 +1,15 @@
+/* eslint-disable no-unused-vars */
 // eslint-disable-next-line no-unused-vars
+
+function _$(css, parent) {
+  return (parent || document).querySelector(css)
+}
+
+function _$$(css, parent) {
+  var nodes = (parent || document).querySelectorAll(css)
+  return Array.prototype.slice.call(nodes, 0)
+}
+
 var _js = (function() {
   'use strict'
 
