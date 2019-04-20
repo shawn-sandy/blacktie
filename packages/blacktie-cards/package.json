@@ -29,6 +29,7 @@
   "dependencies": {
     "blacktie-elements": "^0.1.5",
     "blacktie-styles": "^0.0.7",
+    "bootstrap": "^4.3.1",
     "bulma": "^0.7.1",
     "lodash": "^4.17.11",
     "sass-loader": "^7.0.3",

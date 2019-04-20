@@ -10,6 +10,9 @@
     "email": "shawnsandy04@gmail.com",
     "url": "http://shawnsandy.design"
   },
+  "scripts": {
+    "sass": "yarn gulp sass"
+  },
   "devDependencies": {
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.3",
