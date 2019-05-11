@@ -11,10 +11,10 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.bd39fdb6a2b2d1af504936793f27c8a2.js"
+  "/precache-manifest.02ca41d7e9280b9b0c2bd8013bb381d3.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "blacktie"});
