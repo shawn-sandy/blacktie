@@ -128,13 +128,12 @@ var _js = (function() {
       distance.top >= 0 &&
       distance.left >= 0 &&
       distance.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
+      (window.innerHeight || document.documentElement.clientHeight) &&
       distance.right <=
-        (window.innerWidth || document.documentElement.clientWidth)
+      (window.innerWidth || document.documentElement.clientWidth)
     )
   }
 
   // Expose the public methods
   return methods
 })()
-bla

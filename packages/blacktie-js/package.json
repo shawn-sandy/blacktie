@@ -17,6 +17,7 @@
 		"url": "http://github.com/shawn-sandy/blacktie"
 	},
 	"devDependencies": {
+		"bootstrap": "^4.3.1",
 		"del": "^2.2.2",
 		"gulp": "^3.9.1",
 		"gulp-autoprefixer": "^3.1.1",

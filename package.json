@@ -13,7 +13,8 @@
     "styleguide:build": "vue-styleguidist build",
     "start": "eleventy --serve",
     "content:build": "eleventy",
-    "analyze": "yarn webpack-bundle-analyzer dist/stats.json"
+    "analyze": "yarn webpack-bundle-analyzer dist/stats.json",
+    "sass": "yarn gulp sass"
   },
   "dependencies": {
     "register-service-worker": "^1.0.0",
@@ -38,7 +39,7 @@
     "gulp-sizereport": "^1.2.0",
     "gulp-string-replace": "^1.1.1",
     "handlebars-loader": "^1.7.0",
-    "lerna": "^3.4.0",
+    "lerna": "^3.13.3",
     "lit-element": "^2.0.1",
     "localforage": "^1.7.3",
     "markdown-it": "^8.4.2",
