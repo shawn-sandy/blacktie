@@ -1,5 +1,5 @@
 {
-  "name": "@shawnsandy/blacktie-bootstrap-lite",
+  "name": "@shawnsandy/bootstrap-lite",
   "version": "0.0.5",
   "description": "Bootstrap Lite",
   "main": "dist/bootstrap-lite.min.css",
