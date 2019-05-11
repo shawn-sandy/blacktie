@@ -10,7 +10,7 @@
   "license": "MIT",
   "author": "Shawn Sandy <shawnsandy04@gmail.com> (http://shawnsandy.design)",
   "scripts": {
-    "sass": "yarn gulp sass"
+    "build": "yarn gulp sass"
   },
   "devDependencies": {
     "bootstrap": "^4.3.1",
