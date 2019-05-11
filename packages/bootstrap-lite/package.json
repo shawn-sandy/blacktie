@@ -1,15 +1,14 @@
 {
-  "name": "blacktie-bootstrap-lite",
+  "name": "@shawnsandy/blacktie-bootstrap-lite",
   "version": "0.0.5",
   "description": "Bootstrap Lite",
   "main": "dist/bootstrap-lite.min.css",
-  "repository": "http://github.com/shawn-sandy/blacktie",
-  "license": "MIT",
-  "author": {
-    "name": "Shawn Sandy",
-    "email": "shawnsandy04@gmail.com",
-    "url": "http://shawnsandy.design"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shawn-sandy/blacktie.git"
   },
+  "license": "MIT",
+  "author": "Shawn Sandy <shawnsandy04@gmail.com> (http://shawnsandy.design)",
   "scripts": {
     "sass": "yarn gulp sass"
   },
@@ -31,5 +30,22 @@
   "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/packages/bootstrap-lite",
   "dependencies": {
     "bootstrap": "^4.3.1"
+  },
+  "bugs": {
+    "url": "https://github.com/shawn-sandy/blacktie/issues"
+  },
+  "keywords": [
+    "Bootstrap",
+    "Bootstrap-Lite"
+  ],
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
   }
 }
