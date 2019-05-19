@@ -336,6 +336,22 @@
       "packageName": "@shawnsandy/bootstrap-lite",
       "projectFolder": "packages/bootstrap-lite",
       "reviewCategory": "utilities"
+    },
+
+    {
+      "packageName": "blacktie-styles",
+      "projectFolder": "packages/blacktie-styles",
+      "reviewCategory": "utilities"
+    },
+     {
+      "packageName": "blacktie-elements",
+      "projectFolder": "packages/blacktie-elements",
+      "reviewCategory": "utilities"
+    },
+    {
+      "packageName": "blacktie-loading-dots",
+      "projectFolder": "packages/blacktie-loading-dots",
+      "reviewCategory": "utilities"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "blacktie-styles",
-  "version": "0.0.7",
+  "version": "0.0.6",
   "description": "Stylesheet utilities - blacktie",
   "main": "index.js",
   "private": false,
@@ -10,21 +10,19 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "bable-loader": "^0.0.1-security",
-    "blacktie-elements": "^0.1.5",
     "bootstrap": "^4.3.1",
-    "bulma": "^0.7.1",
-    "cross-env": "^5.1.5",
+    "bulma": "^0.7.4",
+    "cross-env": "^5.2.0",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^3.2.0",
     "lodash": "^4.17.11",
-    "postcss-loader": "^2.1.5",
-    "sass-loader": "^7.0.3",
-    "style-loader": "^0.21.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
     "vue": "^2.5.17",
-    "vue-styleguidist": "1.7.8",
-    "webpack": "^4.9.1",
-    "webpack-cli": "^2.1.4"
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-syntaxhighlight": "^1.0.5",
@@ -36,7 +34,6 @@
     "gulp-sass": "^4.0.1",
     "lodash": "^4.17.11",
     "sass-rem": "^2.0.1",
-    "sassdoc": "^2.5.0",
-    "vue-styleguidist": "^1.7.13"
+    "sassdoc": "^2.5.0"
   }
 }

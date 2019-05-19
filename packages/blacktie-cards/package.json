@@ -28,14 +28,12 @@
   "homepage": "https://github.com/shawn-sandy/blacktie/tree/master/package-name",
   "dependencies": {
     "blacktie-elements": "^0.1.5",
-    "blacktie-styles": "^0.0.7",
-    "bootstrap": "^4.3.1",
+    "blacktie-styles": "^0.0.6",
     "bulma": "^0.7.1",
     "lodash": "^4.17.11",
     "sass-loader": "^7.0.3",
     "vue": "^2.5.16",
     "vue-loader": "^15.2.4",
-    "vue-styleguidist": "1.7.8",
     "vue-template-compiler": "^2.5.16"
   },
   "publishConfig": {
@@ -43,11 +41,9 @@
   },
   "devDependencies": {
     "@vue/eslint-config-prettier": "^3.0.3",
-    "blacktie-styles": "^0.0.1",
     "bootstrap": "^4.3.1",
     "lodash": "^4.17.11",
     "sass-rem": "^2.0.1",
-    "sassdoc": "^2.5.0",
-    "vue-styleguidist": "^1.7.13"
+    "sassdoc": "^2.5.0"
   }
 }
