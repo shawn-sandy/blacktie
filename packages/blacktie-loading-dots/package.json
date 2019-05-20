@@ -21,26 +21,25 @@
   },
   "dependencies": {
     "blacktie-elements": "^0.1.5",
-    "blacktie-styles": "^0.0.7",
+    "blacktie-styles": "^0.0.6",
+    "bootstrap": "^4.3.1",
     "lodash": "^4.17.11",
-    "vue": "^2.5.16",
-    "vue-styleguidist": "1.7.8"
+    "vue": "^2.6.10"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0-beta.15",
-    "@vue/cli-plugin-eslint": "^3.0.0-beta.15",
-    "@vue/cli-service": "^3.0.0-beta.15",
-    "@vue/eslint-config-prettier": "^3.0.3",
-    "@vue/eslint-config-standard": "^3.0.0-rc.3",
-    "blacktie-styles": "^0.0.1",
-    "bulma": "^0.7.1",
-    "file-loader": "^1.1.11",
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "blacktie-styles": "^0.0.6",
+    "bootstrap": "^4.3.1",
+    "bulma": "^0.7.4",
+    "file-loader": "^3.0.1",
     "lodash": "^4.17.11",
     "sass-rem": "^2.0.1",
-    "sassdoc": "^2.5.0",
-    "three-dots": "https://github.com/nzbin/three-dots",
-    "vue-styleguidist": "^1.7.13",
-    "vue-template-compiler": "^2.5.16"
+    "sassdoc": "^2.7.0",
+    "three-dots": "https://github.com/nzbin/three-dots"
   },
   "browserslist": [
     "> 1%",

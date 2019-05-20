@@ -21,6 +21,7 @@
   "dependencies": {
     "blacktie-elements": "^0.1.5",
     "blacktie-styles": "^0.0.3",
+    "bootstrap": "^4.3.1",
     "lodash": "^4.17.11",
     "simplebar": "^3.0.0-beta.1",
     "vue": "^2.5.16"
@@ -32,6 +33,7 @@
     "@vue/eslint-config-prettier": "^3.0.3",
     "@vue/eslint-config-standard": "^3.0.0-rc.3",
     "blacktie-styles": "^0.0.1",
+    "bootstrap": "^4.3.1",
     "bulma": "^0.7.1",
     "file-loader": "^1.1.11",
     "lodash": "^4.17.11",

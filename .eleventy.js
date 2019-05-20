@@ -24,6 +24,11 @@ module.exports = function(eleventyConfig) {
     markdownIt(options).use(markdownItAnchor, opts)
   )
 
+  eleventyConfig.setBrowserSyncConfig({
+    notify: true,
+    open: true
+  })
+
   return {
     dir: {
       input: 'html',
